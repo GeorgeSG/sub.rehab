@@ -1,0 +1,78 @@
+{
+  "subs": [
+    {
+      "name": "r/ProgrammerHumor",
+      "links": [{ "service": "discord", "url": "https://discord.gg/AwwevQgb", "official": true }]
+    },
+    {
+      "name": "r/pcgaming",
+      "links": [{ "service": "discord", "url": "https://discord.gg/4bxJgkY", "official": true }]
+    },
+    {
+      "name": "r/buildapc",
+      "links": [{ "service": "discord", "url": "https://discord.gg/buildapc", "official": true }]
+    },
+    {
+      "name": "r/aww",
+      "links": [{ "service": "discord", "url": "https://discord.gg/UXfd5Pn", "official": true }]
+    },
+    {
+      "name": "r/cats",
+      "links": [{ "service": "discord", "url": "https://discord.gg/GqTrazYFxB", "official": true }]
+    },
+    {
+      "name": "r/StarWars",
+      "links": [
+        { "service": "discord", "url": "https://discord.com/invite/StarWars", "official": true }
+      ]
+    },
+    {
+      "name": "r/NoStupidQuestions",
+      "links": [
+        { "service": "lemmy", "url": "https://lemmy.world/c/nostupidquestions", "official": false }
+      ]
+    },
+    {
+      "name": "r/MildlyInfuriating",
+      "links": [
+        { "service": "lemmy", "url": "https://lemmy.world/c/mildlyinfuriating", "official": false }
+      ]
+    },
+    {
+      "name": "r/Selfhosted",
+      "links": [
+        { "service": "lemmy", "url": "https://lemmy.world/c/selfhosted", "official": false }
+      ]
+    },
+    {
+      "name": "r/Futurama",
+      "links": [{ "service": "lemmy", "url": "https://lemmy.world/c/futurama", "official": false }]
+    },
+    {
+      "name": "r/FoodPorn",
+      "links": [{ "service": "lemmy", "url": "https://lemmy.world/c/foodporn", "official": false }]
+    },
+    {
+      "name": "r/AnarchyChess",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/anarchychess@sopuli.xyz",
+          "official": false
+        }
+      ]
+    },
+    {
+      "name": "r/photography",
+      "links": [
+        { "service": "kbin", "url": "https://kbin.social/m/photography", "official": false }
+      ]
+    },
+    {
+      "name": "r/SquaredCircle",
+      "links": [
+        { "service": "kbin", "url": "https://kbin.social/m/SquaredCircle", "official": false }
+      ]
+    }
+  ]
+}
