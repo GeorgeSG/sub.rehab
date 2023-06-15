@@ -53,7 +53,7 @@ export const theme: MantineThemeOverride = {
         position: "fixed",
         width: "100vw",
         height: "100vh",
-        backgroundImage: `${gradient}, url('/images/background.png')`,
+        backgroundImage: `${gradient}, url('/images/background.webp')`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
       },
