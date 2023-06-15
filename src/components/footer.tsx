@@ -42,7 +42,7 @@ export function Footer() {
           <Tooltip label="sub.rehab @ GitHub" position="top" withArrow>
             <Anchor href="https://github.com/GeorgeSG/sub.rehab" target="_blank">
               <ActionIcon>
-                <IoLogoGithub size="1.05rem" />
+                <IoLogoGithub size={32} />
               </ActionIcon>
             </Anchor>
           </Tooltip>
