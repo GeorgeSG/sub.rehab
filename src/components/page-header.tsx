@@ -1,5 +1,4 @@
-import { ActionIcon, Button, ColorScheme, Group, createStyles } from "@mantine/core";
-import { useColorScheme, useLocalStorage } from "@mantine/hooks";
+import { ActionIcon, Button, Group, createStyles, useMantineColorScheme } from "@mantine/core";
 import Link from "next/link";
 import { IoMoon, IoSunnyOutline } from "react-icons/io5";
 import { Logotype } from "./logotype";
@@ -33,20 +32,12 @@ const useStyles = createStyles(({ spacing, shadows, radius, colorScheme, fn }) =
 
 export function PageHeader({ withBackground = false }: { withBackground?: boolean }) {
   const { classes } = useStyles();
-  const preferredColorScheme = useColorScheme();
-  const [colorScheme, setColorScheme] = useLocalStorage<ColorScheme>({
-    key: "sub-rehab-color-theme",
-    defaultValue: preferredColorScheme,
-    getInitialValueInEffect: true,
-  });
-
-  const toggleColorScheme = (value?: ColorScheme) =>
-    setColorScheme(value || (colorScheme === "dark" ? "light" : "dark"));
+  const { colorScheme, toggleColorScheme } = useMantineColorScheme();
 
   const isDark = colorScheme === "dark";
 
   return (
-    <div className={`${classes.title} ${withBackground && classes.background}`}>
+    <header className={`${classes.title} ${withBackground && classes.background}`}>
       <Logotype />
       <Group ml="auto">
         <Button component={Link} href="/faq" variant="subtle">
@@ -61,6 +52,6 @@ export function PageHeader({ withBackground = false }: { withBackground?: boolea
           {isDark ? <IoSunnyOutline /> : <IoMoon />}
         </ActionIcon>
       </Group>
-    </div>
+    </header>
   );
 }
