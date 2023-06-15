@@ -22,7 +22,7 @@ export default function Home() {
         </Text>
         <Button
           component="a"
-          href="https://github.com/GeorgeSG/sub.rehab/blob/master/data/subreddits.json"
+          href="https://github.com/GeorgeSG/sub.rehab/issues/new?assignees=&labels=new+link&projects=&template=new-subreddit-link.md"
           target="_blank"
           leftIcon={<IoAdd />}
           variant="gradient"
