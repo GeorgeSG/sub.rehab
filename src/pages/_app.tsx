@@ -38,7 +38,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta property="og:url" content="https://sub.rehab/" />
         <meta property="og:site_name" content="sub.rehab" />
 
-        <meta name="viewport" content="widt=device-width, initial-scale=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="48x48" href="/favicon/favicon-48x48.png" />
