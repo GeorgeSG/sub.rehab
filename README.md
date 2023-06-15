@@ -27,14 +27,17 @@ sub.rehab is developed using:
 
 ### Getting Started
 
-First, run the development server:
+You'll need [Node.js](https://nodejs.org/en/) installed on your machine.
+
+Install dependencies:
+```bash
+npm install
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
