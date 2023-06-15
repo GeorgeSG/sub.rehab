@@ -7,11 +7,11 @@ assignees: ''
 
 ---
 
-**Subreddit name:** /r/<insert-name
+**Subreddit name:** /r/<insert-name>
 **Service:** <specify service, for example: lemmy>
 **Link:** <link to the community>
 **Official:** <yes | no>
 
 <!-- fill this, if link is official -->
-## verification
-A short explanation or link proving that the linked community is an official fork of the original subreddit
+## Verification
+Please provide a short explanation or link proving that the linked community is an official fork of the original subreddit
