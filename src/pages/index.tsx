@@ -18,7 +18,7 @@ export default function Home() {
           <Anchor component={Link} href="/">
             sub.rehab
           </Anchor>
-          &nbsp;lists instances of the subreddit communities on alternative platforms.
+          &nbsp;lists instances of the Reddit communities on alternative platforms.
         </Text>
         <Button
           component="a"
