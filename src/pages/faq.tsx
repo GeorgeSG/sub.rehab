@@ -78,9 +78,26 @@ export default function FAQPage() {
           <Accordion.Item className={classes.item} value="why-create-page">
             <Accordion.Control>Why create this page?</Accordion.Control>
             <Accordion.Panel>
-              Communities are attempting to migrate away from Reddit, but it&apos;s hard to figure
-              out where each community went. I figured a single directory of alternatives can
-              improve discoverability and help the transition.
+              <p>
+                With the recent protest and blackouts, I&apos;ve been trying to keep up with the
+                communities I follow outside of Reddit. It&apos;s been a bit difficult to find where
+                people went to. Some subreddits linked to Discord or Lemmy servers, but even then,
+                when they are privated, the links are inaccessible.
+              </p>
+              <p>
+                I’ve heard the same complaint from other people - subreddits are down, and people
+                support the blackout, but finding alternatives is confusing, mostly because there
+                are multiple platforms people jump over to.
+              </p>
+              <p>
+                So, I created https://sub.rehab to attempt to list where subreddits have moved to.
+                It is open source, and edits can be suggested by anyone. It&apos;s obviously lacking
+                content - these are just the subs I found on different platforms.
+              </p>
+              <p>
+                I think this could be useful, especially for subreddits planning an indefinite
+                blackout - it would make it easier to discover alternatives.
+              </p>
             </Accordion.Panel>
           </Accordion.Item>
 
