@@ -27,7 +27,7 @@ sub.rehab is developed using:
 
 ### Getting Started
 
-You'll need [Node.js](https://nodejs.org/en/) installed on your machine.
+You'll need [Node.js version 18](https://nodejs.org/en/) installed.
 
 Install dependencies:
 ```bash
