@@ -17,6 +17,7 @@ const useStyles = createStyles((theme) => ({
 
     [theme.fn.smallerThan("xs")]: {
       flexDirection: "column",
+      gap: 0,
     },
   },
 
