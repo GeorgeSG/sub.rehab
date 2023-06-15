@@ -37,6 +37,14 @@ const useStyles = createStyles((theme) => ({
     },
   },
 
+  checkboxList: {
+    display: "flex",
+    gap: theme.spacing.lg,
+    [theme.fn.smallerThan("xs")]: {
+      marginTop: theme.spacing.xs,
+    },
+  },
+
   searchInput: {
     [theme.fn.smallerThan("xs")]: {
       width: "100%",
@@ -87,25 +95,27 @@ export function CommunityList() {
             rightSection={<IoCloseOutline onClick={() => setSearchParam("")} />}
             className={classes.searchInput}
           />
-          {ALL_SERVICES.map((service) => (
-            <Checkbox
-              classNames={{ body: classes.checkbox }}
-              key={service}
-              label={
-                <Text span size="md">
-                  {service}
-                </Text>
-              }
-              checked={visibleServices.includes(service)}
-              onChange={(e) => {
-                if (e.currentTarget.checked) {
-                  setVisibleServices((prev) => [...prev, service]);
-                } else {
-                  setVisibleServices((prev) => prev.filter((s) => s !== service));
+          <div className={classes.checkboxList}>
+            {ALL_SERVICES.map((service) => (
+              <Checkbox
+                classNames={{ body: classes.checkbox }}
+                key={service}
+                label={
+                  <Text span size="md">
+                    {service}
+                  </Text>
                 }
-              }}
-            />
-          ))}
+                checked={visibleServices.includes(service)}
+                onChange={(e) => {
+                  if (e.currentTarget.checked) {
+                    setVisibleServices((prev) => [...prev, service]);
+                  } else {
+                    setVisibleServices((prev) => prev.filter((s) => s !== service));
+                  }
+                }}
+              />
+            ))}
+          </div>
         </div>
 
         {visibleSubs.length === 0 && (
