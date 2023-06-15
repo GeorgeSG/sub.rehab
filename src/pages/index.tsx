@@ -21,6 +21,9 @@ export default function Home() {
           &nbsp;lists where the communities are moving to.
         </Text>
         <Button
+          component="a"
+          href="https://github.com/GeorgeSG/sub.rehab/blob/master/data/subreddits.json"
+          target="_blank"
           leftIcon={<IoAdd />}
           variant="gradient"
           gradient={{ from: "orange.4", to: "orange.8", deg: 55 }}
