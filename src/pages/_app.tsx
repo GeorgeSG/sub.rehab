@@ -27,12 +27,12 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta name="name" content="Find your next diving spot" />
         <meta
           name="description"
-          content="Find your next diving spot. A list of subreddit alternatives on different services. "
+          content="Find your next diving spot. A list of subreddit alternatives on different platforms. "
         />
         <link rel="canonical" href="https://sub.rehab/" />
         <meta
           property="og:description"
-          content="Find your next diving spot. A list of subreddit alternatives on different services."
+          content="Find your next diving spot. A list of subreddit alternatives on different platforms."
         />
         <meta property="og:image" content="/images/background.png" />
         <meta property="og:url" content="https://sub.rehab/" />
