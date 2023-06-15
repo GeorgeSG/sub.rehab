@@ -23,7 +23,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>sub.rehab</title>
+        <title>sub.rehab · Find your next diving spot</title>
         <meta name="name" content="sub.rehab · Find your next diving spot" />
         <meta
           name="description"
@@ -36,7 +36,7 @@ export default function App({ Component, pageProps }: AppProps) {
         />
         <meta property="og:image" content="https://sub.rehab/images/background.webp" />
         <meta property="og:url" content="https://sub.rehab/" />
-        <meta property="og:site_name" content="sub.rehab" />
+        <meta property="og:site_name" content="sub.rehab · Find your next diving spot" />
 
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
