@@ -34,7 +34,7 @@ export default function App({ Component, pageProps }: AppProps) {
           property="og:description"
           content="Find your next diving spot. A list of subreddit alternatives on different platforms."
         />
-        <meta property="og:image" content="/images/background.png" />
+        <meta property="og:image" content="https://sub.rehab/images/background.png" />
         <meta property="og:url" content="https://sub.rehab/" />
         <meta property="og:site_name" content="sub.rehab" />
 
