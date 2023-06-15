@@ -21,8 +21,8 @@ export default function FAQPage() {
         <Title order={2} mb="lg" sx={{ fontFamily: "var(--font-accent)" }}>
           Answers
         </Title>
-        <Accordion chevronPosition="right" defaultValue="reset-password" variant="separated">
-          <Accordion.Item className={classes.item} value="reset-password">
+        <Accordion chevronPosition="right" defaultValue="what-is-the-protest" variant="separated">
+          <Accordion.Item className={classes.item} value="what-is-the-protest">
             <Accordion.Control>What is the Reddit protest?</Accordion.Control>
             <Accordion.Panel>
               <Text>
@@ -64,7 +64,7 @@ export default function FAQPage() {
               </List>
             </Accordion.Panel>
           </Accordion.Item>
-          <Accordion.Item className={classes.item} value="newsletter">
+          <Accordion.Item className={classes.item} value="what-is-official">
             <Accordion.Control>
               What is the verified/official <IoCheckmarkCircleOutline size="14px" /> mark?
             </Accordion.Control>
@@ -75,7 +75,7 @@ export default function FAQPage() {
             </Accordion.Panel>
           </Accordion.Item>
 
-          <Accordion.Item className={classes.item} value="newsletter">
+          <Accordion.Item className={classes.item} value="why-create-page">
             <Accordion.Control>Why create this page?</Accordion.Control>
             <Accordion.Panel>
               Communities are attempting to migrate away from Reddit, but it&apos;s hard to figure
@@ -84,7 +84,7 @@ export default function FAQPage() {
             </Accordion.Panel>
           </Accordion.Item>
 
-          <Accordion.Item className={classes.item} value="credit-card">
+          <Accordion.Item className={classes.item} value="is-this-open-source">
             <Accordion.Control>Is this site open-source?</Accordion.Control>
             <Accordion.Panel>
               Yes. You can find the source on GitHub at&nbsp;
