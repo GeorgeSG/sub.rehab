@@ -24,7 +24,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <title>sub.rehab</title>
-        <meta name="name" content="Find your next diving spot" />
+        <meta name="name" content="sub.rehab · Find your next diving spot" />
         <meta
           name="description"
           content="Find your next diving spot. A list of subreddit alternatives on different platforms. "
