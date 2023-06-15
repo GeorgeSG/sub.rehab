@@ -1,20 +1,6 @@
 import { MantineThemeOverride } from "@mantine/core";
 
 export const theme: MantineThemeOverride = {
-  colors: {
-    brand: [
-      "#ffe2f4",
-      "#ffb1d5",
-      "#ff7fb7",
-      "#ff4d9a",
-      "#fd1b7d",
-      "#e40264",
-      "#b2004e",
-      "#800037",
-      "#4f0021",
-      "#1f000d",
-    ],
-  },
   primaryColor: "orange",
   cursorType: "pointer",
   fontFamily: "var(--font-default)",
