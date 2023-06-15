@@ -27,17 +27,17 @@ sub.rehab is developed using:
 
 ### Getting Started
 
-You'll need [Node.js version 18](https://nodejs.org/en/) installed.
+You'll need [Node.js version 18](https://nodejs.org/en/) and [yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable) installed.
 
 Install dependencies:
 ```bash
-npm install
+yarn install
 ```
 
 Then, run the development server:
 
 ```bash
-npm run dev
+yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
