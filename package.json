@@ -1,6 +1,17 @@
 {
   "name": "sub.rehab",
   "version": "0.1.0",
+  "description": "A website that lists subreddit alternatives on different platforms",
+  "keywords": ["directory", "links", "fediverse", "discord", "lemmy", "kbin", "reddit"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GeorgeSG/sub.rehab"
+  },
+  "engines": {
+    "node": ">=18 <19"
+  },
+  "enginesStrict": true,
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
