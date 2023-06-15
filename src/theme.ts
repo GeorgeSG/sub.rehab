@@ -25,7 +25,6 @@ export const theme: MantineThemeOverride = {
       h3: {
         fontSize: "clamp(1.35rem, calc(1.32rem + 0.16vw), 1.44rem)",
         lineHeight: 1,
-        fontWeight: 500,
       },
     },
   },

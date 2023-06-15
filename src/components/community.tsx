@@ -52,6 +52,7 @@ const useStyles = createStyles(({ colors, colorScheme, spacing, radius, other })
     communityName: {
       color: isDark ? colors.orange[1] : colors.gray[8],
       marginBottom: spacing.md,
+      fontSize: "1.125rem",
     },
 
     official: {
@@ -67,7 +68,7 @@ export function Community({ name, links }: CommunityProps) {
 
   return (
     <div className={classes.community}>
-      <Title order={4} className={classes.communityName}>
+      <Title order={3} className={classes.communityName}>
         {name}
       </Title>
       {links.map((link) => (
