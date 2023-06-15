@@ -12,13 +12,13 @@ export default function Home() {
       <Section>
         <PageHeader />
         <AnimatedSlogan />
-        <Text mb="xl" style={{ maxWidth: "700px" }}>
+        <Text mb="xl" style={{ maxWidth: "750px" }}>
           Due to the ongoing protest against Reddit&apos;s new API terms, many subreddits are either
           private or restricted.&nbsp;
           <Anchor component={Link} href="/">
             sub.rehab
           </Anchor>
-          &nbsp;lists where the communities are moving to.
+          &nbsp;lists instances of the subreddit communities on alternative platforms.
         </Text>
         <Button
           component="a"
