@@ -73,6 +73,104 @@
       "links": [
         { "service": "kbin", "url": "https://kbin.social/m/SquaredCircle", "official": false }
       ]
+    },
+    {
+      "name": "r/history",
+      "links": [{ "service": "discord", "url": "https://discord.gg/7XkFuez", "official": true }]
+    },
+    {
+      "name": "r/3Dprinting",
+      "links": [{ "service": "lemmy", "url": "https://forum.rhombik.com", "official": true }]
+    },
+    {
+      "name": "r/3DS",
+      "links": [{ "service": "discord", "url": "https://discord.gg/3ds", "official": true }]
+    },
+    {
+      "name": "r/ApplyingToCollege",
+      "links": [{ "service": "discord", "url": "https://discord.com/invite/a2c", "official": true }]
+    },
+    {
+      "name": "r/Architecture",
+      "links": [
+        { "service": "discord", "url": "https://discord.com/invite/tMFaTvk", "official": true }
+      ]
+    },
+    {
+      "name": "r/bodyweightfitness",
+      "links": [{ "service": "discord", "url": "https://discord.com/invite/bwf", "official": true }]
+    },
+    {
+      "name": "r/childfree",
+      "links": [
+        { "service": "web", "url": "https://www.childfree.cc", "official": true },
+        { "service": "lemmy", "url": "https://lemmy.world/c/childfree", "official": true }
+      ]
+    },
+    {
+      "name": "r/cyberpunkgame",
+      "links": [
+        { "service": "discord", "url": "https://discord.com/invite/Rkj2wj6", "official": true }
+      ]
+    },
+    {
+      "name": "r/europe",
+      "links": [
+        { "service": "discord", "url": "https://discord.com/invite/WzsgwHmHvY", "official": true }
+      ]
+    },
+    {
+      "name": "r/HobbyDrama",
+      "links": [
+        { "service": "discord", "url": "https://discord.com/invite/mEpSg3B9ny", "official": true }
+      ]
+    },
+    {
+      "name": "r/itookapicture",
+      "links": [
+        { "service": "discord", "url": "https://discord.com/invite/2AbfJ9w", "official": true }
+      ]
+    },
+    {
+      "name": "r/iPhone",
+      "links": [
+        { "service": "discord", "url": "https://discord.com/invite/r5McVVhqqs", "official": true }
+      ]
+    },
+    {
+      "name": "r/NVIDIA",
+      "links": [
+        { "service": "discord", "url": "https://discord.com/invite/nvidia", "official": true }
+      ]
+    },
+    {
+      "name": "r/Python",
+      "links": [
+        { "service": "discord", "url": "https://discord.com/invite/python", "official": true }
+      ]
+    },
+    {
+      "name": "r/Screenwriting",
+      "links": [
+        { "service": "discord", "url": "https://discord.com/invite/BNh27by", "official": true }
+      ]
+    },
+    {
+      "name": "r/Terraria",
+      "links": [
+        { "service": "discord", "url": "https://discord.gg/terraria", "official": true },
+        { "service": "web", "url": "https://forums.terraria.org", "official": true }
+      ]
+    },
+    {
+      "name": "r/truegaming",
+      "links": [
+        { "service": "discord", "url": "https://discord.com/invite/truegaming", "official": true }
+      ]
+    },
+    {
+      "name": "r/VALORANT",
+      "links": [{ "service": "discord", "url": "https://discord.gg/P8EyvjA", "official": true }]
     }
   ]
 }

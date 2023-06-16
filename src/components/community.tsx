@@ -15,6 +15,7 @@ const SERVICE_ICONS: Record<string, string> = {
   discord: "/images/discord.svg",
   lemmy: "/images/lemmy.svg",
   kbin: "/images/kbin.svg",
+  web: "/images/web.svg",
 };
 
 const useStyles = createStyles(({ colors, colorScheme, spacing, radius, other }) => {
