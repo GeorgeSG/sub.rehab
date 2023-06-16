@@ -257,7 +257,7 @@
       "name": "r/steamdeck_linux",
       "links": [
         { "service": "lemmy", "url": "https://sopuli.xyz/c/steamdeck", "official": true },
-        { "service": "discord", "url": "https://discord.com/invite/swpENgpu75", "official": true }
+        { "service": "discord", "url": "https://discord.com/invite/swpENgpu75", "official": true },
         { "service": "matrix", "url": "https://matrix.to/#/!RtYlIpMObCRjlRZHTV:matrix.org", "official": true }
       ]
     },
