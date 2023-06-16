@@ -14,7 +14,7 @@ const SERVICE_ICONS: Record<string, string> = {
   discord: "/images/discord.svg",
   lemmy: "/images/lemmy.svg",
   kbin: "/images/kbin.svg",
-  web: "/images/web.svg",
+  misc: "/images/web.svg",
   matrix: "/images/matrix.png",
 };
 

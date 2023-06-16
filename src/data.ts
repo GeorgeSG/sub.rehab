@@ -7,7 +7,7 @@ export const SERVICE_COLORS: Record<string, (theme: MantineTheme) => string> = {
   discord: () => "#7289DA",
   matrix: () => "black",
   kbin: () => "#D57AD4",
-  web: ({ colors }) => colors.orange[5],
+  misc: ({ colors }) => colors.orange[5],
 };
 
 export function useSubredditData() {
