@@ -203,7 +203,7 @@
           "url": "https://matrix.to/#/#reddit-firefox:mozilla.org",
           "official": true
         },
-        { "service": "lemmy", "url": "lemmy.world/c/firefox@lemmy.ml", "official": false }
+        { "service": "lemmy", "url": "https://lemmy.world/c/firefox@lemmy.ml", "official": false }
       ]
     },
 
