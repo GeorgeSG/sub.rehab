@@ -1,28 +1,11 @@
 import data from "@/subreddits";
-import { Checkbox, Paper, Text, TextInput, Title, createStyles } from "@mantine/core";
+import { Checkbox, Paper, SimpleGrid, Text, TextInput, Title, createStyles } from "@mantine/core";
 import { useMemo, useState } from "react";
 import { IoCloseOutline, IoSearch } from "react-icons/io5";
-import { Section } from "./section";
 import { Community } from "./community";
+import { Section } from "./section";
 
 const useStyles = createStyles((theme) => ({
-  communityList: {
-    marginTop: theme.spacing.xxl,
-    display: "grid",
-
-    gap: theme.spacing.lg,
-    gridTemplateColumns: "repeat(3, minmax(0, 1fr))",
-
-    [theme.fn.smallerThan("md")]: {
-      gridTemplateColumns: "repeat(2, minmax(0, 1fr))",
-    },
-
-    [theme.fn.smallerThan("xs")]: {
-      gridTemplateColumns: "minmax(0, 1fr)",
-      gap: theme.spacing.md,
-    },
-  },
-
   filters: {
     display: "flex",
     alignItems: "center",
@@ -130,11 +113,19 @@ export function CommunityList() {
             )}
           </Paper>
         )}
-        <div className={classes.communityList}>
+        <SimpleGrid
+          cols={3}
+          spacing="lg"
+          mt="xxl"
+          breakpoints={[
+            { maxWidth: "md", cols: 2, spacing: "md" },
+            { maxWidth: "xs", cols: 1, spacing: "sm" },
+          ]}
+        >
           {visibleSubs.map((sub) => (
             <Community key={sub.name} {...sub} />
           ))}
-        </div>
+        </SimpleGrid>
       </Section>
     </>
   );

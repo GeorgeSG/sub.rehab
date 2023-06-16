@@ -1,5 +1,4 @@
 import { Anchor, Text, Title, Tooltip, createStyles } from "@mantine/core";
-import Image from "next/image";
 import { IoCheckmarkCircleOutline } from "react-icons/io5";
 
 type CommunityProps = {
