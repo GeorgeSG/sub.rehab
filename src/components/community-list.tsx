@@ -29,7 +29,7 @@ const useStyles = createStyles((theme) => ({
     gap: theme.spacing.lg,
     marginTop: theme.spacing.lg,
 
-    [theme.fn.smallerThan("xs")]: {
+    [theme.fn.smallerThan("md")]: {
       marginTop: theme.spacing.md,
       flexDirection: "column",
       alignItems: "flex-start",
@@ -41,6 +41,7 @@ const useStyles = createStyles((theme) => ({
     display: "flex",
     gap: theme.spacing.lg,
     [theme.fn.smallerThan("xs")]: {
+      flexWrap: "wrap",
       marginTop: theme.spacing.xs,
     },
   },
