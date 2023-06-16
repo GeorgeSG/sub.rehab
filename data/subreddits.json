@@ -330,7 +330,7 @@
       "name": "r/Gunners",
       "links": [
         { "service": "discord", "url": "https://discord.gg/gunners", "official": true },
-        { "service": "lemmy", "url": "https://lemmy.world/c/gunners", "official": false }
+        { "service": "lemmy", "url": "https://lemmy.world/c/gunners", "official": true }
       ]
     },
     {
