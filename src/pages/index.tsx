@@ -2,6 +2,7 @@ import { AnimatedSlogan } from "@/components/animated-slogan";
 import { CommunityList } from "@/components/community-list";
 import { PageHeader } from "@/components/page-header";
 import { Section } from "@/components/section";
+import { Statistics } from "@/components/statistics";
 import { Anchor, Button, Text } from "@mantine/core";
 import Link from "next/link";
 import { IoAdd } from "react-icons/io5";
@@ -20,6 +21,7 @@ export default function Home() {
           </Anchor>
           &nbsp;lists instances of the Reddit communities on alternative platforms.
         </Text>
+        <Statistics />
         <Button
           component="a"
           href="https://github.com/GeorgeSG/sub.rehab/discussions/1"

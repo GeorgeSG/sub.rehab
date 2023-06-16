@@ -1,3 +1,4 @@
+import { useSubredditData } from "@/data";
 import data from "@/subreddits";
 import {
   Checkbox,
@@ -60,14 +61,12 @@ const useStyles = createStyles((theme) => ({
   },
 }));
 
-const ALL_SERVICES = Array.from(
-  new Set(data.subs.flatMap((sub) => sub.links.map((link) => link.service)))
-);
-
 export function CommunityList() {
   const { classes } = useStyles();
+  const { uniqueServiceList } = useSubredditData();
+
   const [searchParam, setSearchParam] = useState("");
-  const [visibleServices, setVisibleServices] = useState<string[]>(ALL_SERVICES);
+  const [visibleServices, setVisibleServices] = useState<string[]>(uniqueServiceList);
   const [officialOnly, setOfficialOnly] = useState(false);
 
   const isLinkVisible = useCallback(
@@ -109,7 +108,7 @@ export function CommunityList() {
             className={classes.checkboxList}
             placeholder="Select services"
             size="md"
-            data={ALL_SERVICES}
+            data={uniqueServiceList}
             value={visibleServices}
             onChange={setVisibleServices}
             withinPortal
