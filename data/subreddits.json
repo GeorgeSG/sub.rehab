@@ -104,7 +104,11 @@
       "name": "r/childfree",
       "links": [
         { "service": "web", "url": "https://www.childfree.cc", "official": true },
-        { "service": "lemmy", "url": "https://lemmy.world/c/childfree@lemmy.world", "official": true }
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/childfree@lemmy.world",
+          "official": true
+        }
       ]
     },
     {
@@ -171,6 +175,95 @@
     {
       "name": "r/VALORANT",
       "links": [{ "service": "discord", "url": "https://discord.gg/P8EyvjA", "official": true }]
+    },
+    {
+      "name": "r/android",
+      "links": [{ "service": "lemmy", "href": "https://lemmy.world/c/android", "official": false }]
+    },
+    {
+      "name": "r/apple",
+      "links": [{ "service": "lemmy", "href": "https://lemmy.ml/c/apple", "official": false }]
+    },
+    {
+      "name": "r/askreddit",
+      "links": [{ "service": "lemmy", "href": "https://lemmy.ml/c/asklemmy", "official": false }]
+    },
+    {
+      "name": "r/firefox",
+      "links": [
+        {
+          "service": "lemmy",
+          "href": "https://matrix.to/#/#reddit-firefox:mozilla.org",
+          "official": false
+        }
+      ]
+    },
+
+    {
+      "name": "r/gaming",
+      "links": [{ "service": "lemmy", "href": "https://beehaw.org/c/gaming", "official": false }]
+    },
+    {
+      "name": "r/linux",
+      "links": [
+        { "service": "lemmy", "href": "https://sopuli.xyz/c/linux", "official": false },
+        { "service": "lemmy", "href": "https://lemmy.ml/c/linux", "official": false }
+      ]
+    },
+    {
+      "name": "r/memes",
+      "links": [{ "service": "lemmy", "href": "https://lemmy.ml/c/memes", "official": false }]
+    },
+
+    {
+      "name": "r/music",
+      "links": [{ "service": "lemmy", "href": "https://beehaw.org/c/music", "official": false }]
+    },
+    {
+      "name": "r/news",
+      "links": [{ "service": "lemmy", "href": "https://beehaw.org/c/news", "official": false }]
+    },
+
+    {
+      "name": "r/piracy",
+      "links": [
+        { "service": "lemmy", "href": "https://lemmy.dbzer0.com/c/piracy", "official": false }
+      ]
+    },
+    {
+      "name": "r/politics",
+      "links": [{ "service": "lemmy", "href": "https://beehaw.org/c/politics", "official": false }]
+    },
+    {
+      "name": "r/privacy",
+      "links": [{ "service": "lemmy", "href": "https://lemmy.ml/c/privacy", "official": false }]
+    },
+    {
+      "name": "r/programming",
+      "links": [
+        { "service": "lemmy", "href": "https://beehaw.org/c/programming", "official": false }
+      ]
+    },
+    {
+      "name": "r/startrek",
+      "links": [
+        { "service": "lemmy", "href": "https://startrek.website/c/startrek", "official": false }
+      ]
+    },
+    {
+      "name": "r/steamdeck",
+      "links": [{ "service": "lemmy", "href": "https://sopuli.xyz/c/steamdeck", "official": false }]
+    },
+    {
+      "name": "r/technology",
+      "links": [
+        { "service": "lemmy", "href": "https://lemmy.ml/c/technology", "official": false },
+        { "service": "lemmy", "href": "https://lemmy.world/c/technology", "official": false }
+      ]
+    },
+    {
+      "name": "r/worldnews",
+      "links": [{ "service": "lemmy", "href": "https://lemmy.ml/c/worldnews", "official": false }]
     }
   ]
 }
