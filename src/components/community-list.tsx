@@ -104,8 +104,10 @@ export function CommunityList() {
           />
           <MultiSelect
             clearable
+            clearButtonProps={{ "aria-label": "Clear services" }}
             icon={<IoGlobeOutline />}
             className={classes.checkboxList}
+            aria-label="Select services"
             placeholder="Select services"
             size="md"
             data={uniqueServiceList}
