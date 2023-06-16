@@ -16,6 +16,7 @@ const SERVICE_ICONS: Record<string, string> = {
   lemmy: "/images/lemmy.svg",
   kbin: "/images/kbin.svg",
   web: "/images/web.svg",
+  matrix: "/images/matrix.png",
 };
 
 const useStyles = createStyles(({ colors, colorScheme, spacing, radius, other }) => {
@@ -82,15 +83,14 @@ export function Community({ name, links }: CommunityProps) {
           key={`${name}-${link.service}`}
         >
           {SERVICE_ICONS[link.service] && (
-            <Image
+            <img
               alt={`${name} on ${link.service}`}
               title={`${name} on ${link.service}`}
               src={SERVICE_ICONS[link.service]}
-              width={32}
               height={32}
             />
           )}
-          <Text sx={{ textOverflow: "ellipsis", overflow: "hidden" }}>
+          <Text sx={{ textOverflow: "ellipsis", overflow: "hidden", textWrap: "nowrap" }}>
             {link.url.split("://")[1]}
           </Text>
           {link.official && (

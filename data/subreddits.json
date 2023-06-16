@@ -192,7 +192,7 @@
       "name": "r/firefox",
       "links": [
         {
-          "service": "lemmy",
+          "service": "matrix",
           "url": "https://matrix.to/#/#reddit-firefox:mozilla.org",
           "official": false
         }
