@@ -267,6 +267,18 @@
     {
       "name": "r/worldnews",
       "links": [{ "service": "lemmy", "url": "https://lemmy.ml/c/worldnews", "official": false }]
+    },
+    {
+      "name": "r/AntiWork",
+      "links": [
+        { "service": "lemmy", "url": "https://lemmy.ml/c/antiwork", "official": false },
+        {
+          "service": "matrix",
+          "url": "https://matrix.to/#/#antiwork:matrix.org",
+          "official": false
+        },
+        { "service": "discord", "url": "https://discord.gg/hbtukJCqc9", "official": false }
+      ]
     }
   ]
 }
