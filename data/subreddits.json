@@ -305,6 +305,13 @@
     {
       "name": "r/nba",
       "links": [{ "service": "web", "url": "https://twitter.com/NBA_Reddit", "official": true }]
+    },
+    {
+      "name": "r/fuckcars",
+      "links": [
+        { "service": "lemmy", "url": "https://lemmy.ml/c/fuck_cars", "official": true },
+        { "service": "discord", "url": "https://discord.gg/anticar", "official": true }
+      ]
     }
   ]
 }
