@@ -297,6 +297,9 @@
         { "service": "discord", "url": "https://discord.gg/gcj", "official": true },
         { "service": "lemmy", "url": "https://lemmy.world/c/gamingcirclejerk", "official": false }
       ]
+    }, {
+      "name": "r/nba",
+      "links": [{ "service": "web", "url": "https://twitter.com/NBA_Reddit", "official": true}]
     }
   ]
 }
