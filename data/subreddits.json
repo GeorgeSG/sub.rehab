@@ -175,7 +175,8 @@
     {
       "name": "r/truegaming",
       "links": [
-        { "service": "discord", "url": "https://discord.com/invite/truegaming", "official": true }
+        { "service": "discord", "url": "https://discord.com/invite/truegaming", "official": true },
+        { "service": "kbin", "url": "https://kbin.social/m/truegaming", "official": true }
       ]
     },
     {
@@ -337,6 +338,84 @@
       "links": [
         { "service": "kbin", "url": "https://kbin.social/m/linux_gaming", "official": true },
         { "service": "lemmy", "url": "https://lemmy.world/c/linux_gaming", "official": true }
+      ]
+    },
+    {
+      "name": "r/GlobalOffensive",
+      "links": [
+        { "service": "kbin", "url": "https://kbin.social/m/cs", "official": true },
+        { "service": "discord", "url": " https://discord.gg/cs-2", "official": true }
+      ]
+    },
+    {
+      "name": "r/MMA",
+      "links": [{ "service": "kbin", "url": "https://kbin.social/m/mma", "official": true }]
+    },
+    {
+      "name": "r/Philippines",
+      "links": [
+        { "service": "lemmy", "url": "https://lemmy.world/c/philippines", "official": true },
+        { "service": "discord", "url": "https://discord.gg/philippines", "official": true }
+      ]
+    },
+    {
+      "name": "r/SimpleLiving",
+      "links": [{ "service": "lemmy", "url": "https://lemmy.ml/c/simpleliving", "official": true }]
+    },
+    {
+      "name": "r/ZeroWaste",
+      "links": [{ "service": "lemmy", "url": "https://lemmy.ml/c/zerowaste", "official": true }]
+    },
+    {
+      "name": "r/Disneyland",
+      "links": [
+        { "service": "discord", "url": "https://discord.gg/rdisneyland", "official": true },
+        { "service": "kbin", "url": "https://kbin.social/m/Disneyland", "official": true }
+      ]
+    },
+    {
+      "name": "r/pathofexile",
+      "links": [
+        { "service": "discord", "url": "https://discord.com/invite/pathofexile", "official": true },
+        {
+          "service": "web",
+          "url": "https://pathofexile-discuss.com/c/pathofexile",
+          "official": true
+        }
+      ]
+    },
+    {
+      "name": "r/Warframe",
+      "links": [{ "service": "lemmy", "url": "https://dormi.zone/", "official": true }]
+    },
+    {
+      "name": "r/StableDiffusion",
+      "links": [
+        { "service": "discord", "url": "https://discord.gg/4WbTj8YskM", "official": true },
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.dbzer0.com/c/stable_diffusion",
+          "official": true
+        }
+      ]
+    },
+    {
+      "name": "r/Baltimore",
+      "links": [
+        { "service": "kbin", "url": "https://kbin.social/m/baltimore", "official": true },
+        { "service": "discord", "url": "https://discord.com/invite/hsvBQhTPmX", "official": true }
+      ]
+    },
+    {
+      "name": "r/chicagomeetup",
+      "links": [
+        { "service": "lemmy", "url": "https://lemmy.ml/c/chicagomeetups", "official": true }
+      ]
+    },
+    {
+      "name": "r/aystrominstitute",
+      "links": [
+        { "service": "lemmy", "url": "https://startrek.website/c/daystrominstitute", "official": true  }
       ]
     }
   ]
