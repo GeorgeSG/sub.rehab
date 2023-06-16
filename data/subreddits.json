@@ -83,7 +83,10 @@
     },
     {
       "name": "r/3Dprinting",
-      "links": [{ "service": "lemmy", "url": "https://forum.rhombik.com", "official": true }]
+      "links": [
+        { "service": "lemmy", "url": "https://forum.rhombik.com", "official": true },
+        { "service": "lemmy", "url": "https://lemmy.world/c/3dprinting", "official": true }
+      ]
     },
     {
       "name": "r/3DS",
@@ -197,8 +200,9 @@
         {
           "service": "matrix",
           "url": "https://matrix.to/#/#reddit-firefox:mozilla.org",
-          "official": false
-        }
+          "official": true
+        },
+        { "service": "lemmy", "url": "lemmy.world/c/firefox@lemmy.ml", "official": false }
       ]
     },
 
@@ -311,6 +315,28 @@
       "links": [
         { "service": "lemmy", "url": "https://lemmy.ml/c/fuck_cars", "official": true },
         { "service": "discord", "url": "https://discord.gg/anticar", "official": true }
+      ]
+    },
+    {
+      "name": "r/revancedapp",
+      "links": [{ "service": "discord", "url": "https://revanced.app/discord", "official": true }]
+    },
+    {
+      "name": "r/FREEMEDIAHECKYEAH",
+      "links": [{ "service": "lemmy", "url": "https://lemmy.fmhy.ml/", "official": true }]
+    },
+    {
+      "name": "r/Gunners",
+      "links": [
+        { "service": "discord", "url": "https://discord.gg/gunners", "official": true },
+        { "service": "lemmy", "url": "https://lemmy.world/c/gunners", "official": false }
+      ]
+    },
+    {
+      "name": "r/linux_gaming",
+      "links": [
+        { "service": "kbin", "url": "https://kbin.social/m/linux_gaming", "official": true },
+        { "service": "lemmy", "url": "https://lemmy.world/c/linux_gaming", "official": true }
       ]
     }
   ]
