@@ -4,7 +4,7 @@ import { StatisticCard } from "./statistic-card";
 import { useMemo } from "react";
 
 export function Statistics() {
-  const { colors } = useMantineTheme();
+  const theme = useMantineTheme();
 
   const { communitiesCount, linksCount, officialLinksCount, countPerService } = useSubredditData();
 
@@ -15,10 +15,8 @@ export function Statistics() {
 
   const progressSections = sortedSections.map(([service, count]) => ({
     value: (count / linksCount) * 100,
-    color: SERVICE_COLORS[service]?.(colors) || colors.red[5],
+    color: SERVICE_COLORS[service]?.(theme),
   }));
-
-  console.log(sortedSections);
 
   return (
     <Flex gap="md" wrap="wrap" mb="lg">
@@ -35,7 +33,7 @@ export function Statistics() {
         <SimpleGrid cols={2} spacing="xs" mt="0">
           {sortedSections.map(([service, count]) => (
             <Flex key={service} align="center" gap="xxs" style={{ fontSize: "0.8rem" }}>
-              <ColorSwatch color={SERVICE_COLORS[service](colors)} size={16} />
+              <ColorSwatch color={SERVICE_COLORS[service](theme)} size={16} />
               <span>
                 {service}: <strong>{count}</strong>
               </span>
