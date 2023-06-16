@@ -104,7 +104,7 @@
       "name": "r/childfree",
       "links": [
         { "service": "web", "url": "https://www.childfree.cc", "official": true },
-        { "service": "lemmy", "url": "https://lemmy.world/c/childfree", "official": true }
+        { "service": "lemmy", "url": "https://lemmy.world/c/childfree@lemmy.world", "official": true }
       ]
     },
     {
