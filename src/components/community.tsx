@@ -6,7 +6,7 @@ type CommunityProps = {
   links: {
     service: string;
     url: string;
-    official: boolean;
+    official?: boolean;
   }[];
 };
 
