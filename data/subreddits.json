@@ -236,7 +236,10 @@
     },
     {
       "name": "r/news",
-      "links": [{ "service": "lemmy", "url": "https://beehaw.org/c/news" }]
+      "links": [
+        { "service": "lemmy", "url": "https://beehaw.org/c/news" },
+        { "service": "kbin", "url": "https://kbin.social/m/news" }
+      ]
     },
 
     {
@@ -435,11 +438,6 @@
         }
       ]
     },
-    {
-      "name": "r/gaming",
-      "links": [{ "service": "kbin", "url": "https://kbin.social/m/gaming" }]
-    },
-    { "name": "r/news", "links": [{ "service": "kbin", "url": "https://kbin.social/m/news" }] },
     {
       "name": "r/TodayILearned",
       "links": [{ "service": "kbin", "url": "https://kbin.social/m/TodayILearned" }]
