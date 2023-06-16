@@ -276,8 +276,7 @@
           "service": "matrix",
           "url": "https://matrix.to/#/#antiwork:matrix.org",
           "official": false
-        },
-        { "service": "discord", "url": "https://discord.gg/hbtukJCqc9", "official": false }
+        }
       ]
     }
   ]
