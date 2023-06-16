@@ -76,7 +76,7 @@ export function Community({ name, links }: CommunityProps) {
         .sort((a, b) => (a.official === b.official ? 0 : a.official ? -1 : 1))
         .map((link) => (
           <Anchor
-            key={`${name}-${link.service}`}
+            key={link.url}
             href={link.url}
             target="_blank"
             title={link.url.split("://")[1]}
