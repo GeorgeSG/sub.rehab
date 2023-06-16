@@ -1,0 +1,19 @@
+{
+  "Subreddit JSON": {
+    "prefix": "js",
+    "body": [
+      "{",
+      "\t\"name\": \"${1}\",",
+      "\t\"links\": [",
+      "\t\t{ \"service\": \"${2}\", \"url\": \"${3}\", \"official\": ${4} }",
+      "\t]",
+      "}"
+    ]
+  },
+  "Subreddit Link": {
+    "prefix": "sl",
+    "body": [
+      "{ \"service\": \"${1}\", \"url\": \"${2}\", \"official\": ${3} }$0"
+    ]
+  }
+}
