@@ -73,42 +73,44 @@ export function Community({ name, links }: CommunityProps) {
       <Title order={3} className={classes.communityName}>
         {name}
       </Title>
-      {links.map((link) => (
-        <Anchor
-          href={link.url}
-          target="_blank"
-          title={link.url.split("://")[1]}
-          rel="noreferrer"
-          className={classes.homeLocation}
-          key={`${name}-${link.service}`}
-        >
-          {SERVICE_ICONS[link.service] && (
-            <img
-              alt={`${name} on ${link.service}`}
-              title={`${name} on ${link.service}`}
-              src={SERVICE_ICONS[link.service]}
-              height={32}
-            />
-          )}
-          <Text sx={{ textOverflow: "ellipsis", overflow: "hidden", textWrap: "nowrap" }}>
-            {link.url.split("://")[1]}
-          </Text>
-          {link.official && (
-            <Tooltip
-              label={
-                <>
-                  verified from <strong>{name}</strong>
-                </>
-              }
-              withArrow
-            >
-              <Text className={classes.official}>
-                <IoCheckmarkCircleOutline size={20} />
-              </Text>
-            </Tooltip>
-          )}
-        </Anchor>
-      ))}
+      {links
+        .sort((a, b) => (a.official === b.official ? 0 : a.official ? -1 : 1))
+        .map((link) => (
+          <Anchor
+            key={`${name}-${link.service}`}
+            href={link.url}
+            target="_blank"
+            title={link.url.split("://")[1]}
+            rel="noreferrer"
+            className={classes.homeLocation}
+          >
+            {SERVICE_ICONS[link.service] && (
+              <img
+                alt={`${name} on ${link.service}`}
+                title={`${name} on ${link.service}`}
+                src={SERVICE_ICONS[link.service]}
+                height={32}
+              />
+            )}
+            <Text sx={{ textOverflow: "ellipsis", overflow: "hidden", textWrap: "nowrap" }}>
+              {link.url.split("://")[1]}
+            </Text>
+            {link.official && (
+              <Tooltip
+                label={
+                  <>
+                    verified from <strong>{name}</strong>
+                  </>
+                }
+                withArrow
+              >
+                <Text className={classes.official}>
+                  <IoCheckmarkCircleOutline size={20} />
+                </Text>
+              </Tooltip>
+            )}
+          </Anchor>
+        ))}
     </div>
   );
 }
