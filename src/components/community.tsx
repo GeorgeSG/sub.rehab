@@ -83,8 +83,8 @@ export function Community({ name, links }: CommunityProps) {
         >
           {SERVICE_ICONS[link.service] && (
             <Image
-              alt={`${name} at ${link.service}`}
-              title={`${name} at ${link.service}`}
+              alt={`${name} on ${link.service}`}
+              title={`${name} on ${link.service}`}
               src={SERVICE_ICONS[link.service]}
               width={32}
               height={32}
