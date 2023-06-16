@@ -2,7 +2,10 @@
   "subs": [
     {
       "name": "r/ProgrammerHumor",
-      "links": [{ "service": "discord", "url": "https://discord.gg/invite/rph", "official": true }]
+      "links": [
+        { "service": "discord", "url": "https://discord.gg/invite/rph", "official": true },
+        { "service": "lemmy", "url": "https://lemmy.ml/c/ProgrammerHumor", "official": false }
+      ]
     },
     {
       "name": "r/pcgaming",
