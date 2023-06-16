@@ -1,7 +1,22 @@
 import data from "@/subreddits";
-import { Checkbox, Paper, SimpleGrid, Text, TextInput, Title, createStyles } from "@mantine/core";
-import { useMemo, useState } from "react";
-import { IoCloseOutline, IoSearch } from "react-icons/io5";
+import {
+  Checkbox,
+  MultiSelect,
+  Paper,
+  SimpleGrid,
+  Text,
+  TextInput,
+  Title,
+  Tooltip,
+  createStyles,
+} from "@mantine/core";
+import { useCallback, useMemo, useState } from "react";
+import {
+  IoCheckmarkCircleOutline,
+  IoCloseOutline,
+  IoGlobeOutline,
+  IoSearch,
+} from "react-icons/io5";
 import { Community } from "./community";
 import { Section } from "./section";
 
@@ -21,22 +36,27 @@ const useStyles = createStyles((theme) => ({
   },
 
   checkboxList: {
-    display: "flex",
-    gap: theme.spacing.lg,
-    [theme.fn.smallerThan("xs")]: {
-      flexWrap: "wrap",
-      marginTop: theme.spacing.xs,
+    flexShrink: 0,
+
+    [theme.fn.smallerThan("md")]: {
+      width: "100%",
     },
   },
 
   searchInput: {
-    [theme.fn.smallerThan("xs")]: {
+    [theme.fn.smallerThan("md")]: {
       width: "100%",
     },
   },
 
   checkbox: {
     alignItems: "center",
+  },
+
+  officialOnly: {
+    display: "flex",
+    alignItems: "center",
+    gap: "0.25rem",
   },
 }));
 
@@ -48,6 +68,12 @@ export function CommunityList() {
   const { classes } = useStyles();
   const [searchParam, setSearchParam] = useState("");
   const [visibleServices, setVisibleServices] = useState<string[]>(ALL_SERVICES);
+  const [officialOnly, setOfficialOnly] = useState(false);
+
+  const isLinkVisible = useCallback(
+    (link: any) => visibleServices.includes(link.service) && (!officialOnly || link.official),
+    [visibleServices, officialOnly]
+  );
 
   const visibleSubs = useMemo(
     () =>
@@ -55,12 +81,10 @@ export function CommunityList() {
         .filter(
           (sub) =>
             sub.name.toLowerCase().includes(searchParam.toLowerCase()) &&
-            sub.links
-              .map((link) => link.service)
-              .some((service) => visibleServices.includes(service))
+            sub.links.some(isLinkVisible)
         )
         .sort((a, b) => a.name.localeCompare(b.name)),
-    [searchParam, visibleServices]
+    [searchParam, isLinkVisible]
   );
 
   return (
@@ -79,27 +103,31 @@ export function CommunityList() {
             rightSection={<IoCloseOutline onClick={() => setSearchParam("")} />}
             className={classes.searchInput}
           />
-          <div className={classes.checkboxList}>
-            {ALL_SERVICES.map((service) => (
-              <Checkbox
-                classNames={{ body: classes.checkbox }}
-                key={service}
-                label={
-                  <Text span size="md">
-                    {service}
-                  </Text>
-                }
-                checked={visibleServices.includes(service)}
-                onChange={(e) => {
-                  if (e.currentTarget.checked) {
-                    setVisibleServices((prev) => [...prev, service]);
-                  } else {
-                    setVisibleServices((prev) => prev.filter((s) => s !== service));
-                  }
-                }}
-              />
-            ))}
-          </div>
+          <MultiSelect
+            clearable
+            icon={<IoGlobeOutline />}
+            className={classes.checkboxList}
+            placeholder="Select services"
+            size="md"
+            data={ALL_SERVICES}
+            value={visibleServices}
+            onChange={setVisibleServices}
+            withinPortal
+          />
+          <Checkbox
+            classNames={{ body: classes.checkbox }}
+            style={{ flexShrink: 0, alignItems: "center" }}
+            label={
+              <Tooltip label="Links that have been listed by the original subreddit" withArrow>
+                <Text className={classes.officialOnly}>
+                  Official only
+                  <IoCheckmarkCircleOutline size="1rem" />
+                </Text>
+              </Tooltip>
+            }
+            checked={officialOnly}
+            onChange={(e) => setOfficialOnly(e.target.checked)}
+          />
         </div>
 
         {visibleSubs.length === 0 && (
@@ -122,8 +150,8 @@ export function CommunityList() {
             { maxWidth: "xs", cols: 1, spacing: "sm" },
           ]}
         >
-          {visibleSubs.map((sub) => (
-            <Community key={sub.name} {...sub} />
+          {visibleSubs.map(({ name, links }) => (
+            <Community key={name} name={name} links={links.filter(isLinkVisible)} />
           ))}
         </SimpleGrid>
       </Section>
