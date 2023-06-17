@@ -44,7 +44,6 @@ const useStyles = createStyles((theme) => ({
   },
 
   searchInput: {
-    flexGrow: 1,
     [theme.fn.smallerThan("lg")]: {
       width: "100%",
     },
