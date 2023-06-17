@@ -360,7 +360,7 @@
       "name": "r/GlobalOffensive",
       "links": [
         { "service": "kbin", "url": "https://kbin.social/m/cs", "official": true },
-        { "service": "discord", "url": " https://discord.gg/cs-2", "official": true }
+        { "service": "discord", "url": "https://discord.gg/cs-2", "official": true }
       ]
     },
     {
