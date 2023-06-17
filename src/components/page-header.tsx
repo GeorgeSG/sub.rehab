@@ -1,6 +1,13 @@
-import { ActionIcon, Button, Group, createStyles, useMantineColorScheme } from "@mantine/core";
+import {
+  ActionIcon,
+  Button,
+  Group,
+  Tooltip,
+  createStyles,
+  useMantineColorScheme,
+} from "@mantine/core";
 import Link from "next/link";
-import { IoMoon, IoSunnyOutline } from "react-icons/io5";
+import { IoLogoGithub, IoLogoMastodon, IoMoon, IoSunnyOutline } from "react-icons/io5";
 import { Logotype } from "./logotype";
 
 const useStyles = createStyles(({ spacing, shadows, radius, colorScheme, fn }) => ({
@@ -8,7 +15,11 @@ const useStyles = createStyles(({ spacing, shadows, radius, colorScheme, fn }) =
     display: "flex",
     alignItems: "center",
     marginBottom: spacing.xxl,
+    justifyContent: "space-between",
+    gap: spacing.sm,
+
     [fn.smallerThan("xs")]: {
+      flexDirection: "column",
       marginBottom: spacing.md,
     },
   },
@@ -39,18 +50,55 @@ export function PageHeader({ withBackground = false }: { withBackground?: boolea
   return (
     <header className={`${classes.title} ${withBackground && classes.background}`}>
       <Logotype />
-      <Group ml="auto">
-        <Button component={Link} href="/faq" variant="subtle">
+      <Group spacing="xs">
+        <Button
+          component={Link}
+          href="/faq"
+          variant="subtle"
+          color={isDark ? "#C1C2C5" : "orange.5"}
+        >
           FAQ
         </Button>
-        <ActionIcon
-          size="lg"
-          color={isDark ? "yellow" : "indigo"}
-          onClick={() => toggleColorScheme()}
-          title="Toggle color scheme"
+        <Tooltip label="sub.rehab @ mastodon.social" position="top" withArrow>
+          <ActionIcon
+            size="lg"
+            color={isDark ? "#C1C2C5" : "orange.5"}
+            variant="subtle"
+            component="a"
+            href="https://mastodon.social/@subrehab"
+            title="sub.rehab @ mastodon.social"
+            target="_blank"
+            rel="me"
+          >
+            <IoLogoMastodon size={20} />
+          </ActionIcon>
+        </Tooltip>
+        <Tooltip label="sub.rehab @ GitHub" position="top" withArrow>
+          <ActionIcon
+            size="lg"
+            color={isDark ? "#C1C2C5" : "orange.5"}
+            component="a"
+            href="https://github.com/GeorgeSG/sub.rehab"
+            target="_blank"
+            title="sub.rehab @ GitHub"
+          >
+            <IoLogoGithub size={20} />
+          </ActionIcon>
+        </Tooltip>
+        <Tooltip
+          label={isDark ? "Switch to light mode" : "Switch to dark mode"}
+          position="top"
+          withArrow
         >
-          {isDark ? <IoSunnyOutline /> : <IoMoon />}
-        </ActionIcon>
+          <ActionIcon
+            size="lg"
+            color={isDark ? "yellow" : "indigo"}
+            onClick={() => toggleColorScheme()}
+            title="Toggle color scheme"
+          >
+            {isDark ? <IoSunnyOutline /> : <IoMoon />}
+          </ActionIcon>
+        </Tooltip>
       </Group>
     </header>
   );

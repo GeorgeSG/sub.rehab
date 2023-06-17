@@ -1,5 +1,13 @@
-import { ActionIcon, Anchor, Group, Text, Tooltip, createStyles } from "@mantine/core";
-import { IoHeartOutline, IoLogoGithub } from "react-icons/io5";
+import {
+  ActionIcon,
+  Anchor,
+  Group,
+  Text,
+  Tooltip,
+  createStyles,
+  useMantineColorScheme,
+} from "@mantine/core";
+import { IoHeartOutline, IoLogoGithub, IoLogoMastodon } from "react-icons/io5";
 import { Logotype } from "./logotype";
 
 const useStyles = createStyles((theme) => ({
@@ -31,6 +39,8 @@ const useStyles = createStyles((theme) => ({
 
 export function Footer() {
   const { classes } = useStyles();
+  const { colorScheme } = useMantineColorScheme();
+  const isDark = colorScheme === "dark";
 
   return (
     <footer className={classes.footer}>
@@ -39,17 +49,29 @@ export function Footer() {
         <Text size="sm" sx={{ lineHeight: "2.5rem" }}>
           Made with <IoHeartOutline /> by <Anchor href="https://gar.dev">gar.dev</Anchor>.
         </Text>
-        <Group spacing={0} className={classes.links} noWrap>
+        <Group spacing="sm" className={classes.links} noWrap>
+          <Tooltip label="sub.rehab @ mastodon.social" position="top" withArrow>
+            <ActionIcon
+              color={isDark ? "gray.4" : "gray.8"}
+              component="a"
+              href="https://mastodon.social/@subrehab"
+              target="_blank"
+              rel="me"
+              title="sub.rehab @ mastodon.social"
+            >
+              <IoLogoMastodon size={24} />
+            </ActionIcon>
+          </Tooltip>
           <Tooltip label="sub.rehab @ GitHub" position="top" withArrow>
-            <Anchor
+            <ActionIcon
+              color={isDark ? "gray.4" : "gray.8"}
+              component="a"
               href="https://github.com/GeorgeSG/sub.rehab"
               target="_blank"
-              aria-label="sub.rehab @ GitHub"
+              title="sub.rehab @ GitHub"
             >
-              <ActionIcon aria-label="sub.rehab @ GitHub">
-                <IoLogoGithub size={32} />
-              </ActionIcon>
-            </Anchor>
+              <IoLogoGithub size={24} />
+            </ActionIcon>
           </Tooltip>
         </Group>
       </div>
