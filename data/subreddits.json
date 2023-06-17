@@ -54,12 +54,7 @@
     },
     {
       "name": "r/AnarchyChess",
-      "links": [
-        {
-          "service": "lemmy",
-          "url": "https://lemmy.world/c/anarchychess@sopuli.xyz"
-        }
-      ]
+      "links": [{ "service": "lemmy", "url": "https://lemmy.world/c/anarchychess@sopuli.xyz" }]
     },
     {
       "name": "r/photography",
@@ -222,11 +217,7 @@
         { "service": "kbin", "url": "https://kbin.social/m/linux" }
       ]
     },
-    {
-      "name": "r/memes",
-      "links": [{ "service": "lemmy", "url": "https://lemmy.ml/c/memes" }]
-    },
-
+    { "name": "r/memes", "links": [{ "service": "lemmy", "url": "https://lemmy.ml/c/memes" }] },
     {
       "name": "r/music",
       "links": [
@@ -241,7 +232,6 @@
         { "service": "kbin", "url": "https://kbin.social/m/news" }
       ]
     },
-
     {
       "name": "r/piracy",
       "links": [{ "service": "lemmy", "url": "https://lemmy.dbzer0.com/c/piracy" }]
@@ -302,10 +292,7 @@
       "name": "r/AntiWork",
       "links": [
         { "service": "lemmy", "url": "https://lemmy.ml/c/antiwork" },
-        {
-          "service": "matrix",
-          "url": "https://matrix.to/#/#antiwork:matrix.org"
-        }
+        { "service": "matrix", "url": "https://matrix.to/#/#antiwork:matrix.org" }
       ]
     },
     {
@@ -446,7 +433,6 @@
       "name": "r/explainlikeimfive",
       "links": [{ "service": "kbin", "url": "https://kbin.social/m/ELI5" }]
     },
-
     {
       "name": "r/showerthoughts",
       "links": [{ "service": "kbin", "url": "https://kbin.social/m/showerthoughts" }]
@@ -456,7 +442,6 @@
       "links": [{ "service": "kbin", "url": "https://kbin.social/m/wholesome" }]
     },
     { "name": "r/books", "links": [{ "service": "kbin", "url": "https://kbin.social/m/books" }] },
-
     {
       "name": "r/animals",
       "links": [{ "service": "kbin", "url": "https://kbin.social/m/animals" }]
@@ -479,7 +464,6 @@
       "name": "r/linuxmasterrace",
       "links": [{ "service": "kbin", "url": "https://kbin.social/m/linuxmasterrace" }]
     },
-
     { "name": "r/Fedora", "links": [{ "service": "kbin", "url": "https://kbin.social/m/fedora" }] },
     {
       "name": "r/archlinux",
@@ -506,9 +490,7 @@
       "name": "r/moviescirclejerk",
       "links": [{ "service": "lemmy", "url": "https://lemmy.world/c/moviescirclejerk" }]
     },
-
     { "name": "r/emo", "links": [{ "service": "lemmy", "url": "https://lemmy.world/c/emo" }] },
-
     {
       "name": "r/strangerthings",
       "links": [{ "service": "lemmy", "url": "https://lemmy.world/c/strangerthings" }]
@@ -520,6 +502,22 @@
     {
       "name": "r/StephenKing",
       "links": [{ "service": "lemmy", "url": "https://lemmy.world/c/stephenking" }]
+    },
+    {
+      "name": "r/SteamDeck",
+      "links": [{ "service": "kbin", "url": "https://kbin.social/m/Steamdeck", "official": false }]
+    },
+    {
+      "name": "r/osugame",
+      "links": [{ "service": "lemmy", "url": "https://lemmy.ml/c/osu", "official": false }]
+    },
+    {
+      "name": "r/plex",
+      "links": [{ "service": "lemmy", "url": "https://lemmy.ml/c/plex", "official": false }]
+    },
+    {
+      "name": "r/scuba",
+      "links": [{ "service": "lemmy", "url": "https://lemmy.world/c/scuba", "official": false }]
     }
   ]
 }
