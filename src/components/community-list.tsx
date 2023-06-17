@@ -1,77 +1,23 @@
-import { useSubredditData } from "@/data";
 import data from "@/subreddits";
-import {
-  Checkbox,
-  MultiSelect,
-  Paper,
-  SimpleGrid,
-  Text,
-  TextInput,
-  Title,
-  Tooltip,
-  createStyles,
-} from "@mantine/core";
+import { Paper, SimpleGrid, Title } from "@mantine/core";
 import { useCallback, useMemo, useState } from "react";
-import {
-  IoCheckmarkCircleOutline,
-  IoCloseOutline,
-  IoGlobeOutline,
-  IoSearch,
-} from "react-icons/io5";
 import { Community } from "./community";
+import { CommunityFilters, Filter } from "./community-filters";
 import { Section } from "./section";
-
-const useStyles = createStyles((theme) => ({
-  filters: {
-    display: "flex",
-    alignItems: "center",
-    gap: theme.spacing.lg,
-    marginTop: theme.spacing.lg,
-
-    [theme.fn.smallerThan("md")]: {
-      marginTop: theme.spacing.md,
-      flexDirection: "column",
-      alignItems: "flex-start",
-      gap: theme.spacing.xxs,
-    },
-  },
-
-  checkboxList: {
-    flexShrink: 0,
-
-    [theme.fn.smallerThan("md")]: {
-      width: "100%",
-    },
-  },
-
-  searchInput: {
-    [theme.fn.smallerThan("md")]: {
-      width: "100%",
-    },
-  },
-
-  checkbox: {
-    alignItems: "center",
-  },
-
-  officialOnly: {
-    display: "flex",
-    alignItems: "center",
-    gap: "0.25rem",
-  },
-}));
+import { useSubredditData } from "@/data";
 
 export function CommunityList() {
-  const { classes } = useStyles();
   const { uniqueServiceList } = useSubredditData();
-
-  const [searchParam, setSearchParam] = useState("");
-  const [visibleServices, setVisibleServices] = useState<string[]>(uniqueServiceList);
-  const [officialOnly, setOfficialOnly] = useState(false);
+  const [filter, setFilter] = useState<Filter>({
+    searchParam: "",
+    visibleServices: uniqueServiceList,
+    officialOnly: false,
+  });
 
   const isLinkVisible = useCallback(
-    (link: any) => visibleServices.includes(link.service) && (!officialOnly || link.official),
-    [visibleServices, officialOnly]
+    (link: any) =>
+      filter.visibleServices.includes(link.service) && (!filter.officialOnly || link.official),
+    [filter]
   );
 
   const visibleSubs = useMemo(
@@ -79,11 +25,11 @@ export function CommunityList() {
       data.subs
         .filter(
           (sub) =>
-            sub.name.toLowerCase().includes(searchParam.toLowerCase()) &&
+            sub.name.toLowerCase().includes(filter.searchParam.toLowerCase()) &&
             sub.links.some(isLinkVisible)
         )
         .sort((a, b) => a.name.localeCompare(b.name)),
-    [searchParam, isLinkVisible]
+    [filter, isLinkVisible]
   );
 
   return (
@@ -92,50 +38,13 @@ export function CommunityList() {
         <Title order={2} sx={{ fontFamily: "var(--font-accent)" }}>
           Communities
         </Title>
-        <div className={classes.filters}>
-          <TextInput
-            placeholder="Search"
-            value={searchParam}
-            size="md"
-            onChange={(e) => setSearchParam(e.currentTarget.value)}
-            icon={<IoSearch />}
-            rightSection={<IoCloseOutline onClick={() => setSearchParam("")} />}
-            className={classes.searchInput}
-          />
-          <MultiSelect
-            clearable
-            clearButtonProps={{ "aria-label": "Clear services" }}
-            icon={<IoGlobeOutline />}
-            className={classes.checkboxList}
-            aria-label="Select services"
-            placeholder="Select services"
-            size="md"
-            data={uniqueServiceList}
-            value={visibleServices}
-            onChange={setVisibleServices}
-            withinPortal
-          />
-          <Checkbox
-            classNames={{ body: classes.checkbox }}
-            style={{ flexShrink: 0, alignItems: "center" }}
-            label={
-              <Tooltip label="Links that have been posted in the original subreddit" withArrow>
-                <Text className={classes.officialOnly}>
-                  Official only
-                  <IoCheckmarkCircleOutline size="1rem" />
-                </Text>
-              </Tooltip>
-            }
-            checked={officialOnly}
-            onChange={(e) => setOfficialOnly(e.target.checked)}
-          />
-        </div>
+        <CommunityFilters {...{ filter, setFilter }} />
 
         {visibleSubs.length === 0 && (
           <Paper mt="xxl" px="xxs" style={{ background: "transparent" }}>
-            {searchParam ? (
+            {filter.searchParam ? (
               <>
-                No results matching <strong>&quot;{searchParam}&quot;</strong> found.
+                No results matching <strong>&quot;{filter.searchParam}&quot;</strong> found.
               </>
             ) : (
               <>No results found.</>
