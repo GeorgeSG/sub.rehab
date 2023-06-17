@@ -1,7 +1,7 @@
 import { select, confirm, input } from "@inquirer/prompts";
 import { writeData, data } from "../data.mjs";
 import { subSchema, validateSubList } from "../validation.mjs";
-import { chalkSuccess, error, warning } from "../output-utils.mjs";
+import { chalkSuccess, error, warning, success } from "../output-utils.mjs";
 import chalk from "chalk";
 
 const createLink = async () => {
@@ -15,7 +15,12 @@ const createLink = async () => {
       { name: "misc", value: "misc" },
     ],
   });
-  const url = await input({ message: "Link URL:" });
+  let url = await input({ message: "Link URL:" });
+
+  if (!url.startsWith("https://")) {
+    url = `https://${url}`;
+  }
+
   const official = await confirm({ message: "Is this an official link?" });
 
   return { service, url, official };
