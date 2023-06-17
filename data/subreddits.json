@@ -518,6 +518,108 @@
     {
       "name": "r/scuba",
       "links": [{ "service": "lemmy", "url": "https://lemmy.world/c/scuba", "official": false }]
+    },
+    {
+      "name": "r/FellowKids",
+      "links": [{ "service": "lemmy", "url": "https://lemmy.world/c/fellowkids", "official": true }]
+    },
+    {
+      "name": "r/AskElectronics",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://discuss.tchncs.de/c/askelectronics",
+          "official": true
+        }
+      ]
+    },
+    {
+      "name": "r/rpg_brasil",
+      "links": [{ "service": "lemmy", "url": "https://lemmy.world/c/rpg_brasil", "official": true }]
+    },
+    {
+      "name": "r/Cebu",
+      "links": [{ "service": "lemmy", "url": "https://lemmy.world/c/cebu", "official": true }]
+    },
+    {
+      "name": "r/Darksiders",
+      "links": [
+        { "service": "lemmy", "url": "https://lemmy.blahaj.zone/c/darksiders", "official": true }
+      ]
+    },
+    {
+      "name": "r/destinycirclejerk",
+      "links": [
+        { "service": "lemmy", "url": "https://lemmy.world/c/destinycirclejerk", "official": true }
+      ]
+    },
+    {
+      "name": "r/ErgoMechKeyboards",
+      "links": [
+        { "service": "lemmy", "url": "https://lemmy.world/c/ergomechkeyboards", "official": true }
+      ]
+    },
+    {
+      "name": "r/ffxivart",
+      "links": [{ "service": "kbin", "url": "https://kbin.social/m/ffxivart", "official": true }]
+    },
+    {
+      "name": "r/financialmodelling",
+      "links": [
+        { "service": "misc", "url": "https://squabbles.io/s/FinancialModelling", "official": true }
+      ]
+    },
+    {
+      "name": "r/LinuxCrackSupport",
+      "links": [
+        { "service": "lemmy", "url": "https://lemmy.world/c/linuxcracksupport", "official": true }
+      ]
+    },
+    {
+      "name": "r/Menopause",
+      "links": [{ "service": "lemmy", "url": "https://lemmy.world/c/menopause", "official": true }]
+    },
+    {
+      "name": "r/MinecraftUnlimited",
+      "links": [{ "service": "misc", "url": "https://www.minecraftforum.net/", "official": true }]
+    },
+    {
+      "name": "r/Pentesting",
+      "links": [{ "service": "lemmy", "url": "https://lemmy.world/c/pentesting", "official": true }]
+    },
+    {
+      "name": "r/postmarketOS",
+      "links": [{ "service": "lemmy", "url": "https://lemmy.ml/c/postmarketOS", "official": true }]
+    },
+    {
+      "name": "r/startpages",
+      "links": [{ "service": "kbin", "url": "https://kbin.social/m/startpages", "official": true }]
+    },
+    {
+      "name": "r/ZeroWasteVegans",
+      "links": [{ "service": "lemmy", "url": "https://lemmy.ml/c/zerowaste", "official": true }]
+    },
+    {
+      "name": "r/WayOfTheBern",
+      "links": [
+        { "service": "misc", "url": "https://www.saidit.net/s/WayOfTheBern", "official": true }
+      ]
+    },
+    {
+      "name": "r/brisbane",
+      "links": [{ "service": "lemmy", "url": "https://aussie.zone/c/brisbane", "official": true }]
+    },
+    {
+      "name": "r/Megaten",
+      "links": [{ "service": "lemmy", "url": "https://lemmy.world/c/megaten", "official": true }]
+    },
+    {
+      "name": "r/Moustache",
+      "links": [{ "service": "kbin", "url": "https://kbin.social/m/Moustache", "official": true }]
+    },
+    {
+      "name": "r/AskAGerman",
+      "links": [{ "service": "lemmy", "url": "https://feddit.de/c/germany", "official": true }]
     }
   ]
 }
