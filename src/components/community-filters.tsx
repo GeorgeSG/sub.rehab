@@ -1,19 +1,16 @@
 import { useSubredditData } from "@/data";
 import {
-  Button,
   Checkbox,
   Drawer,
-  Group,
   MediaQuery,
   MultiSelect,
   Text,
   TextInput,
   Tooltip,
   createStyles,
-  useMantineTheme,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
-import { use, useCallback, useMemo } from "react";
+import { useCallback, useMemo } from "react";
 import {
   IoCheckmarkCircleOutline,
   IoCloseOutline,
@@ -21,6 +18,7 @@ import {
   IoGlobeOutline,
   IoSearch,
 } from "react-icons/io5";
+import { GradientButton } from "./gradient-button";
 
 const useStyles = createStyles((theme) => ({
   filters: {
@@ -29,7 +27,7 @@ const useStyles = createStyles((theme) => ({
     gap: theme.spacing.lg,
     marginTop: theme.spacing.lg,
 
-    [theme.fn.smallerThan("md")]: {
+    [theme.fn.smallerThan("lg")]: {
       marginTop: theme.spacing.md,
       flexDirection: "column",
       alignItems: "flex-start",
@@ -37,16 +35,16 @@ const useStyles = createStyles((theme) => ({
     },
   },
 
-  checkboxList: {
+  multiSelect: {
     flexShrink: 0,
 
-    [theme.fn.smallerThan("md")]: {
+    [theme.fn.smallerThan("lg")]: {
       width: "100%",
     },
   },
 
   searchInput: {
-    [theme.fn.smallerThan("md")]: {
+    [theme.fn.smallerThan("lg")]: {
       width: "100%",
     },
   },
@@ -101,7 +99,7 @@ export function CommunityFilters({ filter, setFilter }: CommunityFiltersProps) {
           clearable
           clearButtonProps={{ "aria-label": "Clear services" }}
           icon={<IoGlobeOutline />}
-          className={classes.checkboxList}
+          className={classes.multiSelect}
           aria-label="Select services"
           placeholder="Select services"
           size="md"
@@ -132,16 +130,16 @@ export function CommunityFilters({ filter, setFilter }: CommunityFiltersProps) {
   return (
     <>
       <MediaQuery largerThan="xs" styles={{ display: "none" }}>
-        <Button mt="lg" onClick={open} leftIcon={<IoFilter />}>
+        <GradientButton mt="lg" onClick={open} leftIcon={<IoFilter />}>
           Filters
-        </Button>
+        </GradientButton>
       </MediaQuery>
       <MediaQuery largerThan="xs" styles={{ display: "none" }}>
         <Drawer opened={opened} onClose={close} title="Filters">
           {filters}
-          <Button mt="lg" onClick={close} fullWidth>
+          <GradientButton mt="lg" onClick={close} fullWidth>
             Apply
-          </Button>
+          </GradientButton>
         </Drawer>
       </MediaQuery>
       <MediaQuery smallerThan="xs" styles={{ display: "none" }}>

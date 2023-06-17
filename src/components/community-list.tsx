@@ -1,5 +1,5 @@
 import data from "@/subreddits";
-import { Paper, SimpleGrid, Title } from "@mantine/core";
+import { Paper, SimpleGrid, Table, Title } from "@mantine/core";
 import { useCallback, useMemo, useState } from "react";
 import { Community } from "./community";
 import { CommunityFilters, Filter } from "./community-filters";
@@ -51,6 +51,7 @@ export function CommunityList() {
             )}
           </Paper>
         )}
+
         <SimpleGrid
           cols={3}
           spacing="lg"

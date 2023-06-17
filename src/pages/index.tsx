@@ -1,13 +1,31 @@
 import { AnimatedSlogan } from "@/components/animated-slogan";
 import { CommunityList } from "@/components/community-list";
+import { GradientButton } from "@/components/gradient-button";
 import { PageHeader } from "@/components/page-header";
 import { Section } from "@/components/section";
 import { Statistics } from "@/components/statistics";
-import { Anchor, Button, Text } from "@mantine/core";
+import { Anchor, Button, Flex, MediaQuery, Text, TextInput, createStyles } from "@mantine/core";
+import { modals } from "@mantine/modals";
 import Link from "next/link";
-import { IoAdd } from "react-icons/io5";
+import { IoAdd, IoStatsChart } from "react-icons/io5";
+
+const useStyles = createStyles((theme) => ({
+  statisticsWrapper: {
+    [theme.fn.smallerThan("xs")]: {
+      display: "none",
+    },
+  },
+  statisticsModal: {
+    display: "none",
+
+    [theme.fn.smallerThan("xs")]: {
+      display: "inline-flex",
+    },
+  },
+}));
 
 export default function Home() {
+  const { classes } = useStyles();
   return (
     <>
       <Section>
@@ -21,17 +39,34 @@ export default function Home() {
           </Anchor>
           &nbsp;lists instances of the Reddit communities on alternative platforms.
         </Text>
-        <Statistics />
-        <Button
-          component="a"
-          href="https://github.com/GeorgeSG/sub.rehab/discussions/1"
-          target="_blank"
-          leftIcon={<IoAdd />}
-          variant="gradient"
-          gradient={{ from: "orange.4", to: "orange.8", deg: 55 }}
-        >
-          Suggest link
-        </Button>
+        <div className={classes.statisticsWrapper}>
+          <Statistics />
+        </div>
+        <Flex gap="xs">
+          <GradientButton<"a">
+            component="a"
+            href="https://github.com/GeorgeSG/sub.rehab/discussions/1"
+            target="_blank"
+            leftIcon={<IoAdd />}
+          >
+            Suggest link
+          </GradientButton>
+          <div className={classes.statisticsModal}>
+            <Button
+              variant="subtle"
+              leftIcon={<IoStatsChart />}
+              onClick={() =>
+                modals.open({
+                  title: "Stats for Nerds",
+                  children: <Statistics />,
+                  centered: true,
+                })
+              }
+            >
+              Stats for Nerds
+            </Button>
+          </div>
+        </Flex>
       </Section>
       <CommunityList />
     </>

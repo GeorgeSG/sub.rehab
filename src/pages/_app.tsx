@@ -2,6 +2,7 @@ import { Footer } from "@/components/footer";
 import { theme } from "@/theme";
 import { ColorScheme, ColorSchemeProvider, MantineProvider } from "@mantine/core";
 import { useColorScheme, useLocalStorage } from "@mantine/hooks";
+import { ModalsProvider } from "@mantine/modals";
 import type { AppProps } from "next/app";
 import { Inter, Lobster } from "next/font/google";
 import Head from "next/head";
@@ -52,11 +53,13 @@ export default function App({ Component, pageProps }: AppProps) {
       </Head>
       <ColorSchemeProvider colorScheme={colorScheme} toggleColorScheme={toggleColorScheme}>
         <MantineProvider withGlobalStyles withNormalizeCSS theme={{ ...theme, colorScheme }}>
-          <div className="background" />
-          <main className={`wrapper ${fontAccent.variable} ${fontDefault.variable}`}>
-            <Component {...pageProps} />
-            <Footer />
-          </main>
+          <ModalsProvider>
+            <div className="background" />
+            <main className={`wrapper ${fontAccent.variable} ${fontDefault.variable}`}>
+              <Component {...pageProps} />
+              <Footer />
+            </main>
+          </ModalsProvider>
         </MantineProvider>
       </ColorSchemeProvider>
     </>

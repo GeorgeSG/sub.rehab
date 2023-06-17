@@ -33,6 +33,7 @@
     "@emotion/server": "11.11.0",
     "@mantine/core": "6.0.13",
     "@mantine/hooks": "6.0.13",
+    "@mantine/modals": "^6.0.13",
     "@mantine/next": "6.0.13",
     "next": "13.4.5",
     "react": "18.2.0",
