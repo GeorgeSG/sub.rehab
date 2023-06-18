@@ -434,10 +434,6 @@
       "links": [{ "service": "kbin", "url": "https://kbin.social/m/ELI5" }]
     },
     {
-      "name": "r/showerthoughts",
-      "links": [{ "service": "kbin", "url": "https://kbin.social/m/showerthoughts" }]
-    },
-    {
       "name": "r/wholesome",
       "links": [{ "service": "kbin", "url": "https://kbin.social/m/wholesome" }]
     },
@@ -620,6 +616,41 @@
     {
       "name": "r/AskAGerman",
       "links": [{ "service": "lemmy", "url": "https://feddit.de/c/germany", "official": true }]
+    },
+    {
+      "name": "r/Steam",
+      "links": [
+        { "service": "discord", "url": "https://discord.com/invite/steam", "official": true }
+      ]
+    },
+    {
+      "name": "r/me_irl",
+      "links": [{ "service": "lemmy", "url": "https://lemmy.ml/c/me_irl", "official": false }]
+    },
+    {
+      "name": "r/youshouldknow",
+      "links": [
+        { "service": "lemmy", "url": "https://lemmy.world/c/youshouldknow", "official": false }
+      ]
+    },
+    {
+      "name": "r/showerthoughts",
+      "links": [
+        { "service": "kbin", "url": "https://kbin.social/m/showerthoughts" },
+        { "service": "lemmy", "url": "https://lemmy.world/c/showerthoughts", "official": false }
+      ]
+    },
+    {
+      "name": "r/shittyfoodporn",
+      "links": [
+        { "service": "lemmy", "url": "https://lemmy.ca/c/shittyfoodporn", "official": false }
+      ]
+    },
+    {
+      "name": "r/snowboarding",
+      "links": [
+        { "service": "kbin", "url": "https://kbin.social/m/snowboarding/", "official": false }
+      ]
     }
   ]
 }
