@@ -59,7 +59,7 @@ export default function Home() {
               if (showRulesConfirm) {
                 e.preventDefault();
                 modals.open({
-                  title: "New Rules Requirements",
+                  title: "New Links criteria",
                   children: (
                     <>
                       <p>
@@ -68,7 +68,7 @@ export default function Home() {
                           href="https://github.com/GeorgeSG/sub.rehab/discussions/2"
                           target="_blank"
                         >
-                          New Links requirements
+                          New links criteria
                         </Anchor>
                         .
                       </p>
