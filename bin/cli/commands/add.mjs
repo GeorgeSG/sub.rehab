@@ -29,7 +29,10 @@ const createLink = async () => {
   if (!service) {
     service = await select({
       message: "Link service:",
-      choices: knownServices.map((service) => ({ name: service, value: service })),
+      choices: [
+        ...knownServices.map((service) => ({ name: service, value: service })),
+        { name: "misc", value: "misc" },
+      ],
     });
   }
 
