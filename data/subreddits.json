@@ -41,10 +41,6 @@
       "links": [{ "service": "lemmy", "url": "https://lemmy.world/c/mildlyinfuriating" }]
     },
     {
-      "name": "r/Selfhosted",
-      "links": [{ "service": "lemmy", "url": "https://lemmy.world/c/selfhosted" }]
-    },
-    {
       "name": "r/Futurama",
       "links": [{ "service": "lemmy", "url": "https://lemmy.world/c/futurama" }]
     },
@@ -936,6 +932,103 @@
           "url": "https://kbin.social/m/amitheasshole/microblog",
           "official": false,
           "added_ts": 1687119835162
+        }
+      ]
+    },
+    {
+      "name": "r/TalkingHank",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/TalkingHank",
+          "official": true,
+          "added_ts": 1687125477901
+        }
+      ]
+    },
+    {
+      "name": "r/TalkingAngela",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/TalkingAngela",
+          "official": true,
+          "added_ts": 1687125520640
+        }
+      ]
+    },
+    {
+      "name": "r/Switzerland",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/Switzerland",
+          "official": false,
+          "added_ts": 1687125711844
+        }
+      ]
+    },
+    {
+      "name": "r/AdobeIllustrator",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/adobeillustrator",
+          "official": true,
+          "added_ts": 1687125869599
+        }
+      ]
+    },
+    {
+      "name": "r/selfhosted",
+      "links": [
+        { "service": "lemmy", "url": "https://lemmy.world/c/selfhosted" },
+        {
+          "service": "misc",
+          "url": "https://forum.r-selfhosted.com/",
+          "official": true,
+          "added_ts": 1687125998166
+        },
+        {
+          "service": "discord",
+          "url": "https://discord.gg/UrZKzYZfcS",
+          "official": true,
+          "added_ts": 1687126014517
+        },
+        {
+          "service": "matrix",
+          "url": "https://matrix.to/#/#selfhosted:selfhosted.chat",
+          "official": true,
+          "added_ts": 1687126029513
+        },
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.ml/c/selfhost",
+          "official": false,
+          "added_ts": 1687126052648
+        },
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/selfhosted",
+          "official": false,
+          "added_ts": 1687126068787
+        },
+        {
+          "service": "misc",
+          "url": "https://squabbles.io/s/selfhosted",
+          "official": false,
+          "added_ts": 1687126083618
+        }
+      ]
+    },
+    {
+      "name": "r/sysadmin",
+      "links": [
+        {
+          "service": "misc",
+          "url": "https://sysadmins.zone",
+          "official": false,
+          "added_ts": 1687126182198
         }
       ]
     }
