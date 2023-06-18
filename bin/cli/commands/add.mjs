@@ -4,21 +4,33 @@ import { subSchema, validateSubList } from "../validation.mjs";
 import { chalkSuccess, error, warning, success } from "../output-utils.mjs";
 import chalk from "chalk";
 
+const knownServices = ["discord", "lemmy", "kbin", "matrix"];
+
 const createLink = async () => {
-  const service = await select({
-    message: "Link service:",
-    choices: [
-      { name: "discord", value: "discord" },
-      { name: "lemmy", value: "lemmy" },
-      { name: "kbin", value: "kbin" },
-      { name: "matrix", value: "matrix" },
-      { name: "misc", value: "misc" },
-    ],
-  });
   let url = await input({ message: "Link URL:" });
+  url = url.trim();
 
   if (!url.startsWith("https://")) {
     url = `https://${url}`;
+  }
+
+  let service;
+
+  for await (const knownService of knownServices) {
+    if (url.includes(knownService)) {
+      const doesLinkMatch = await confirm({ message: `Is this a ${knownService} link?` });
+      if (doesLinkMatch) {
+        service = knownService;
+        break;
+      }
+    }
+  }
+
+  if (!service) {
+    await select({
+      message: "Link service:",
+      choices: knownServices.map((service) => ({ name: service, value: service })),
+    });
   }
 
   const official = await confirm({ message: "Is this an official link?" });
@@ -27,9 +39,13 @@ const createLink = async () => {
 };
 
 export async function addSubreddit(argv) {
-  const name = argv.name || (await input({ message: "Subreddit name:" }));
+  let name = argv.name || (await input({ message: "Subreddit name:" }));
+  name = name.trim();
+  if (name.startsWith("/r/")) {
+    name = name.slice(1);
+  }
 
-  let subreddit = data.subs.find((sub) => sub.name === name);
+  let subreddit = data.subs.find((sub) => sub.name.toLowerCase() === name.toLowerCase());
   let newLink;
 
   if (subreddit) {
