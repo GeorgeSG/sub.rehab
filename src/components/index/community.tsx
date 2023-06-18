@@ -1,6 +1,5 @@
 import { useIsLinkNew } from "@/hooks/use-is-link-new";
 import { Anchor, Indicator, Text, Title, Tooltip, createStyles } from "@mantine/core";
-import { useEffect, useState } from "react";
 import { IoCheckmarkCircleOutline } from "react-icons/io5";
 
 type CommunityProps = {

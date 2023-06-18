@@ -18,7 +18,7 @@ import {
   IoGlobeOutline,
   IoSearch,
 } from "react-icons/io5";
-import { GradientButton } from "./gradient-button";
+import { GradientButton } from "../core/gradient-button";
 
 const useStyles = createStyles((theme) => ({
   filters: {

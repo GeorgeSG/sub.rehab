@@ -3,7 +3,7 @@ import { Paper, SimpleGrid, Table, Title } from "@mantine/core";
 import { useCallback, useMemo, useState } from "react";
 import { Community } from "./community";
 import { CommunityFilters, Filter } from "./community-filters";
-import { Section } from "./section";
+import { Section } from "@/components/core/section";
 import { useSubredditData } from "@/data";
 import { useIsLinkNew } from "@/hooks/use-is-link-new";
 

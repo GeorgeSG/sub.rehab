@@ -1,5 +1,5 @@
-import { PageHeader } from "@/components/page-header";
-import { Section } from "@/components/section";
+import { PageHeader } from "@/components/core/page-header";
+import { Section } from "@/components/core/section";
 import { Accordion, Anchor, List, Text, Title, createStyles } from "@mantine/core";
 import { IoCheckmarkCircleOutline } from "react-icons/io5";
 

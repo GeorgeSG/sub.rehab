@@ -1,6 +1,6 @@
+import { StatisticCard } from "@/components/core/statistic-card";
 import { SERVICE_COLORS, useSubredditData } from "@/data";
 import { ColorSwatch, Flex, SimpleGrid, useMantineTheme } from "@mantine/core";
-import { StatisticCard } from "./statistic-card";
 import { useMemo } from "react";
 
 export function Statistics() {

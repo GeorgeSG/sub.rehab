@@ -1,12 +1,14 @@
-import { AnimatedSlogan } from "@/components/animated-slogan";
-import { CommunityList } from "@/components/community-list";
-import { GradientButton } from "@/components/gradient-button";
-import { PageHeader } from "@/components/page-header";
-import { Section } from "@/components/section";
-import { Statistics } from "@/components/statistics";
-import { Anchor, Button, Flex, MediaQuery, Text, TextInput, createStyles } from "@mantine/core";
+import { GradientButton } from "@/components/core/gradient-button";
+import { PageHeader } from "@/components/core/page-header";
+import { Section } from "@/components/core/section";
+import { AnimatedSlogan } from "@/components/index/animated-slogan";
+import { CommunityList } from "@/components/index/community-list";
+import { Statistics } from "@/components/index/statistics";
+import { Anchor, Button, Flex, Text, createStyles } from "@mantine/core";
+import { useLocalStorage } from "@mantine/hooks";
 import { modals } from "@mantine/modals";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { IoAdd, IoStatsChart } from "react-icons/io5";
 
 const useStyles = createStyles((theme) => ({
@@ -26,6 +28,13 @@ const useStyles = createStyles((theme) => ({
 
 export default function Home() {
   const { classes } = useStyles();
+  const router = useRouter();
+
+  const [showRulesConfirm, setShowRulesConfirm] = useLocalStorage({
+    key: "sub-rehab-show-rules-confirm",
+    defaultValue: true,
+  });
+
   return (
     <>
       <Section>
@@ -46,6 +55,45 @@ export default function Home() {
           <GradientButton<"a">
             component="a"
             href="https://github.com/GeorgeSG/sub.rehab/discussions/1"
+            onClick={(e) => {
+              if (showRulesConfirm) {
+                e.preventDefault();
+                modals.open({
+                  title: "New Rules Requirements",
+                  children: (
+                    <>
+                      <p>
+                        Before submitting new links, please read the&nbsp;
+                        <Anchor
+                          href="https://github.com/GeorgeSG/sub.rehab/discussions/2"
+                          target="_blank"
+                        >
+                          New Links requirements
+                        </Anchor>
+                        .
+                      </p>
+                      <Flex mt="sm" justify="flex-end" gap="sm">
+                        <Button
+                          variant="subtle"
+                          onClick={() => {
+                            setShowRulesConfirm(false);
+                            router.push("https://github.com/GeorgeSG/sub.rehab/discussions/1");
+                          }}
+                        >
+                          Don&apos;t show this again
+                        </Button>
+                        <Button
+                          component="a"
+                          href="https://github.com/GeorgeSG/sub.rehab/discussions/1"
+                        >
+                          Suggest a link
+                        </Button>
+                      </Flex>
+                    </>
+                  ),
+                });
+              }
+            }}
             target="_blank"
             leftIcon={<IoAdd />}
           >

@@ -1,5 +1,5 @@
-import { PageHeader } from "@/components/page-header";
-import { Section } from "@/components/section";
+import { PageHeader } from "@/components/core/page-header";
+import { Section } from "@/components/core/section";
 import { Text, Title } from "@mantine/core";
 import { BsRobot } from "react-icons/bs";
 
