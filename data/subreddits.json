@@ -618,12 +618,6 @@
       "links": [{ "service": "lemmy", "url": "https://feddit.de/c/germany", "official": true }]
     },
     {
-      "name": "r/Steam",
-      "links": [
-        { "service": "discord", "url": "https://discord.com/invite/steam", "official": true }
-      ]
-    },
-    {
       "name": "r/me_irl",
       "links": [{ "service": "lemmy", "url": "https://lemmy.ml/c/me_irl", "official": false }]
     },
@@ -650,6 +644,126 @@
       "name": "r/snowboarding",
       "links": [
         { "service": "kbin", "url": "https://kbin.social/m/snowboarding/", "official": false }
+      ]
+    },
+    {
+      "name": "r/gog",
+      "links": [{ "service": "lemmy", "url": "https://lemmy.world/c/gog", "official": false }]
+    },
+    {
+      "name": "r/Steam",
+      "links": [
+        { "service": "discord", "url": "https://discord.com/invite/steam", "official": true },
+        { "service": "lemmy", "url": "https://lemmy.ml/c/steam", "official": false }
+      ]
+    },
+    {
+      "name": "r/thunderbird",
+      "links": [
+        { "service": "lemmy", "url": "https://lemmy.world/c/thunderbird", "official": false }
+      ]
+    },
+    {
+      "name": "r/windows10",
+      "links": [{ "service": "lemmy", "url": "https://lemmy.world/c/windows10", "official": false }]
+    },
+    {
+      "name": "r/intel",
+      "links": [{ "service": "lemmy", "url": "https://lemmy.world/c/intel", "official": false }]
+    },
+    {
+      "name": "r/vpn",
+      "links": [{ "service": "lemmy", "url": "https://lemmy.world/c/vpn", "official": false }]
+    },
+    {
+      "name": "r/iosgaming",
+      "links": [{ "service": "lemmy", "url": "https://lemmy.ml/c/iosgaming", "official": false }]
+    },
+    {
+      "name": "r/indonesia",
+      "links": [{ "service": "lemmy", "url": "https://lemmy.ml/c/Indonesia", "official": false }]
+    },
+    {
+      "name": "r/afl",
+      "links": [{ "service": "kbin", "url": "https://kbin.social/m/afl", "official": false }]
+    },
+    {
+      "name": "r/aspiememes",
+      "links": [{ "service": "kbin", "url": "https://kbin.social/m/aspiememes", "official": false }]
+    },
+    {
+      "name": "r/celestegame",
+      "links": [{ "service": "lemmy", "url": "https://lemmy.ca/c/celeste", "official": false }]
+    },
+    {
+      "name": "r/geometrydash",
+      "links": [
+        { "service": "lemmy", "url": "https://lemmy.world/c/geometrydash", "official": false }
+      ]
+    },
+    {
+      "name": "r/leipzig",
+      "links": [{ "service": "lemmy", "url": "https://lemmy.ca/c/leipzig", "official": false }]
+    },
+    {
+      "name": "r/dresden",
+      "links": [{ "service": "lemmy", "url": "https://feddit.de/c/Dresden", "official": false }]
+    },
+    {
+      "name": "r/crt",
+      "links": [{ "service": "kbin", "url": "https://kbin.social/m/CRTs", "official": false }]
+    },
+    {
+      "name": "r/hmm",
+      "links": [{ "service": "kbin", "url": "https://kbin.social/m/hmm", "official": false }]
+    },
+    {
+      "name": "r/nomanssky",
+      "links": [{ "service": "lemmy", "url": "https://lemmy.world/c/nomanssky", "official": false }]
+    },
+    {
+      "name": "r/norge",
+      "links": [
+        { "service": "kbin", "url": "https://kbin.social/m/norge", "official": false },
+        { "service": "lemmy", "url": "https://lemmy.world/c/norge", "official": false }
+      ]
+    },
+    {
+      "name": "r/nope",
+      "links": [{ "service": "kbin", "url": "https://kbin.social/m/nope", "official": false }]
+    },
+    {
+      "name": "r/pics",
+      "links": [{ "service": "lemmy", "url": "https://lemmy.world/c/pics", "official": false }]
+    },
+    {
+      "name": "r/urbanplanning",
+      "links": [{ "service": "discord", "url": "https://discord.gg/ThGmeJAAtc", "official": true }]
+    },
+    {
+      "name": "r/nyc",
+      "links": [{ "service": "discord", "url": "https://discord.gg/newyorkcity", "official": true }]
+    },
+    {
+      "name": "r/transitdiagrams",
+      "links": [{ "service": "discord", "url": "https://discord.gg/UXHWNSNuCn", "official": true }]
+    },
+    {
+      "name": "r/boardgames",
+      "links": [{ "service": "discord", "url": "https://discord.gg/dN4P4PZcU9", "official": true }]
+    },
+    {
+      "name": "r/crusaderkings",
+      "links": [{ "service": "discord", "url": "https://discord.gg/gvkBVJw", "official": true }]
+    },
+    {
+      "name": "r/amitheasshole",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/amitheasshole/microblog",
+          "official": false
+        }
       ]
     }
   ]
