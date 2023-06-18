@@ -1,4 +1,6 @@
-import { Anchor, Text, Title, Tooltip, createStyles } from "@mantine/core";
+import { useIsLinkNew } from "@/hooks/use-is-link-new";
+import { Anchor, Indicator, Text, Title, Tooltip, createStyles } from "@mantine/core";
+import { useEffect, useState } from "react";
 import { IoCheckmarkCircleOutline } from "react-icons/io5";
 
 type CommunityProps = {
@@ -7,6 +9,7 @@ type CommunityProps = {
     service: string;
     url: string;
     official?: boolean;
+    added_ts?: number;
   }[];
 };
 
@@ -66,6 +69,7 @@ const useStyles = createStyles(({ colors, colorScheme, spacing, radius, other })
 
 export function Community({ name, links }: CommunityProps) {
   const { classes } = useStyles();
+  const isLinkNew = useIsLinkNew();
 
   return (
     <div className={classes.community}>
@@ -84,12 +88,14 @@ export function Community({ name, links }: CommunityProps) {
             className={classes.homeLocation}
           >
             {SERVICE_ICONS[link.service] && (
-              <img
-                alt={`${name} on ${link.service}`}
-                title={`${name} on ${link.service}`}
-                src={SERVICE_ICONS[link.service]}
-                height={32}
-              />
+              <Indicator inline label="new" size={14} disabled={!isLinkNew(link.added_ts)}>
+                <img
+                  alt={`${name} on ${link.service}`}
+                  title={`${name} on ${link.service}`}
+                  src={SERVICE_ICONS[link.service]}
+                  height={32}
+                />
+              </Indicator>
             )}
             <Text sx={{ textOverflow: "ellipsis", overflow: "hidden", textWrap: "nowrap" }}>
               {link.url.split("://")[1]}

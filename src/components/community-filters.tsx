@@ -64,6 +64,7 @@ export type Filter = {
   searchParam: string;
   visibleServices: string[];
   officialOnly: boolean;
+  newOnly: boolean;
 };
 
 export type CommunityFiltersProps = {
@@ -121,6 +122,17 @@ export function CommunityFilters({ filter, setFilter }: CommunityFiltersProps) {
           }
           checked={filter.officialOnly}
           onChange={(e) => setFilter((prev) => ({ ...prev, officialOnly: e.target.checked }))}
+        />
+        <Checkbox
+          classNames={{ body: classes.checkbox }}
+          style={{ flexShrink: 0, alignItems: "center" }}
+          label={
+            <Tooltip label="Links that have been added in the past 24 hours" withArrow>
+              <Text className={classes.officialOnly}>New only</Text>
+            </Tooltip>
+          }
+          checked={filter.newOnly}
+          onChange={(e) => setFilter((prev) => ({ ...prev, newOnly: e.target.checked }))}
         />
       </div>
     ),

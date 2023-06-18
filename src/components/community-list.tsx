@@ -5,19 +5,25 @@ import { Community } from "./community";
 import { CommunityFilters, Filter } from "./community-filters";
 import { Section } from "./section";
 import { useSubredditData } from "@/data";
+import { useIsLinkNew } from "@/hooks/use-is-link-new";
 
 export function CommunityList() {
   const { uniqueServiceList } = useSubredditData();
+  const isLinkNew = useIsLinkNew();
+
   const [filter, setFilter] = useState<Filter>({
     searchParam: "",
     visibleServices: uniqueServiceList,
     officialOnly: false,
+    newOnly: false,
   });
 
   const isLinkVisible = useCallback(
     (link: any) =>
-      filter.visibleServices.includes(link.service) && (!filter.officialOnly || link.official),
-    [filter]
+      filter.visibleServices.includes(link.service) &&
+      (!filter.officialOnly || link.official) &&
+      (!filter.newOnly || isLinkNew(link.added_ts)),
+    [filter, isLinkNew]
   );
 
   const visibleSubs = useMemo(
