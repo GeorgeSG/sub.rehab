@@ -6,6 +6,7 @@ export const linkSchema = z.object({
   service: z.string().min(1),
   url: z.string().startsWith("https://").url(),
   official: z.boolean().optional(),
+  added_ts: z.number().optional(),
 });
 
 export const subSchema = z.object({

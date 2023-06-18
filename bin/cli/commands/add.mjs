@@ -27,7 +27,7 @@ const createLink = async () => {
   }
 
   if (!service) {
-    await select({
+    service = await select({
       message: "Link service:",
       choices: knownServices.map((service) => ({ name: service, value: service })),
     });
@@ -35,7 +35,7 @@ const createLink = async () => {
 
   const official = await confirm({ message: "Is this an official link?" });
 
-  return { service, url, official };
+  return { service, url, official, added_ts: new Date().getTime() };
 };
 
 export async function addSubreddit(argv) {
