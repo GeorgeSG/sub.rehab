@@ -296,7 +296,7 @@
       "links": [
         { "service": "lemmy", "url": "https://lemmy.blahaj.zone/c/196", "official": true },
         { "service": "discord", "url": "https://discord.gg/196cord", "official": true },
-        { "service": "kbin", "url": "https://kbin.su/196", "official": true }
+        { "service": "kbin", "url": "https://fedi196.gay/", "official": true }
       ]
     },
     {
