@@ -59,6 +59,7 @@ export default function Home() {
               if (showRulesConfirm) {
                 e.preventDefault();
                 modals.open({
+                  centered: true,
                   title: "New Links criteria",
                   children: (
                     <>
