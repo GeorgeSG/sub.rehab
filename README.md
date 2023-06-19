@@ -6,7 +6,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Add subreddit links
 
-To add a new subreddit or links for an exisisting one, edit [`./data/subreddits.json`](data/subreddits.json) and add a new object
+To add a new subreddit or links for an existing one, edit [`./data/subreddits.json`](data/subreddits.json) and add a new object
 to the `subs` array. The object should have the following properties:
 
 ```json
