@@ -1947,6 +1947,28 @@
           "added_ts": 1687203656664
         }
       ]
+    },
+    {
+      "name": "r/washington",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/washington",
+          "official": false,
+          "added_ts": 1687205891008
+        }
+      ]
+    },
+    {
+      "name": "r/boston",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/boston",
+          "official": false,
+          "added_ts": 1687205919156
+        }
+      ]
     }
   ]
 }
