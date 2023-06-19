@@ -9,6 +9,7 @@ export default function SubmitLink() {
 
   // TODO: type values
   const handleSubmit = (values: any) => {
+    console.log("values: ", values);
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -23,6 +24,7 @@ export default function SubmitLink() {
       subreddit: "",
       service: "",
       link: "",
+      "form-name": "linkSuggestions",
     },
 
     validate: {
@@ -88,7 +90,9 @@ export default function SubmitLink() {
             onSubmit={form.onSubmit((values) => handleSubmit(values))}
             data-netlify="true"
             name="linkSuggestions"
+            data-netlify-recaptcha="true"
           >
+            <TextInput type="hidden" name="form-name" {...form.getInputProps("form-name")} />
             <TextInput
               withAsterisk
               label="Original subreddit:"
