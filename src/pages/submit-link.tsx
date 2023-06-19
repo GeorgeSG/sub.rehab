@@ -8,7 +8,8 @@ import { z } from "zod";
 export default function SubmitLink() {
   const { uniqueServiceList, allLinks } = useSubredditData();
 
-  const handleSubmit = (values) => {
+  // TODO: type values
+  const handleSubmit = (values: any) => {
     console.log(values);
 
     fetch("/", {
