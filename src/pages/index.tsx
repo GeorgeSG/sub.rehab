@@ -30,11 +30,6 @@ export default function Home() {
   const { classes } = useStyles();
   const router = useRouter();
 
-  const [showRulesConfirm, setShowRulesConfirm] = useLocalStorage({
-    key: "sub-rehab-show-rules-confirm",
-    defaultValue: true,
-  });
-
   return (
     <>
       <Section>
@@ -52,51 +47,7 @@ export default function Home() {
           <Statistics />
         </div>
         <Flex gap="xs">
-          <GradientButton<typeof Link>
-            component={Link}
-            href="/submit-link"
-            onClick={(e) => {
-              if (showRulesConfirm) {
-                e.preventDefault();
-                modals.open({
-                  centered: true,
-                  title: "New Links criteria",
-                  children: (
-                    <>
-                      <p>
-                        Before submitting new links, please read the&nbsp;
-                        <Anchor
-                          href="https://github.com/GeorgeSG/sub.rehab/discussions/2"
-                          target="_blank"
-                        >
-                          New links criteria
-                        </Anchor>
-                        .
-                      </p>
-                      <Flex mt="sm" justify="flex-end" gap="sm">
-                        <Button
-                          variant="subtle"
-                          onClick={() => {
-                            setShowRulesConfirm(false);
-                            router.push("https://github.com/GeorgeSG/sub.rehab/discussions/1");
-                          }}
-                        >
-                          Don&apos;t show this again
-                        </Button>
-                        <Button
-                          component="a"
-                          href="https://github.com/GeorgeSG/sub.rehab/discussions/1"
-                        >
-                          Suggest a link
-                        </Button>
-                      </Flex>
-                    </>
-                  ),
-                });
-              }
-            }}
-            leftIcon={<IoAdd />}
-          >
+          <GradientButton<typeof Link> component={Link} href="/submit-link" leftIcon={<IoAdd />}>
             Suggest link
           </GradientButton>
           <div className={classes.statisticsModal}>
