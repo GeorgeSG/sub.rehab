@@ -1,17 +1,18 @@
-import data from "@/subreddits";
-import { Paper, SimpleGrid, Table, Title } from "@mantine/core";
-import { useCallback, useMemo, useState } from "react";
-import { Community } from "./community";
-import { CommunityFilters, Filter } from "./community-filters";
 import { Section } from "@/components/core/section";
 import { useSubredditData } from "@/data";
 import { useIsLinkNew } from "@/hooks/use-is-link-new";
+import data from "@/subreddits";
+import { Paper, SimpleGrid, Title } from "@mantine/core";
+import { useSetState } from "@mantine/hooks";
+import { useCallback, useEffect, useMemo, useState } from "react";
+import { Community } from "./community";
+import { CommunityFilters, Filter } from "./community-filters";
 
 export function CommunityList() {
   const { uniqueServiceList } = useSubredditData();
   const isLinkNew = useIsLinkNew();
 
-  const [filter, setFilter] = useState<Filter>({
+  const [filter, setFilter] = useSetState<Filter>({
     searchParam: "",
     visibleServices: uniqueServiceList,
     officialOnly: false,
@@ -26,7 +27,7 @@ export function CommunityList() {
     [filter, isLinkNew]
   );
 
-  const visibleSubs = useMemo(
+  const filteredSubs = useMemo(
     () =>
       data.subs
         .filter(
@@ -37,6 +38,31 @@ export function CommunityList() {
         .sort((a, b) => a.name.localeCompare(b.name)),
     [filter, isLinkVisible]
   );
+
+  const [page, setPage] = useState(1);
+
+  const visibleSubs = useMemo(() => filteredSubs.slice(0, page * 20), [filteredSubs, page]);
+
+  useEffect(() => {
+    // Refresh page when filter changes
+    setPage(1);
+  }, [filter]);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const handleScroll = () => {
+    if (
+      window.innerHeight + Math.round(window.scrollY) + window.innerHeight / 5 >=
+      document.body.offsetHeight
+    ) {
+      setPage((prev) => prev + 1);
+    }
+  };
 
   return (
     <>
