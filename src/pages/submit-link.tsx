@@ -86,23 +86,22 @@ export default function SubmitLink() {
             No links to communities who break their service&apos;s ToS or share any illegal content
             (this should be self-explanatory).
           </List.Item>
-          <List.Item>
+          <List.Item pt="sm">
             Link must be an alternative to an existing subreddit. I don&apos;t see sub.rehab as a
             general fediverse directory (for now).
           </List.Item>
-          <List.Item>
-            Community must have a minimal amount of activity. I am thinking - at least 3 posts that
-            are not submitted by the community&apos;s moderator team. This does not apply for
-            communities that are verified and proven as official replacements of the original
-            subreddit
+          <List.Item pt="sm">
+            Community must have a minimal amount of activity - at least 3 posts that are not
+            submitted by the community&apos;s moderator team. This does not apply for communities
+            that are verified and proven as official replacements of the original subreddit
           </List.Item>
         </List>
-        <Text>
+        <Text mt="md">
           For more info and suggestions, see the&nbsp;
           <Anchor href="https://github.com/GeorgeSG/sub.rehab/discussions/2">
             discussion thread
           </Anchor>
-          &nbsp; on Link criteria
+          &nbsp;on link criteria.
         </Text>
         <Title order={2} mt="xxl" sx={{ fontFamily: "var(--font-accent)" }}>
           Suggest a link
