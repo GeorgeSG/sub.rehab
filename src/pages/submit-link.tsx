@@ -9,7 +9,6 @@ export default function SubmitLink() {
 
   // TODO: type values
   const handleSubmit = (values: any) => {
-    console.log("values: ", values);
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -113,6 +112,7 @@ export default function SubmitLink() {
               placeholder="https://..."
               {...form.getInputProps("link")}
             />
+            <div data-netlify-recaptcha="true"></div>
 
             <Group position="right" mt="md">
               <Button type="submit">Submit</Button>
