@@ -1936,6 +1936,17 @@
           "added_ts": 1687203586444
         }
       ]
+    },
+    {
+      "name": "r/ukcasual",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/ukcasual",
+          "official": false,
+          "added_ts": 1687203656664
+        }
+      ]
     }
   ]
 }
