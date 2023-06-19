@@ -69,7 +69,7 @@ export type Filter = {
 
 export type CommunityFiltersProps = {
   filter: Filter;
-  setFilter: React.Dispatch<React.SetStateAction<Filter>>;
+  setFilter: React.Dispatch<React.SetStateAction<Partial<Filter>>>;
 };
 
 export function CommunityFilters({ filter, setFilter }: CommunityFiltersProps) {
@@ -79,7 +79,7 @@ export function CommunityFilters({ filter, setFilter }: CommunityFiltersProps) {
   const [opened, { open, close }] = useDisclosure(false);
 
   const onChangeSearchParam = useCallback(
-    (value: string) => setFilter((prev) => ({ ...prev, searchParam: value })),
+    (value: string) => setFilter({ searchParam: value }),
     [setFilter]
   );
 
@@ -106,7 +106,7 @@ export function CommunityFilters({ filter, setFilter }: CommunityFiltersProps) {
           size="md"
           data={uniqueServiceList}
           value={filter.visibleServices}
-          onChange={(visibleServices) => setFilter((prev) => ({ ...prev, visibleServices }))}
+          onChange={(visibleServices) => setFilter({ visibleServices })}
           withinPortal
         />
         <Checkbox
@@ -121,7 +121,7 @@ export function CommunityFilters({ filter, setFilter }: CommunityFiltersProps) {
             </Tooltip>
           }
           checked={filter.officialOnly}
-          onChange={(e) => setFilter((prev) => ({ ...prev, officialOnly: e.target.checked }))}
+          onChange={(e) => setFilter(() => ({ officialOnly: e.target.checked }))}
         />
         <Checkbox
           classNames={{ body: classes.checkbox }}
@@ -132,7 +132,7 @@ export function CommunityFilters({ filter, setFilter }: CommunityFiltersProps) {
             </Tooltip>
           }
           checked={filter.newOnly}
-          onChange={(e) => setFilter((prev) => ({ ...prev, newOnly: e.target.checked }))}
+          onChange={(e) => setFilter(() => ({ newOnly: e.target.checked }))}
         />
       </div>
     ),
