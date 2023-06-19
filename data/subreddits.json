@@ -1154,29 +1154,6 @@
       ]
     },
     {
-      "name": "r/de",
-      "links": [
-        {
-          "service": "lemmy",
-          "url": "https://feddit.de/c/gesellschaft",
-          "official": false,
-          "added_ts": 1687195191370
-        },
-        {
-          "service": "lemmy",
-          "url": "https://feddit.de/c/nachrichten",
-          "official": false,
-          "added_ts": 1687195213033
-        },
-        {
-          "service": "lemmy",
-          "url": "https://feddit.de/c/deutschland",
-          "official": false,
-          "added_ts": 1687195225195
-        }
-      ]
-    },
-    {
       "name": "r/Switzerland",
       "links": [
         {
@@ -1967,6 +1944,57 @@
           "url": "https://lemmy.world/c/boston",
           "official": false,
           "added_ts": 1687205919156
+        }
+      ]
+    },
+    {
+      "name": "r/de",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://feddit.de/c/gesellschaft",
+          "official": false,
+          "added_ts": 1687195191370
+        },
+        {
+          "service": "lemmy",
+          "url": "https://feddit.de/c/nachrichten",
+          "official": false,
+          "added_ts": 1687195213033
+        },
+        {
+          "service": "lemmy",
+          "url": "https://feddit.de/c/deutschland",
+          "official": false,
+          "added_ts": 1687195225195
+        },
+        {
+          "service": "lemmy",
+          "url": "https://feddit.de/c/dach",
+          "official": false,
+          "added_ts": 1687208318935
+        }
+      ]
+    },
+    {
+      "name": "r/flutterdev",
+      "links": [
+        {
+          "service": "discord",
+          "url": "https://discord.gg/rflutterdev",
+          "official": true,
+          "added_ts": 1687208393522
+        }
+      ]
+    },
+    {
+      "name": "r/apstudents",
+      "links": [
+        {
+          "service": "discord",
+          "url": "https://discord.com/invite/apstudents",
+          "official": true,
+          "added_ts": 1687208410466
         }
       ]
     }
