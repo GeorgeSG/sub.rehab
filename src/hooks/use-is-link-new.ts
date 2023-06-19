@@ -11,7 +11,7 @@ export function useIsLinkNew() {
 
   return useCallback(
     (timestamp?: number | null) =>
-      Boolean(currentDate && timestamp && timestamp - currentDate <= NEW_LINK_THRESHOLD),
+      Boolean(currentDate && timestamp && currentDate - timestamp <= NEW_LINK_THRESHOLD),
     [currentDate]
   );
 }
