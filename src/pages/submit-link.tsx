@@ -89,7 +89,6 @@ export default function SubmitLink() {
             onSubmit={form.onSubmit((values) => handleSubmit(values))}
             data-netlify="true"
             name="linkSuggestions"
-            data-netlify-recaptcha="true"
           >
             <TextInput type="hidden" name="form-name" {...form.getInputProps("form-name")} />
             <TextInput
@@ -112,7 +111,6 @@ export default function SubmitLink() {
               placeholder="https://..."
               {...form.getInputProps("link")}
             />
-            <div data-netlify-recaptcha="true"></div>
 
             <Group position="right" mt="md">
               <Button type="submit">Submit</Button>
