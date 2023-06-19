@@ -16,14 +16,15 @@ export default function SubmitLink() {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(values).toString(),
     })
-      .then(() =>
+      .then(() => {
         notifications.show({
           icon: <IoCheckmark />,
           color: "green",
           title: "Success!",
-          message: "Your suggestion was received. We will review it shortly.",
-        })
-      )
+          message: "Your suggestion was received! It will be added after review. Thank you! 🙏",
+        });
+        form.reset();
+      })
       .catch((_error) =>
         notifications.show({
           icon: <IoCloseCircle />,
