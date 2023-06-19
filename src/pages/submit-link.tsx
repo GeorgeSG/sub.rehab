@@ -1,7 +1,18 @@
 import { PageHeader } from "@/components/core/page-header";
 import { Section } from "@/components/core/section";
 import { useSubredditData } from "@/data";
-import { Anchor, Box, Button, Group, List, Select, Text, TextInput, Title } from "@mantine/core";
+import {
+  Anchor,
+  Box,
+  Button,
+  Checkbox,
+  Group,
+  List,
+  Select,
+  Text,
+  TextInput,
+  Title,
+} from "@mantine/core";
 import { useForm } from "@mantine/form";
 import { notifications } from "@mantine/notifications";
 import { IoCheckmark, IoCloseCircle } from "react-icons/io5";
@@ -46,6 +57,8 @@ export default function SubmitLink() {
       subreddit: "",
       service: "",
       link: "",
+      official: false,
+      officialExplanation: "",
       "form-name": "linkSuggestions",
     },
 
@@ -106,7 +119,7 @@ export default function SubmitLink() {
         <Title order={2} mt="xxl" sx={{ fontFamily: "var(--font-accent)" }}>
           Suggest a link
         </Title>
-        <Box maw={300} mt="xxl">
+        <Box maw={400} mt="xxl">
           <form
             onSubmit={form.onSubmit((values) => handleSubmit(values))}
             data-netlify="true"
@@ -115,6 +128,7 @@ export default function SubmitLink() {
             <TextInput type="hidden" name="form-name" {...form.getInputProps("form-name")} />
             <TextInput
               withAsterisk
+              mt="xs"
               name="subreddit"
               label="Original subreddit:"
               placeholder="r/..."
@@ -123,6 +137,7 @@ export default function SubmitLink() {
 
             <Select
               withAsterisk
+              mt="xs"
               label="Service:"
               name="service"
               placeholder=""
@@ -132,10 +147,27 @@ export default function SubmitLink() {
 
             <TextInput
               withAsterisk
+              mt="xs"
               name="link"
               label="Alternative Link:"
               placeholder="https://..."
               {...form.getInputProps("link")}
+            />
+
+            <Checkbox
+              name="official"
+              mt="md"
+              label="Is official?"
+              {...form.getInputProps("official")}
+              checked={form.values.official}
+            ></Checkbox>
+
+            <TextInput
+              mt="xs"
+              name="officialExplanation"
+              placeholder="Source or proof that this is an official alternative"
+              label="Official explanation:"
+              {...form.getInputProps("officialExplanation")}
             />
 
             <Group position="right" mt="md">
