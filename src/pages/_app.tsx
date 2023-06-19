@@ -6,6 +6,7 @@ import { ModalsProvider } from "@mantine/modals";
 import type { AppProps } from "next/app";
 import { Inter, Lobster } from "next/font/google";
 import Head from "next/head";
+import { Notifications } from "@mantine/notifications";
 
 const fontAccent = Lobster({ weight: "400", subsets: ["latin"], variable: "--font-accent" });
 const fontDefault = Inter({ subsets: ["latin"], variable: "--font-default" });
@@ -54,6 +55,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <ColorSchemeProvider colorScheme={colorScheme} toggleColorScheme={toggleColorScheme}>
         <MantineProvider withGlobalStyles withNormalizeCSS theme={{ ...theme, colorScheme }}>
           <ModalsProvider>
+            <Notifications />
             <div className="background" />
             <main className={`wrapper ${fontAccent.variable} ${fontDefault.variable}`}>
               <Component {...pageProps} />

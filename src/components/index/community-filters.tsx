@@ -10,6 +10,7 @@ import {
   createStyles,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
+import { notifications } from "@mantine/notifications";
 import { useRouter } from "next/router";
 import { useCallback, useMemo } from "react";
 import {
@@ -119,6 +120,12 @@ export function CommunityFilters({ filter, setFilter }: CommunityFiltersProps) {
           onChange={(newServices) => {
             if (newServices.length) {
               setFilterAndPushParams({ visibleServices: newServices });
+            } else {
+              notifications.show({
+                color: "red",
+                title: "Ooops 🙈",
+                message: "There must always be at least one service selected",
+              });
             }
           }}
           withinPortal

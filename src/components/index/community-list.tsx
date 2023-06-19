@@ -3,11 +3,10 @@ import { useSubredditData } from "@/data";
 import { useIsLinkNew } from "@/hooks/use-is-link-new";
 import data from "@/subreddits";
 import { Paper, SimpleGrid, Title } from "@mantine/core";
-import { useSetState } from "@mantine/hooks";
+import { useRouter } from "next/router";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { Community } from "./community";
 import { CommunityFilters, Filter } from "./community-filters";
-import { useRouter } from "next/router";
 
 const PAGE_SIZE = 30;
 
