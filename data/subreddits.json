@@ -1846,29 +1846,6 @@
       ]
     },
     {
-      "name": "r/formula1",
-      "links": [
-        {
-          "service": "misc",
-          "url": "https://squabbles.io/s/formula1",
-          "official": false,
-          "added_ts": 1687197666581
-        },
-        {
-          "service": "lemmy",
-          "url": "https://lemmy.ml/c/formula1",
-          "official": false,
-          "added_ts": 1687203078648
-        },
-        {
-          "service": "misc",
-          "url": "https://squabbles.io/s/formula1",
-          "official": false,
-          "added_ts": 1687203514812
-        }
-      ]
-    },
-    {
       "name": "r/iPhone",
       "links": [
         { "service": "discord", "url": "https://discord.com/invite/r5McVVhqqs", "official": true },
@@ -1995,6 +1972,35 @@
           "url": "https://discord.com/invite/apstudents",
           "official": true,
           "added_ts": 1687208410466
+        }
+      ]
+    },
+    {
+      "name": "r/formula1",
+      "links": [
+        {
+          "service": "misc",
+          "url": "https://squabbles.io/s/formula1",
+          "official": false,
+          "added_ts": 1687197666581
+        },
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.ml/c/formula1",
+          "official": false,
+          "added_ts": 1687203078648
+        },
+        {
+          "service": "misc",
+          "url": "https://squabbles.io/s/formula1",
+          "official": false,
+          "added_ts": 1687203514812
+        },
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/formula1",
+          "official": false,
+          "added_ts": 1687210236867
         }
       ]
     }
