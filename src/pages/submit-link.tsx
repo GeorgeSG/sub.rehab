@@ -93,13 +93,16 @@ export default function SubmitLink() {
             <TextInput type="hidden" name="form-name" {...form.getInputProps("form-name")} />
             <TextInput
               withAsterisk
+              name="subreddit"
               label="Original subreddit:"
               placeholder="r/..."
               {...form.getInputProps("subreddit")}
             />
 
             <Select
+              withAsterisk
               label="Service:"
+              name="service"
               placeholder=""
               data={uniqueServiceList}
               {...form.getInputProps("service")}
@@ -107,6 +110,7 @@ export default function SubmitLink() {
 
             <TextInput
               withAsterisk
+              name="link"
               label="Alternative Link:"
               placeholder="https://..."
               {...form.getInputProps("link")}
