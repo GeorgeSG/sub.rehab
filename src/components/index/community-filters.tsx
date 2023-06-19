@@ -10,6 +10,7 @@ import {
   createStyles,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
+import { useRouter } from "next/router";
 import { useCallback, useMemo } from "react";
 import {
   IoCheckmarkCircleOutline,
@@ -61,7 +62,7 @@ const useStyles = createStyles((theme) => ({
 }));
 
 export type Filter = {
-  searchParam: string;
+  searchTerm: string;
   visibleServices: string[];
   officialOnly: boolean;
   newOnly: boolean;
@@ -69,18 +70,28 @@ export type Filter = {
 
 export type CommunityFiltersProps = {
   filter: Filter;
-  setFilter: React.Dispatch<React.SetStateAction<Partial<Filter>>>;
+  setFilter: React.Dispatch<React.SetStateAction<Filter>>;
 };
 
 export function CommunityFilters({ filter, setFilter }: CommunityFiltersProps) {
   const { classes } = useStyles();
   const { uniqueServiceList } = useSubredditData();
+  const router = useRouter();
+
+  const setFilterAndPushParams = useCallback(
+    (newFilter: Partial<Filter>) => {
+      setFilter((prev) => {
+        router.push({ query: { ...prev, ...newFilter } });
+        return { ...prev, ...newFilter };
+      });
+    },
+    [setFilter]
+  );
 
   const [opened, { open, close }] = useDisclosure(false);
-
-  const onChangeSearchParam = useCallback(
-    (value: string) => setFilter({ searchParam: value }),
-    [setFilter]
+  const onChangeSearchTerm = useCallback(
+    (value: string) => setFilterAndPushParams({ searchTerm: value }),
+    [setFilterAndPushParams]
   );
 
   const filters = useMemo(
@@ -89,15 +100,14 @@ export function CommunityFilters({ filter, setFilter }: CommunityFiltersProps) {
         <TextInput
           data-autofocus
           placeholder="Search"
-          value={filter.searchParam}
+          value={filter.searchTerm}
           size="md"
-          onChange={(e) => onChangeSearchParam(e.currentTarget.value)}
+          onChange={(e) => onChangeSearchTerm(e.currentTarget.value)}
           icon={<IoSearch />}
-          rightSection={<IoCloseOutline onClick={() => onChangeSearchParam("")} />}
+          rightSection={<IoCloseOutline onClick={() => onChangeSearchTerm("")} />}
           className={classes.searchInput}
         />
         <MultiSelect
-          clearable
           clearButtonProps={{ "aria-label": "Clear services" }}
           icon={<IoGlobeOutline />}
           className={classes.multiSelect}
@@ -106,7 +116,11 @@ export function CommunityFilters({ filter, setFilter }: CommunityFiltersProps) {
           size="md"
           data={uniqueServiceList}
           value={filter.visibleServices}
-          onChange={(visibleServices) => setFilter({ visibleServices })}
+          onChange={(newServices) => {
+            if (newServices.length) {
+              setFilterAndPushParams({ visibleServices: newServices });
+            }
+          }}
           withinPortal
         />
         <Checkbox
@@ -121,7 +135,7 @@ export function CommunityFilters({ filter, setFilter }: CommunityFiltersProps) {
             </Tooltip>
           }
           checked={filter.officialOnly}
-          onChange={(e) => setFilter(() => ({ officialOnly: e.target.checked }))}
+          onChange={(e) => setFilterAndPushParams({ officialOnly: e.target.checked })}
         />
         <Checkbox
           classNames={{ body: classes.checkbox }}
@@ -132,11 +146,11 @@ export function CommunityFilters({ filter, setFilter }: CommunityFiltersProps) {
             </Tooltip>
           }
           checked={filter.newOnly}
-          onChange={(e) => setFilter(() => ({ newOnly: e.target.checked }))}
+          onChange={(e) => setFilterAndPushParams({ newOnly: e.target.checked })}
         />
       </div>
     ),
-    [filter, onChangeSearchParam, setFilter, uniqueServiceList, classes]
+    [filter, setFilterAndPushParams, uniqueServiceList, classes, onChangeSearchTerm]
   );
 
   return (

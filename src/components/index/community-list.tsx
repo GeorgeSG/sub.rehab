@@ -7,15 +7,33 @@ import { useSetState } from "@mantine/hooks";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { Community } from "./community";
 import { CommunityFilters, Filter } from "./community-filters";
+import { useRouter } from "next/router";
 
 const PAGE_SIZE = 30;
 
 export function CommunityList() {
   const { uniqueServiceList } = useSubredditData();
+  const router = useRouter();
   const isLinkNew = useIsLinkNew();
 
-  const [filter, setFilter] = useSetState<Filter>({
-    searchParam: "",
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const urlVisibleServices =
+        typeof router.query.visibleServices === "string"
+          ? [router.query.visibleServices]
+          : router.query.visibleServices;
+
+      setFilter({
+        searchTerm: (router.query.searchTerm as string) || "",
+        visibleServices: urlVisibleServices || uniqueServiceList,
+        officialOnly: (router.query.officialOnly as string) === "true" || false,
+        newOnly: (router.query.newOnly as string) === "true" || false,
+      });
+    }
+  }, [router.query]);
+
+  const [filter, setFilter] = useState<Filter>({
+    searchTerm: "",
     visibleServices: uniqueServiceList,
     officialOnly: false,
     newOnly: false,
@@ -34,7 +52,7 @@ export function CommunityList() {
       data.subs
         .filter(
           (sub) =>
-            sub.name.toLowerCase().includes(filter.searchParam.toLowerCase()) &&
+            sub.name.toLowerCase().includes(filter.searchTerm.toLowerCase()) &&
             sub.links.some(isLinkVisible)
         )
         .sort((a, b) => a.name.localeCompare(b.name)),
@@ -76,9 +94,9 @@ export function CommunityList() {
 
         {visibleSubs.length === 0 && (
           <Paper mt="xxl" px="xxs" style={{ background: "transparent" }}>
-            {filter.searchParam ? (
+            {filter.searchTerm ? (
               <>
-                No results matching <strong>&quot;{filter.searchParam}&quot;</strong> found.
+                No results matching <strong>&quot;{filter.searchTerm}&quot;</strong> found.
               </>
             ) : (
               <>No results found.</>
