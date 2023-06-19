@@ -3,15 +3,12 @@ import { Section } from "@/components/core/section";
 import { useSubredditData } from "@/data";
 import { Anchor, Box, Button, Group, List, Select, Text, TextInput, Title } from "@mantine/core";
 import { useForm } from "@mantine/form";
-import { z } from "zod";
 
 export default function SubmitLink() {
   const { uniqueServiceList, allLinks } = useSubredditData();
 
   // TODO: type values
   const handleSubmit = (values: any) => {
-    console.log(values);
-
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -87,7 +84,11 @@ export default function SubmitLink() {
           Suggest a link
         </Title>
         <Box maw={300} mt="xxl">
-          <form onSubmit={handleSubmit} data-netlify="true">
+          <form
+            onSubmit={form.onSubmit((values) => handleSubmit(values))}
+            data-netlify="true"
+            name="linkSuggestions"
+          >
             <TextInput
               withAsterisk
               label="Original subreddit:"
