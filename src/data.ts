@@ -35,5 +35,12 @@ export function useSubredditData() {
     [allLinks]
   );
 
-  return { uniqueServiceList, communitiesCount, linksCount, officialLinksCount, countPerService };
+  return {
+    uniqueServiceList,
+    communitiesCount,
+    linksCount,
+    officialLinksCount,
+    countPerService,
+    allLinks,
+  };
 }

@@ -52,9 +52,9 @@ export default function Home() {
           <Statistics />
         </div>
         <Flex gap="xs">
-          <GradientButton<"a">
-            component="a"
-            href="https://github.com/GeorgeSG/sub.rehab/discussions/1"
+          <GradientButton<typeof Link>
+            component={Link}
+            href="/submit-link"
             onClick={(e) => {
               if (showRulesConfirm) {
                 e.preventDefault();
@@ -95,7 +95,6 @@ export default function Home() {
                 });
               }
             }}
-            target="_blank"
             leftIcon={<IoAdd />}
           >
             Suggest link
