@@ -86,8 +86,8 @@ export function CommunityFilters({ filter, setFilter }: CommunityFiltersProps) {
         return { ...prev, ...newFilter };
       });
     },
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     // omitting router.push from deps because it'll cause an infinite loop
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     [setFilter]
   );
 
