@@ -8,6 +8,8 @@ import { useCallback, useEffect, useMemo, useState } from "react";
 import { Community } from "./community";
 import { CommunityFilters, Filter } from "./community-filters";
 
+const PAGE_SIZE = 30;
+
 export function CommunityList() {
   const { uniqueServiceList } = useSubredditData();
   const isLinkNew = useIsLinkNew();
@@ -41,7 +43,7 @@ export function CommunityList() {
 
   const [page, setPage] = useState(1);
 
-  const visibleSubs = useMemo(() => filteredSubs.slice(0, page * 20), [filteredSubs, page]);
+  const visibleSubs = useMemo(() => filteredSubs.slice(0, page * PAGE_SIZE), [filteredSubs, page]);
 
   useEffect(() => {
     // Refresh page when filter changes
