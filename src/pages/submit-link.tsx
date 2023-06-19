@@ -3,6 +3,8 @@ import { Section } from "@/components/core/section";
 import { useSubredditData } from "@/data";
 import { Anchor, Box, Button, Group, List, Select, Text, TextInput, Title } from "@mantine/core";
 import { useForm } from "@mantine/form";
+import { notifications } from "@mantine/notifications";
+import { IoCheckmark, IoCloseCircle } from "react-icons/io5";
 
 export default function SubmitLink() {
   const { uniqueServiceList, allLinks } = useSubredditData();
@@ -14,8 +16,28 @@ export default function SubmitLink() {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(values).toString(),
     })
-      .then(() => console.log("Form successfully submitted"))
-      .catch((error) => alert(error));
+      .then(() =>
+        notifications.show({
+          icon: <IoCheckmark />,
+          color: "green",
+          title: "Success!",
+          message: "Your suggestion was received. We will review it shortly.",
+        })
+      )
+      .catch((_error) =>
+        notifications.show({
+          icon: <IoCloseCircle />,
+          color: "red",
+          title: "Error",
+          message: (
+            <>
+              We were unable to process your request. Sorry about that. Let us know in a&nbsp;
+              <Anchor href="https://github.com/GeorgeSG/sub.rehab/issues">GitHub issue</Anchor>
+              &nbsp;
+            </>
+          ),
+        })
+      );
   };
 
   const form = useForm({
