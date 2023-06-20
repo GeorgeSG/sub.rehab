@@ -2,6 +2,10 @@
 /.next/
 /build
 /out
+/bin/forms/*.json
+/bin/forms/toDelete
+/bin/forms/toSkip
+
 .DS_Store
 npm-debug.log*
 .env*.local
@@ -10,3 +14,6 @@ next-env.d.ts
 # Local Netlify folder
 .netlify
 .env
+*.cache
+
+*firebase*

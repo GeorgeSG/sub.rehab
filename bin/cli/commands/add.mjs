@@ -1,7 +1,7 @@
 import { select, confirm, input } from "@inquirer/prompts";
-import { writeData, data } from "../data.mjs";
-import { subSchema, validateSubList } from "../validation.mjs";
-import { chalkSuccess, error, warning, success } from "../output-utils.mjs";
+import { writeData, data } from "../../data.mjs";
+import { subSchema, validateSubList } from "../../validation.mjs";
+import { chalkSuccess, error, warning, success } from "../../output-utils.mjs";
 import chalk from "chalk";
 
 const knownServices = ["discord", "lemmy", "kbin", "matrix"];
