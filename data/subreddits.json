@@ -161,10 +161,6 @@
       ]
     },
     {
-      "name": "r/nba",
-      "links": [{ "service": "misc", "url": "https://twitter.com/NBA_Reddit", "official": true }]
-    },
-    {
       "name": "r/fuckcars",
       "links": [
         { "service": "lemmy", "url": "https://lemmy.ml/c/fuck_cars", "official": true },
@@ -379,7 +375,7 @@
     {
       "name": "r/financialmodelling",
       "links": [
-        { "service": "misc", "url": "https://squabbles.io/s/FinancialModelling", "official": true }
+        { "service": "squabbles", "url": "https://squabbles.io/s/FinancialModelling", "official": true }
       ]
     },
     {
@@ -776,7 +772,7 @@
           "added_ts": 1687126068787
         },
         {
-          "service": "misc",
+          "service": "squabbles",
           "url": "https://squabbles.io/s/selfhosted",
           "official": false,
           "added_ts": 1687126083618
@@ -1223,7 +1219,7 @@
           "added_ts": 1687196515063
         },
         {
-          "service": "misc",
+          "service": "squabbles",
           "url": "https://squabbles.io/s/Buttcoin",
           "official": true,
           "added_ts": 1687196529494
@@ -1385,7 +1381,7 @@
         { "service": "lemmy", "url": "https://beehaw.org/c/gaming" },
         { "service": "kbin", "url": "https://kbin.social/m/gaming" },
         {
-          "service": "misc",
+          "service": "squabbles",
           "url": "https://squabbles.io/s/gaming",
           "official": false,
           "added_ts": 1687197686984
@@ -1396,7 +1392,7 @@
       "name": "r/xbox",
       "links": [
         {
-          "service": "misc",
+          "service": "squabbles",
           "url": "https://squabbles.io/s/Xbox",
           "official": false,
           "added_ts": 1687197737720
@@ -1407,7 +1403,7 @@
       "name": "r/anarchism",
       "links": [
         {
-          "service": "misc",
+          "service": "raddle",
           "url": "https://raddle.me/f/Anarchism",
           "official": true,
           "added_ts": 1687197868501
@@ -1458,7 +1454,7 @@
           "added_ts": 1687119835162
         },
         {
-          "service": "misc",
+          "service": "squabbles",
           "url": "https://squabbles.io/s/boardgames",
           "official": false,
           "added_ts": 1687197797089
@@ -1517,7 +1513,7 @@
       "links": [
         { "service": "discord", "url": "https://discord.com/invite/StarWars", "official": true },
         {
-          "service": "misc",
+          "service": "squabbles",
           "url": "https://squabbles.io/s/StarWars",
           "official": false,
           "added_ts": 1687197704922
@@ -1546,7 +1542,7 @@
       "links": [
         { "service": "kbin", "url": "https://kbin.social/m/books" },
         {
-          "service": "misc",
+          "service": "squabbles",
           "url": "https://squabbles.io/s/books",
           "official": false,
           "added_ts": 1687203458818
@@ -1557,7 +1553,7 @@
       "name": "r/cosmere",
       "links": [
         {
-          "service": "misc",
+          "service": "squabbles",
           "url": "https://squabbles.io/s/cosmere",
           "official": false,
           "added_ts": 1687203476648
@@ -1575,7 +1571,7 @@
           "added_ts": 1687203332802
         },
         {
-          "service": "misc",
+          "service": "squabbles",
           "url": "https://squabbles.io/s/iPhone",
           "official": false,
           "added_ts": 1687203533415
@@ -1586,7 +1582,7 @@
       "name": "r/iOS",
       "links": [
         {
-          "service": "misc",
+          "service": "squabbles",
           "url": "https://squabbles.io/s/iOS",
           "official": false,
           "added_ts": 1687203549196
@@ -1787,7 +1783,7 @@
       "name": "r/autism",
       "links": [
         {
-          "service": "misc",
+          "service": "squabbles",
           "url": "https://squabbles.io/s/autism",
           "official": false,
           "added_ts": 1687197254405
@@ -1960,7 +1956,7 @@
         { "service": "lemmy", "url": "https://beehaw.org/c/music" },
         { "service": "kbin", "url": "https://kbin.social/m/music" },
         {
-          "service": "misc",
+          "service": "squabbles",
           "url": "https://squabbles.io/s/music",
           "official": false,
           "added_ts": 1687280890862
@@ -2015,7 +2011,7 @@
       "name": "r/dadjokes",
       "links": [
         {
-          "service": "misc",
+          "service": "squabbles",
           "url": "https://squabbles.io/s/dadjokes",
           "official": false,
           "added_ts": 1687280983791
@@ -2026,7 +2022,7 @@
       "name": "r/ffxiv",
       "links": [
         {
-          "service": "misc",
+          "service": "squabbles",
           "url": "https://squabbles.io/s/ffxiv",
           "official": false,
           "added_ts": 1687280990898
@@ -2037,7 +2033,7 @@
       "name": "r/art",
       "links": [
         {
-          "service": "misc",
+          "service": "squabbles",
           "url": "https://squabbles.io/s/art",
           "official": false,
           "added_ts": 1687280997768
@@ -2072,7 +2068,7 @@
           "added_ts": 1687203242251
         },
         {
-          "service": "misc",
+          "service": "squabbles",
           "url": "https://squabbles.io/s/aww",
           "official": false,
           "added_ts": 1687281017596
@@ -2089,7 +2085,7 @@
           "added_ts": 1687119835162
         },
         {
-          "service": "misc",
+          "service": "squabbles",
           "url": "https://squabbles.io/s/pics",
           "official": false,
           "added_ts": 1687281028799
@@ -2103,13 +2099,13 @@
         { "service": "discord", "url": "https://discord.gg/196cord", "official": true },
         { "service": "kbin", "url": "https://fedi196.gay/", "official": true },
         {
-          "service": "misc",
+          "service": "raddle",
           "url": "https://raddle.me/f/196",
           "official": false,
           "added_ts": 1687280625700
         },
         {
-          "service": "misc",
+          "service": "squabbles",
           "url": "https://squabbles.io/s/196",
           "official": false,
           "added_ts": 1687281037711
@@ -2244,7 +2240,7 @@
           "added_ts": 1687279758616
         },
         {
-          "service": "misc",
+          "service": "squabbles",
           "url": "https://squabbles.io/s/programmerHumor",
           "official": false,
           "added_ts": 1687282287262
@@ -2395,13 +2391,13 @@
         { "service": "lemmy", "url": "https://lemmy.ml/c/asklemmy" },
         { "service": "kbin", "url": "https://kbin.social/m/AskKbin" },
         {
-          "service": "misc",
+          "service": "raddle",
           "url": "https://raddle.me/f/AskRaddle",
           "official": false,
           "added_ts": 1687281359479
         },
         {
-          "service": "misc",
+          "service": "squabbles",
           "url": "https://squabbles.io/s/AskSquabble",
           "official": false,
           "added_ts": 1687282601970
@@ -2434,7 +2430,7 @@
       "name": "r/touhou",
       "links": [
         {
-          "service": "misc",
+          "service": "raddle",
           "url": "https://raddle.me/f/touhou",
           "official": true,
           "added_ts": 1687282718709
@@ -2445,7 +2441,7 @@
       "name": "r/funny",
       "links": [
         {
-          "service": "misc",
+          "service": "squabbles",
           "url": "https://squabbles.io/s/funny",
           "official": false,
           "added_ts": 1687282724863
@@ -2511,7 +2507,7 @@
       "name": "r/formula1",
       "links": [
         {
-          "service": "misc",
+          "service": "squabbles",
           "url": "https://squabbles.io/s/formula1",
           "official": false,
           "added_ts": 1687197666581
@@ -2523,7 +2519,7 @@
           "added_ts": 1687203078648
         },
         {
-          "service": "misc",
+          "service": "squabbles",
           "url": "https://squabbles.io/s/formula1",
           "official": false,
           "added_ts": 1687203514812
@@ -2598,7 +2594,7 @@
       "links": [
         { "service": "kbin", "url": "https://kbin.social/m/science" },
         {
-          "service": "misc",
+          "service": "squabbles",
           "url": "https://squabbles.io/s/science",
           "official": false,
           "added_ts": 1687197776532
@@ -2626,7 +2622,7 @@
       "name": "r/LesbianJermaFans",
       "links": [
         {
-          "service": "misc",
+          "service": "raddle",
           "url": "https://raddle.me/f/LesbianJermaFans",
           "official": true,
           "added_ts": 1687283440944
@@ -2639,7 +2635,7 @@
         { "service": "lemmy", "url": "https://lemmy.ml/c/worldnews" },
         { "service": "kbin", "url": "https://kbin.social/m/worldnews" },
         {
-          "service": "misc",
+          "service": "squabbles",
           "url": "https://squabbles.io/s/worldnews",
           "official": false,
           "added_ts": 1687282678933
@@ -2656,7 +2652,7 @@
       "name": "r/Jerma",
       "links": [
         {
-          "service": "misc",
+          "service": "raddle",
           "url": "https://raddle.me/f/Jerma",
           "official": false,
           "added_ts": 1687283546934
@@ -2783,7 +2779,7 @@
         { "service": "lemmy", "url": "https://beehaw.org/c/politics" },
         { "service": "kbin", "url": "https://kbin.social/m/politics" },
         {
-          "service": "misc",
+          "service": "squabbles",
           "url": "https://squabbles.io/s/politics",
           "official": false,
           "added_ts": 1687284724627
@@ -2811,7 +2807,7 @@
           "added_ts": 1687282496012
         },
         {
-          "service": "misc",
+          "service": "squabbles",
           "url": "https://squabbles.io/s/DoctorWho",
           "official": false,
           "added_ts": 1687284755083
@@ -2833,7 +2829,7 @@
       "name": "r/classicalmusic",
       "links": [
         {
-          "service": "misc",
+          "service": "squabbles",
           "url": "https://squabbles.io/s/ClassicalMusic",
           "official": false,
           "added_ts": 1687284770515
@@ -2844,7 +2840,7 @@
       "name": "r/torties",
       "links": [
         {
-          "service": "misc",
+          "service": "squabbles",
           "url": "https://squabbles.io/s/Torties",
           "official": false,
           "added_ts": 1687284795772
@@ -2927,7 +2923,7 @@
           "added_ts": 1687281402787
         },
         {
-          "service": "misc",
+          "service": "squabbles",
           "url": "https://squabbles.io/s/anime",
           "official": false,
           "added_ts": 1687285012241
@@ -2988,7 +2984,7 @@
       "name": "r/eyebleach",
       "links": [
         {
-          "service": "misc",
+          "service": "squabbles",
           "url": "https://squabbles.io/s/Eyebleach",
           "official": false,
           "added_ts": 1687285214304
@@ -3010,7 +3006,7 @@
       "name": "r/reactiongifs",
       "links": [
         {
-          "service": "misc",
+          "service": "squabbles",
           "url": "https://squabbles.io/s/reactiongifs",
           "official": false,
           "added_ts": 1687285276832
@@ -3052,7 +3048,7 @@
           "added_ts": 1687203282908
         },
         {
-          "service": "misc",
+          "service": "squabbles",
           "url": "https://squabbles.io/s/Cats",
           "official": false,
           "added_ts": 1687285290161
@@ -3162,7 +3158,7 @@
       "name": "r/Rabbits",
       "links": [
         {
-          "service": "misc",
+          "service": "squabbles",
           "url": "https://squabbles.io/s/Rabbits",
           "official": false,
           "added_ts": 1687285420185
@@ -3173,7 +3169,7 @@
       "name": "r/food",
       "links": [
         {
-          "service": "misc",
+          "service": "lemmy",
           "url": "https://beehaw.org/c/food",
           "official": false,
           "added_ts": 1687285542413
@@ -3230,7 +3226,7 @@
           "added_ts": 1687285692440
         },
         {
-          "service": "misc",
+          "service": "squabbles",
           "url": "https://squabbles.io/s/ELI5",
           "official": false,
           "added_ts": 1687286669848
@@ -3275,7 +3271,7 @@
       "name": "r/transclones",
       "links": [
         {
-          "service": "misc",
+          "service": "raddle",
           "url": "https://raddle.me/f/transclones",
           "official": true,
           "added_ts": 1687285814408
@@ -3292,7 +3288,7 @@
           "added_ts": 1687284892442
         },
         {
-          "service": "misc",
+          "service": "raddle",
           "url": "https://raddle.me/f/egg_irl",
           "official": true,
           "added_ts": 1687285836238
@@ -3326,7 +3322,7 @@
           "added_ts": 1687285098827
         },
         {
-          "service": "misc",
+          "service": "raddle",
           "url": "https://raddle.me/f/traaaaaaannnnnnnnnns",
           "official": false,
           "added_ts": 1687285865263
@@ -3337,7 +3333,7 @@
       "name": "r/solarpunk",
       "links": [
         {
-          "service": "misc",
+          "service": "raddle",
           "url": "https://raddle.me/f/solarpunk",
           "official": true,
           "added_ts": 1687285876749
@@ -3348,7 +3344,7 @@
       "name": "r/movies",
       "links": [
         {
-          "service": "misc",
+          "service": "squabbles",
           "url": "https://squabbles.io/s/movies",
           "official": false,
           "added_ts": 1687284899813
@@ -3387,7 +3383,7 @@
       "name": "r/trans",
       "links": [
         {
-          "service": "misc",
+          "service": "raddle",
           "url": "https://raddle.me/f/trans",
           "official": false,
           "added_ts": 1687285967896
@@ -3566,7 +3562,7 @@
         { "service": "lemmy", "url": "https://forum.rhombik.com", "official": true },
         { "service": "lemmy", "url": "https://lemmy.world/c/3dprinting", "official": true },
         {
-          "service": "misc",
+          "service": "squabbles",
           "url": "https://squabbles.io/s/3DPrinting",
           "official": false,
           "added_ts": 1687286437204
@@ -3638,7 +3634,7 @@
       "name": "r/daddit",
       "links": [
         {
-          "service": "misc",
+          "service": "squabbles",
           "url": "https://squabbles.io/s/DadSquab",
           "official": false,
           "added_ts": 1687286676958
@@ -3649,7 +3645,7 @@
       "name": "r/Mommit",
       "links": [
         {
-          "service": "misc",
+          "service": "squabbles",
           "url": "https://squabbles.io/s/MomSquab",
           "official": false,
           "added_ts": 1687286682550
@@ -4022,7 +4018,7 @@
           "added_ts": 1687283379803
         },
         {
-          "service": "misc",
+          "service": "squabbles",
           "url": "https://squabbles.io/s/Apple",
           "official": false,
           "added_ts": 1687287847017
@@ -4039,7 +4035,7 @@
           "added_ts": 1687196038197
         },
         {
-          "service": "misc",
+          "service": "squabbles",
           "url": "https://squabbles.io/s/ADHDMemes",
           "official": false,
           "added_ts": 1687287852973
@@ -4062,7 +4058,7 @@
           "added_ts": 1687286214840
         },
         {
-          "service": "misc",
+          "service": "squabbles",
           "url": "https://squabbles.io/s/adhd",
           "official": false,
           "added_ts": 1687287858228

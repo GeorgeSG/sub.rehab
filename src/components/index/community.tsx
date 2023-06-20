@@ -18,6 +18,8 @@ const SERVICE_ICONS: Record<string, string> = {
   kbin: "/images/kbin.svg",
   misc: "/images/web.svg",
   matrix: "/images/matrix.png",
+  squabbles: "/images/squabbles.png",
+  raddle: "",
 };
 
 const useStyles = createStyles(({ colors, colorScheme, spacing, radius, other }) => {

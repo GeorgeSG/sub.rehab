@@ -4,7 +4,7 @@ import { subSchema, validateSubList } from "../../validation.mjs";
 import { chalkSuccess, error, warning, success } from "../../output-utils.mjs";
 import chalk from "chalk";
 
-const knownServices = ["discord", "lemmy", "kbin", "matrix"];
+const knownServices = ["discord", "lemmy", "kbin", "matrix", "squabbles", "raddle"];
 
 const createLink = async () => {
   let url = await input({ message: "Link URL:" });

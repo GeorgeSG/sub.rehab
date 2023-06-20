@@ -19,7 +19,7 @@ const shouldSkip = (submissionId) => {
 };
 
 export const startCommand = async () => {
-  const knownServices = ["discord", "lemmy", "kbin", "matrix", "misc"];
+  const knownServices = ["discord", "lemmy", "kbin", "matrix", "misc", "squabbles", "raddle"];
   const currentSubmissions = JSON.parse(readFileSync(new URL("./forms.json", import.meta.url)));
 
   const suggestions = currentSubmissions.map(({ id, data }) => ({ id, data }));
