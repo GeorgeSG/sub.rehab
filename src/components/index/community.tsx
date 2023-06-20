@@ -1,7 +1,6 @@
 import { useIsLinkNew } from "@/hooks/use-is-link-new";
-import { Anchor, Indicator, Text, Title, Tooltip, createStyles } from "@mantine/core";
-import { useCallback } from "react";
-import { IoCheckmarkCircleOutline } from "react-icons/io5";
+import { Anchor, Indicator, Title, createStyles } from "@mantine/core";
+import { useCallback, useMemo } from "react";
 
 type Link = {
   service: string;
@@ -76,16 +75,40 @@ export function Community({ name, links, homeInstance }: CommunityProps) {
   const { classes } = useStyles();
   const isLinkNew = useIsLinkNew();
 
+  const homeInstanceURL = useMemo(() => {
+    if (homeInstance.length === 0) {
+      return null;
+    }
+    let hs = homeInstance.replace("http://", "https://");
+    hs = hs.startsWith("https://") ? hs : `https://${hs}`;
+
+    try {
+      const url = new URL(hs);
+      return url;
+    } catch {
+      return null;
+    }
+  }, [homeInstance]);
+
+  const supportsHomeInstance = (link: Link) => {
+    if (link.service !== "lemmy" && link.service !== "kbin") {
+      return false;
+    }
+
+    const url = new URL(link.url);
+
+    return homeInstanceURL && url.host !== homeInstanceURL.host;
+  };
+
   const getSubredditLink = useCallback(
     (link: Link) => {
-      if (
-        homeInstance.length > 0 &&
-        (link.service === "lemmy" || link.service === "kbin") &&
-        !link.url.includes(homeInstance)
-      ) {
-        return `${homeInstance}/c/${link.url.split("/").pop()}@${
-          link.url.split("https://")[1].split("/")[0]
-        }`;
+      if (supportsHomeInstance(link) && homeInstanceURL) {
+        const url = new URL(link.url);
+        if (url.pathname !== "/") {
+          return `${homeInstanceURL.host}${homeInstanceURL.pathname}${url.pathname.split("/")[2]}@${
+            url.host
+          }`;
+        }
       }
 
       return link.url.split("://")[1];
@@ -120,23 +143,6 @@ export function Community({ name, links, homeInstance }: CommunityProps) {
                   style={{ objectFit: "contain" }}
                 />
               </Indicator>
-            )}
-            <Text sx={{ textOverflow: "ellipsis", overflow: "hidden", textWrap: "nowrap" }}>
-              {getSubredditLink(link)}
-            </Text>
-            {link.official && (
-              <Tooltip
-                label={
-                  <>
-                    verified from <strong>{name}</strong>
-                  </>
-                }
-                withArrow
-              >
-                <Text className={classes.official}>
-                  <IoCheckmarkCircleOutline size={20} />
-                </Text>
-              </Tooltip>
             )}
           </Anchor>
         ))}
