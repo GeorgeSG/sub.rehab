@@ -2,11 +2,12 @@ import { Section } from "@/components/core/section";
 import { useSubredditData } from "@/data";
 import { useIsLinkNew } from "@/hooks/use-is-link-new";
 import data from "@/subreddits";
-import { Paper, SimpleGrid, Title } from "@mantine/core";
+import { Paper, SimpleGrid, TextInput, Title } from "@mantine/core";
 import { useRouter } from "next/router";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { Community } from "./community";
 import { CommunityFilters, Filter } from "./community-filters";
+import { IoCloseOutline, IoHomeOutline, IoSearch } from "react-icons/io5";
 
 const PAGE_SIZE = 30;
 
@@ -83,12 +84,23 @@ export function CommunityList() {
     }
   };
 
+  const [homeInstance, setHomeInstance] = useState<string>("");
+
   return (
     <>
       <Section mt="xxl">
         <Title order={2} sx={{ fontFamily: "var(--font-accent)" }}>
           Communities
         </Title>
+        <TextInput
+          placeholder="Home instance"
+          value={homeInstance}
+          size="md"
+          onChange={(e) => setHomeInstance(e.currentTarget.value)}
+          icon={<IoHomeOutline />}
+          rightSection={<IoCloseOutline onClick={() => setHomeInstance("")} />}
+        />
+
         <CommunityFilters {...{ filter, setFilter }} />
 
         {visibleSubs.length === 0 && (
@@ -113,7 +125,12 @@ export function CommunityList() {
           ]}
         >
           {visibleSubs.map(({ name, links }) => (
-            <Community key={name} name={name} links={links.filter(isLinkVisible)} />
+            <Community
+              key={name}
+              name={name}
+              links={links.filter(isLinkVisible)}
+              homeInstance={homeInstance}
+            />
           ))}
         </SimpleGrid>
       </Section>

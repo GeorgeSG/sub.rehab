@@ -1,15 +1,19 @@
 import { useIsLinkNew } from "@/hooks/use-is-link-new";
 import { Anchor, Indicator, Text, Title, Tooltip, createStyles } from "@mantine/core";
+import { useCallback } from "react";
 import { IoCheckmarkCircleOutline } from "react-icons/io5";
+
+type Link = {
+  service: string;
+  url: string;
+  official?: boolean;
+  added_ts?: number;
+};
 
 type CommunityProps = {
   name: string;
-  links: {
-    service: string;
-    url: string;
-    official?: boolean;
-    added_ts?: number;
-  }[];
+  links: Link[];
+  homeInstance: string;
 };
 
 const SERVICE_ICONS: Record<string, string> = {
@@ -68,9 +72,26 @@ const useStyles = createStyles(({ colors, colorScheme, spacing, radius, other })
   };
 });
 
-export function Community({ name, links }: CommunityProps) {
+export function Community({ name, links, homeInstance }: CommunityProps) {
   const { classes } = useStyles();
   const isLinkNew = useIsLinkNew();
+
+  const getSubredditLink = useCallback(
+    (link: Link) => {
+      if (
+        homeInstance.length > 0 &&
+        (link.service === "lemmy" || link.service === "kbin") &&
+        !link.url.includes(homeInstance)
+      ) {
+        return `${homeInstance}/c/${link.url.split("/").pop()}@${
+          link.url.split("https://")[1].split("/")[0]
+        }`;
+      }
+
+      return link.url.split("://")[1];
+    },
+    [homeInstance]
+  );
 
   return (
     <div className={classes.community}>
@@ -82,9 +103,9 @@ export function Community({ name, links }: CommunityProps) {
         .map((link) => (
           <Anchor
             key={link.url}
-            href={link.url}
+            href={`https://${getSubredditLink(link)}`}
             target="_blank"
-            title={link.url.split("://")[1]}
+            title={getSubredditLink(link)}
             rel="noreferrer"
             className={classes.homeLocation}
           >
@@ -101,7 +122,7 @@ export function Community({ name, links }: CommunityProps) {
               </Indicator>
             )}
             <Text sx={{ textOverflow: "ellipsis", overflow: "hidden", textWrap: "nowrap" }}>
-              {link.url.split("://")[1]}
+              {getSubredditLink(link)}
             </Text>
             {link.official && (
               <Tooltip
