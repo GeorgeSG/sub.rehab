@@ -4,12 +4,12 @@ import { Section } from "@/components/core/section";
 import { AnimatedSlogan } from "@/components/index/animated-slogan";
 import { CommunityList } from "@/components/index/community-list";
 import { Statistics } from "@/components/index/statistics";
-import { Anchor, Button, Flex, Text, createStyles } from "@mantine/core";
+import { Anchor, Button, Flex, Group, Text, createStyles } from "@mantine/core";
 import { useLocalStorage } from "@mantine/hooks";
 import { modals } from "@mantine/modals";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { IoAdd, IoStatsChart } from "react-icons/io5";
+import { IoAdd, IoStatsChart, IoWarningOutline } from "react-icons/io5";
 
 const useStyles = createStyles((theme) => ({
   statisticsWrapper: {
@@ -24,11 +24,16 @@ const useStyles = createStyles((theme) => ({
       display: "inline-flex",
     },
   },
+
+  buttonRow: {
+    [theme.fn.smallerThan("xs")]: {
+      flexDirection: "column",
+    },
+  },
 }));
 
 export default function Home() {
   const { classes } = useStyles();
-  const router = useRouter();
 
   return (
     <>
@@ -46,10 +51,19 @@ export default function Home() {
         <div className={classes.statisticsWrapper}>
           <Statistics />
         </div>
-        <Flex gap="xs">
-          <GradientButton<typeof Link> component={Link} href="/submit-link" leftIcon={<IoAdd />}>
-            Suggest link
-          </GradientButton>
+        <Flex gap="xs" className={classes.buttonRow}>
+          <Group>
+            <GradientButton<typeof Link> component={Link} href="/submit-link" leftIcon={<IoAdd />}>
+              Suggest link
+            </GradientButton>
+            <GradientButton<typeof Link>
+              component={Link}
+              href="https://github.com/GeorgeSG/sub.rehab/discussions/9"
+              leftIcon={<IoWarningOutline />}
+            >
+              Report link
+            </GradientButton>
+          </Group>
           <div className={classes.statisticsModal}>
             <Button
               variant="subtle"
