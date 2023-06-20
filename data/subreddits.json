@@ -121,7 +121,9 @@
     },
     {
       "name": "r/piracy",
-      "links": [{ "service": "lemmy", "url": "https://lemmy.dbzer0.com/c/piracy" }]
+      "links": [
+        { "service": "lemmy", "url": "https://lemmy.dbzer0.com/c/piracy", "official": true }
+      ]
     },
     {
       "name": "r/privacy",
@@ -132,7 +134,9 @@
     },
     {
       "name": "r/startrek",
-      "links": [{ "service": "lemmy", "url": "https://startrek.website/c/startrek" }]
+      "links": [
+        { "service": "lemmy", "url": "https://startrek.website/c/startrek", "official": true }
+      ]
     },
     {
       "name": "r/steamdeck_linux",
@@ -371,7 +375,11 @@
     {
       "name": "r/financialmodelling",
       "links": [
-        { "service": "squabbles", "url": "https://squabbles.io/s/FinancialModelling", "official": true }
+        {
+          "service": "squabbles",
+          "url": "https://squabbles.io/s/FinancialModelling",
+          "official": true
+        }
       ]
     },
     {
