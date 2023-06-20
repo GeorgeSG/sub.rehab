@@ -76,7 +76,7 @@ export function CommunityFilters({ filter, setFilter }: CommunityFiltersProps) {
   const setFilterAndPushParams = useCallback(
     (newFilter: Partial<Filter>) => {
       setFilter((prev) => {
-        router.push({ query: { ...prev, ...newFilter } });
+        router.push({ query: { ...prev, ...newFilter } }, undefined, { scroll: false });
         return { ...prev, ...newFilter };
       });
     },
