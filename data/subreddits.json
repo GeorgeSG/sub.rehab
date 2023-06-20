@@ -4347,6 +4347,17 @@
           "added_ts": 1687216538677
         }
       ]
+    },
+    {
+      "name": "r/curlyhaircare",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/curlyhair",
+          "official": false,
+          "added_ts": 1687294462370
+        }
+      ]
     }
   ]
 }
