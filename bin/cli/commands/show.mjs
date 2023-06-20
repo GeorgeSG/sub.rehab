@@ -1,5 +1,5 @@
-import { data } from "../data.mjs";
-import { warning, success } from "../output-utils.mjs";
+import { data } from "../../data.mjs";
+import { warning, success } from "../../output-utils.mjs";
 import { input } from "@inquirer/prompts";
 
 export async function showSubreddit(argv) {

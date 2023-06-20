@@ -1,10 +1,10 @@
 import { hideBin } from "yargs/helpers";
 import yargs from "yargs/yargs";
-import { validateSubList } from "./validation.mjs";
+import { data, writeData } from "../data.mjs";
+import { chalkSuccess } from "../output-utils.mjs";
+import { validateSubList } from "../validation.mjs";
 import { addSubreddit } from "./commands/add.mjs";
 import { showSubreddit } from "./commands/show.mjs";
-import { chalkSuccess, warning, success } from "./output-utils.mjs";
-import { data, writeData } from "./data.mjs";
 
 const onValidate = (argv) => {
   validateSubList(data.subs);
