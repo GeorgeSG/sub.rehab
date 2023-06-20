@@ -286,10 +286,6 @@
     { "name": "r/tech", "links": [{ "service": "kbin", "url": "https://kbin.social/m/tech" }] },
     { "name": "r/space", "links": [{ "service": "kbin", "url": "https://kbin.social/m/space" }] },
     {
-      "name": "r/austion",
-      "links": [{ "service": "lemmy", "url": "https://lemmy.world/c/austin" }]
-    },
-    {
       "name": "r/linuxmasterrace",
       "links": [{ "service": "kbin", "url": "https://kbin.social/m/linuxmasterrace" }]
     },
@@ -403,10 +399,6 @@
     {
       "name": "r/startpages",
       "links": [{ "service": "kbin", "url": "https://kbin.social/m/startpages", "official": true }]
-    },
-    {
-      "name": "r/ZeroWasteVegans",
-      "links": [{ "service": "lemmy", "url": "https://lemmy.ml/c/zerowaste", "official": true }]
     },
     {
       "name": "r/WayOfTheBern",
@@ -2534,7 +2526,7 @@
           "service": "discord",
           "url": "https://discord.gg/formula1",
           "official": true,
-          "added_ts": 1687283074325
+          "added_ts": 1687283671046
         }
       ]
     },
@@ -2661,17 +2653,6 @@
           "url": "https://lemmy.ca/c/lpt",
           "official": false,
           "added_ts": 1687283599227
-        }
-      ]
-    },
-    {
-      "name": "r/fomula1",
-      "links": [
-        {
-          "service": "discord",
-          "url": "https://discord.gg/formula1",
-          "official": true,
-          "added_ts": 1687283671046
         }
       ]
     },
