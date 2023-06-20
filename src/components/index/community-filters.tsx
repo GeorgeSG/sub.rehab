@@ -2,6 +2,7 @@ import { useSubredditData } from "@/data";
 import {
   Checkbox,
   Drawer,
+  Flex,
   MediaQuery,
   MultiSelect,
   Text,
@@ -28,13 +29,6 @@ const useStyles = createStyles((theme) => ({
     alignItems: "center",
     gap: theme.spacing.lg,
     marginTop: theme.spacing.lg,
-
-    [theme.fn.smallerThan("lg")]: {
-      marginTop: theme.spacing.md,
-      flexDirection: "column",
-      alignItems: "flex-start",
-      gap: theme.spacing.xxs,
-    },
   },
 
   multiSelect: {
@@ -99,17 +93,44 @@ export function CommunityFilters({ filter, setFilter }: CommunityFiltersProps) {
 
   const filters = useMemo(
     () => (
-      <div className={classes.filters}>
-        <TextInput
-          data-autofocus
-          placeholder="Search"
-          value={filter.searchTerm}
-          size="md"
-          onChange={(e) => onChangeSearchTerm(e.currentTarget.value)}
-          icon={<IoSearch />}
-          rightSection={<IoCloseOutline onClick={() => onChangeSearchTerm("")} />}
-          className={classes.searchInput}
-        />
+      <Flex direction="column" gap="md">
+        <div className={classes.filters}>
+          <TextInput
+            data-autofocus
+            placeholder="Search"
+            value={filter.searchTerm}
+            size="md"
+            onChange={(e) => onChangeSearchTerm(e.currentTarget.value)}
+            icon={<IoSearch />}
+            rightSection={<IoCloseOutline onClick={() => onChangeSearchTerm("")} />}
+            className={classes.searchInput}
+          />
+          <Checkbox
+            classNames={{ body: classes.checkbox }}
+            style={{ flexShrink: 0, alignItems: "center" }}
+            label={
+              <Tooltip label="Links that have been posted in the original subreddit" withArrow>
+                <Text className={classes.officialOnly}>
+                  Official only
+                  <IoCheckmarkCircleOutline size="1rem" />
+                </Text>
+              </Tooltip>
+            }
+            checked={filter.officialOnly}
+            onChange={(e) => setFilterAndPushParams({ officialOnly: e.target.checked })}
+          />
+          <Checkbox
+            classNames={{ body: classes.checkbox }}
+            style={{ flexShrink: 0, alignItems: "center" }}
+            label={
+              <Tooltip label="Links that have been added in the past 24 hours" withArrow>
+                <Text className={classes.officialOnly}>New only</Text>
+              </Tooltip>
+            }
+            checked={filter.newOnly}
+            onChange={(e) => setFilterAndPushParams({ newOnly: e.target.checked })}
+          />
+        </div>
         <MultiSelect
           clearButtonProps={{ "aria-label": "Clear services" }}
           icon={<IoGlobeOutline />}
@@ -132,32 +153,7 @@ export function CommunityFilters({ filter, setFilter }: CommunityFiltersProps) {
           }}
           withinPortal
         />
-        <Checkbox
-          classNames={{ body: classes.checkbox }}
-          style={{ flexShrink: 0, alignItems: "center" }}
-          label={
-            <Tooltip label="Links that have been posted in the original subreddit" withArrow>
-              <Text className={classes.officialOnly}>
-                Official only
-                <IoCheckmarkCircleOutline size="1rem" />
-              </Text>
-            </Tooltip>
-          }
-          checked={filter.officialOnly}
-          onChange={(e) => setFilterAndPushParams({ officialOnly: e.target.checked })}
-        />
-        <Checkbox
-          classNames={{ body: classes.checkbox }}
-          style={{ flexShrink: 0, alignItems: "center" }}
-          label={
-            <Tooltip label="Links that have been added in the past 24 hours" withArrow>
-              <Text className={classes.officialOnly}>New only</Text>
-            </Tooltip>
-          }
-          checked={filter.newOnly}
-          onChange={(e) => setFilterAndPushParams({ newOnly: e.target.checked })}
-        />
-      </div>
+      </Flex>
     ),
     [filter, setFilterAndPushParams, uniqueServiceList, classes, onChangeSearchTerm]
   );
