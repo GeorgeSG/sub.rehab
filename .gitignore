@@ -1,6 +1,7 @@
 /node_modules
 /.next/
 /build
+/out
 .DS_Store
 npm-debug.log*
 .env*.local
