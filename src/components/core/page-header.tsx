@@ -1,5 +1,6 @@
 import {
   ActionIcon,
+  Anchor,
   Button,
   Group,
   Tooltip,
@@ -9,6 +10,7 @@ import {
 import Link from "next/link";
 import { IoLogoGithub, IoLogoMastodon, IoMoon, IoSunnyOutline } from "react-icons/io5";
 import { Logotype } from "./logotype";
+import { useMediaQuery } from "@mantine/hooks";
 
 const useStyles = createStyles(({ spacing, shadows, radius, colorScheme, fn }) => ({
   title: {
@@ -44,6 +46,7 @@ const useStyles = createStyles(({ spacing, shadows, radius, colorScheme, fn }) =
 export function PageHeader({ withBackground = false }: { withBackground?: boolean }) {
   const { classes } = useStyles();
   const { colorScheme, toggleColorScheme } = useMantineColorScheme();
+  const isSmallScreen = useMediaQuery("(max-width: 30em)");
 
   const isDark = colorScheme === "dark";
 
@@ -59,6 +62,17 @@ export function PageHeader({ withBackground = false }: { withBackground?: boolea
         >
           FAQ
         </Button>
+        <Button
+          component={Link}
+          href="https://www.buymeacoffee.com/subrehab"
+          target="_blank"
+          variant="subtle"
+          color={isDark ? "#C1C2C5" : "orange.5"}
+          leftIcon={isSmallScreen ? null : "☕"}
+        >
+          {isSmallScreen ? "Donate" : "Buy me a coffee"}
+        </Button>
+
         <Tooltip label="sub.rehab @ mastodon.social" position="top" withArrow>
           <ActionIcon
             size="lg"
