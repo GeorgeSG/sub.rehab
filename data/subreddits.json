@@ -2519,12 +2519,6 @@
           "added_ts": 1687203078648
         },
         {
-          "service": "squabbles",
-          "url": "https://squabbles.io/s/formula1",
-          "official": false,
-          "added_ts": 1687203514812
-        },
-        {
           "service": "kbin",
           "url": "https://kbin.social/m/formula1",
           "official": false,
