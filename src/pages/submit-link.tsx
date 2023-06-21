@@ -13,6 +13,7 @@ import {
   Text,
   TextInput,
   Title,
+  Tooltip,
 } from "@mantine/core";
 import { useForm } from "@mantine/form";
 import { notifications } from "@mantine/notifications";
@@ -24,34 +25,34 @@ export default function SubmitLink() {
 
   // TODO: type values
   const handleSubmit = async (values: any) => {
-    try {
-      const ref = collection(firestore, "linkSubmissions");
-      await addDoc(ref, {
-        ...values,
-        sentAt: Timestamp.now().toDate(),
-      });
-      notifications.show({
-        icon: <IoCheckmark />,
-        color: "green",
-        title: "Success!",
-        message: "Your suggestion was received! It will be added after review. Thank you! 🙏",
-      });
-      form.reset();
-    } catch (err) {
-      notifications.show({
-        icon: <IoCloseCircle />,
-        color: "red",
-        title: "Error",
-        message: (
-          <>
-            We were unable to process your request. Sorry about that. Let us know in a&nbsp;
-            <Anchor href="https://github.com/GeorgeSG/sub.rehab/issues">GitHub issue</Anchor>
-            &nbsp;
-          </>
-        ),
-      });
-      console.log(err);
-    }
+    // try {
+    //   const ref = collection(firestore, "linkSubmissions");
+    //   await addDoc(ref, {
+    //     ...values,
+    //     sentAt: Timestamp.now().toDate(),
+    //   });
+    //   notifications.show({
+    //     icon: <IoCheckmark />,
+    //     color: "green",
+    //     title: "Success!",
+    //     message: "Your suggestion was received! It will be added after review. Thank you! 🙏",
+    //   });
+    //   form.reset();
+    // } catch (err) {
+    //   notifications.show({
+    //     icon: <IoCloseCircle />,
+    //     color: "red",
+    //     title: "Error",
+    //     message: (
+    //       <>
+    //         We were unable to process your request. Sorry about that. Let us know in a&nbsp;
+    //         <Anchor href="https://github.com/GeorgeSG/sub.rehab/issues">GitHub issue</Anchor>
+    //         &nbsp;
+    //       </>
+    //     ),
+    //   });
+    //   console.log(err);
+    // }
   };
 
   const form = useForm({
@@ -171,7 +172,16 @@ export default function SubmitLink() {
             />
 
             <Group position="right" mt="md">
-              <Button type="submit">Submit</Button>
+              <Tooltip
+                withArrow
+                label="Submitting disabled due to very high traffic. 😅 Follow us on Mastodon for updates. Thank you!"
+              >
+                <div>
+                  <Button type="submit" disabled>
+                    Submit
+                  </Button>
+                </div>
+              </Tooltip>
             </Group>
           </form>
         </Box>

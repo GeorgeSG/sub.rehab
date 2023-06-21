@@ -1,6 +1,5 @@
 import { useIsLinkNew } from "@/hooks/use-is-link-new";
 import { Anchor, Indicator, Text, Title, Tooltip, createStyles } from "@mantine/core";
-import Image from "next/image";
 import { IoCheckmarkCircleOutline } from "react-icons/io5";
 
 type CommunityProps = {
@@ -91,7 +90,7 @@ export function Community({ name, links }: CommunityProps) {
           >
             {SERVICE_ICONS[link.service] && (
               <Indicator inline label="new" size={14} disabled={!isLinkNew(link.added_ts)}>
-                <Image
+                <img
                   alt={`${name} on ${link.service}`}
                   title={`${name} on ${link.service}`}
                   src={SERVICE_ICONS[link.service]}
