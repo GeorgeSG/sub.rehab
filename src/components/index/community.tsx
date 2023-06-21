@@ -19,7 +19,7 @@ const SERVICE_ICONS: Record<string, string> = {
   misc: "/images/web.svg",
   matrix: "/images/matrix.png",
   squabbles: "/images/squabbles.png",
-  raddle: "",
+  raddle: "/images/raddle.svg",
 };
 
 const useStyles = createStyles(({ colors, colorScheme, spacing, radius, other }) => {
