@@ -15,6 +15,10 @@
       "name": "r/NoStupidQuestions",
       "links": [{ "service": "lemmy", "url": "https://lemmy.world/c/nostupidquestions" }]
     },
+     {
+      "name": "r/jailbreak",
+      "links": [{ "service": "discord", "url": " https://discord.gg/VM2ZVWqxsjc", "official": false }]
+    },
     {
       "name": "r/MildlyInfuriating",
       "links": [{ "service": "lemmy", "url": "https://lemmy.world/c/mildlyinfuriating" }]
