@@ -1,7 +1,7 @@
 import { PageHeader } from "@/components/core/page-header";
 import { Section } from "@/components/core/section";
 import { useSubredditData } from "@/data";
-import { firestore } from "@/firebase";
+import { db } from "@/firebase";
 import {
   Anchor,
   Box,

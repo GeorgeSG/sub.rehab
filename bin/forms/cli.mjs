@@ -1,7 +1,7 @@
 import { collection, getDocs } from "firebase/firestore/lite";
 import { hideBin } from "yargs/helpers";
 import yargs from "yargs/yargs";
-import { firestore } from "../firebase.mjs";
+import { db } from "../firebase.mjs";
 import { deleteCommand, fetchForms } from "./api.mjs";
 import { startCommand } from "./start.mjs";
 
@@ -11,7 +11,7 @@ yargs(hideBin(process.argv))
   .command("start", "start", {}, startCommand)
   .command("delete", "Delete from netlify", {}, deleteCommand)
   .command("firebase", "firebase", {}, async () => {
-    const ref = collection(firestore, "linkSubmissions");
+    const ref = collection(db, "linkSubmissions");
     const submissions = await getDocs(ref);
     submissions.forEach((doc) => {
       console.log(doc.id, doc.data());
