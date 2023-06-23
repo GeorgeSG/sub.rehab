@@ -1134,17 +1134,6 @@
       ]
     },
     {
-      "name": "r/SoundersFC",
-      "links": [
-        {
-          "service": "discord",
-          "url": "https://discord.gg/yu75K4WdCd",
-          "official": false,
-          "added_ts": 1687196972655
-        }
-      ]
-    },
-    {
       "name": "r/photocritique",
       "links": [
         {
@@ -1469,17 +1458,6 @@
           "url": "https://lemmy.ml/c/personalfinance",
           "official": false,
           "added_ts": 1687278782772
-        }
-      ]
-    },
-    {
-      "name": "r/voroncorexy",
-      "links": [
-        {
-          "service": "discord",
-          "url": "https://discord.gg/voron",
-          "official": false,
-          "added_ts": 1687279569315
         }
       ]
     },
@@ -2287,17 +2265,6 @@
       ]
     },
     {
-      "name": "r/D4DJ",
-      "links": [
-        {
-          "service": "discord",
-          "url": "https://discord.gg/mnR2wkh",
-          "official": false,
-          "added_ts": 1687284865187
-        }
-      ]
-    },
-    {
       "name": "r/subaruimpreza",
       "links": [
         {
@@ -2428,17 +2395,6 @@
           "url": "https://lemmy.world/c/tennis",
           "official": false,
           "added_ts": 1687285401879
-        }
-      ]
-    },
-    {
-      "name": "r/rochester",
-      "links": [
-        {
-          "service": "discord",
-          "url": "https://discord.gg/rochester",
-          "official": false,
-          "added_ts": 1687285407559
         }
       ]
     },
@@ -2942,50 +2898,6 @@
       ]
     },
     {
-      "name": "r/Rainbow6",
-      "links": [
-        {
-          "service": "discord",
-          "url": "https://discord.gg/rainbow6",
-          "official": false,
-          "added_ts": 1687287088819
-        }
-      ]
-    },
-    {
-      "name": "r/mechanicus",
-      "links": [
-        {
-          "service": "discord",
-          "url": "https://discord.gg/mechanicus40k",
-          "official": false,
-          "added_ts": 1687287160755
-        }
-      ]
-    },
-    {
-      "name": "r/JellesMarbleRuns",
-      "links": [
-        {
-          "service": "discord",
-          "url": "https://discord.com/invite/marbles",
-          "official": false,
-          "added_ts": 1687287174581
-        }
-      ]
-    },
-    {
-      "name": "r/LivestreamFail",
-      "links": [
-        {
-          "service": "discord",
-          "url": "https://discord.gg/qZGCNee",
-          "official": false,
-          "added_ts": 1687287263207
-        }
-      ]
-    },
-    {
       "name": "r/LittleWitchAcademia",
       "links": [
         {
@@ -2997,17 +2909,6 @@
       ]
     },
     {
-      "name": "r/japanesepeopletwitter",
-      "links": [
-        {
-          "service": "discord",
-          "url": "https://discord.gg/YZR3zgAfSx",
-          "official": false,
-          "added_ts": 1687287337646
-        }
-      ]
-    },
-    {
       "name": "r/goodanimemes",
       "links": [
         {
@@ -3015,28 +2916,6 @@
           "url": "https://discord.gg/wQrvE9CeKu",
           "official": true,
           "added_ts": 1687287396946
-        }
-      ]
-    },
-    {
-      "name": "r/HellLetLoose",
-      "links": [
-        {
-          "service": "discord",
-          "url": "https://discord.gg/6VNHJ2t",
-          "official": false,
-          "added_ts": 1687287440275
-        }
-      ]
-    },
-    {
-      "name": "r/HelltakerArt",
-      "links": [
-        {
-          "service": "discord",
-          "url": "https://discord.gg/dEeqTyX",
-          "official": false,
-          "added_ts": 1687287477353
         }
       ]
     },
@@ -3136,17 +3015,6 @@
       ]
     },
     {
-      "name": "r/ultrawidemasterrace",
-      "links": [
-        {
-          "service": "discord",
-          "url": "https://discord.gg/ultrawide",
-          "official": false,
-          "added_ts": 1687287948302
-        }
-      ]
-    },
-    {
       "name": "r/elderscrollsonline",
       "links": [
         {
@@ -3165,28 +3033,6 @@
           "url": "https://lemmy.world/c/seattle",
           "official": false,
           "added_ts": 1687287997889
-        }
-      ]
-    },
-    {
-      "name": "r/watches",
-      "links": [
-        {
-          "service": "discord",
-          "url": "https://discord.gg/DvgRkUG",
-          "official": false,
-          "added_ts": 1687288068214
-        }
-      ]
-    },
-    {
-      "name": "r/subaru",
-      "links": [
-        {
-          "service": "discord",
-          "url": "https://discord.gg/EpzMpv6",
-          "official": false,
-          "added_ts": 1687288082504
         }
       ]
     },
@@ -3221,17 +3067,6 @@
           "url": "https://discord.gg/streetwear",
           "official": true,
           "added_ts": 1687288112429
-        }
-      ]
-    },
-    {
-      "name": "r/gravelcycling",
-      "links": [
-        {
-          "service": "discord",
-          "url": "https://discord.gg/JY9B3Ry",
-          "official": false,
-          "added_ts": 1687288203176
         }
       ]
     },
@@ -4556,7 +4391,6 @@
       "name": "r/AntiWork",
       "links": [
         { "service": "lemmy", "url": "https://lemmy.ml/c/antiwork" },
-        { "service": "matrix", "url": "https://matrix.to/#/#antiwork:matrix.org" },
         {
           "service": "lemmy",
           "url": "https://lemmy.ca/c/antiwork",
@@ -4768,12 +4602,6 @@
           "url": "https://discord.gg/badminton",
           "official": true,
           "added_ts": 1687285163329
-        },
-        {
-          "service": "discord",
-          "url": "https://discord.gg/invite/badminton",
-          "official": true,
-          "added_ts": 1687514891766
         }
       ]
     },
@@ -5163,17 +4991,6 @@
       ]
     },
     {
-      "name": "r/engineeringstudents",
-      "links": [
-        {
-          "service": "discord",
-          "url": "https://discord.gg/engineeringstudents",
-          "official": false,
-          "added_ts": 1687514892911
-        }
-      ]
-    },
-    {
       "name": "r/enviro_archaeology",
       "links": [
         {
@@ -5385,12 +5202,6 @@
           "url": "https://lemmy.one/c/genderqueer",
           "official": true,
           "added_ts": 1687216345402
-        },
-        {
-          "service": "discord",
-          "url": "https://discord.gg/ka9mp5bpcn",
-          "official": false,
-          "added_ts": 1687514893554
         }
       ]
     },
@@ -5747,12 +5558,6 @@
     {
       "name": "r/mechanicalkeyboards",
       "links": [
-        {
-          "service": "discord",
-          "url": "https://discordapp.com/invite/mechkeys",
-          "official": false,
-          "added_ts": 1687288183868
-        },
         {
           "service": "kbin",
           "url": "https://kbin.social/m/mechanicalkeyboards",
@@ -6649,17 +6454,6 @@
           "url": "https://lemmy.ml/c/videos",
           "official": false,
           "added_ts": 1687514897503
-        }
-      ]
-    },
-    {
-      "name": "r/vinyl",
-      "links": [
-        {
-          "service": "discord",
-          "url": "https://discord.gg/vinylchat",
-          "official": false,
-          "added_ts": 1687514897544
         }
       ]
     },
