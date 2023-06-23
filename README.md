@@ -1,20 +1,11 @@
 # sub.rehab
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-
-
 ## Add subreddit links
 
-To add a new subreddit or links for an existing one, edit [`./data/subreddits.json`](data/subreddits.json) and add a new object
-to the `subs` array. The object should have the following properties:
+We do not accept Pull Requests for new subreddits, as we now have a system for verification of new links.
 
-```json
-{
-  "name": "r/<sub name>",
-  "links": [{ "service": "<discord | lemmy | kbin>", "url": "<url>", "official": true | false }]
-},
-```
+Please suggest new links via the [subreddit suggestion form](https://sub.rehab/submit-link/).
+
 
 ## Development
 
