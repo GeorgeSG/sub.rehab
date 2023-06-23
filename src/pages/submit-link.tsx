@@ -152,6 +152,10 @@ export default function SubmitLink() {
             list tumblr, twitter, or mastodon.
           </List.Item>
           <List.Item pt="sm">
+            We accept communities from discord and other IRC-style platforms only if they are
+            official.
+          </List.Item>
+          <List.Item pt="sm">
             Community must have a minimal amount of activity - at least 3 posts that are not
             submitted by the community&apos;s moderator team. This does not apply for communities
             that are verified and proven as official replacements of the original subreddit
