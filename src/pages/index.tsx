@@ -4,7 +4,7 @@ import { Section } from "@/components/core/section";
 import { AnimatedSlogan } from "@/components/index/animated-slogan";
 import { CommunityList } from "@/components/index/community-list";
 import { Statistics } from "@/components/index/statistics";
-import { Anchor, Button, Flex, Group, Text, createStyles } from "@mantine/core";
+import { Anchor, Button, Flex, Group, Text, Tooltip, createStyles } from "@mantine/core";
 import { modals } from "@mantine/modals";
 import Link from "next/link";
 import { IoAdd, IoStatsChart, IoWarningOutline } from "react-icons/io5";
@@ -55,13 +55,17 @@ export default function Home() {
               Suggest link
             </GradientButton>
 
-            <GradientButton<typeof Link>
-              component={Link}
-              href="https://github.com/GeorgeSG/sub.rehab/discussions/9"
-              leftIcon={<IoWarningOutline />}
-            >
-              Report link
-            </GradientButton>
+            <Tooltip label="Report a broken, miscategorized, or inaccurate link" withArrow>
+              <div>
+                <GradientButton<typeof Link>
+                  component={Link}
+                  href="https://github.com/GeorgeSG/sub.rehab/discussions/9"
+                  leftIcon={<IoWarningOutline />}
+                >
+                  Report link
+                </GradientButton>
+              </div>
+            </Tooltip>
           </Group>
           <div className={classes.statisticsModal}>
             <Button

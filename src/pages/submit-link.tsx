@@ -13,7 +13,6 @@ import {
   Text,
   TextInput,
   Title,
-  Tooltip,
 } from "@mantine/core";
 import { useForm } from "@mantine/form";
 import { notifications } from "@mantine/notifications";
@@ -244,28 +243,22 @@ export default function SubmitLink() {
               {...form.getInputProps("official")}
             />
 
-            <TextInput
-              mt="xs"
-              name="officialExplanation"
-              placeholder="Source or proof that this is an official alternative"
-              label="Official explanation:"
-              {...form.getInputProps("officialExplanation")}
-            />
+            {form.values.official && (
+              <TextInput
+                mt="xs"
+                name="officialExplanation"
+                placeholder="Source or proof that this is an official alternative"
+                label="Official explanation:"
+                {...form.getInputProps("officialExplanation")}
+              />
+            )}
 
-            <Tooltip
-              withArrow
-              label="Community is official or has at least 3 posts that are not
-            submitted by the community's moderator team"
-            >
-              <div>
-                <Checkbox
-                  mt="md"
-                  label="* I have checked that the community meets the criteria above"
-                  onChange={(e) => setConfirmRules(e.target.checked)}
-                  checked={confirmRules}
-                />
-              </div>
-            </Tooltip>
+            <Checkbox
+              mt="md"
+              label="* I have checked that the community meets the criteria above"
+              onChange={(e) => setConfirmRules(e.target.checked)}
+              checked={confirmRules}
+            />
 
             <Group position="right" mt="md">
               <Button type="submit" disabled={!confirmRules}>
