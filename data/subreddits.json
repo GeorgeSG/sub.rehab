@@ -5486,7 +5486,7 @@
         { "service": "lemmy", "url": "https://lemmy.world/c/linux_gaming", "official": true },
         {
           "service": "lemmy",
-          "url": "https://lemmy.ml/c/linux_gaming@lemmy.ml",
+          "url": "https://lemmy.ml/c/linux_gaming",
           "official": false,
           "added_ts": 1687514894337
         }
