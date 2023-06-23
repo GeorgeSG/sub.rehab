@@ -31,7 +31,7 @@ export default function SubmitLink() {
   // TODO: type values
   const handleSubmit = async (values: any) => {
     try {
-      const ref = collection(db, "linkSubmissionsDev");
+      const ref = collection(db, "linkSubmissions");
       console.log("adding", values);
 
       await addDoc(ref, {
