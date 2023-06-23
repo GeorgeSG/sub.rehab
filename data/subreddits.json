@@ -6513,6 +6513,17 @@
           "added_ts": 1687514897706
         }
       ]
+    },
+    {
+      "name": "r/bbs",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.sdf.org/c/bbs",
+          "official": false,
+          "added_ts": 1687535497962
+        }
+      ]
     }
   ]
 }
