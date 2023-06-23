@@ -2916,6 +2916,11 @@
           "url": "https://discord.gg/wQrvE9CeKu",
           "official": true,
           "added_ts": 1687287396946
+        },
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.ml/c/animemes",
+          "official": false,
         }
       ]
     },
@@ -5551,6 +5556,10 @@
           "url": "https://kbin.social/m/manga",
           "official": false,
           "added_ts": 1687514894557
+        },{
+          "service": "lemmy",
+          "url": "https://lemmy.ml/c/manga",
+          "official": false
         }
       ]
     },
@@ -6521,6 +6530,76 @@
           "url": "https://lemmy.sdf.org/c/bbs",
           "official": false,
           "added_ts": 1687535497962
+        }
+      ]
+    },
+    {
+      "name": "r/atheism",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.ml/c/atheism",
+          "official": false,
+        }
+      ]
+    },
+    {
+      "name": "r/titanfall",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/titanfall",
+          "official": true
+        }
+      ]
+    },
+    {
+      "name": "r/Helltaker",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://sopuli.xyz/c/helltaker",
+          "official": false,
+        }
+      ]
+    },
+    {
+      "name": "r/fitmoe",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/fitmoe",
+          "official": false,
+        }
+      ]
+    },
+    {
+      "name": "r/animemes",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.ml/c/animemes",
+          "official": false,
+        }
+      ]
+    },
+    {
+      "name": "r/overlord",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://sopuli.xyz/c/overlord",
+          "official": false,
+        }
+      ]
+    },
+    {
+      "name": "r/ChainsawMan",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://feddit.de/c/chainsawman",
+          "official": false,
         }
       ]
     }
