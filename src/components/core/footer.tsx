@@ -50,14 +50,14 @@ export function Footer() {
           Made with <IoHeartOutline /> by <Anchor href="https://gar.dev">gar.dev</Anchor>.
         </Text>
         <Group spacing="sm" className={classes.links} noWrap>
-          <Tooltip label="sub.rehab @ mastodon.social" position="top" withArrow>
+          <Tooltip label="@sub.rehab@mastodon.social" position="top" withArrow>
             <ActionIcon
               color={isDark ? "gray.4" : "gray.8"}
               component="a"
               href="https://mastodon.social/@subrehab"
               target="_blank"
               rel="me"
-              title="sub.rehab @ mastodon.social"
+              title="@sub.rehab@mastodon.social"
             >
               <IoLogoMastodon size={24} />
             </ActionIcon>

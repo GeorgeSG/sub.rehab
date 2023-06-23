@@ -73,14 +73,14 @@ export function PageHeader({ withBackground = false }: { withBackground?: boolea
           {isSmallScreen ? "Donate" : "Buy me a coffee"}
         </Button>
 
-        <Tooltip label="sub.rehab @ mastodon.social" position="top" withArrow>
+        <Tooltip label="@sub.rehab@mastodon.social" position="top" withArrow>
           <ActionIcon
             size="lg"
             color={isDark ? "#C1C2C5" : "orange.5"}
             variant="subtle"
             component="a"
             href="https://mastodon.social/@subrehab"
-            title="sub.rehab @ mastodon.social"
+            title="@sub.rehab@mastodon.social"
             target="_blank"
             rel="me"
           >
