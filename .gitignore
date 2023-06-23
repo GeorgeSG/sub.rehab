@@ -5,6 +5,8 @@
 /bin/forms/*.json
 /bin/forms/toDelete
 /bin/forms/toSkip
+/bin/firebase/toDelete
+/import
 
 
 .DS_Store
