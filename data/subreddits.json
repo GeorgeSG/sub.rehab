@@ -6708,6 +6708,17 @@
           "added_ts": 1687514897706
         }
       ]
+    },
+    {
+      "name": "r/Austria",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://feddit.de/c/austria",
+          "official": false,
+          "added_ts": 1687514897706
+        }
+      ]
     }
   ]
 }
