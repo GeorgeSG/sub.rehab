@@ -3277,7 +3277,6 @@
     {
       "name": "r/AnarchyChess",
       "links": [
-        { "service": "lemmy", "url": "https://lemmy.world/c/anarchychess@sopuli.xyz" },
         {
           "service": "lemmy",
           "url": "https://sopuli.xyz/c/anarchychess",
