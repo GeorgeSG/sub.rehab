@@ -8,18 +8,6 @@
       ]
     },
     {
-      "name": "r/buildapc",
-      "links": [{ "service": "discord", "url": "https://discord.gg/buildapc", "official": true }]
-    },
-    {
-      "name": "r/NoStupidQuestions",
-      "links": [{ "service": "lemmy", "url": "https://lemmy.world/c/nostupidquestions" }]
-    },
-    {
-      "name": "r/MildlyInfuriating",
-      "links": [{ "service": "lemmy", "url": "https://lemmy.world/c/mildlyinfuriating" }]
-    },
-    {
       "name": "r/Futurama",
       "links": [{ "service": "lemmy", "url": "https://lemmy.world/c/futurama" }]
     },
@@ -36,12 +24,6 @@
       "links": [{ "service": "discord", "url": "https://discord.com/invite/a2c", "official": true }]
     },
     {
-      "name": "r/Architecture",
-      "links": [
-        { "service": "discord", "url": "https://discord.com/invite/tMFaTvk", "official": true }
-      ]
-    },
-    {
       "name": "r/bodyweightfitness",
       "links": [{ "service": "discord", "url": "https://discord.com/invite/bwf", "official": true }]
     },
@@ -54,12 +36,6 @@
           "url": "https://lemmy.world/c/childfree@lemmy.world",
           "official": true
         }
-      ]
-    },
-    {
-      "name": "r/cyberpunkgame",
-      "links": [
-        { "service": "discord", "url": "https://discord.com/invite/Rkj2wj6", "official": true }
       ]
     },
     {
@@ -105,40 +81,6 @@
       "links": [{ "service": "discord", "url": "https://discord.gg/P8EyvjA", "official": true }]
     },
     {
-      "name": "r/android",
-      "links": [
-        { "service": "lemmy", "url": "https://lemmy.world/c/android" },
-        { "service": "kbin", "url": "https://kbin.social/m/android" }
-      ]
-    },
-    { "name": "r/memes", "links": [{ "service": "lemmy", "url": "https://lemmy.ml/c/memes" }] },
-    {
-      "name": "r/news",
-      "links": [
-        { "service": "lemmy", "url": "https://beehaw.org/c/news" },
-        { "service": "kbin", "url": "https://kbin.social/m/news" }
-      ]
-    },
-    {
-      "name": "r/piracy",
-      "links": [
-        { "service": "lemmy", "url": "https://lemmy.dbzer0.com/c/piracy", "official": true }
-      ]
-    },
-    {
-      "name": "r/privacy",
-      "links": [
-        { "service": "lemmy", "url": "https://lemmy.ml/c/privacy" },
-        { "service": "kbin", "url": "https://kbin.social/m/privacy" }
-      ]
-    },
-    {
-      "name": "r/startrek",
-      "links": [
-        { "service": "lemmy", "url": "https://startrek.website/c/startrek", "official": true }
-      ]
-    },
-    {
       "name": "r/steamdeck_linux",
       "links": [
         { "service": "lemmy", "url": "https://sopuli.xyz/c/steamdeck", "official": true },
@@ -151,24 +93,10 @@
       ]
     },
     {
-      "name": "r/AntiWork",
-      "links": [
-        { "service": "lemmy", "url": "https://lemmy.ml/c/antiwork" },
-        { "service": "matrix", "url": "https://matrix.to/#/#antiwork:matrix.org" }
-      ]
-    },
-    {
       "name": "r/gamingcirclejerk",
       "links": [
         { "service": "discord", "url": "https://discord.gg/gcj", "official": true },
         { "service": "lemmy", "url": "https://lemmy.world/c/gamingcirclejerk" }
-      ]
-    },
-    {
-      "name": "r/fuckcars",
-      "links": [
-        { "service": "lemmy", "url": "https://lemmy.ml/c/fuck_cars", "official": true },
-        { "service": "discord", "url": "https://discord.gg/anticar", "official": true }
       ]
     },
     {
@@ -184,13 +112,6 @@
       "links": [
         { "service": "discord", "url": "https://discord.gg/gunners", "official": true },
         { "service": "lemmy", "url": "https://lemmy.world/c/gunners", "official": true }
-      ]
-    },
-    {
-      "name": "r/linux_gaming",
-      "links": [
-        { "service": "kbin", "url": "https://kbin.social/m/linux_gaming", "official": true },
-        { "service": "lemmy", "url": "https://lemmy.world/c/linux_gaming", "official": true }
       ]
     },
     {
@@ -216,10 +137,6 @@
       "links": [{ "service": "lemmy", "url": "https://lemmy.ml/c/simpleliving", "official": true }]
     },
     {
-      "name": "r/ZeroWaste",
-      "links": [{ "service": "lemmy", "url": "https://lemmy.ml/c/zerowaste", "official": true }]
-    },
-    {
       "name": "r/Disneyland",
       "links": [
         { "service": "discord", "url": "https://discord.gg/rdisneyland", "official": true },
@@ -240,17 +157,6 @@
     {
       "name": "r/Warframe",
       "links": [{ "service": "lemmy", "url": "https://dormi.zone/", "official": true }]
-    },
-    {
-      "name": "r/StableDiffusion",
-      "links": [
-        { "service": "discord", "url": "https://discord.gg/4WbTj8YskM", "official": true },
-        {
-          "service": "lemmy",
-          "url": "https://lemmy.dbzer0.com/c/stable_diffusion",
-          "official": true
-        }
-      ]
     },
     {
       "name": "r/Baltimore",
@@ -289,16 +195,11 @@
     },
     { "name": "r/tech", "links": [{ "service": "kbin", "url": "https://kbin.social/m/tech" }] },
     { "name": "r/space", "links": [{ "service": "kbin", "url": "https://kbin.social/m/space" }] },
-    {
-      "name": "r/linuxmasterrace",
-      "links": [{ "service": "kbin", "url": "https://kbin.social/m/linuxmasterrace" }]
-    },
     { "name": "r/Fedora", "links": [{ "service": "kbin", "url": "https://kbin.social/m/fedora" }] },
     {
       "name": "r/ManjaroLinux",
       "links": [{ "service": "kbin", "url": "https://kbin.social/m/manjaro" }]
     },
-    { "name": "r/debian", "links": [{ "service": "kbin", "url": "https://kbin.social/m/debian" }] },
     {
       "name": "r/linuxquestions",
       "links": [{ "service": "kbin", "url": "https://kbin.social/m/linuxquestions" }]
@@ -534,17 +435,6 @@
       ]
     },
     {
-      "name": "r/indonesia",
-      "links": [
-        {
-          "service": "lemmy",
-          "url": "https://lemmy.ml/c/Indonesia",
-          "official": false,
-          "added_ts": 1687119835162
-        }
-      ]
-    },
-    {
       "name": "r/AFL",
       "links": [
         {
@@ -694,17 +584,6 @@
       ]
     },
     {
-      "name": "r/AmItheAsshole",
-      "links": [
-        {
-          "service": "kbin",
-          "url": "https://kbin.social/m/amitheasshole/microblog",
-          "official": false,
-          "added_ts": 1687119835162
-        }
-      ]
-    },
-    {
       "name": "r/TalkingHank",
       "links": [
         {
@@ -776,17 +655,6 @@
           "url": "https://squabbles.io/s/selfhosted",
           "official": false,
           "added_ts": 1687126083618
-        }
-      ]
-    },
-    {
-      "name": "r/sysadmin",
-      "links": [
-        {
-          "service": "misc",
-          "url": "https://sysadmins.zone",
-          "official": false,
-          "added_ts": 1687126182198
         }
       ]
     },
@@ -1182,17 +1050,6 @@
       ]
     },
     {
-      "name": "r/StarCitizen",
-      "links": [
-        {
-          "service": "lemmy",
-          "url": "https://lemmy.ml/c/starcitizen",
-          "official": false,
-          "added_ts": 1687196330360
-        }
-      ]
-    },
-    {
       "name": "r/BudgetKeebs",
       "links": [
         {
@@ -1277,28 +1134,6 @@
       ]
     },
     {
-      "name": "r/THE_PACK",
-      "links": [
-        {
-          "service": "lemmy",
-          "url": "https://lemmy.world/c/the_pack",
-          "official": false,
-          "added_ts": 1687196928247
-        }
-      ]
-    },
-    {
-      "name": "r/motorcycles",
-      "links": [
-        {
-          "service": "lemmy",
-          "url": "https://lemmy.world/c/motorcycles",
-          "official": false,
-          "added_ts": 1687196948997
-        }
-      ]
-    },
-    {
       "name": "r/SoundersFC",
       "links": [
         {
@@ -1343,17 +1178,6 @@
       ]
     },
     {
-      "name": "r/Denver",
-      "links": [
-        {
-          "service": "lemmy",
-          "url": "https://lemmy.world/c/denver",
-          "official": false,
-          "added_ts": 1687197327771
-        }
-      ]
-    },
-    {
       "name": "r/pathfinder2",
       "links": [
         {
@@ -1385,28 +1209,6 @@
           "url": "https://squabbles.io/s/gaming",
           "official": false,
           "added_ts": 1687197686984
-        }
-      ]
-    },
-    {
-      "name": "r/xbox",
-      "links": [
-        {
-          "service": "squabbles",
-          "url": "https://squabbles.io/s/Xbox",
-          "official": false,
-          "added_ts": 1687197737720
-        }
-      ]
-    },
-    {
-      "name": "r/anarchism",
-      "links": [
-        {
-          "service": "raddle",
-          "url": "https://raddle.me/f/Anarchism",
-          "official": true,
-          "added_ts": 1687197868501
         }
       ]
     },
@@ -1468,30 +1270,6 @@
       ]
     },
     {
-      "name": "r/europe",
-      "links": [
-        { "service": "discord", "url": "https://discord.com/invite/WzsgwHmHvY", "official": true },
-        {
-          "service": "lemmy",
-          "url": "https://lemmy.ml/c/europe",
-          "official": false,
-          "added_ts": 1687203299409
-        }
-      ]
-    },
-    {
-      "name": "r/history",
-      "links": [
-        { "service": "discord", "url": "https://discord.gg/7XkFuez", "official": true },
-        {
-          "service": "lemmy",
-          "url": "https://lemmy.ml/c/history",
-          "official": false,
-          "added_ts": 1687203316947
-        }
-      ]
-    },
-    {
       "name": "r/nyc",
       "links": [
         {
@@ -1505,24 +1283,6 @@
           "url": "https://kbin.social/m/nyc",
           "official": false,
           "added_ts": 1687203354274
-        }
-      ]
-    },
-    {
-      "name": "r/StarWars",
-      "links": [
-        { "service": "discord", "url": "https://discord.com/invite/StarWars", "official": true },
-        {
-          "service": "squabbles",
-          "url": "https://squabbles.io/s/StarWars",
-          "official": false,
-          "added_ts": 1687197704922
-        },
-        {
-          "service": "lemmy",
-          "url": "https://lemmy.world/c/star_wars",
-          "official": false,
-          "added_ts": 1687203392280
         }
       ]
     },
@@ -1625,17 +1385,6 @@
           "url": "https://kbin.social/m/washington",
           "official": false,
           "added_ts": 1687205891008
-        }
-      ]
-    },
-    {
-      "name": "r/boston",
-      "links": [
-        {
-          "service": "lemmy",
-          "url": "https://lemmy.world/c/boston",
-          "official": false,
-          "added_ts": 1687205919156
         }
       ]
     },
@@ -1826,19 +1575,6 @@
       ]
     },
     {
-      "name": "r/programming",
-      "links": [
-        { "service": "lemmy", "url": "https://beehaw.org/c/programming" },
-        { "service": "kbin", "url": "https://kbin.social/m/programming" },
-        {
-          "service": "lemmy",
-          "url": "https://programming.dev/c/programming",
-          "official": false,
-          "added_ts": 1687279805673
-        }
-      ]
-    },
-    {
       "name": "r/archlinux",
       "links": [
         { "service": "kbin", "url": "https://kbin.social/m/archlinux" },
@@ -1906,17 +1642,6 @@
       ]
     },
     {
-      "name": "r/argentina",
-      "links": [
-        {
-          "service": "lemmy",
-          "url": "https://lemmy.world/c/argentina",
-          "official": false,
-          "added_ts": 1687280064815
-        }
-      ]
-    },
-    {
       "name": "r/TaylorSwift",
       "links": [
         {
@@ -1947,19 +1672,6 @@
           "url": "https://kbin.social/m/theyogscast",
           "official": false,
           "added_ts": 1687280863974
-        }
-      ]
-    },
-    {
-      "name": "r/music",
-      "links": [
-        { "service": "lemmy", "url": "https://beehaw.org/c/music" },
-        { "service": "kbin", "url": "https://kbin.social/m/music" },
-        {
-          "service": "squabbles",
-          "url": "https://squabbles.io/s/music",
-          "official": false,
-          "added_ts": 1687280890862
         }
       ]
     },
@@ -2008,39 +1720,6 @@
       ]
     },
     {
-      "name": "r/dadjokes",
-      "links": [
-        {
-          "service": "squabbles",
-          "url": "https://squabbles.io/s/dadjokes",
-          "official": false,
-          "added_ts": 1687280983791
-        }
-      ]
-    },
-    {
-      "name": "r/ffxiv",
-      "links": [
-        {
-          "service": "squabbles",
-          "url": "https://squabbles.io/s/ffxiv",
-          "official": false,
-          "added_ts": 1687280990898
-        }
-      ]
-    },
-    {
-      "name": "r/art",
-      "links": [
-        {
-          "service": "squabbles",
-          "url": "https://squabbles.io/s/art",
-          "official": false,
-          "added_ts": 1687280997768
-        }
-      ]
-    },
-    {
       "name": "r/peloton",
       "links": [
         {
@@ -2072,23 +1751,6 @@
           "url": "https://squabbles.io/s/aww",
           "official": false,
           "added_ts": 1687281017596
-        }
-      ]
-    },
-    {
-      "name": "r/pics",
-      "links": [
-        {
-          "service": "lemmy",
-          "url": "https://lemmy.world/c/pics",
-          "official": false,
-          "added_ts": 1687119835162
-        },
-        {
-          "service": "squabbles",
-          "url": "https://squabbles.io/s/pics",
-          "official": false,
-          "added_ts": 1687281028799
         }
       ]
     },
@@ -2196,17 +1858,6 @@
       ]
     },
     {
-      "name": "r/bestofredditorupdates",
-      "links": [
-        {
-          "service": "discord",
-          "url": "https://discord.gg/Hx2hym2juy",
-          "official": true,
-          "added_ts": 1687282174013
-        }
-      ]
-    },
-    {
       "name": "r/Minnesota",
       "links": [
         {
@@ -2214,36 +1865,6 @@
           "url": "https://midwest.social/c/minnesota",
           "official": false,
           "added_ts": 1687282225199
-        }
-      ]
-    },
-    {
-      "name": "r/InternetIsBeautiful",
-      "links": [
-        {
-          "service": "lemmy",
-          "url": "https://feddit.de/c/internetisbeautiful",
-          "official": false,
-          "added_ts": 1687282235437
-        }
-      ]
-    },
-    {
-      "name": "r/ProgrammerHumor",
-      "links": [
-        { "service": "discord", "url": "https://discord.gg/rph", "official": true },
-        { "service": "lemmy", "url": "https://lemmy.ml/c/ProgrammerHumor" },
-        {
-          "service": "lemmy",
-          "url": "https://programming.dev/c/programmer_humor",
-          "official": false,
-          "added_ts": 1687279758616
-        },
-        {
-          "service": "squabbles",
-          "url": "https://squabbles.io/s/programmerHumor",
-          "official": false,
-          "added_ts": 1687282287262
         }
       ]
     },
@@ -2277,17 +1898,6 @@
           "url": "https://discuss.ntfy.sh",
           "official": true,
           "added_ts": 1687282358080
-        }
-      ]
-    },
-    {
-      "name": "r/malaysia",
-      "links": [
-        {
-          "service": "lemmy",
-          "url": "https://monyet.cc/",
-          "official": true,
-          "added_ts": 1687282415035
         }
       ]
     },
@@ -2336,34 +1946,6 @@
       ]
     },
     {
-      "name": "r/shitposting",
-      "links": [
-        {
-          "service": "lemmy",
-          "url": "https://lemmy.world/c/lemmyshitpost",
-          "official": false,
-          "added_ts": 1687279773889
-        },
-        {
-          "service": "kbin",
-          "url": "https://kbin.social/m/shitposting",
-          "official": false,
-          "added_ts": 1687282530246
-        }
-      ]
-    },
-    {
-      "name": "r/australia",
-      "links": [
-        {
-          "service": "lemmy",
-          "url": "https://aussie.zone/c/australia",
-          "official": false,
-          "added_ts": 1687282552949
-        }
-      ]
-    },
-    {
       "name": "r/cloudsecurity",
       "links": [
         {
@@ -2382,25 +1964,6 @@
           "url": "https://ziggit.dev/",
           "official": false,
           "added_ts": 1687282587176
-        }
-      ]
-    },
-    {
-      "name": "r/askreddit",
-      "links": [
-        { "service": "lemmy", "url": "https://lemmy.ml/c/asklemmy" },
-        { "service": "kbin", "url": "https://kbin.social/m/AskKbin" },
-        {
-          "service": "raddle",
-          "url": "https://raddle.me/f/AskRaddle",
-          "official": false,
-          "added_ts": 1687281359479
-        },
-        {
-          "service": "squabbles",
-          "url": "https://squabbles.io/s/AskSquabble",
-          "official": false,
-          "added_ts": 1687282601970
         }
       ]
     },
@@ -2438,17 +2001,6 @@
       ]
     },
     {
-      "name": "r/funny",
-      "links": [
-        {
-          "service": "squabbles",
-          "url": "https://squabbles.io/s/funny",
-          "official": false,
-          "added_ts": 1687282724863
-        }
-      ]
-    },
-    {
       "name": "r/rollercoasters",
       "links": [
         {
@@ -2456,17 +2008,6 @@
           "url": "https://lemm.ee/c/rollercoasters",
           "official": false,
           "added_ts": 1687282731934
-        }
-      ]
-    },
-    {
-      "name": "r/WritingPrompts",
-      "links": [
-        {
-          "service": "lemmy",
-          "url": "https://lemmy.ml/c/writingprompts",
-          "official": false,
-          "added_ts": 1687282785379
         }
       ]
     },
@@ -2535,17 +2076,6 @@
           "url": "https://discord.gg/formula1",
           "official": true,
           "added_ts": 1687283671046
-        }
-      ]
-    },
-    {
-      "name": "r/PixelArt",
-      "links": [
-        {
-          "service": "lemmy",
-          "url": "https://lemmy.ml/c/pixelart",
-          "official": false,
-          "added_ts": 1687283099601
         }
       ]
     },
@@ -2624,25 +2154,6 @@
       ]
     },
     {
-      "name": "r/worldnews",
-      "links": [
-        { "service": "lemmy", "url": "https://lemmy.ml/c/worldnews" },
-        { "service": "kbin", "url": "https://kbin.social/m/worldnews" },
-        {
-          "service": "squabbles",
-          "url": "https://squabbles.io/s/worldnews",
-          "official": false,
-          "added_ts": 1687282678933
-        },
-        {
-          "service": "lemmy",
-          "url": "https://lemmy.world/c/world",
-          "official": false,
-          "added_ts": 1687283475492
-        }
-      ]
-    },
-    {
       "name": "r/Jerma",
       "links": [
         {
@@ -2672,48 +2183,6 @@
           "url": "https://lemmy.world/c/diablo",
           "official": false,
           "added_ts": 1687283694982
-        }
-      ]
-    },
-    {
-      "name": "r/lgbt",
-      "links": [
-        {
-          "service": "lemmy",
-          "url": "https://beehaw.org/c/lgbtq_plus",
-          "official": false,
-          "added_ts": 1687281125077
-        },
-        {
-          "service": "lemmy",
-          "url": "https://lemmy.blahaj.zone/c/lgbtq_plus",
-          "official": false,
-          "added_ts": 1687283728516
-        }
-      ]
-    },
-    {
-      "name": "r/gamedev",
-      "links": [
-        {
-          "service": "lemmy",
-          "url": "https://programming.dev/c/gamedev",
-          "official": false,
-          "added_ts": 1687283793593
-        }
-      ]
-    },
-    {
-      "name": "r/linux",
-      "links": [
-        { "service": "lemmy", "url": "https://sopuli.xyz/c/linux" },
-        { "service": "lemmy", "url": "https://lemmy.ml/c/linux" },
-        { "service": "kbin", "url": "https://kbin.social/m/linux" },
-        {
-          "service": "lemmy",
-          "url": "https://programming.dev/c/linux",
-          "official": false,
-          "added_ts": 1687284648597
         }
       ]
     },
@@ -2757,19 +2226,6 @@
       ]
     },
     {
-      "name": "r/politics",
-      "links": [
-        { "service": "lemmy", "url": "https://beehaw.org/c/politics" },
-        { "service": "kbin", "url": "https://kbin.social/m/politics" },
-        {
-          "service": "squabbles",
-          "url": "https://squabbles.io/s/politics",
-          "official": false,
-          "added_ts": 1687284724627
-        }
-      ]
-    },
-    {
       "name": "r/DataIsBeautiful",
       "links": [
         {
@@ -2798,17 +2254,6 @@
       ]
     },
     {
-      "name": "r/Minecraft",
-      "links": [
-        {
-          "service": "lemmy",
-          "url": "https://lemmy.world/c/minecraft",
-          "official": false,
-          "added_ts": 1687284764391
-        }
-      ]
-    },
-    {
       "name": "r/classicalmusic",
       "links": [
         {
@@ -2831,17 +2276,6 @@
       ]
     },
     {
-      "name": "r/BuyItForLife",
-      "links": [
-        {
-          "service": "lemmy",
-          "url": "https://sh.itjust.works/c/buytiforlife",
-          "official": false,
-          "added_ts": 1687284809566
-        }
-      ]
-    },
-    {
       "name": "r/DiogenesWouldBeProud",
       "links": [
         {
@@ -2853,28 +2287,6 @@
       ]
     },
     {
-      "name": "r/bisexual",
-      "links": [
-        {
-          "service": "lemmy",
-          "url": "https://lemmy.world/c/bisexual",
-          "official": false,
-          "added_ts": 1687284843863
-        }
-      ]
-    },
-    {
-      "name": "r/WallStreetBets",
-      "links": [
-        {
-          "service": "discord",
-          "url": "https://discord.com/invite/wsbverse",
-          "official": true,
-          "added_ts": 1687284852644
-        }
-      ]
-    },
-    {
       "name": "r/D4DJ",
       "links": [
         {
@@ -2882,34 +2294,6 @@
           "url": "https://discord.gg/mnR2wkh",
           "official": false,
           "added_ts": 1687284865187
-        }
-      ]
-    },
-    {
-      "name": "r/Pathfinder2e",
-      "links": [
-        {
-          "service": "lemmy",
-          "url": "https://pathfinder.social",
-          "official": false,
-          "added_ts": 1687284912189
-        }
-      ]
-    },
-    {
-      "name": "r/anime",
-      "links": [
-        {
-          "service": "discord",
-          "url": "https://discord.gg/r-anime",
-          "official": true,
-          "added_ts": 1687281402787
-        },
-        {
-          "service": "squabbles",
-          "url": "https://squabbles.io/s/anime",
-          "official": false,
-          "added_ts": 1687285012241
         }
       ]
     },
@@ -2943,23 +2327,6 @@
           "url": "https://discord.gg/CompetitiveOW",
           "official": true,
           "added_ts": 1687285135647
-        }
-      ]
-    },
-    {
-      "name": "r/badminton",
-      "links": [
-        {
-          "service": "kbin",
-          "url": "https://kbin.social/m/badminton",
-          "official": true,
-          "added_ts": 1687282163593
-        },
-        {
-          "service": "discord",
-          "url": "https://discord.gg/badminton",
-          "official": true,
-          "added_ts": 1687285163329
         }
       ]
     },
@@ -3015,30 +2382,6 @@
       ]
     },
     {
-      "name": "r/cats",
-      "links": [
-        { "service": "discord", "url": "https://discord.gg/GqTrazYFxB", "official": true },
-        {
-          "service": "lemmy",
-          "url": "https://lemmy.world/c/cat",
-          "official": false,
-          "added_ts": 1687195472229
-        },
-        {
-          "service": "lemmy",
-          "url": "https://sh.itjust.works/c/cats",
-          "official": false,
-          "added_ts": 1687203282908
-        },
-        {
-          "service": "squabbles",
-          "url": "https://squabbles.io/s/Cats",
-          "official": false,
-          "added_ts": 1687285290161
-        }
-      ]
-    },
-    {
       "name": "r/blueteamsec",
       "links": [
         {
@@ -3046,44 +2389,6 @@
           "url": "https://infosec.pub/c/blueteamsec",
           "official": true,
           "added_ts": 1687285302896
-        }
-      ]
-    },
-    {
-      "name": "r/technology",
-      "links": [
-        { "service": "lemmy", "url": "https://lemmy.ml/c/technology" },
-        { "service": "lemmy", "url": "https://lemmy.world/c/technology" },
-        { "service": "kbin", "url": "https://kbin.social/m/technology" },
-        {
-          "service": "lemmy",
-          "url": "https://beehaw.org/c/technology",
-          "official": false,
-          "added_ts": 1687285320316
-        }
-      ]
-    },
-    {
-      "name": "r/Python",
-      "links": [
-        { "service": "discord", "url": "https://discord.com/invite/python", "official": true },
-        {
-          "service": "kbin",
-          "url": "https://kbin.social/m/python/microblog",
-          "official": false,
-          "added_ts": 1687203379037
-        },
-        {
-          "service": "lemmy",
-          "url": "https://programming.dev/c/python",
-          "official": false,
-          "added_ts": 1687281802008
-        },
-        {
-          "service": "lemmy",
-          "url": "https://lemmy.ml/c/python",
-          "official": false,
-          "added_ts": 1687285344788
         }
       ]
     },
@@ -3149,17 +2454,6 @@
       ]
     },
     {
-      "name": "r/food",
-      "links": [
-        {
-          "service": "lemmy",
-          "url": "https://beehaw.org/c/food",
-          "official": false,
-          "added_ts": 1687285542413
-        }
-      ]
-    },
-    {
       "name": "r/ainbow",
       "links": [
         {
@@ -3178,23 +2472,6 @@
           "url": "https://lemmy.world/c/fakehistoryporn",
           "official": false,
           "added_ts": 1687285661989
-        }
-      ]
-    },
-    {
-      "name": "r/iOSBeta",
-      "links": [
-        {
-          "service": "discord",
-          "url": "https://discord.com/invite/a9b9ftH7kT",
-          "official": true,
-          "added_ts": 1687203111176
-        },
-        {
-          "service": "lemmy",
-          "url": "https://lemmy.world/c/iosbeta",
-          "official": false,
-          "added_ts": 1687285673068
         }
       ]
     },
@@ -3224,18 +2501,6 @@
           "url": "https://kbin.social/m/JojosBizarreAdventure",
           "official": false,
           "added_ts": 1687285722568
-        }
-      ]
-    },
-    {
-      "name": "r/blender",
-      "links": [
-        { "service": "kbin", "url": "https://kbin.social/m/blender" },
-        {
-          "service": "lemmy",
-          "url": "https://lemmy.world/c/blender",
-          "official": false,
-          "added_ts": 1687285731710
         }
       ]
     },
@@ -3279,23 +2544,6 @@
       ]
     },
     {
-      "name": "r/firefox",
-      "links": [
-        {
-          "service": "matrix",
-          "url": "https://matrix.to/#/#reddit-firefox:mozilla.org",
-          "official": true
-        },
-        { "service": "lemmy", "url": "https://lemmy.world/c/firefox@lemmy.ml" },
-        {
-          "service": "lemmy",
-          "url": "https://lemmy.ml/c/firefox",
-          "official": false,
-          "added_ts": 1687285854987
-        }
-      ]
-    },
-    {
       "name": "r/traaaaaaannnnnnnnnns",
       "links": [
         {
@@ -3309,34 +2557,6 @@
           "url": "https://raddle.me/f/traaaaaaannnnnnnnnns",
           "official": false,
           "added_ts": 1687285865263
-        }
-      ]
-    },
-    {
-      "name": "r/solarpunk",
-      "links": [
-        {
-          "service": "raddle",
-          "url": "https://raddle.me/f/solarpunk",
-          "official": true,
-          "added_ts": 1687285876749
-        }
-      ]
-    },
-    {
-      "name": "r/movies",
-      "links": [
-        {
-          "service": "squabbles",
-          "url": "https://squabbles.io/s/movies",
-          "official": false,
-          "added_ts": 1687284899813
-        },
-        {
-          "service": "misc",
-          "url": "https://tildes.net/~movies",
-          "official": false,
-          "added_ts": 1687285924775
         }
       ]
     },
@@ -3451,34 +2671,6 @@
       ]
     },
     {
-      "name": "r/analog",
-      "links": [
-        {
-          "service": "kbin",
-          "url": "https://kbin.social/m/analog",
-          "official": true,
-          "added_ts": 1687286143768
-        }
-      ]
-    },
-    {
-      "name": "r/splatoon",
-      "links": [
-        {
-          "service": "lemmy",
-          "url": "https://lemmy.world/c/splatoon",
-          "official": false,
-          "added_ts": 1687195666822
-        },
-        {
-          "service": "discord",
-          "url": "https://discord.gg/rsplatoon",
-          "official": true,
-          "added_ts": 1687286156231
-        }
-      ]
-    },
-    {
       "name": "r/netsec",
       "links": [
         {
@@ -3536,19 +2728,6 @@
           "url": "https://lemmy.world/c/castiron",
           "official": false,
           "added_ts": 1687286337697
-        }
-      ]
-    },
-    {
-      "name": "r/3Dprinting",
-      "links": [
-        { "service": "lemmy", "url": "https://forum.rhombik.com", "official": true },
-        { "service": "lemmy", "url": "https://lemmy.world/c/3dprinting", "official": true },
-        {
-          "service": "squabbles",
-          "url": "https://squabbles.io/s/3DPrinting",
-          "official": false,
-          "added_ts": 1687286437204
         }
       ]
     },
@@ -3614,17 +2793,6 @@
       ]
     },
     {
-      "name": "r/daddit",
-      "links": [
-        {
-          "service": "squabbles",
-          "url": "https://squabbles.io/s/DadSquab",
-          "official": false,
-          "added_ts": 1687286676958
-        }
-      ]
-    },
-    {
       "name": "r/Mommit",
       "links": [
         {
@@ -3643,17 +2811,6 @@
           "url": "https://lemmy.ca/c/newfoundland",
           "official": false,
           "added_ts": 1687286717777
-        }
-      ]
-    },
-    {
-      "name": "r/canada",
-      "links": [
-        {
-          "service": "lemmy",
-          "url": "https://lemmy.ca/c/canada",
-          "official": false,
-          "added_ts": 1687286729112
         }
       ]
     },
@@ -3687,17 +2844,6 @@
           "url": "https://kbin.social/m/treelaw",
           "official": true,
           "added_ts": 1687286793074
-        }
-      ]
-    },
-    {
-      "name": "r/AmateurRadio",
-      "links": [
-        {
-          "service": "lemmy",
-          "url": "https://lemmy.radio/",
-          "official": false,
-          "added_ts": 1687286836033
         }
       ]
     },
@@ -3807,18 +2953,6 @@
       ]
     },
     {
-      "name": "r/osugame",
-      "links": [
-        { "service": "lemmy", "url": "https://lemmy.ml/c/osu", "official": false },
-        {
-          "service": "misc",
-          "url": "https://osu.ppy.sh/community/forums",
-          "official": false,
-          "added_ts": 1687287147754
-        }
-      ]
-    },
-    {
       "name": "r/mechanicus",
       "links": [
         {
@@ -3874,17 +3008,6 @@
       ]
     },
     {
-      "name": "r/Jellyfin",
-      "links": [
-        {
-          "service": "misc",
-          "url": "https://forum.jellyfin.org/",
-          "official": true,
-          "added_ts": 1687286569710
-        }
-      ]
-    },
-    {
       "name": "r/goodanimemes",
       "links": [
         {
@@ -3929,17 +3052,6 @@
       ]
     },
     {
-      "name": "r/citiesskylines",
-      "links": [
-        {
-          "service": "discord",
-          "url": "https://discord.gg/citiesskylines",
-          "official": true,
-          "added_ts": 1687287524683
-        }
-      ]
-    },
-    {
       "name": "r/shitpostemblem",
       "links": [
         {
@@ -3980,31 +3092,6 @@
           "url": "https://programming.dev/c/unity",
           "official": false,
           "added_ts": 1687287842034
-        }
-      ]
-    },
-    {
-      "name": "r/apple",
-      "links": [
-        { "service": "lemmy", "url": "https://lemmy.ml/c/apple" },
-        { "service": "kbin", "url": "https://kbin.social/m/apple" },
-        {
-          "service": "discord",
-          "url": "https://discord.com/invite/apple",
-          "official": true,
-          "added_ts": 1687203096952
-        },
-        {
-          "service": "lemmy",
-          "url": "https://lemmy.world/c/apple_enthusiast",
-          "official": false,
-          "added_ts": 1687283379803
-        },
-        {
-          "service": "squabbles",
-          "url": "https://squabbles.io/s/Apple",
-          "official": false,
-          "added_ts": 1687287847017
         }
       ]
     },
@@ -4082,18 +3169,6 @@
       ]
     },
     {
-      "name": "r/AnarchyChess",
-      "links": [
-        { "service": "lemmy", "url": "https://lemmy.world/c/anarchychess@sopuli.xyz" },
-        {
-          "service": "lemmy",
-          "url": "https://sopuli.xyz/c/anarchychess",
-          "official": false,
-          "added_ts": 1687288045231
-        }
-      ]
-    },
-    {
       "name": "r/watches",
       "links": [
         {
@@ -4150,28 +3225,6 @@
       ]
     },
     {
-      "name": "r/battlestations",
-      "links": [
-        {
-          "service": "discord",
-          "url": "https://discord.gg/battlestations",
-          "official": true,
-          "added_ts": 1687288123177
-        }
-      ]
-    },
-    {
-      "name": "r/mechanicalkeyboards",
-      "links": [
-        {
-          "service": "discord",
-          "url": "https://discordapp.com/invite/mechkeys",
-          "official": false,
-          "added_ts": 1687288183868
-        }
-      ]
-    },
-    {
       "name": "r/gravelcycling",
       "links": [
         {
@@ -4190,28 +3243,6 @@
           "url": "https://discord.gg/eneTGxZ",
           "official": true,
           "added_ts": 1687288217484
-        }
-      ]
-    },
-    {
-      "name": "r/austin",
-      "links": [
-        {
-          "service": "lemmy",
-          "url": "https://lemmy.world/c/austin",
-          "official": false,
-          "added_ts": 1687216101981
-        }
-      ]
-    },
-    {
-      "name": "r/hockey",
-      "links": [
-        {
-          "service": "lemmy",
-          "url": "https://lemmy.ca/c/hockey",
-          "official": false,
-          "added_ts": 1687216119569
         }
       ]
     },
@@ -4272,17 +3303,6 @@
       ]
     },
     {
-      "name": "r/genderqueer",
-      "links": [
-        {
-          "service": "lemmy",
-          "url": "https://lemmy.one/c/genderqueer",
-          "official": true,
-          "added_ts": 1687216345402
-        }
-      ]
-    },
-    {
       "name": "r/guildwars2",
       "links": [
         {
@@ -4335,6 +3355,3357 @@
           "url": "https://lemmy.world/c/curlyhair",
           "official": false,
           "added_ts": 1687294462370
+        }
+      ]
+    },
+    {
+      "name": "r/3Dprinting",
+      "links": [
+        { "service": "lemmy", "url": "https://forum.rhombik.com", "official": true },
+        { "service": "lemmy", "url": "https://lemmy.world/c/3dprinting", "official": true },
+        {
+          "service": "squabbles",
+          "url": "https://squabbles.io/s/3DPrinting",
+          "official": false,
+          "added_ts": 1687286437204
+        },
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/3dprinting",
+          "official": false,
+          "added_ts": 1687514887953
+        },
+        {
+          "service": "misc",
+          "url": "https://ramble.pw/f/3dprinting",
+          "official": false,
+          "added_ts": 1687514888063
+        }
+      ]
+    },
+    {
+      "name": "r/600euro",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://feddit.de/c/600euro",
+          "official": false,
+          "added_ts": 1687514888122
+        }
+      ]
+    },
+    {
+      "name": "r/AbandonedPorn",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://reddthat.com/c/abandonedporn",
+          "official": false,
+          "added_ts": 1687514888172
+        }
+      ]
+    },
+    {
+      "name": "r/AmItheAsshole",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/amitheasshole/microblog",
+          "official": false,
+          "added_ts": 1687119835162
+        },
+        {
+          "service": "squabbles",
+          "url": "https://squabbles.io/s/amitheasshole",
+          "official": false,
+          "added_ts": 1687514888207
+        }
+      ]
+    },
+    {
+      "name": "r/AmateurRadio",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.radio/",
+          "official": false,
+          "added_ts": 1687286836033
+        },
+        {
+          "service": "squabbles",
+          "url": "https://squabbles.io/s/amateurradio",
+          "official": false,
+          "added_ts": 1687514888234
+        }
+      ]
+    },
+    {
+      "name": "r/AnarchyChess",
+      "links": [
+        { "service": "lemmy", "url": "https://lemmy.world/c/anarchychess@sopuli.xyz" },
+        {
+          "service": "lemmy",
+          "url": "https://sopuli.xyz/c/anarchychess",
+          "official": false,
+          "added_ts": 1687288045231
+        },
+        {
+          "service": "squabbles",
+          "url": "https://squabbles.io/s/anarchychess",
+          "official": false,
+          "added_ts": 1687514888262
+        }
+      ]
+    },
+    {
+      "name": "r/anime",
+      "links": [
+        {
+          "service": "discord",
+          "url": "https://discord.gg/r-anime",
+          "official": true,
+          "added_ts": 1687281402787
+        },
+        {
+          "service": "squabbles",
+          "url": "https://squabbles.io/s/anime",
+          "official": false,
+          "added_ts": 1687285012241
+        },
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/anime",
+          "official": false,
+          "added_ts": 1687514888318
+        }
+      ]
+    },
+    {
+      "name": "r/ApexLegends",
+      "links": [
+        {
+          "service": "squabbles",
+          "url": "https://squabbles.io/s/apexlegends",
+          "official": false,
+          "added_ts": 1687514888346
+        }
+      ]
+    },
+    {
+      "name": "r/AskMen",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/askmen",
+          "official": false,
+          "added_ts": 1687514888436
+        }
+      ]
+    },
+    {
+      "name": "r/askreddit",
+      "links": [
+        { "service": "lemmy", "url": "https://lemmy.ml/c/asklemmy" },
+        { "service": "kbin", "url": "https://kbin.social/m/AskKbin" },
+        {
+          "service": "raddle",
+          "url": "https://raddle.me/f/AskRaddle",
+          "official": false,
+          "added_ts": 1687281359479
+        },
+        {
+          "service": "squabbles",
+          "url": "https://squabbles.io/s/AskSquabble",
+          "official": false,
+          "added_ts": 1687282601970
+        },
+        {
+          "service": "misc",
+          "url": "https://ramble.pw/f/askramble",
+          "official": false,
+          "added_ts": 1687514888463
+        }
+      ]
+    },
+    {
+      "name": "r/Baking",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/baking",
+          "official": false,
+          "added_ts": 1687514888519
+        }
+      ]
+    },
+    {
+      "name": "r/BuffaloBills",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/buffalobills",
+          "official": false,
+          "added_ts": 1687514888547
+        }
+      ]
+    },
+    {
+      "name": "r/BuyItForLife",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://sh.itjust.works/c/buytiforlife",
+          "official": false,
+          "added_ts": 1687284809566
+        },
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/buyitforlife",
+          "official": false,
+          "added_ts": 1687514888574
+        }
+      ]
+    },
+    {
+      "name": "r/CanadaPolitics",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/canadapolitics",
+          "official": false,
+          "added_ts": 1687514888602
+        }
+      ]
+    },
+    {
+      "name": "r/cats",
+      "links": [
+        { "service": "discord", "url": "https://discord.gg/GqTrazYFxB", "official": true },
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/cat",
+          "official": false,
+          "added_ts": 1687195472229
+        },
+        {
+          "service": "lemmy",
+          "url": "https://sh.itjust.works/c/cats",
+          "official": false,
+          "added_ts": 1687203282908
+        },
+        {
+          "service": "squabbles",
+          "url": "https://squabbles.io/s/Cats",
+          "official": false,
+          "added_ts": 1687285290161
+        },
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/cats",
+          "official": false,
+          "added_ts": 1687514888629
+        }
+      ]
+    },
+    {
+      "name": "r/ChatGPT",
+      "links": [
+        {
+          "service": "discord",
+          "url": "https://discord.gg/nuefu36ec2",
+          "official": true,
+          "added_ts": 1687514888657
+        }
+      ]
+    },
+    {
+      "name": "r/CombatFootage",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/combatfootage",
+          "official": false,
+          "added_ts": 1687514888685
+        }
+      ]
+    },
+    {
+      "name": "r/CreditCards",
+      "links": [
+        {
+          "service": "misc",
+          "url": "https://yunanimous.com/f/creditcards",
+          "official": false,
+          "added_ts": 1687514888715
+        }
+      ]
+    },
+    {
+      "name": "r/daddit",
+      "links": [
+        {
+          "service": "squabbles",
+          "url": "https://squabbles.io/s/DadSquab",
+          "official": false,
+          "added_ts": 1687286676958
+        },
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/daddit",
+          "official": false,
+          "added_ts": 1687514888745
+        }
+      ]
+    },
+    {
+      "name": "r/DayZ",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/dayz",
+          "official": false,
+          "added_ts": 1687514888773
+        }
+      ]
+    },
+    {
+      "name": "r/Deaf",
+      "links": [
+        {
+          "service": "discord",
+          "url": "https://discord.com/invite/ae8t8pg",
+          "official": true,
+          "added_ts": 1687514888802
+        }
+      ]
+    },
+    {
+      "name": "r/DebateReligion",
+      "links": [
+        {
+          "service": "squabbles",
+          "url": "https://squabbles.io/s/debatereligion",
+          "official": true,
+          "added_ts": 1687514888830
+        }
+      ]
+    },
+    {
+      "name": "r/Diablo4",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/diablo4",
+          "official": false,
+          "added_ts": 1687514888858
+        },
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.fmhy.ml/c/diablo4",
+          "official": false,
+          "added_ts": 1687514888885
+        }
+      ]
+    },
+    {
+      "name": "r/DnD",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/dnd",
+          "official": false,
+          "added_ts": 1687514888914
+        },
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/dnd",
+          "official": false,
+          "added_ts": 1687514888968
+        }
+      ]
+    },
+    {
+      "name": "r/DnDMemes",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/dndmemes",
+          "official": false,
+          "added_ts": 1687514888998
+        }
+      ]
+    },
+    {
+      "name": "r/Dogs",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/dogs",
+          "official": false,
+          "added_ts": 1687514889026
+        }
+      ]
+    },
+    {
+      "name": "r/EatCheapAndHealthy",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/eatcheapandhealthy",
+          "official": false,
+          "added_ts": 1687514889054
+        }
+      ]
+    },
+    {
+      "name": "r/fuckcars",
+      "links": [
+        { "service": "lemmy", "url": "https://lemmy.ml/c/fuck_cars", "official": true },
+        { "service": "discord", "url": "https://discord.gg/anticar", "official": true },
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/fuckcars",
+          "official": false,
+          "added_ts": 1687514889081
+        }
+      ]
+    },
+    {
+      "name": "r/Futurology",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/futurology",
+          "official": false,
+          "added_ts": 1687514889136
+        }
+      ]
+    },
+    {
+      "name": "r/gamedev",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://programming.dev/c/gamedev",
+          "official": false,
+          "added_ts": 1687283793593
+        },
+        {
+          "service": "squabbles",
+          "url": "https://squabbles.io/s/gamedev",
+          "official": false,
+          "added_ts": 1687514889164
+        }
+      ]
+    },
+    {
+      "name": "r/GenX",
+      "links": [
+        {
+          "service": "squabbles",
+          "url": "https://squabbles.io/s/genx",
+          "official": false,
+          "added_ts": 1687514889193
+        }
+      ]
+    },
+    {
+      "name": "r/Genshin_Impact",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/genshin_impact",
+          "official": false,
+          "added_ts": 1687514889222
+        }
+      ]
+    },
+    {
+      "name": "r/Genshin_Impact_Leaks",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/genshin_impact_leaks",
+          "official": false,
+          "added_ts": 1687514889252
+        }
+      ]
+    },
+    {
+      "name": "r/GreenBayPackers",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/greenbaypackers",
+          "official": false,
+          "added_ts": 1687514889280
+        }
+      ]
+    },
+    {
+      "name": "r/Halo",
+      "links": [
+        {
+          "service": "squabbles",
+          "url": "https://squabbles.io/s/halo",
+          "official": false,
+          "added_ts": 1687514889309
+        }
+      ]
+    },
+    {
+      "name": "r/HomeImprovement",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/homeimprovement",
+          "official": false,
+          "added_ts": 1687514889337
+        }
+      ]
+    },
+    {
+      "name": "r/IndiaSocial",
+      "links": [
+        {
+          "service": "discord",
+          "url": "https://discord.gg/r-indiasocial-727016164215226450",
+          "official": true,
+          "added_ts": 1687514889367
+        },
+        {
+          "service": "squabbles",
+          "url": "https://squabbles.io/s/indiacasual",
+          "official": true,
+          "added_ts": 1687514889396
+        }
+      ]
+    },
+    {
+      "name": "r/InternetIsBeautiful",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://feddit.de/c/internetisbeautiful",
+          "official": false,
+          "added_ts": 1687282235437
+        },
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/internetisbeautiful",
+          "official": false,
+          "added_ts": 1687514889425
+        }
+      ]
+    },
+    {
+      "name": "r/JRPGs",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/jrpgs",
+          "official": false,
+          "added_ts": 1687514889455
+        }
+      ]
+    },
+    {
+      "name": "r/JoeRogan",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/joeroganexperience",
+          "official": false,
+          "added_ts": 1687514889513
+        }
+      ]
+    },
+    {
+      "name": "r/KerbalSpaceProgram",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://vlemmy.net/c/kerbalspaceprogram",
+          "official": false,
+          "added_ts": 1687514889542
+        }
+      ]
+    },
+    {
+      "name": "r/Leagueoflegends",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/leagueoflegends",
+          "official": false,
+          "added_ts": 1687514889572
+        },
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/leagueoflegends",
+          "official": false,
+          "added_ts": 1687514889601
+        }
+      ]
+    },
+    {
+      "name": "r/LucidDreaming",
+      "links": [
+        {
+          "service": "misc",
+          "url": "https://wts2.wt.social/en/wt/lucid-dreaming",
+          "official": false,
+          "added_ts": 1687514889630
+        }
+      ]
+    },
+    {
+      "name": "r/Lyon",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.ml/c/lyon",
+          "official": true,
+          "added_ts": 1687514889659
+        }
+      ]
+    },
+    {
+      "name": "r/malaysia",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://monyet.cc/",
+          "official": true,
+          "added_ts": 1687282415035
+        },
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/malaysia",
+          "official": false,
+          "added_ts": 1687514889689
+        },
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/malaysia",
+          "official": false,
+          "added_ts": 1687514889718
+        }
+      ]
+    },
+    {
+      "name": "r/MapPorn",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://sopuli.xyz/c/map_enthusiasts",
+          "official": false,
+          "added_ts": 1687514889748
+        }
+      ]
+    },
+    {
+      "name": "r/Minecraft",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/minecraft",
+          "official": false,
+          "added_ts": 1687284764391
+        },
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/minecraft",
+          "official": false,
+          "added_ts": 1687514889778
+        }
+      ]
+    },
+    {
+      "name": "r/Musicals",
+      "links": [
+        {
+          "service": "squabbles",
+          "url": "https://squabbles.io/s/musicals",
+          "official": false,
+          "added_ts": 1687514889807
+        }
+      ]
+    },
+    {
+      "name": "r/Mycology",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/mycology",
+          "official": false,
+          "added_ts": 1687514889837
+        }
+      ]
+    },
+    {
+      "name": "r/NFL",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/nfl",
+          "official": false,
+          "added_ts": 1687514889867
+        }
+      ]
+    },
+    {
+      "name": "r/NonCredibleDefense",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/noncredibledefense",
+          "official": false,
+          "added_ts": 1687514889927
+        },
+        {
+          "service": "lemmy",
+          "url": "https://sh.itjust.works/c/noncredibledefense",
+          "official": false,
+          "added_ts": 1687514889957
+        }
+      ]
+    },
+    {
+      "name": "r/OffGrid",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://slrpnk.net/c/offgrid",
+          "official": false,
+          "added_ts": 1687514889987
+        }
+      ]
+    },
+    {
+      "name": "r/OldRecipes",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/oldrecipes",
+          "official": false,
+          "added_ts": 1687514890017
+        }
+      ]
+    },
+    {
+      "name": "r/Patriots",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/patriots",
+          "official": false,
+          "added_ts": 1687514890110
+        }
+      ]
+    },
+    {
+      "name": "r/PetPics",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/petpics",
+          "official": false,
+          "added_ts": 1687514890142
+        }
+      ]
+    },
+    {
+      "name": "r/PhysicalGeography",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://www.mander.xyz/c/geography",
+          "official": true,
+          "added_ts": 1687514890173
+        }
+      ]
+    },
+    {
+      "name": "r/PlantIdentification",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://www.mander.xyz/c/plantid",
+          "official": false,
+          "added_ts": 1687514890235
+        }
+      ]
+    },
+    {
+      "name": "r/Plants",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/plants",
+          "official": false,
+          "added_ts": 1687514890266
+        }
+      ]
+    },
+    {
+      "name": "r/PokemonGO",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/pokemongo",
+          "official": false,
+          "added_ts": 1687514890297
+        }
+      ]
+    },
+    {
+      "name": "r/Proplifting",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/proplifting",
+          "official": false,
+          "added_ts": 1687514890328
+        }
+      ]
+    },
+    {
+      "name": "r/Rats",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/rats",
+          "official": false,
+          "added_ts": 1687514890360
+        }
+      ]
+    },
+    {
+      "name": "r/ShittyLifeProTips",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/shittylifeprotips",
+          "official": false,
+          "added_ts": 1687514890392
+        }
+      ]
+    },
+    {
+      "name": "r/ShittySysadmins",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://sh.itjust.works/c/shitty_sysadmin",
+          "official": false,
+          "added_ts": 1687514890454
+        }
+      ]
+    },
+    {
+      "name": "r/Solo_Roleplaying",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemm.ee/c/solorpg",
+          "official": false,
+          "added_ts": 1687514890486
+        }
+      ]
+    },
+    {
+      "name": "r/StableDiffusion",
+      "links": [
+        { "service": "discord", "url": "https://discord.gg/4WbTj8YskM", "official": true },
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.dbzer0.com/c/stable_diffusion",
+          "official": true
+        },
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/stablediffusion",
+          "official": false,
+          "added_ts": 1687514890516
+        }
+      ]
+    },
+    {
+      "name": "r/StarCitizen",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.ml/c/starcitizen",
+          "official": false,
+          "added_ts": 1687196330360
+        },
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/starcitizen",
+          "official": false,
+          "added_ts": 1687514890547
+        }
+      ]
+    },
+    {
+      "name": "r/startrek",
+      "links": [
+        { "service": "lemmy", "url": "https://startrek.website/c/startrek", "official": true },
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/startrek",
+          "official": false,
+          "added_ts": 1687514890577
+        }
+      ]
+    },
+    {
+      "name": "r/Starfield",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/starfield",
+          "official": false,
+          "added_ts": 1687514890608
+        }
+      ]
+    },
+    {
+      "name": "r/StarWars",
+      "links": [
+        { "service": "discord", "url": "https://discord.com/invite/StarWars", "official": true },
+        {
+          "service": "squabbles",
+          "url": "https://squabbles.io/s/StarWars",
+          "official": false,
+          "added_ts": 1687197704922
+        },
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/star_wars",
+          "official": false,
+          "added_ts": 1687203392280
+        },
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/starwars",
+          "official": false,
+          "added_ts": 1687514890638
+        }
+      ]
+    },
+    {
+      "name": "r/THE_PACK",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/the_pack",
+          "official": false,
+          "added_ts": 1687196928247
+        },
+        {
+          "service": "squabbles",
+          "url": "https://squabbles.io/s/the_pack",
+          "official": false,
+          "added_ts": 1687514890669
+        }
+      ]
+    },
+    {
+      "name": "r/TOTK",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/totk",
+          "official": false,
+          "added_ts": 1687514890700
+        }
+      ]
+    },
+    {
+      "name": "r/TrueCrime",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/truecrime",
+          "official": false,
+          "added_ts": 1687514890730
+        }
+      ]
+    },
+    {
+      "name": "r/UBC",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.ca/c/ubc",
+          "official": true,
+          "added_ts": 1687514890761
+        }
+      ]
+    },
+    {
+      "name": "r/UFOs",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/ufos",
+          "official": false,
+          "added_ts": 1687514890793
+        },
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/ufos",
+          "official": false,
+          "added_ts": 1687514890824
+        }
+      ]
+    },
+    {
+      "name": "r/UnethicalLifeProTips",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/unethicallifeprotips",
+          "official": false,
+          "added_ts": 1687514890855
+        }
+      ]
+    },
+    {
+      "name": "r/Warhammer40K",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/warhammer40k",
+          "official": false,
+          "added_ts": 1687514890886
+        },
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/warhammer40k",
+          "official": false,
+          "added_ts": 1687514890917
+        }
+      ]
+    },
+    {
+      "name": "r/Witchfire",
+      "links": [
+        {
+          "service": "discord",
+          "url": "https://discord.gg/yg7vj2c5z9",
+          "official": true,
+          "added_ts": 1687514890948
+        },
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/witchfire",
+          "official": true,
+          "added_ts": 1687514890980
+        }
+      ]
+    },
+    {
+      "name": "r/worldnews",
+      "links": [
+        { "service": "lemmy", "url": "https://lemmy.ml/c/worldnews" },
+        { "service": "kbin", "url": "https://kbin.social/m/worldnews" },
+        {
+          "service": "squabbles",
+          "url": "https://squabbles.io/s/worldnews",
+          "official": false,
+          "added_ts": 1687282678933
+        },
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/world",
+          "official": false,
+          "added_ts": 1687283475492
+        },
+        {
+          "service": "misc",
+          "url": "https://ramble.pw/f/worldnews",
+          "official": false,
+          "added_ts": 1687514891011
+        }
+      ]
+    },
+    {
+      "name": "r/WritingPrompts",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.ml/c/writingprompts",
+          "official": false,
+          "added_ts": 1687282785379
+        },
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/writingprompts",
+          "official": false,
+          "added_ts": 1687514891043
+        }
+      ]
+    },
+    {
+      "name": "r/xbox",
+      "links": [
+        {
+          "service": "squabbles",
+          "url": "https://squabbles.io/s/Xbox",
+          "official": false,
+          "added_ts": 1687197737720
+        },
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/xbox",
+          "official": false,
+          "added_ts": 1687514891077
+        }
+      ]
+    },
+    {
+      "name": "r/Xennials",
+      "links": [
+        {
+          "service": "squabbles",
+          "url": "https://squabbles.io/s/xennials",
+          "official": false,
+          "added_ts": 1687514891109
+        }
+      ]
+    },
+    {
+      "name": "r/analog",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/analog",
+          "official": true,
+          "added_ts": 1687286143768
+        },
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/analog",
+          "official": false,
+          "added_ts": 1687514891140
+        }
+      ]
+    },
+    {
+      "name": "r/anarchism",
+      "links": [
+        {
+          "service": "raddle",
+          "url": "https://raddle.me/f/Anarchism",
+          "official": true,
+          "added_ts": 1687197868501
+        },
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.dbzer0.com/c/anarchism",
+          "official": false,
+          "added_ts": 1687514891172
+        }
+      ]
+    },
+    {
+      "name": "r/android",
+      "links": [
+        { "service": "lemmy", "url": "https://lemmy.world/c/android" },
+        { "service": "kbin", "url": "https://kbin.social/m/android" },
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.ml/c/android",
+          "official": false,
+          "added_ts": 1687514888290
+        },
+        {
+          "service": "squabbles",
+          "url": "https://squabbles.io/s/android",
+          "official": false,
+          "added_ts": 1687514891205
+        }
+      ]
+    },
+    {
+      "name": "r/anime_irl",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/anime_irl",
+          "official": false,
+          "added_ts": 1687514891237
+        }
+      ]
+    },
+    {
+      "name": "r/antiarbeit",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://feddit.de/c/antiarbeit",
+          "official": false,
+          "added_ts": 1687514891269
+        }
+      ]
+    },
+    {
+      "name": "r/AntiWork",
+      "links": [
+        { "service": "lemmy", "url": "https://lemmy.ml/c/antiwork" },
+        { "service": "matrix", "url": "https://matrix.to/#/#antiwork:matrix.org" },
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.ca/c/antiwork",
+          "official": false,
+          "added_ts": 1687514891302
+        }
+      ]
+    },
+    {
+      "name": "r/apple",
+      "links": [
+        { "service": "lemmy", "url": "https://lemmy.ml/c/apple" },
+        { "service": "kbin", "url": "https://kbin.social/m/apple" },
+        {
+          "service": "discord",
+          "url": "https://discord.com/invite/apple",
+          "official": true,
+          "added_ts": 1687203096952
+        },
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/apple_enthusiast",
+          "official": false,
+          "added_ts": 1687283379803
+        },
+        {
+          "service": "squabbles",
+          "url": "https://squabbles.io/s/Apple",
+          "official": false,
+          "added_ts": 1687287847017
+        },
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/apple",
+          "official": false,
+          "added_ts": 1687514891334
+        }
+      ]
+    },
+    {
+      "name": "r/Archaeology",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/archaeology",
+          "official": false,
+          "added_ts": 1687514888376
+        },
+        {
+          "service": "lemmy",
+          "url": "https://mander.xyz/c/archaeology",
+          "official": false,
+          "added_ts": 1687514888407
+        }
+      ]
+    },
+    {
+      "name": "r/Architecture",
+      "links": [
+        { "service": "discord", "url": "https://discord.com/invite/tMFaTvk", "official": true },
+        {
+          "service": "lemmy",
+          "url": "https://vlemmy.net/c/architecture",
+          "official": false,
+          "added_ts": 1687514891399
+        }
+      ]
+    },
+    {
+      "name": "r/argentina",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/argentina",
+          "official": false,
+          "added_ts": 1687280064815
+        },
+        {
+          "service": "squabbles",
+          "url": "https://squabbles.io/s/argentina",
+          "official": false,
+          "added_ts": 1687514891432
+        }
+      ]
+    },
+    {
+      "name": "r/art",
+      "links": [
+        {
+          "service": "squabbles",
+          "url": "https://squabbles.io/s/art",
+          "official": false,
+          "added_ts": 1687280997768
+        },
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/art",
+          "official": false,
+          "added_ts": 1687514891464
+        }
+      ]
+    },
+    {
+      "name": "r/askbiologists",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/askbiologists",
+          "official": false,
+          "added_ts": 1687514891496
+        }
+      ]
+    },
+    {
+      "name": "r/askdad",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/askdad",
+          "official": false,
+          "added_ts": 1687514891530
+        }
+      ]
+    },
+    {
+      "name": "r/askscience",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/askscience",
+          "official": false,
+          "added_ts": 1687514891564
+        }
+      ]
+    },
+    {
+      "name": "r/astrophotography",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/astrophotography",
+          "official": false,
+          "added_ts": 1687514891596
+        },
+        {
+          "service": "discord",
+          "url": "https://discord.com/invite/4vybmvd",
+          "official": true,
+          "added_ts": 1687514891629
+        }
+      ]
+    },
+    {
+      "name": "r/audiofiction",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/audiofiction",
+          "official": false,
+          "added_ts": 1687514891662
+        }
+      ]
+    },
+    {
+      "name": "r/austin",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/austin",
+          "official": false,
+          "added_ts": 1687216101981
+        },
+        {
+          "service": "squabbles",
+          "url": "https://squabbles.io/s/austin",
+          "official": false,
+          "added_ts": 1687514891698
+        }
+      ]
+    },
+    {
+      "name": "r/australia",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://aussie.zone/c/australia",
+          "official": false,
+          "added_ts": 1687282552949
+        },
+        {
+          "service": "squabbles",
+          "url": "https://squabbles.io/s/australia",
+          "official": false,
+          "added_ts": 1687514891733
+        }
+      ]
+    },
+    {
+      "name": "r/badminton",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/badminton",
+          "official": true,
+          "added_ts": 1687282163593
+        },
+        {
+          "service": "discord",
+          "url": "https://discord.gg/badminton",
+          "official": true,
+          "added_ts": 1687285163329
+        },
+        {
+          "service": "discord",
+          "url": "https://discord.gg/invite/badminton",
+          "official": true,
+          "added_ts": 1687514891766
+        }
+      ]
+    },
+    {
+      "name": "r/baseball",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/baseball",
+          "official": false,
+          "added_ts": 1687514891800
+        }
+      ]
+    },
+    {
+      "name": "r/battlestations",
+      "links": [
+        {
+          "service": "discord",
+          "url": "https://discord.gg/battlestations",
+          "official": true,
+          "added_ts": 1687288123177
+        },
+        {
+          "service": "squabbles",
+          "url": "https://squabbles.io/s/battlestations",
+          "official": false,
+          "added_ts": 1687514891834
+        }
+      ]
+    },
+    {
+      "name": "r/beer",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/beer",
+          "official": false,
+          "added_ts": 1687514891867
+        }
+      ]
+    },
+    {
+      "name": "r/bestofredditorupdates",
+      "links": [
+        {
+          "service": "discord",
+          "url": "https://discord.gg/Hx2hym2juy",
+          "official": true,
+          "added_ts": 1687282174013
+        },
+        {
+          "service": "squabbles",
+          "url": "https://squabbles.io/s/bestofsquabblerupdates",
+          "official": false,
+          "added_ts": 1687514891938
+        }
+      ]
+    },
+    {
+      "name": "r/biodiversity",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://mander.xyz/c/biodiversity",
+          "official": true,
+          "added_ts": 1687514891972
+        }
+      ]
+    },
+    {
+      "name": "r/biogeography",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://www.mander.xyz/c/geography",
+          "official": true,
+          "added_ts": 1687514892004
+        }
+      ]
+    },
+    {
+      "name": "r/bisexual",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/bisexual",
+          "official": false,
+          "added_ts": 1687284843863
+        },
+        {
+          "service": "squabbles",
+          "url": "https://squabbles.io/s/bisexual",
+          "official": false,
+          "added_ts": 1687514892037
+        }
+      ]
+    },
+    {
+      "name": "r/blender",
+      "links": [
+        { "service": "kbin", "url": "https://kbin.social/m/blender" },
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/blender",
+          "official": false,
+          "added_ts": 1687285731710
+        },
+        {
+          "service": "squabbles",
+          "url": "https://squabbles.io/s/blender",
+          "official": false,
+          "added_ts": 1687514892069
+        }
+      ]
+    },
+    {
+      "name": "r/blind",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://rblind.com",
+          "official": true,
+          "added_ts": 1687514892102
+        }
+      ]
+    },
+    {
+      "name": "r/boston",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/boston",
+          "official": false,
+          "added_ts": 1687205919156
+        },
+        {
+          "service": "squabbles",
+          "url": "https://squabbles.io/s/boston",
+          "official": false,
+          "added_ts": 1687514892134
+        }
+      ]
+    },
+    {
+      "name": "r/buildapc",
+      "links": [
+        { "service": "discord", "url": "https://discord.gg/buildapc", "official": true },
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/buildapc",
+          "official": false,
+          "added_ts": 1687514892166
+        },
+        {
+          "service": "squabbles",
+          "url": "https://squabbles.io/s/buildapc",
+          "official": false,
+          "added_ts": 1687514892200
+        }
+      ]
+    },
+    {
+      "name": "r/buildapcsales",
+      "links": [
+        {
+          "service": "discord",
+          "url": "https://discord.gg/bapcs",
+          "official": true,
+          "added_ts": 1687514892232
+        }
+      ]
+    },
+    {
+      "name": "r/canada",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.ca/c/canada",
+          "official": false,
+          "added_ts": 1687286729112
+        },
+        {
+          "service": "squabbles",
+          "url": "https://squabbles.io/s/canada",
+          "official": false,
+          "added_ts": 1687514892266
+        }
+      ]
+    },
+    {
+      "name": "r/canberra",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://aussie.zone/c/canberra",
+          "official": false,
+          "added_ts": 1687514892301
+        }
+      ]
+    },
+    {
+      "name": "r/caps",
+      "links": [
+        {
+          "service": "discord",
+          "url": "https://discord.gg/acnbc2qwgm",
+          "official": true,
+          "added_ts": 1687514892335
+        }
+      ]
+    },
+    {
+      "name": "r/citiesskylines",
+      "links": [
+        {
+          "service": "discord",
+          "url": "https://discord.gg/citiesskylines",
+          "official": true,
+          "added_ts": 1687287524683
+        },
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.ml/c/citiesskylines",
+          "official": false,
+          "added_ts": 1687514892368
+        }
+      ]
+    },
+    {
+      "name": "r/coffee",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/coffee",
+          "official": false,
+          "added_ts": 1687514892402
+        },
+        {
+          "service": "lemmy",
+          "url": "https://latte.isnot.coffee/c/coffee",
+          "official": false,
+          "added_ts": 1687514892435
+        },
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/coffee",
+          "official": false,
+          "added_ts": 1687514892469
+        }
+      ]
+    },
+    {
+      "name": "r/community",
+      "links": [
+        {
+          "service": "squabbles",
+          "url": "https://squabbles.io/s/meowmeowbeenz",
+          "official": false,
+          "added_ts": 1687514892502
+        }
+      ]
+    },
+    {
+      "name": "r/cozygames",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://feddit.de/c/cozygames",
+          "official": false,
+          "added_ts": 1687514892536
+        }
+      ]
+    },
+    {
+      "name": "r/cricket",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/cricket",
+          "official": false,
+          "added_ts": 1687514892570
+        },
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/cricket",
+          "official": false,
+          "added_ts": 1687514892604
+        }
+      ]
+    },
+    {
+      "name": "r/cyberpunkgame",
+      "links": [
+        { "service": "discord", "url": "https://discord.com/invite/Rkj2wj6", "official": true },
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/cyberpunk2077",
+          "official": false,
+          "added_ts": 1687514892638
+        }
+      ]
+    },
+    {
+      "name": "r/dadjokes",
+      "links": [
+        {
+          "service": "squabbles",
+          "url": "https://squabbles.io/s/dadjokes",
+          "official": false,
+          "added_ts": 1687280983791
+        },
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/dadjokes",
+          "official": false,
+          "added_ts": 1687514892671
+        }
+      ]
+    },
+    {
+      "name": "r/debian",
+      "links": [
+        { "service": "kbin", "url": "https://kbin.social/m/debian" },
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.ml/c/debian",
+          "official": false,
+          "added_ts": 1687514892706
+        }
+      ]
+    },
+    {
+      "name": "r/Denver",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/denver",
+          "official": false,
+          "added_ts": 1687197327771
+        },
+        {
+          "service": "squabbles",
+          "url": "https://squabbles.io/s/denvermetro",
+          "official": false,
+          "added_ts": 1687514892740
+        }
+      ]
+    },
+    {
+      "name": "r/discgolf",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/discgolf",
+          "official": false,
+          "added_ts": 1687514892774
+        }
+      ]
+    },
+    {
+      "name": "r/discussion",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://wirebase.org/c/wirebase_discussion",
+          "official": false,
+          "added_ts": 1687514892808
+        }
+      ]
+    },
+    {
+      "name": "r/documentaries",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/documentaries",
+          "official": false,
+          "added_ts": 1687514892843
+        },
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/documentaries",
+          "official": false,
+          "added_ts": 1687514892877
+        }
+      ]
+    },
+    {
+      "name": "r/engineeringstudents",
+      "links": [
+        {
+          "service": "discord",
+          "url": "https://discord.gg/engineeringstudents",
+          "official": false,
+          "added_ts": 1687514892911
+        }
+      ]
+    },
+    {
+      "name": "r/enviro_archaeology",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://www.mander.xyz/c/archaeology",
+          "official": true,
+          "added_ts": 1687514892946
+        }
+      ]
+    },
+    {
+      "name": "r/environment",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/environment",
+          "official": false,
+          "added_ts": 1687514892981
+        }
+      ]
+    },
+    {
+      "name": "r/europe",
+      "links": [
+        { "service": "discord", "url": "https://discord.com/invite/WzsgwHmHvY", "official": true },
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.ml/c/europe",
+          "official": false,
+          "added_ts": 1687203299409
+        },
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/europe",
+          "official": false,
+          "added_ts": 1687514893016
+        },
+        {
+          "service": "lemmy",
+          "url": "https://feddit.de/c/europe",
+          "official": false,
+          "added_ts": 1687514893050
+        }
+      ]
+    },
+    {
+      "name": "r/exmormon",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/exmormon",
+          "official": false,
+          "added_ts": 1687514893086
+        }
+      ]
+    },
+    {
+      "name": "r/fediverse",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/fediverse",
+          "official": false,
+          "added_ts": 1687514893121
+        }
+      ]
+    },
+    {
+      "name": "r/ffxiv",
+      "links": [
+        {
+          "service": "squabbles",
+          "url": "https://squabbles.io/s/ffxiv",
+          "official": false,
+          "added_ts": 1687280990898
+        },
+        {
+          "service": "lemmy",
+          "url": "https://possumpat.io/c/ffxiv",
+          "official": false,
+          "added_ts": 1687514893157
+        }
+      ]
+    },
+    {
+      "name": "r/firefox",
+      "links": [
+        {
+          "service": "matrix",
+          "url": "https://matrix.to/#/#reddit-firefox:mozilla.org",
+          "official": true
+        },
+        { "service": "lemmy", "url": "https://lemmy.world/c/firefox@lemmy.ml" },
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.ml/c/firefox",
+          "official": false,
+          "added_ts": 1687285854987
+        },
+        {
+          "service": "squabbles",
+          "url": "https://squabbles.io/s/firefox",
+          "official": false,
+          "added_ts": 1687514893192
+        }
+      ]
+    },
+    {
+      "name": "r/fitness",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/fitness",
+          "official": false,
+          "added_ts": 1687514893227
+        }
+      ]
+    },
+    {
+      "name": "r/food",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://beehaw.org/c/food",
+          "official": false,
+          "added_ts": 1687285542413
+        },
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/food",
+          "official": false,
+          "added_ts": 1687514893264
+        }
+      ]
+    },
+    {
+      "name": "r/formuladank",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/formuladank",
+          "official": false,
+          "added_ts": 1687514893299
+        }
+      ]
+    },
+    {
+      "name": "r/fountainpens",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://wayfarershaven.eu/c/fountainpens",
+          "official": false,
+          "added_ts": 1687514893335
+        }
+      ]
+    },
+    {
+      "name": "r/funny",
+      "links": [
+        {
+          "service": "squabbles",
+          "url": "https://squabbles.io/s/funny",
+          "official": false,
+          "added_ts": 1687282724863
+        },
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/funny",
+          "official": false,
+          "added_ts": 1687514889109
+        },
+        {
+          "service": "misc",
+          "url": "https://ramble.pw/f/funny",
+          "official": false,
+          "added_ts": 1687514893382
+        },
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/humor",
+          "official": false,
+          "added_ts": 1687514893450
+        },
+        {
+          "service": "lemmy",
+          "url": "https://sh.itjust.works/c/funny",
+          "official": false,
+          "added_ts": 1687514893485
+        }
+      ]
+    },
+    {
+      "name": "r/gardening",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/gardening",
+          "official": false,
+          "added_ts": 1687514893519
+        }
+      ]
+    },
+    {
+      "name": "r/genderqueer",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.one/c/genderqueer",
+          "official": true,
+          "added_ts": 1687216345402
+        },
+        {
+          "service": "discord",
+          "url": "https://discord.gg/ka9mp5bpcn",
+          "official": false,
+          "added_ts": 1687514893554
+        }
+      ]
+    },
+    {
+      "name": "r/geoarchaeology",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://www.mander.xyz/c/archaeology",
+          "official": true,
+          "added_ts": 1687514893589
+        }
+      ]
+    },
+    {
+      "name": "r/geomatics",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://www.mander.xyz/c/geospatial",
+          "official": true,
+          "added_ts": 1687514893623
+        }
+      ]
+    },
+    {
+      "name": "r/guns",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/guns",
+          "official": false,
+          "added_ts": 1687514893658
+        }
+      ]
+    },
+    {
+      "name": "r/hearthstone",
+      "links": [
+        {
+          "service": "discord",
+          "url": "https://discord.gg/hearthstone",
+          "official": true,
+          "added_ts": 1687514893692
+        }
+      ]
+    },
+    {
+      "name": "r/hexcrawl",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemm.ee/c/hexcrawl",
+          "official": false,
+          "added_ts": 1687514893728
+        }
+      ]
+    },
+    {
+      "name": "r/history",
+      "links": [
+        { "service": "discord", "url": "https://discord.gg/7XkFuez", "official": true },
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.ml/c/history",
+          "official": false,
+          "added_ts": 1687203316947
+        },
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/history",
+          "official": false,
+          "added_ts": 1687514893763
+        }
+      ]
+    },
+    {
+      "name": "r/hockey",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.ca/c/hockey",
+          "official": false,
+          "added_ts": 1687216119569
+        },
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/hockey",
+          "official": false,
+          "added_ts": 1687514893799
+        }
+      ]
+    },
+    {
+      "name": "r/homestead",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/homestead",
+          "official": false,
+          "added_ts": 1687514893834
+        }
+      ]
+    },
+    {
+      "name": "r/houseplants",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/houseplants",
+          "official": false,
+          "added_ts": 1687514893869
+        },
+        {
+          "service": "lemmy",
+          "url": "https://www.mander.xyz/c/houseplants",
+          "official": false,
+          "added_ts": 1687514893905
+        },
+        {
+          "service": "lemmy",
+          "url": "https://mander.xyz/c/houseplants",
+          "official": false,
+          "added_ts": 1687514893940
+        }
+      ]
+    },
+    {
+      "name": "r/iOSBeta",
+      "links": [
+        {
+          "service": "discord",
+          "url": "https://discord.com/invite/a9b9ftH7kT",
+          "official": true,
+          "added_ts": 1687203111176
+        },
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/iosbeta",
+          "official": false,
+          "added_ts": 1687285673068
+        },
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/iosbeta",
+          "official": false,
+          "added_ts": 1687514893976
+        }
+      ]
+    },
+    {
+      "name": "r/indonesia",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.ml/c/Indonesia",
+          "official": false,
+          "added_ts": 1687119835162
+        },
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/indonesia",
+          "official": false,
+          "added_ts": 1687514894012
+        }
+      ]
+    },
+    {
+      "name": "r/japonic",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/japonic",
+          "official": true,
+          "added_ts": 1687514894047
+        }
+      ]
+    },
+    {
+      "name": "r/Jellyfin",
+      "links": [
+        {
+          "service": "misc",
+          "url": "https://forum.jellyfin.org/",
+          "official": true,
+          "added_ts": 1687286569710
+        },
+        {
+          "service": "squabbles",
+          "url": "https://squabbles.io/s/jellyfin",
+          "official": false,
+          "added_ts": 1687514889484
+        },
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.ml/c/jellyfin",
+          "official": false,
+          "added_ts": 1687514894083
+        }
+      ]
+    },
+    {
+      "name": "r/jokes",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/jokes",
+          "official": false,
+          "added_ts": 1687514894119
+        }
+      ]
+    },
+    {
+      "name": "r/korean",
+      "links": [
+        {
+          "service": "discord",
+          "url": "https://discord.gg/nkns9mf",
+          "official": true,
+          "added_ts": 1687514894155
+        }
+      ]
+    },
+    {
+      "name": "r/lgbt",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://beehaw.org/c/lgbtq_plus",
+          "official": false,
+          "added_ts": 1687281125077
+        },
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.blahaj.zone/c/lgbtq_plus",
+          "official": false,
+          "added_ts": 1687283728516
+        },
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/lgbt",
+          "official": false,
+          "added_ts": 1687514894192
+        }
+      ]
+    },
+    {
+      "name": "r/linux",
+      "links": [
+        { "service": "lemmy", "url": "https://sopuli.xyz/c/linux" },
+        { "service": "lemmy", "url": "https://lemmy.ml/c/linux" },
+        { "service": "kbin", "url": "https://kbin.social/m/linux" },
+        {
+          "service": "lemmy",
+          "url": "https://programming.dev/c/linux",
+          "official": false,
+          "added_ts": 1687284648597
+        },
+        {
+          "service": "misc",
+          "url": "https://ramble.pw/f/linux",
+          "official": false,
+          "added_ts": 1687514894227
+        },
+        {
+          "service": "raddle",
+          "url": "https://raddle.me/f/linux",
+          "official": false,
+          "added_ts": 1687514894263
+        },
+        {
+          "service": "raddle",
+          "url": "https://raddle.me/f/lignux",
+          "official": false,
+          "added_ts": 1687514894300
+        }
+      ]
+    },
+    {
+      "name": "r/linux_gaming",
+      "links": [
+        { "service": "kbin", "url": "https://kbin.social/m/linux_gaming", "official": true },
+        { "service": "lemmy", "url": "https://lemmy.world/c/linux_gaming", "official": true },
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.ml/c/linux_gaming@lemmy.ml",
+          "official": false,
+          "added_ts": 1687514894337
+        }
+      ]
+    },
+    {
+      "name": "r/linuxmasterrace",
+      "links": [
+        { "service": "kbin", "url": "https://kbin.social/m/linuxmasterrace" },
+        {
+          "service": "matrix",
+          "url": "https://matrix.to/#/#linuxmasterrace:matrix.org",
+          "official": true,
+          "added_ts": 1687514894375
+        }
+      ]
+    },
+    {
+      "name": "r/linuxmemes",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.ml/c/linuxmemes@lemmy.world",
+          "official": false,
+          "added_ts": 1687514894411
+        },
+        {
+          "service": "raddle",
+          "url": "https://raddle.me/f/linuxmemes",
+          "official": false,
+          "added_ts": 1687514894448
+        }
+      ]
+    },
+    {
+      "name": "r/livingmas",
+      "links": [
+        {
+          "service": "squabbles",
+          "url": "https://squabbles.io/s/tacobell",
+          "official": false,
+          "added_ts": 1687514894485
+        }
+      ]
+    },
+    {
+      "name": "r/loseit",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://discuss.tchncs.de/c/loseit",
+          "official": false,
+          "added_ts": 1687514894521
+        }
+      ]
+    },
+    {
+      "name": "r/manga",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/manga",
+          "official": false,
+          "added_ts": 1687514894557
+        }
+      ]
+    },
+    {
+      "name": "r/mechanicalkeyboards",
+      "links": [
+        {
+          "service": "discord",
+          "url": "https://discordapp.com/invite/mechkeys",
+          "official": false,
+          "added_ts": 1687288183868
+        },
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/mechanicalkeyboards",
+          "official": false,
+          "added_ts": 1687514894595
+        }
+      ]
+    },
+    {
+      "name": "r/memes",
+      "links": [
+        { "service": "lemmy", "url": "https://lemmy.ml/c/memes" },
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/memes",
+          "official": false,
+          "added_ts": 1687514894631
+        },
+        {
+          "service": "lemmy",
+          "url": "https://midwest.social/c/memes",
+          "official": false,
+          "added_ts": 1687514894668
+        },
+        {
+          "service": "lemmy",
+          "url": "https://sopuli.xyz/c/memes",
+          "official": false,
+          "added_ts": 1687514894705
+        }
+      ]
+    },
+    {
+      "name": "r/MildlyInfuriating",
+      "links": [
+        { "service": "lemmy", "url": "https://lemmy.world/c/mildlyinfuriating" },
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/mildlyinfuriating",
+          "official": false,
+          "added_ts": 1687514894742
+        }
+      ]
+    },
+    {
+      "name": "r/moderatepolitics",
+      "links": [
+        {
+          "service": "squabbles",
+          "url": "https://squabbles.io/s/moderatepolitics",
+          "official": false,
+          "added_ts": 1687514894780
+        }
+      ]
+    },
+    {
+      "name": "r/motorcycles",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/motorcycles",
+          "official": false,
+          "added_ts": 1687196948997
+        },
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/motorcycles",
+          "official": false,
+          "added_ts": 1687514894826
+        }
+      ]
+    },
+    {
+      "name": "r/movies",
+      "links": [
+        {
+          "service": "squabbles",
+          "url": "https://squabbles.io/s/movies",
+          "official": false,
+          "added_ts": 1687284899813
+        },
+        {
+          "service": "misc",
+          "url": "https://tildes.net/~movies",
+          "official": false,
+          "added_ts": 1687285924775
+        },
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/movies",
+          "official": false,
+          "added_ts": 1687514894891
+        }
+      ]
+    },
+    {
+      "name": "r/moviesuggestions",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/moviesuggestions",
+          "official": false,
+          "added_ts": 1687514894928
+        }
+      ]
+    },
+    {
+      "name": "r/music",
+      "links": [
+        { "service": "lemmy", "url": "https://beehaw.org/c/music" },
+        { "service": "kbin", "url": "https://kbin.social/m/music" },
+        {
+          "service": "squabbles",
+          "url": "https://squabbles.io/s/music",
+          "official": false,
+          "added_ts": 1687280890862
+        },
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/music",
+          "official": false,
+          "added_ts": 1687514894965
+        },
+        {
+          "service": "misc",
+          "url": "https://ramble.pw/f/music",
+          "official": false,
+          "added_ts": 1687514895002
+        }
+      ]
+    },
+    {
+      "name": "r/nba",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/nba",
+          "official": false,
+          "added_ts": 1687514895038
+        },
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/nba",
+          "official": false,
+          "added_ts": 1687514895075
+        }
+      ]
+    },
+    {
+      "name": "r/neovim",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://sopuli.xyz/c/neovim",
+          "official": false,
+          "added_ts": 1687514895110
+        }
+      ]
+    },
+    {
+      "name": "r/news",
+      "links": [
+        { "service": "lemmy", "url": "https://beehaw.org/c/news" },
+        { "service": "kbin", "url": "https://kbin.social/m/news" },
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/news",
+          "official": false,
+          "added_ts": 1687514895146
+        },
+        {
+          "service": "misc",
+          "url": "https://ramble.pw/f/news",
+          "official": false,
+          "added_ts": 1687514895183
+        }
+      ]
+    },
+    {
+      "name": "r/nextfuckinglevel",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/nextfuckinglevel",
+          "official": false,
+          "added_ts": 1687514895221
+        }
+      ]
+    },
+    {
+      "name": "r/norskfotball",
+      "links": [
+        {
+          "service": "discord",
+          "url": "https://discord.gg/h883knpzw",
+          "official": true,
+          "added_ts": 1687514895259
+        }
+      ]
+    },
+    {
+      "name": "r/NoStupidQuestions",
+      "links": [
+        { "service": "lemmy", "url": "https://lemmy.world/c/nostupidquestions" },
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/nostupidquestions",
+          "official": false,
+          "added_ts": 1687514889897
+        },
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.ca/c/nostupidquestions",
+          "official": false,
+          "added_ts": 1687514895296
+        }
+      ]
+    },
+    {
+      "name": "r/nottheonion",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/nottheonion",
+          "official": false,
+          "added_ts": 1687514895333
+        },
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/nottheonion",
+          "official": false,
+          "added_ts": 1687514895371
+        }
+      ]
+    },
+    {
+      "name": "r/nutrition",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://mander.xyz/c/nutrition",
+          "official": false,
+          "added_ts": 1687514895445
+        }
+      ]
+    },
+    {
+      "name": "r/oddlysatisfying",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/oddlysatisfying",
+          "official": false,
+          "added_ts": 1687514895482
+        },
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/oddlysatisfying",
+          "official": false,
+          "added_ts": 1687514895520
+        }
+      ]
+    },
+    {
+      "name": "r/OnePiece",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/onepiece",
+          "official": false,
+          "added_ts": 1687514890049
+        },
+        {
+          "service": "squabbles",
+          "url": "https://squabbles.io/s/onepiece",
+          "official": false,
+          "added_ts": 1687514895558
+        }
+      ]
+    },
+    {
+      "name": "r/osr",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemm.ee/c/osr",
+          "official": false,
+          "added_ts": 1687514895595
+        }
+      ]
+    },
+    {
+      "name": "r/osugame",
+      "links": [
+        { "service": "lemmy", "url": "https://lemmy.ml/c/osu", "official": false },
+        {
+          "service": "misc",
+          "url": "https://osu.ppy.sh/community/forums",
+          "official": false,
+          "added_ts": 1687287147754
+        },
+        {
+          "service": "discord",
+          "url": "https://discord.gg/osugame",
+          "official": true,
+          "added_ts": 1687514895632
+        }
+      ]
+    },
+    {
+      "name": "r/palaeoecology",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://www.mander.xyz/c/palaeoecology",
+          "official": true,
+          "added_ts": 1687514895671
+        }
+      ]
+    },
+    {
+      "name": "r/Pathfinder2e",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://pathfinder.social",
+          "official": false,
+          "added_ts": 1687284912189
+        },
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/pathfinder2e",
+          "official": false,
+          "added_ts": 1687514895708
+        }
+      ]
+    },
+    {
+      "name": "r/PatientGamers",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/patientgamers",
+          "official": false,
+          "added_ts": 1687514890079
+        },
+        {
+          "service": "lemmy",
+          "url": "https://sh.itjust.works/c/patientgamers",
+          "official": false,
+          "added_ts": 1687514895746
+        }
+      ]
+    },
+    {
+      "name": "r/pcmasterrace",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/pcmasterrace",
+          "official": false,
+          "added_ts": 1687514895785
+        }
+      ]
+    },
+    {
+      "name": "r/philosophy",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://mander.xyz/c/philosophy",
+          "official": false,
+          "added_ts": 1687514895823
+        }
+      ]
+    },
+    {
+      "name": "r/pics",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/pics",
+          "official": false,
+          "added_ts": 1687119835162
+        },
+        {
+          "service": "squabbles",
+          "url": "https://squabbles.io/s/pics",
+          "official": false,
+          "added_ts": 1687281028799
+        },
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/pics",
+          "official": false,
+          "added_ts": 1687514895861
+        },
+        {
+          "service": "misc",
+          "url": "https://ramble.pw/f/pics",
+          "official": false,
+          "added_ts": 1687514895900
+        }
+      ]
+    },
+    {
+      "name": "r/piracy",
+      "links": [
+        { "service": "lemmy", "url": "https://lemmy.dbzer0.com/c/piracy", "official": true },
+        {
+          "service": "misc",
+          "url": "https://ramble.pw/f/piracy",
+          "official": false,
+          "added_ts": 1687514890204
+        },
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/piracy",
+          "official": false,
+          "added_ts": 1687514895938
+        }
+      ]
+    },
+    {
+      "name": "r/PixelArt",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.ml/c/pixelart",
+          "official": false,
+          "added_ts": 1687283099601
+        },
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/pixelart",
+          "official": false,
+          "added_ts": 1687514895977
+        }
+      ]
+    },
+    {
+      "name": "r/playingcards",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/playingcards",
+          "official": false,
+          "added_ts": 1687514896015
+        }
+      ]
+    },
+    {
+      "name": "r/pokeplush",
+      "links": [
+        {
+          "service": "discord",
+          "url": "https://discord.gg/pokeplush",
+          "official": true,
+          "added_ts": 1687514896053
+        }
+      ]
+    },
+    {
+      "name": "r/politics",
+      "links": [
+        { "service": "lemmy", "url": "https://beehaw.org/c/politics" },
+        { "service": "kbin", "url": "https://kbin.social/m/politics" },
+        {
+          "service": "squabbles",
+          "url": "https://squabbles.io/s/politics",
+          "official": false,
+          "added_ts": 1687284724627
+        },
+        {
+          "service": "misc",
+          "url": "https://ramble.pw/f/politics",
+          "official": false,
+          "added_ts": 1687514896093
+        }
+      ]
+    },
+    {
+      "name": "r/privacy",
+      "links": [
+        { "service": "lemmy", "url": "https://lemmy.ml/c/privacy" },
+        { "service": "kbin", "url": "https://kbin.social/m/privacy" },
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.ca/c/privacy",
+          "official": false,
+          "added_ts": 1687514896133
+        },
+        {
+          "service": "misc",
+          "url": "https://ramble.pw/f/privacy",
+          "official": false,
+          "added_ts": 1687514896174
+        }
+      ]
+    },
+    {
+      "name": "r/ProgrammerHumor",
+      "links": [
+        { "service": "discord", "url": "https://discord.gg/rph", "official": true },
+        { "service": "lemmy", "url": "https://lemmy.ml/c/ProgrammerHumor" },
+        {
+          "service": "lemmy",
+          "url": "https://programming.dev/c/programmer_humor",
+          "official": false,
+          "added_ts": 1687279758616
+        },
+        {
+          "service": "squabbles",
+          "url": "https://squabbles.io/s/programmerHumor",
+          "official": false,
+          "added_ts": 1687282287262
+        },
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/programmerhumor",
+          "official": false,
+          "added_ts": 1687514896213
+        }
+      ]
+    },
+    {
+      "name": "r/programming",
+      "links": [
+        { "service": "lemmy", "url": "https://beehaw.org/c/programming" },
+        { "service": "kbin", "url": "https://kbin.social/m/programming" },
+        {
+          "service": "lemmy",
+          "url": "https://programming.dev/c/programming",
+          "official": false,
+          "added_ts": 1687279805673
+        },
+        {
+          "service": "misc",
+          "url": "https://ramble.pw/f/programming",
+          "official": false,
+          "added_ts": 1687514896252
+        }
+      ]
+    },
+    {
+      "name": "r/punk",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/punk",
+          "official": false,
+          "added_ts": 1687514896328
+        }
+      ]
+    },
+    {
+      "name": "r/Python",
+      "links": [
+        { "service": "discord", "url": "https://discord.com/invite/python", "official": true },
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/python/microblog",
+          "official": false,
+          "added_ts": 1687203379037
+        },
+        {
+          "service": "lemmy",
+          "url": "https://programming.dev/c/python",
+          "official": false,
+          "added_ts": 1687281802008
+        },
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.ml/c/python",
+          "official": false,
+          "added_ts": 1687285344788
+        },
+        {
+          "service": "lemmy",
+          "url": "https://sh.itjust.works/c/python",
+          "official": false,
+          "added_ts": 1687514896369
+        },
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/python",
+          "official": false,
+          "added_ts": 1687514896407
+        }
+      ]
+    },
+    {
+      "name": "r/retrogaming",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/retrogaming",
+          "official": false,
+          "added_ts": 1687514896445
+        },
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/retrogaming",
+          "official": false,
+          "added_ts": 1687514896483
+        }
+      ]
+    },
+    {
+      "name": "r/rpg",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.ml/c/rpg",
+          "official": false,
+          "added_ts": 1687514896521
+        }
+      ]
+    },
+    {
+      "name": "r/rust",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/rust",
+          "official": false,
+          "added_ts": 1687514896559
+        },
+        {
+          "service": "lemmy",
+          "url": "https://programming.dev/c/rust",
+          "official": false,
+          "added_ts": 1687514896596
+        },
+        {
+          "service": "lemmy",
+          "url": "https://lemmyrs.org/c/rustlang",
+          "official": false,
+          "added_ts": 1687514896634
+        }
+      ]
+    },
+    {
+      "name": "r/sandiego",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.ml/c/sandiego",
+          "official": false,
+          "added_ts": 1687514896672
+        }
+      ]
+    },
+    {
+      "name": "r/sbcgaming",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.ml/c/sbcgaming",
+          "official": false,
+          "added_ts": 1687514896710
+        }
+      ]
+    },
+    {
+      "name": "r/shitposting",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/lemmyshitpost",
+          "official": false,
+          "added_ts": 1687279773889
+        },
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/shitposting",
+          "official": false,
+          "added_ts": 1687282530246
+        },
+        {
+          "service": "lemmy",
+          "url": "https://sopuli.xyz/c/shitposting",
+          "official": false,
+          "added_ts": 1687514896749
+        }
+      ]
+    },
+    {
+      "name": "r/soccer",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/soccer",
+          "official": false,
+          "added_ts": 1687514896790
+        },
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/football",
+          "official": false,
+          "added_ts": 1687514896830
+        }
+      ]
+    },
+    {
+      "name": "r/solarpunk",
+      "links": [
+        {
+          "service": "raddle",
+          "url": "https://raddle.me/f/solarpunk",
+          "official": true,
+          "added_ts": 1687285876749
+        },
+        {
+          "service": "lemmy",
+          "url": "https://slrpnk.net",
+          "official": false,
+          "added_ts": 1687514896870
+        }
+      ]
+    },
+    {
+      "name": "r/splatoon",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/splatoon",
+          "official": false,
+          "added_ts": 1687195666822
+        },
+        {
+          "service": "discord",
+          "url": "https://discord.gg/rsplatoon",
+          "official": true,
+          "added_ts": 1687286156231
+        },
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/splatoon",
+          "official": false,
+          "added_ts": 1687514896910
+        }
+      ]
+    },
+    {
+      "name": "r/sysadmin",
+      "links": [
+        {
+          "service": "misc",
+          "url": "https://sysadmins.zone",
+          "official": false,
+          "added_ts": 1687126182198
+        },
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/sysadmin",
+          "official": false,
+          "added_ts": 1687514896949
+        },
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/sysadmin",
+          "official": false,
+          "added_ts": 1687514896988
+        }
+      ]
+    },
+    {
+      "name": "r/technology",
+      "links": [
+        { "service": "lemmy", "url": "https://lemmy.ml/c/technology" },
+        { "service": "lemmy", "url": "https://lemmy.world/c/technology" },
+        { "service": "kbin", "url": "https://kbin.social/m/technology" },
+        {
+          "service": "lemmy",
+          "url": "https://beehaw.org/c/technology",
+          "official": false,
+          "added_ts": 1687285320316
+        },
+        {
+          "service": "misc",
+          "url": "https://ramble.pw/f/technology",
+          "official": false,
+          "added_ts": 1687514897028
+        }
+      ]
+    },
+    {
+      "name": "r/techsupport",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/techsupport",
+          "official": false,
+          "added_ts": 1687514897067
+        }
+      ]
+    },
+    {
+      "name": "r/television",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/television",
+          "official": false,
+          "added_ts": 1687514897106
+        },
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/television",
+          "official": false,
+          "added_ts": 1687514897145
+        }
+      ]
+    },
+    {
+      "name": "r/therewasanattempt",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/therewasanattempt",
+          "official": false,
+          "added_ts": 1687514897185
+        }
+      ]
+    },
+    {
+      "name": "r/trashpandas",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/trashpandas",
+          "official": false,
+          "added_ts": 1687514897225
+        }
+      ]
+    },
+    {
+      "name": "r/trippinthroughtime",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.ca/c/trippinthroughtime",
+          "official": false,
+          "added_ts": 1687514897265
+        }
+      ]
+    },
+    {
+      "name": "r/unpopularopinion",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/unpopularopinion",
+          "official": false,
+          "added_ts": 1687514897304
+        },
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/unpopularopinion",
+          "official": false,
+          "added_ts": 1687514897344
+        }
+      ]
+    },
+    {
+      "name": "r/vancouver",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.ca/c/vancouver",
+          "official": false,
+          "added_ts": 1687514897384
+        }
+      ]
+    },
+    {
+      "name": "r/videos",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/videos",
+          "official": false,
+          "added_ts": 1687514897423
+        },
+        {
+          "service": "lemmy",
+          "url": "https://sopuli.xyz/c/videos",
+          "official": false,
+          "added_ts": 1687514897463
+        },
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.ml/c/videos",
+          "official": false,
+          "added_ts": 1687514897503
+        }
+      ]
+    },
+    {
+      "name": "r/vinyl",
+      "links": [
+        {
+          "service": "discord",
+          "url": "https://discord.gg/vinylchat",
+          "official": false,
+          "added_ts": 1687514897544
+        }
+      ]
+    },
+    {
+      "name": "r/WallStreetBets",
+      "links": [
+        {
+          "service": "discord",
+          "url": "https://discord.com/invite/wsbverse",
+          "official": true,
+          "added_ts": 1687284852644
+        },
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/wallstreetbets",
+          "official": false,
+          "added_ts": 1687514897584
+        }
+      ]
+    },
+    {
+      "name": "r/wow",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/wow",
+          "official": false,
+          "added_ts": 1687514897625
+        }
+      ]
+    },
+    {
+      "name": "r/ZeroWaste",
+      "links": [
+        { "service": "lemmy", "url": "https://lemmy.ml/c/zerowaste", "official": true },
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/zerowaste",
+          "official": false,
+          "added_ts": 1687514897665
+        },
+        {
+          "service": "lemmy",
+          "url": "https://slrpnk.net/c/zerowaste",
+          "official": false,
+          "added_ts": 1687514897706
         }
       ]
     }
