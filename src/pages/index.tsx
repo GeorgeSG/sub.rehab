@@ -4,11 +4,9 @@ import { Section } from "@/components/core/section";
 import { AnimatedSlogan } from "@/components/index/animated-slogan";
 import { CommunityList } from "@/components/index/community-list";
 import { Statistics } from "@/components/index/statistics";
-import { Anchor, Button, Flex, Group, Text, Tooltip, createStyles } from "@mantine/core";
-import { useLocalStorage } from "@mantine/hooks";
+import { Anchor, Button, Flex, Group, Text, createStyles } from "@mantine/core";
 import { modals } from "@mantine/modals";
 import Link from "next/link";
-import { useRouter } from "next/router";
 import { IoAdd, IoStatsChart, IoWarningOutline } from "react-icons/io5";
 
 const useStyles = createStyles((theme) => ({
@@ -53,21 +51,10 @@ export default function Home() {
         </div>
         <Flex gap="xs" className={classes.buttonRow}>
           <Group>
-            <Tooltip
-              withArrow
-              label="Submitting disabled due to very high traffic. 😅 Follow us on Mastodon for updates. Thank you!"
-            >
-              <div>
-                <GradientButton<typeof Link>
-                  disabled
-                  component={Link}
-                  href="/submit-link"
-                  leftIcon={<IoAdd />}
-                >
-                  Suggest link
-                </GradientButton>
-              </div>
-            </Tooltip>
+            <GradientButton<typeof Link> component={Link} href="/submit-link" leftIcon={<IoAdd />}>
+              Suggest link
+            </GradientButton>
+
             <GradientButton<typeof Link>
               component={Link}
               href="https://github.com/GeorgeSG/sub.rehab/discussions/9"
