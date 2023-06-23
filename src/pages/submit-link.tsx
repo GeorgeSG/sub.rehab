@@ -95,33 +95,63 @@ export default function SubmitLink() {
 
         return null;
       },
+
+      officialExplanation: (value, values) => {
+        if (values.official && !value) {
+          return "Official explanation is required";
+        }
+
+        return null;
+      },
     },
   });
 
   useEffect(() => {
-    console.log(";checking");
     if (form.values.link.includes("squabbles.io")) {
       form.setFieldValue("service", "squabbles");
       setServiceDisabled(true);
       return;
     }
+
     if (form.values.link.includes("kbin.social")) {
       form.setFieldValue("service", "kbin");
       setServiceDisabled(true);
       return;
     }
+
     if (
       form.values.link.includes("lemmy.ml") ||
       form.values.link.includes("lemmy.world") ||
+      form.values.link.includes("sopuli.xyz") ||
       form.values.link.includes("feddit.de")
     ) {
       form.setFieldValue("service", "lemmy");
       setServiceDisabled(true);
       return;
     }
+
+    if (form.values.link.includes("matrix.to")) {
+      form.setFieldValue("service", "matrix");
+      setServiceDisabled(true);
+      return;
+    }
+
+    if (form.values.link.includes("raddle.me")) {
+      form.setFieldValue("service", "raddle");
+      setServiceDisabled(true);
+      return;
+    }
+
     setServiceDisabled(false);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [form.values.link]);
+
+  useEffect(() => {
+    if (form.values.service === "discord") {
+      form.setFieldValue("official", true);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [form.values.service]);
 
   return (
     <>
@@ -210,8 +240,9 @@ export default function SubmitLink() {
               name="official"
               mt="md"
               label="Is official?"
-              {...form.getInputProps("official")}
+              disabled={form.values.service === "discord"}
               checked={form.values.official}
+              {...form.getInputProps("official")}
             />
 
             <TextInput
