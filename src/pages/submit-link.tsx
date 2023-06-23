@@ -162,20 +162,19 @@ export default function SubmitLink() {
         </Title>
         <List mt="xxl" maw={800}>
           <List.Item>
-            No links to communities who break their service&apos;s ToS or share any illegal content
-            (this should be self-explanatory).
+            No links to communities who break their platform&apos;s ToS or share any illegal
+            content.
           </List.Item>
-          <List.Item>
-            No links to communities that an alternative for a subreddit that has been banned for ToS
-            violations.
+          <List.Item pt="sm">
+            No links to communities that are an alternative for a subreddit that has been banned.
           </List.Item>
           <List.Item pt="sm">
             No NSFW communities (yet). We want to figure out how to handle NSFW stuff before we
             allow it.
           </List.Item>
           <List.Item pt="sm">
-            Link must be an alternative to an existing subreddit. I don&apos;t see sub.rehab as a
-            general fediverse directory (for now).
+            Links must be alternatives to an existing subreddit. sub.rehab is not a general
+            fediverse directory (for now).
           </List.Item>
           <List.Item pt="sm">
             For &quot;misc&quot; communities, we approve forum-like platforms. We do not currently
@@ -201,7 +200,7 @@ export default function SubmitLink() {
         <Title order={2} mt="xxl" sx={{ fontFamily: "var(--font-accent)" }}>
           Suggest a link
         </Title>
-        <Box maw={400} mt="xxl">
+        <Box maw={450} mt="xxl">
           <form
             onSubmit={form.onSubmit((values) => handleSubmit(values))}
             data-netlify="true"
@@ -261,7 +260,7 @@ export default function SubmitLink() {
               <div>
                 <Checkbox
                   mt="md"
-                  label="This submission meet the activity requirements"
+                  label="* I have checked that the community meets the criteria above"
                   onChange={(e) => setConfirmRules(e.target.checked)}
                   checked={confirmRules}
                 />
