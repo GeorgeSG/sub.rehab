@@ -28,7 +28,7 @@
     "cli": "ts-node --esm ./bin/cli/cli.mts",
     "fbs": "yarn cli firebase",
     "prepare": "husky install",
-    "deploy": "NEXT_PUBLIC_FIRESTORE_SUFFIX='' yarn build && yarn fbs deploy"
+    "deploy": "NEXT_PUBLIC_FIRESTORE_SUFFIX='' yarn build && firebase deploy"
   },
   "dependencies": {
     "@emotion/react": "11.11.1",
