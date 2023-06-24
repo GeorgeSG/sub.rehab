@@ -57,12 +57,6 @@
       ]
     },
     {
-      "name": "r/Screenwriting",
-      "links": [
-        { "service": "discord", "url": "https://discord.com/invite/BNh27by", "official": true }
-      ]
-    },
-    {
       "name": "r/Terraria",
       "links": [
         { "service": "discord", "url": "https://discord.gg/terraria", "official": true },
@@ -2546,17 +2540,6 @@
           "url": "https://raddle.me/f/trans",
           "official": false,
           "added_ts": 1687285967896
-        }
-      ]
-    },
-    {
-      "name": "r/retrogamingmagazines",
-      "links": [
-        {
-          "service": "discord",
-          "url": "https://discord.gg/s8vDRuB2",
-          "official": true,
-          "added_ts": 1687285986875
         }
       ]
     },
