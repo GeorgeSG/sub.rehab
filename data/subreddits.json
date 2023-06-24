@@ -3529,7 +3529,7 @@
       "links": [
         {
           "service": "lemmy",
-          "url": "https://www.mander.xyz/c/geography",
+          "url": "https://mander.xyz/c/geography",
           "official": true,
           "added_ts": 1687514890173
         }
@@ -3540,7 +3540,7 @@
       "links": [
         {
           "service": "lemmy",
-          "url": "https://www.mander.xyz/c/plantid",
+          "url": "https://mander.xyz/c/plantid",
           "official": false,
           "added_ts": 1687514890235
         }
@@ -4183,7 +4183,7 @@
       "links": [
         {
           "service": "lemmy",
-          "url": "https://www.mander.xyz/c/geography",
+          "url": "https://mander.xyz/c/geography",
           "official": true,
           "added_ts": 1687514892004
         }
@@ -4462,7 +4462,7 @@
       "links": [
         {
           "service": "lemmy",
-          "url": "https://www.mander.xyz/c/archaeology",
+          "url": "https://mander.xyz/c/archaeology",
           "official": true,
           "added_ts": 1687514892946
         }
@@ -4649,7 +4649,7 @@
       "links": [
         {
           "service": "lemmy",
-          "url": "https://www.mander.xyz/c/archaeology",
+          "url": "https://mander.xyz/c/archaeology",
           "official": true,
           "added_ts": 1687514893589
         }
@@ -4660,7 +4660,7 @@
       "links": [
         {
           "service": "lemmy",
-          "url": "https://www.mander.xyz/c/geospatial",
+          "url": "https://mander.xyz/c/geospatial",
           "official": true,
           "added_ts": 1687514893623
         }
@@ -4753,12 +4753,6 @@
           "url": "https://kbin.social/m/houseplants",
           "official": false,
           "added_ts": 1687514893869
-        },
-        {
-          "service": "lemmy",
-          "url": "https://www.mander.xyz/c/houseplants",
-          "official": false,
-          "added_ts": 1687514893905
         },
         {
           "service": "lemmy",
@@ -5209,7 +5203,7 @@
       "links": [
         {
           "service": "lemmy",
-          "url": "https://www.mander.xyz/c/palaeoecology",
+          "url": "https://mander.xyz/c/palaeoecology",
           "official": true,
           "added_ts": 1687514895671
         }
