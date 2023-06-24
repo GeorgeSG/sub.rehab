@@ -1610,13 +1610,13 @@
         {
           "service": "raddle",
           "url": "https://raddle.me/f/196",
-          "official": false,
+          "official": true,
           "added_ts": 1687280625700
         },
         {
           "service": "squabbles",
           "url": "https://squabbles.io/s/196",
-          "official": false,
+          "official": true,
           "added_ts": 1687281037711
         }
       ]
@@ -2455,12 +2455,6 @@
           "url": "https://lemmy.ca/c/calgary",
           "official": false,
           "added_ts": 1687281378804
-        },
-        {
-          "service": "discord",
-          "url": "https://discord.gg/calgary",
-          "official": false,
-          "added_ts": 1687286662799
         }
       ]
     },
