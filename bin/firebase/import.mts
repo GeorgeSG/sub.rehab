@@ -26,12 +26,14 @@ type ExistingSub = {
 
 type ImportSub = {
   id: string;
-  added_ts: number;
   subreddit: string;
   service: string;
-  url: string;
+  link: string;
   official?: boolean;
+  officialExplanation?: boolean;
+  added_ts?: number;
   added_by?: string;
+  sent_at: { seconds: number };
 };
 
 const getExistingData = () =>
@@ -50,7 +52,7 @@ export const writeData = (newData: ExiistingData) =>
 const addLink = (importSub: ImportSub) => {
   let existingData = getExistingData();
   const importName = normalizeSubreddit(importSub.subreddit);
-  const url = normalizeLink(importSub.url);
+  const url = normalizeLink(importSub.link);
 
   let subredditToWrite = existingData.find(
     (sub: ExistingSub) => sub.name.toLowerCase() === importName.toLowerCase()
@@ -66,7 +68,7 @@ const addLink = (importSub: ImportSub) => {
   if (subredditToWrite) {
     warning(`Subreddit ${importName} already exists`);
     if (subredditToWrite.links.find((l: ExistingLink) => l.url === url)) {
-      warning("Link already exists, skipping...");
+      warning(`Link already exists, skipping: ${chalk.bold.white(url)}`);
       writeForDeletion(importSub.id);
       return;
     }
