@@ -22,7 +22,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "NEXT_PUBLIC_FIRESTORE_SUFFIX='' next build",
     "start": "next start",
     "lint": "next lint",
     "cli": "ts-node --esm ./bin/cli/cli.mts",
