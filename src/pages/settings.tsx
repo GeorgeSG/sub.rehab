@@ -13,11 +13,7 @@ import {
   Title,
   useMantineColorScheme,
 } from "@mantine/core";
-import { useLocalStorage } from "@mantine/hooks";
-import { useEffect, useState } from "react";
 import {
-  IoAlert,
-  IoAlertCircle,
   IoAlertCircleOutline,
   IoCloseOutline,
   IoHomeOutline,
@@ -42,7 +38,6 @@ export default function FAQPage() {
 
   const {
     rawHomeInstance,
-    homeInstance,
     setHomeInstance,
     enabled: homeInstanceEnabled,
     setEnabled: setHomeInstanceEnabled,
@@ -99,7 +94,12 @@ export default function FAQPage() {
         <Flex maw={400} direction="column" gap="md" mt="lg">
           <Switch
             checked={homeInstanceEnabled}
-            onChange={() => setHomeInstanceEnabled((prev) => !prev)}
+            onChange={() => {
+              setHomeInstanceEnabled((prev) => {
+                umami.track("setHomeInstanceEnabled", { enabled: (!prev).toString() });
+                return !prev;
+              });
+            }}
             labelPosition="left"
             label="Enabled:"
           />
@@ -110,7 +110,12 @@ export default function FAQPage() {
             placeholder="Select an instance"
             value={rawHomeInstance}
             label="Instance:"
-            onChange={(e) => e && setHomeInstance(e)}
+            onChange={(e) => {
+              if (e) {
+                setHomeInstance(e);
+                umami.track("setHomeInstance", { instance: e });
+              }
+            }}
             icon={<IoHomeOutline />}
           />
           {rawHomeInstance === "custom" && (
