@@ -1,7 +1,7 @@
 import { PageHeader } from "@/components/core/page-header";
 import { Section } from "@/components/core/section";
 import { useSubredditData } from "@/data";
-import { db } from "@/firebase";
+import { COLLECTION_LINK_SUBMISSIONS, db } from "@/firebase";
 import {
   Anchor,
   Box,
@@ -30,7 +30,7 @@ export default function SubmitLink() {
   // TODO: type values
   const handleSubmit = async (values: any) => {
     try {
-      const ref = collection(db, "linkSubmissions");
+      const ref = collection(db, COLLECTION_LINK_SUBMISSIONS);
 
       await addDoc(ref, {
         ...values,

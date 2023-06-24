@@ -12,3 +12,6 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app);
+
+export const COLLECTION_LINK_SUBMISSIONS =
+  "linkSubmissions" + (process.env.NEXT_PUBLIC_FIRESTORE_SUFFIX || "");
