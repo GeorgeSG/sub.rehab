@@ -1,16 +1,17 @@
 import {
   ActionIcon,
-  Anchor,
   Button,
   Group,
+  Indicator,
   Tooltip,
   createStyles,
   useMantineColorScheme,
 } from "@mantine/core";
-import Link from "next/link";
-import { IoLogoGithub, IoLogoMastodon, IoMoon, IoSunnyOutline } from "react-icons/io5";
-import { Logotype } from "./logotype";
 import { useMediaQuery } from "@mantine/hooks";
+import Link from "next/link";
+import { useRouter } from "next/router";
+import { IoCogOutline, IoLogoGithub, IoLogoMastodon } from "react-icons/io5";
+import { Logotype } from "./logotype";
 
 const useStyles = createStyles(({ spacing, shadows, radius, colorScheme, fn }) => ({
   title: {
@@ -47,6 +48,7 @@ export function PageHeader({ withBackground = false }: { withBackground?: boolea
   const { classes } = useStyles();
   const { colorScheme, toggleColorScheme } = useMantineColorScheme();
   const isSmallScreen = useMediaQuery("(max-width: 30em)");
+  const router = useRouter();
 
   const isDark = colorScheme === "dark";
 
@@ -99,19 +101,17 @@ export function PageHeader({ withBackground = false }: { withBackground?: boolea
             <IoLogoGithub size={20} />
           </ActionIcon>
         </Tooltip>
-        <Tooltip
-          label={isDark ? "Switch to light mode" : "Switch to dark mode"}
-          position="top"
-          withArrow
-        >
-          <ActionIcon
-            size="lg"
-            color={isDark ? "yellow" : "indigo"}
-            onClick={() => toggleColorScheme()}
-            title="Toggle color scheme"
-          >
-            {isDark ? <IoSunnyOutline /> : <IoMoon />}
-          </ActionIcon>
+        <Tooltip label="Settings" position="top" withArrow>
+          <Indicator size={7} processing offset={5} color={isDark ? "indigo.3" : "indigo.6"}>
+            <ActionIcon
+              onClick={() => router.push("/settings")}
+              size="lg"
+              color={isDark ? "#C1C2C5" : "orange.5"}
+              title="Settings"
+            >
+              <IoCogOutline size={20} />
+            </ActionIcon>
+          </Indicator>
         </Tooltip>
       </Group>
     </header>

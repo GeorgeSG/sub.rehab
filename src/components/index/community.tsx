@@ -1,6 +1,18 @@
+import { useHomeInstance } from "@/hooks/use-home-instance";
 import { useIsLinkNew } from "@/hooks/use-is-link-new";
-import { Anchor, Indicator, Title, createStyles } from "@mantine/core";
+import {
+  ActionIcon,
+  Anchor,
+  Flex,
+  Indicator,
+  Text,
+  Title,
+  Tooltip,
+  createStyles,
+} from "@mantine/core";
 import { useCallback, useMemo } from "react";
+import { IoCheckmarkCircleOutline, IoShareOutline } from "react-icons/io5";
+import { OriginalInstanceLink } from "../original-instance-link";
 
 type Link = {
   service: string;
@@ -12,7 +24,6 @@ type Link = {
 type CommunityProps = {
   name: string;
   links: Link[];
-  homeInstance: string;
 };
 
 const SERVICE_ICONS: Record<string, string> = {
@@ -65,15 +76,16 @@ const useStyles = createStyles(({ colors, colorScheme, spacing, radius, other })
 
     official: {
       height: "20px",
-      marginLeft: "auto",
       color: isDark ? colors.orange[1] : colors.orange[6],
     },
   };
 });
 
-export function Community({ name, links, homeInstance }: CommunityProps) {
+export function Community({ name, links }: CommunityProps) {
   const { classes } = useStyles();
   const isLinkNew = useIsLinkNew();
+
+  const { homeInstance } = useHomeInstance();
 
   const homeInstanceURL = useMemo(() => {
     if (homeInstance.length === 0) {
@@ -95,25 +107,41 @@ export function Community({ name, links, homeInstance }: CommunityProps) {
       return false;
     }
 
-    const url = new URL(link.url);
+    if (!homeInstanceURL) {
+      return false;
+    }
 
-    return homeInstanceURL && url.host !== homeInstanceURL.host;
+    const url = new URL(link.url);
+    if (url.host === homeInstanceURL.host) {
+      return false;
+    }
+
+    if (link.service === "lemmy") {
+      return link.url.includes("/c/");
+    }
+
+    if (link.service === "kbin") {
+      return link.url.includes("/m/");
+    }
+
+    return false;
   };
 
   const getSubredditLink = useCallback(
     (link: Link) => {
       if (supportsHomeInstance(link) && homeInstanceURL) {
-        const url = new URL(link.url);
-        if (url.pathname !== "/") {
-          return `${homeInstanceURL.host}${homeInstanceURL.pathname}${url.pathname.split("/")[2]}@${
-            url.host
-          }`;
+        const originalUrl = new URL(link.url);
+        if (originalUrl.pathname !== "/") {
+          return `https://${homeInstanceURL.host}${homeInstanceURL.pathname}${
+            originalUrl.pathname.split("/")[2]
+          }@${originalUrl.host}`;
         }
       }
 
-      return link.url.split("://")[1];
+      return link.url;
     },
-    [homeInstance]
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [homeInstanceURL]
   );
 
   return (
@@ -126,10 +154,9 @@ export function Community({ name, links, homeInstance }: CommunityProps) {
         .map((link) => (
           <Anchor
             key={link.url}
-            href={`https://${getSubredditLink(link)}`}
+            href={getSubredditLink(link)}
             target="_blank"
-            title={getSubredditLink(link)}
-            rel="noreferrer"
+            title={getSubredditLink(link).split("https://")[1]}
             className={classes.homeLocation}
           >
             {SERVICE_ICONS[link.service] && (
@@ -144,6 +171,26 @@ export function Community({ name, links, homeInstance }: CommunityProps) {
                 />
               </Indicator>
             )}
+            <Text sx={{ textOverflow: "ellipsis", overflow: "hidden", textWrap: "nowrap" }}>
+              {getSubredditLink(link).split("://")[1]}
+            </Text>
+            <Flex ml="auto" align="center" gap="sm">
+              {supportsHomeInstance(link) && <OriginalInstanceLink url={link.url} />}
+              {link.official && (
+                <Tooltip
+                  label={
+                    <>
+                      verified from <strong>{name}</strong>
+                    </>
+                  }
+                  withArrow
+                >
+                  <Text className={classes.official}>
+                    <IoCheckmarkCircleOutline size={20} />
+                  </Text>
+                </Tooltip>
+              )}
+            </Flex>
           </Anchor>
         ))}
     </div>

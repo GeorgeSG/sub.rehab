@@ -158,7 +158,7 @@ export default function SubmitLink() {
         <Title order={2} sx={{ fontFamily: "var(--font-accent)" }}>
           Link approval criteria
         </Title>
-        <List mt="xxl" maw={800}>
+        <List mt="xxl" maw={800} type="ordered">
           <List.Item>
             No links to communities who break their platform&apos;s ToS or share any illegal
             content.
