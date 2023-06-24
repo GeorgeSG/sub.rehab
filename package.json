@@ -22,12 +22,13 @@
   "license": "MIT",
   "scripts": {
     "dev": "next dev",
-    "build": "NEXT_PUBLIC_FIRESTORE_SUFFIX='' next build",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "cli": "ts-node --esm ./bin/cli/cli.mts",
     "fbs": "yarn cli firebase",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "deploy": "NEXT_PUBLIC_FIRESTORE_SUFFIX='' yarn build && yarn fbs deploy"
   },
   "dependencies": {
     "@emotion/react": "11.11.1",
