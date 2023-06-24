@@ -21,11 +21,11 @@
     },
     {
       "name": "r/ApplyingToCollege",
-      "links": [{ "service": "discord", "url": "https://discord.com/invite/a2c", "official": true }]
+      "links": [{ "service": "discord", "url": "https://discord.gg/a2c", "official": true }]
     },
     {
       "name": "r/bodyweightfitness",
-      "links": [{ "service": "discord", "url": "https://discord.com/invite/bwf", "official": true }]
+      "links": [{ "service": "discord", "url": "https://discord.gg/bwf", "official": true }]
     },
     {
       "name": "r/childfree",
@@ -41,19 +41,19 @@
     {
       "name": "r/HobbyDrama",
       "links": [
-        { "service": "discord", "url": "https://discord.com/invite/mEpSg3B9ny", "official": true }
+        { "service": "discord", "url": "https://discord.gg/mEpSg3B9ny", "official": true }
       ]
     },
     {
       "name": "r/itookapicture",
       "links": [
-        { "service": "discord", "url": "https://discord.com/invite/2AbfJ9w", "official": true }
+        { "service": "discord", "url": "https://discord.gg/2AbfJ9w", "official": true }
       ]
     },
     {
       "name": "r/NVIDIA",
       "links": [
-        { "service": "discord", "url": "https://discord.com/invite/nvidia", "official": true }
+        { "service": "discord", "url": "https://discord.gg/nvidia", "official": true }
       ]
     },
     {
@@ -66,7 +66,7 @@
     {
       "name": "r/truegaming",
       "links": [
-        { "service": "discord", "url": "https://discord.com/invite/truegaming", "official": true },
+        { "service": "discord", "url": "https://discord.gg/truegaming", "official": true },
         { "service": "kbin", "url": "https://kbin.social/m/truegaming", "official": true }
       ]
     },
@@ -78,7 +78,7 @@
       "name": "r/steamdeck_linux",
       "links": [
         { "service": "lemmy", "url": "https://sopuli.xyz/c/steamdeck", "official": true },
-        { "service": "discord", "url": "https://discord.com/invite/swpENgpu75", "official": true },
+        { "service": "discord", "url": "https://discord.gg/swpENgpu75", "official": true },
         {
           "service": "matrix",
           "url": "https://matrix.to/#/!RtYlIpMObCRjlRZHTV:matrix.org",
@@ -140,7 +140,7 @@
     {
       "name": "r/pathofexile",
       "links": [
-        { "service": "discord", "url": "https://discord.com/invite/pathofexile", "official": true },
+        { "service": "discord", "url": "https://discord.gg/pathofexile", "official": true },
         {
           "service": "lemmy",
           "url": "https://pathofexile-discuss.com/c/pathofexile",
@@ -156,7 +156,7 @@
       "name": "r/Baltimore",
       "links": [
         { "service": "kbin", "url": "https://kbin.social/m/baltimore", "official": true },
-        { "service": "discord", "url": "https://discord.com/invite/hsvBQhTPmX", "official": true }
+        { "service": "discord", "url": "https://discord.gg/hsvBQhTPmX", "official": true }
       ]
     },
     {
@@ -364,7 +364,7 @@
     {
       "name": "r/Steam",
       "links": [
-        { "service": "discord", "url": "https://discord.com/invite/steam", "official": true },
+        { "service": "discord", "url": "https://discord.gg/steam", "official": true },
         {
           "service": "lemmy",
           "url": "https://lemmy.ml/c/steam",
@@ -1037,7 +1037,7 @@
       "links": [
         {
           "service": "discord",
-          "url": "https://discord.com/invite/kutfDG3",
+          "url": "https://discord.gg/kutfDG3",
           "official": true,
           "added_ts": 1687196283537
         }
@@ -1211,7 +1211,7 @@
       "links": [
         {
           "service": "discord",
-          "url": "https://discord.com/invite/projectsekai",
+          "url": "https://discord.gg/projectsekai",
           "official": true,
           "added_ts": 1687203144020
         }
@@ -1306,7 +1306,7 @@
     {
       "name": "r/iPhone",
       "links": [
-        { "service": "discord", "url": "https://discord.com/invite/r5McVVhqqs", "official": true },
+        { "service": "discord", "url": "https://discord.gg/r5McVVhqqs", "official": true },
         {
           "service": "lemmy",
           "url": "https://lemmy.ml/c/iphone",
@@ -1416,7 +1416,7 @@
       "links": [
         {
           "service": "discord",
-          "url": "https://discord.com/invite/apstudents",
+          "url": "https://discord.gg/apstudents",
           "official": true,
           "added_ts": 1687208410466
         }
@@ -2725,7 +2725,7 @@
         },
         {
           "service": "discord",
-          "url": "https://discord.com/invite/calgary",
+          "url": "https://discord.gg/calgary",
           "official": false,
           "added_ts": 1687286662799
         }
@@ -4091,7 +4091,7 @@
     {
       "name": "r/StarWars",
       "links": [
-        { "service": "discord", "url": "https://discord.com/invite/StarWars", "official": true },
+        { "service": "discord", "url": "https://discord.gg/StarWars", "official": true },
         {
           "service": "squabbles",
           "url": "https://squabbles.io/s/StarWars",
@@ -4388,7 +4388,7 @@
         { "service": "kbin", "url": "https://kbin.social/m/apple" },
         {
           "service": "discord",
-          "url": "https://discord.com/invite/apple",
+          "url": "https://discord.gg/apple",
           "official": true,
           "added_ts": 1687203096952
         },
@@ -4432,7 +4432,7 @@
     {
       "name": "r/Architecture",
       "links": [
-        { "service": "discord", "url": "https://discord.com/invite/tMFaTvk", "official": true },
+        { "service": "discord", "url": "https://discord.gg/tMFaTvk", "official": true },
         {
           "service": "lemmy",
           "url": "https://vlemmy.net/c/architecture",
@@ -4878,7 +4878,7 @@
     {
       "name": "r/cyberpunkgame",
       "links": [
-        { "service": "discord", "url": "https://discord.com/invite/Rkj2wj6", "official": true },
+        { "service": "discord", "url": "https://discord.gg/Rkj2wj6", "official": true },
         {
           "service": "lemmy",
           "url": "https://lemmy.world/c/cyberpunk2077",
@@ -4997,7 +4997,7 @@
     {
       "name": "r/europe",
       "links": [
-        { "service": "discord", "url": "https://discord.com/invite/WzsgwHmHvY", "official": true },
+        { "service": "discord", "url": "https://discord.gg/WzsgwHmHvY", "official": true },
         {
           "service": "lemmy",
           "url": "https://lemmy.ml/c/europe",
@@ -5316,7 +5316,7 @@
       "links": [
         {
           "service": "discord",
-          "url": "https://discord.com/invite/a9b9ftH7kT",
+          "url": "https://discord.gg/a9b9ftH7kT",
           "official": true,
           "added_ts": 1687203111176
         },
@@ -6098,7 +6098,7 @@
     {
       "name": "r/Python",
       "links": [
-        { "service": "discord", "url": "https://discord.com/invite/python", "official": true },
+        { "service": "discord", "url": "https://discord.gg/python", "official": true },
         {
           "service": "kbin",
           "url": "https://kbin.social/m/python/microblog",
@@ -6444,7 +6444,7 @@
       "links": [
         {
           "service": "discord",
-          "url": "https://discord.com/invite/wsbverse",
+          "url": "https://discord.gg/wsbverse",
           "official": true,
           "added_ts": 1687284852644
         },
