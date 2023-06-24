@@ -33,6 +33,7 @@ export default function FAQPage() {
     { label: "beehaw.org", value: "beehaw.org/c/", group: "lemmy" },
     { label: "programming.dev", value: "programming.dev/c/", group: "lemmy" },
     { label: "sopuli.xyz", value: "sopuli.xyz/c/", group: "lemmy" },
+    { label: "lemmy.wtf", value: "lemmy.wtf/c/", group: "lemmy" },
     { label: "custom", value: "custom", group: "custom" },
   ];
 
