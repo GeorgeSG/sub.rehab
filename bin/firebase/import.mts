@@ -65,9 +65,7 @@ const addLink = (importSub: ImportSub) => {
 
   if (subredditToWrite) {
     warning(`Subreddit ${importName} already exists`);
-    if (
-      subredditToWrite.links.find((l: ExistingLink) => l.url.toLowerCase() === url.toLowerCase())
-    ) {
+    if (subredditToWrite.links.find((l: ExistingLink) => l.url === url)) {
       warning("Link already exists, skipping...");
       writeForDeletion(importSub.id);
       return;

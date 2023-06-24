@@ -101,7 +101,7 @@ export const startCommand = async () => {
 
     if (subredditToWrite) {
       warning(`Subreddit ${subredditName} already exists`);
-      if (subredditToWrite.links.find((l) => l.url.toLowerCase() === link.toLowerCase())) {
+      if (subredditToWrite.links.find((l) => l.url === link)) {
         warning("Link already exists, skipping...");
         writeForDeletion(suggestion.id);
 

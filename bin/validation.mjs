@@ -54,7 +54,7 @@ export function validateSubList(subList) {
   }
 
   // Validate link uniqueness
-  const allLinks = subList.flatMap((sub) => sub.links).map((link) => link.url.toLowerCase());
+  const allLinks = subList.flatMap((sub) => sub.links).map((link) => link.url);
   const duplicateLinks = findDuplicates(allLinks);
   if (duplicateLinks.length > 0) {
     warning("Duplicate links found!");
