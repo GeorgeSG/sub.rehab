@@ -12,7 +12,7 @@ export const normalizeSubreddit = (subreddit: string) => {
 };
 
 export const normalizeLink = (link: string) => {
-  let response = link.trim().toLowerCase();
+  let response = link.trim();
   if (response.startsWith("http://")) {
     response = response.replace("http://", "https://");
   }
