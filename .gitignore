@@ -2,11 +2,9 @@
 /.next/
 /build
 /out
-/bin/forms/*.json
-/bin/forms/toDelete
-/bin/forms/toSkip
-/bin/firebase/toDelete
 /import
+toSkip
+toDelete
 
 
 .DS_Store

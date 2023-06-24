@@ -1,7 +1,7 @@
 import { select, confirm, input } from "@inquirer/prompts";
 import { writeData, data } from "../../data.mjs";
-import { subSchema, validateSubList } from "../../validation.mjs";
-import { chalkSuccess, error, warning, success } from "../../output-utils.mjs";
+import { subSchema, validateSubList } from "../../validation.mts";
+import { chalkSuccess, error, warning, success } from "../../output-utils.mts";
 import chalk from "chalk";
 
 const knownServices = ["discord", "lemmy", "kbin", "matrix", "squabbles", "raddle"];
@@ -41,14 +41,14 @@ const createLink = async () => {
   return { service, url, official, added_ts: new Date().getTime() };
 };
 
-export async function addSubreddit(argv) {
+export async function addSubreddit(argv: any) {
   let name = argv.name || (await input({ message: "Subreddit name:" }));
   name = name.trim();
   if (name.startsWith("/r/")) {
     name = name.slice(1);
   }
 
-  let subreddit = data.subs.find((sub) => sub.name.toLowerCase() === name.toLowerCase());
+  let subreddit = data.subs.find((sub: any) => sub.name.toLowerCase() === name.toLowerCase());
   let newLink;
 
   if (subreddit) {
@@ -76,7 +76,7 @@ export async function addSubreddit(argv) {
     console.log(chalk.bold("New subreddit"), subreddit);
   }
 
-  const newData = { subs: [...data.subs.filter((sub) => sub.name !== name), subreddit] };
+  const newData = { subs: [...data.subs.filter((sub: any) => sub.name !== name), subreddit] };
   validateSubList(newData.subs);
 
   await writeData(newData);

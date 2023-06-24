@@ -1,12 +1,12 @@
 import chalk from "chalk";
 import { appendFileSync, readFileSync, writeFileSync } from "fs";
 import prettier from "prettier";
-import { normalizeLink, normalizeSubreddit } from "../normalizers.mts";
-import { error, success, warning } from "../output-utils.mts";
-import { subSchema, validateSubList } from "../validation.mts";
+import { normalizeLink, normalizeSubreddit } from "../../../normalizers.mts";
+import { error, warning } from "../../../output-utils.mts";
+import { subSchema, validateSubList } from "../../../validation.mts";
 
-const subredditsUrl = new URL("../../data/subreddits.json", import.meta.url);
-const importUrl = new URL("../../import/import.json", import.meta.url);
+const subredditsUrl = new URL("../../../../data/subreddits.json", import.meta.url);
+const importUrl = new URL("../../../../import/import.json", import.meta.url);
 
 type ExistingLink = {
   service: string;

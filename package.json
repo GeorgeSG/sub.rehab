@@ -25,9 +25,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "cli": "node ./bin/cli/cli.mjs",
-    "forms": "node ./bin/forms/cli.mjs",
-    "fbs": "ts-node --esm ./bin/firebase/cli.mts",
+    "cli": "ts-node --esm ./bin/cli/cli.mts",
+    "fbs": "yarn cli firebase",
     "prepare": "husky install"
   },
   "dependencies": {
