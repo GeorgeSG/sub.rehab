@@ -86,6 +86,9 @@ export default function SubmitLink() {
         if (!value) {
           return "Link is required";
         }
+        if (value.includes("@")) {
+          return "'@' is not allowed in links. If you are adding a link to a community on a federated instance, use the home instance URL for the community.";
+        }
 
         if (allLinks.find(({ url }) => url === value)) {
           return "Link is already listed";
