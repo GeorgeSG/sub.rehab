@@ -66,12 +66,39 @@ export default function FAQPage() {
           </Accordion.Item>
           <Accordion.Item className={classes.item} value="what-is-official">
             <Accordion.Control>
-              What is the verified/official <IoCheckmarkCircleOutline size="14px" /> mark?
+              What are verified / official <IoCheckmarkCircleOutline size="14px" /> links?
             </Accordion.Control>
             <Accordion.Panel>
-              We place a &quot;verified&quot; mark next to links that were found in the original
-              subreddit. We look for links in the subreddit description, sidebar, pinned post, or
-              privated message if subreddit was marked private.
+              <p>
+                We place an <IoCheckmarkCircleOutline size="14px" />
+                &nbsp;&quot;official&quot; mark next to links that we have verified as endorsed or
+                created by the original subreddit&apos;s staff.
+              </p>
+              <p>
+                We have a moderation process setup to verify alternatives as official. We look for
+                links in the subreddit description, sidebar, pinned post, or privated message if
+                subreddit was marked private.
+              </p>
+            </Accordion.Panel>
+          </Accordion.Item>
+
+          <Accordion.Item className={classes.item} value="wrongly-official">
+            <Accordion.Control>
+              An alternative to a subrredit I am moderator of is wrongly marked as{" "}
+              <IoCheckmarkCircleOutline size="14px" /> official
+            </Accordion.Control>
+            <Accordion.Panel>
+              <p>
+                Apologies for the inconvenience! We have a moderation process in place to verify
+                links, but we might have missed something.
+              </p>
+              <p>
+                Please message us in the{" "}
+                <Anchor href="https://github.com/GeorgeSG/sub.rehab/discussions/9">
+                  Report links
+                </Anchor>
+                &nbsp;discussion thread in Github or on mastodon @subrehab@mastodon.world.
+              </p>
             </Accordion.Panel>
           </Accordion.Item>
 

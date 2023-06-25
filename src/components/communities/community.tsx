@@ -1,13 +1,15 @@
-import { Flex, Title, createStyles } from "@mantine/core";
+import { Box, Flex, Title, Tooltip, createStyles } from "@mantine/core";
 import { CommunityFavorite } from "./community-favorite";
 import { CommunityLink, Link } from "./community-link";
+import { useMemo } from "react";
+import { IoCheckmarkCircleOutline } from "react-icons/io5";
 
 type CommunityProps = {
   name: string;
   links: Link[];
 };
 
-const useStyles = createStyles(({ colors, colorScheme, spacing, radius, other, fn }) => {
+const useStyles = createStyles(({ colors, colorScheme, spacing, radius, fn, fontSizes }) => {
   const isDark = colorScheme === "dark";
 
   return {
@@ -26,11 +28,32 @@ const useStyles = createStyles(({ colors, colorScheme, spacing, radius, other, f
       color: isDark ? colors.orange[1] : colors.gray[8],
       fontSize: "1.125rem",
     },
+
+    section: {
+      position: "relative",
+      display: "flex",
+      alignItems: "center",
+      marginBottom: "4px",
+      color: colors.gray[6],
+      fontSize: fontSizes.xs,
+      textTransform: "uppercase",
+
+      "&::after": {
+        display: "block",
+        content: '""',
+        width: "100%",
+        height: "1px",
+        background: "currentColor",
+      },
+    },
   };
 });
 
 export function Community({ name, links }: CommunityProps) {
   const { classes } = useStyles();
+
+  const officialLinks = useMemo(() => links.filter((link) => link.official), [links]);
+  const unofficialLinks = useMemo(() => links.filter((link) => !link.official), [links]);
 
   return (
     <div className={classes.community}>
@@ -40,11 +63,30 @@ export function Community({ name, links }: CommunityProps) {
         </Title>
         <CommunityFavorite name={name} />
       </Flex>
-      {links
-        .sort((a, b) => (a.official === b.official ? 0 : a.official ? -1 : 1))
-        .map((link) => (
-          <CommunityLink link={link} key={link.url} name={name} />
-        ))}
+      {officialLinks.length > 0 && (
+        <Tooltip
+          label="Communities officially endorsed or created by the original subreddit's staff"
+          withArrow
+        >
+          <div className={classes.section}>
+            <IoCheckmarkCircleOutline size={17} />
+            <span style={{ display: "inline-block", flexShrink: 0, paddingRight: "6px" }}>
+              &nbsp;official
+            </span>
+          </div>
+        </Tooltip>
+      )}
+      {officialLinks.map((link) => (
+        <CommunityLink link={link} key={link.url} name={name} />
+      ))}
+      {unofficialLinks.length > 0 && (
+        <Box className={classes.section} mt="md">
+          <span style={{ flexShrink: 0, paddingRight: "6px" }}>spin-offs</span>
+        </Box>
+      )}
+      {unofficialLinks.map((link) => (
+        <CommunityLink link={link} key={link.url} name={name} />
+      ))}
     </div>
   );
 }
