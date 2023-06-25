@@ -20,11 +20,7 @@
       "name": "r/childfree",
       "links": [
         { "service": "misc", "url": "https://www.childfree.cc", "official": true },
-        {
-          "service": "lemmy",
-          "url": "https://lemmy.world/c/childfree",
-          "official": true
-        }
+        { "service": "lemmy", "url": "https://lemmy.world/c/childfree", "official": true }
       ]
     },
     {
@@ -4525,17 +4521,6 @@
       ]
     },
     {
-      "name": "r/formuladank",
-      "links": [
-        {
-          "service": "lemmy",
-          "url": "https://lemmy.world/c/formuladank",
-          "official": false,
-          "added_ts": 1687514893299
-        }
-      ]
-    },
-    {
       "name": "r/fountainpens",
       "links": [
         {
@@ -6791,7 +6776,7 @@
       "links": [
         {
           "service": "squabbles",
-          "url": "https://www.squabbles.io/s/metroidvania",
+          "url": "https://squabbles.io/s/metroidvania",
           "official": false,
           "added_ts": 1687625200056
         }
@@ -7581,23 +7566,6 @@
       ]
     },
     {
-      "name": "r/Stargate",
-      "links": [
-        {
-          "service": "squabbles",
-          "url": "https://squabbles.io/s/stargate",
-          "official": false,
-          "added_ts": 1687644143988
-        },
-        {
-          "service": "discord",
-          "url": "https://discord.gg/Y44fKT2zZe",
-          "official": true,
-          "added_ts": 1687644144037
-        }
-      ]
-    },
-    {
       "name": "r/Warhammer40K",
       "links": [
         {
@@ -7809,6 +7777,212 @@
           "url": "https://feddit.de/c/virtualreality",
           "official": false,
           "added_ts": 1687644144828
+        }
+      ]
+    },
+    {
+      "name": "r/ArtificialIntelligence",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/ArtificialIntelligence",
+          "official": false,
+          "added_ts": 1687721948899
+        }
+      ]
+    },
+    {
+      "name": "r/Atlanta",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://Lemmy.world/c/Atlanta",
+          "official": false,
+          "added_ts": 1687721949036
+        }
+      ]
+    },
+    {
+      "name": "r/Fantasy",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/fantasy",
+          "official": false,
+          "added_ts": 1687721949122
+        },
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.ml/c/fantasy",
+          "official": false,
+          "added_ts": 1687721949188
+        }
+      ]
+    },
+    {
+      "name": "r/IntltoUSA",
+      "links": [
+        {
+          "service": "discord",
+          "url": "https://discord.gg/cK9fGJTJSu",
+          "official": true,
+          "added_ts": 1687721949239
+        }
+      ]
+    },
+    {
+      "name": "r/Stargate",
+      "links": [
+        {
+          "service": "squabbles",
+          "url": "https://squabbles.io/s/stargate",
+          "official": false,
+          "added_ts": 1687644143988
+        },
+        {
+          "service": "discord",
+          "url": "https://discord.gg/Y44fKT2zZe",
+          "official": true,
+          "added_ts": 1687644144037
+        },
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/stargate",
+          "official": true,
+          "added_ts": 1687721949285
+        }
+      ]
+    },
+    {
+      "name": "r/TIHI",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/TIHI",
+          "official": true,
+          "added_ts": 1687721949329
+        }
+      ]
+    },
+    {
+      "name": "r/auckland",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.nz/c/auckland",
+          "official": false,
+          "added_ts": 1687721949373
+        }
+      ]
+    },
+    {
+      "name": "r/formuladank",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/formuladank",
+          "official": false,
+          "added_ts": 1687514893299
+        },
+        {
+          "service": "squabbles",
+          "url": "https://squabbles.io/s/formuladank",
+          "official": false,
+          "added_ts": 1687721949416
+        }
+      ]
+    },
+    {
+      "name": "r/furry",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://pawb.social/c/furry",
+          "official": false,
+          "added_ts": 1687721949462
+        }
+      ]
+    },
+    {
+      "name": "r/girlgames",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/GirlGames",
+          "official": true,
+          "added_ts": 1687721949507
+        }
+      ]
+    },
+    {
+      "name": "r/igcse",
+      "links": [
+        {
+          "service": "discord",
+          "url": "https://discord.gg/IGCSE",
+          "official": true,
+          "added_ts": 1687721949551
+        }
+      ]
+    },
+    {
+      "name": "r/lotrmems",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://midwest.social/c/lotrmemes",
+          "official": false,
+          "added_ts": 1687721949595
+        }
+      ]
+    },
+    {
+      "name": "r/minetest",
+      "links": [
+        {
+          "service": "matrix",
+          "url": "https://matrix.to/#/#minetest:tchncs.de",
+          "official": true,
+          "added_ts": 1687721949640
+        },
+        {
+          "service": "misc",
+          "url": "https://forum.minetest.net",
+          "official": true,
+          "added_ts": 1687721949685
+        }
+      ]
+    },
+    {
+      "name": "r/newzealand",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.nz/c/newzealand",
+          "official": false,
+          "added_ts": 1687721949729
+        }
+      ]
+    },
+    {
+      "name": "r/pokemedia",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.ml/c/pokemedia",
+          "official": true,
+          "added_ts": 1687721949774
+        }
+      ]
+    },
+    {
+      "name": "r/shrooms",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/shrooms",
+          "official": false,
+          "added_ts": 1687721949855
         }
       ]
     }
