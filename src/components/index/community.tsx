@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { useHomeInstance } from "@/hooks/use-home-instance";
 import { useIsLinkNew } from "@/hooks/use-is-link-new";
 import {
