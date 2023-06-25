@@ -1550,7 +1550,7 @@
         {
           "service": "kbin",
           "url": "https://kbin.social/m/machinelearning",
-          "official": false,
+          "official": true,
           "added_ts": 1687280970513
         }
       ]
