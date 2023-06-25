@@ -30,7 +30,7 @@ const useStyles = createStyles((theme) => ({
     gap: theme.spacing.lg,
     marginTop: theme.spacing.lg,
 
-    [theme.fn.smallerThan(360)]: {
+    [theme.fn.smallerThan("xs")]: {
       flexDirection: "column",
       alignItems: "flex-start",
     },
