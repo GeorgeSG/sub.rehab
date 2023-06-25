@@ -1,17 +1,32 @@
 import { useFavorites } from "@/hooks/use-favorites";
-import { Button, Flex, Text } from "@mantine/core";
+import { Box, Button, Text, createStyles } from "@mantine/core";
 import { modals } from "@mantine/modals";
 import { useState } from "react";
 import { IoAddCircleOutline, IoTrashOutline } from "react-icons/io5";
 import { ImportModal } from "./import-modal";
 
+const useStyles = createStyles(({ fn, spacing }) => ({
+  actionButtons: {
+    display: "flex",
+    alignItems: "center",
+    gap: spacing.md,
+    marginTop: spacing.lg,
+
+    [fn.smallerThan("xs")]: {
+      flexDirection: "column",
+      alignItems: "flex-start",
+    },
+  },
+}));
+
 export function SettingsFavorites() {
+  const { classes } = useStyles();
   const [importOpen, setImportOpen] = useState(false);
   const [, setFavorites] = useFavorites();
 
   return (
     <>
-      <Flex align="center" mt="lg" gap="md">
+      <Box className={classes.actionButtons}>
         <Button
           variant="outline"
           leftIcon={<IoAddCircleOutline size={18} />}
@@ -40,7 +55,7 @@ export function SettingsFavorites() {
         >
           Reset Favorites
         </Button>
-      </Flex>
+      </Box>
       <ImportModal opened={importOpen} onClose={() => setImportOpen(false)} />
     </>
   );
