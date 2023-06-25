@@ -102,16 +102,14 @@ export function PageHeader({ withBackground = false }: { withBackground?: boolea
           </ActionIcon>
         </Tooltip>
         <Tooltip label="Settings" position="top" withArrow>
-          <Indicator size={7} processing offset={5} color={isDark ? "indigo.3" : "indigo.6"}>
-            <ActionIcon
-              onClick={() => router.push("/settings")}
-              size="lg"
-              color={isDark ? "#C1C2C5" : "orange.5"}
-              title="Settings"
-            >
-              <IoCogOutline size={20} />
-            </ActionIcon>
-          </Indicator>
+          <ActionIcon
+            onClick={() => router.push("/settings")}
+            size="lg"
+            color={isDark ? "#C1C2C5" : "orange.5"}
+            title="Settings"
+          >
+            <IoCogOutline size={20} />
+          </ActionIcon>
         </Tooltip>
       </Group>
     </header>
