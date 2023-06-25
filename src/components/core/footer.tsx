@@ -1,6 +1,8 @@
 import {
   ActionIcon,
   Anchor,
+  Box,
+  Flex,
   Group,
   Text,
   Tooltip,
@@ -75,6 +77,13 @@ export function Footer() {
           </Tooltip>
         </Group>
       </div>
+      <Box maw={800}>
+        <Text size="sm">
+          Disclaimer: sub.rehab is not affiliated with Reddit, any of the listed subreddits, or any
+          of the listed platforms and websites. sub.rehab is not responsible for any content hosted
+          on the linked websites.
+        </Text>
+      </Box>
     </footer>
   );
 }
