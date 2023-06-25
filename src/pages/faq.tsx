@@ -69,9 +69,9 @@ export default function FAQPage() {
               What is the verified/official <IoCheckmarkCircleOutline size="14px" /> mark?
             </Accordion.Control>
             <Accordion.Panel>
-              I placed a &quot;verified&quot; mark next to links that were found in the original
-              subreddit or were communicated to be an official alternative of the original
-              subreddit.
+              We place a &quot;verified&quot; mark next to links that were found in the original
+              subreddit. We look for links in the subreddit description, sidebar, pinned post, or
+              privated message if subreddit was marked private.
             </Accordion.Panel>
           </Accordion.Item>
 
