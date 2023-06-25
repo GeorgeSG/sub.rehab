@@ -6,6 +6,7 @@ import { useHomeInstance } from "@/hooks/use-home-instance";
 import {
   Alert,
   Badge,
+  Button,
   Code,
   Flex,
   Indicator,
@@ -16,6 +17,7 @@ import {
   Title,
   useMantineColorScheme,
 } from "@mantine/core";
+import { modals } from "@mantine/modals";
 import {
   IoAlertCircleOutline,
   IoCloseOutline,
@@ -23,6 +25,7 @@ import {
   IoLinkOutline,
   IoMoon,
   IoSunnyOutline,
+  IoTrashOutline,
 } from "react-icons/io5";
 
 export default function FAQPage() {
@@ -154,6 +157,31 @@ export default function FAQPage() {
             </>
           )}
         </Flex>
+        <Title order={2} mb="lg" mt={40} sx={{ fontFamily: "var(--font-accent)" }}>
+          Data
+        </Title>
+        <Button
+          variant="outline"
+          color="red"
+          leftIcon={<IoTrashOutline size={17} />}
+          onClick={() => {
+            modals.openConfirmModal({
+              title: (
+                <Text size="md" fw="900">
+                  Are you sure?
+                </Text>
+              ),
+              children:
+                "This will reset all configuration persisted in the browser's local storage and clear your favorites.",
+              centered: true,
+              cancelProps: { children: "No, thanks" },
+              confirmProps: { color: "red", children: "Yes, delete all browser data!" },
+              onConfirm: () => localStorage.clear(),
+            });
+          }}
+        >
+          Reset configuration
+        </Button>
       </Section>
     </>
   );
