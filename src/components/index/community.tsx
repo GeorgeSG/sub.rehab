@@ -36,7 +36,7 @@ const SERVICE_ICONS: Record<string, string> = {
   raddle: "/images/raddle.svg",
 };
 
-const useStyles = createStyles(({ colors, colorScheme, spacing, radius, other }) => {
+const useStyles = createStyles(({ colors, colorScheme, spacing, radius, other, fn }) => {
   const isDark = colorScheme === "dark";
 
   return {
@@ -45,6 +45,10 @@ const useStyles = createStyles(({ colors, colorScheme, spacing, radius, other })
       border: `1px solid ${isDark ? colors.gray[8] : colors.gray[3]}`,
       backgroundColor: isDark ? colors.dark[6] : "#fff",
       borderRadius: radius.md,
+
+      [fn.smallerThan(360)]: {
+        padding: spacing.xs,
+      },
     },
 
     homeLocation: {
@@ -65,6 +69,11 @@ const useStyles = createStyles(({ colors, colorScheme, spacing, radius, other })
 
       "& + &": {
         marginTop: spacing.sm,
+      },
+
+      [fn.smallerThan("xs")]: {
+        gap: spacing.xs,
+        padding: spacing.xs,
       },
     },
 

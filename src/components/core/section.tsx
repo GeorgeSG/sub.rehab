@@ -16,6 +16,10 @@ const useStyles = createStyles(({ colorScheme, radius, shadows, fn }) => ({
     [fn.smallerThan("xs")]: {
       padding: "1.3rem !important",
     },
+
+    [fn.smallerThan(360)]: {
+      padding: "1.2rem 0.8rem !important",
+    },
   },
 }));
 

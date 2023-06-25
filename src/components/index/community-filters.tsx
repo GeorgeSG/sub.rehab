@@ -29,6 +29,11 @@ const useStyles = createStyles((theme) => ({
     alignItems: "center",
     gap: theme.spacing.lg,
     marginTop: theme.spacing.lg,
+
+    [theme.fn.smallerThan(360)]: {
+      flexDirection: "column",
+      alignItems: "flex-start",
+    },
   },
 
   multiSelect: {

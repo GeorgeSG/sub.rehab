@@ -37,7 +37,7 @@ export const theme: MantineThemeOverride = {
     transitionTime: "200ms",
   },
 
-  globalStyles: ({ spacing, colorScheme }) => {
+  globalStyles: ({ spacing, colorScheme, fn }) => {
     const gradient =
       colorScheme === "dark"
         ? "linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.8) 40%, rgba(0, 0, 0, 1))"
@@ -66,6 +66,10 @@ export const theme: MantineThemeOverride = {
         flexDirection: "column",
         margin: "0 auto",
         padding: `${spacing.xxl} 0`,
+
+        [fn.smallerThan(360)]: {
+          width: "95vw",
+        },
       },
     };
   },

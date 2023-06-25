@@ -46,7 +46,7 @@ const useStyles = createStyles(({ spacing, shadows, radius, colorScheme, fn }) =
 
 export function PageHeader({ withBackground = false }: { withBackground?: boolean }) {
   const { classes } = useStyles();
-  const { colorScheme, toggleColorScheme } = useMantineColorScheme();
+  const { colorScheme } = useMantineColorScheme();
   const isSmallScreen = useMediaQuery("(max-width: 30em)");
   const router = useRouter();
 
