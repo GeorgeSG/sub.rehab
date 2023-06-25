@@ -9,7 +9,7 @@ export const SERVICE_COLORS: Record<string, (theme: MantineTheme) => string> = {
   kbin: () => "#D57AD4",
   misc: ({ colors }) => colors.orange[5],
   squabbles: () => "#2581BC",
-  raddle: () => "#4FA736",
+  raddle: () => "#EA3524",
 };
 
 export function useSubredditData() {
