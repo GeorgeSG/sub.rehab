@@ -115,7 +115,7 @@ export function CommunityFilters({ filter, setFilter }: CommunityFiltersProps) {
             classNames={{ body: classes.checkbox }}
             style={{ flexShrink: 0, alignItems: "center" }}
             label={
-              <Tooltip label="Links that have been posted in the original subreddit" withArrow>
+              <Tooltip label="Links that have been endorsed by the original subreddit" withArrow>
                 <Text className={classes.officialOnly}>
                   Official
                   <IoCheckmarkCircleOutline size="1rem" />
