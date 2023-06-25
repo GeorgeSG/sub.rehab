@@ -43,7 +43,7 @@ const useStyles = createStyles(({ colors, colorScheme, spacing, radius, fn, font
         content: '""',
         width: "100%",
         height: "1px",
-        background: "currentColor",
+        background: isDark ? colors.gray[8] : colors.gray[3],
       },
     },
   };
