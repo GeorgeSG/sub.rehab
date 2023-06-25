@@ -32,6 +32,7 @@ const useStyles = createStyles(({ colors, colorScheme, spacing, radius, fn, font
     section: {
       position: "relative",
       display: "flex",
+      fontWeight: 700,
       alignItems: "center",
       marginBottom: "4px",
       color: colors.gray[6],
