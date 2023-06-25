@@ -66,6 +66,7 @@ export type Filter = {
   visibleServices: string[];
   officialOnly: boolean;
   newOnly: boolean;
+  favoriteOnly: boolean;
 };
 
 export type CommunityFiltersProps = {
@@ -116,24 +117,40 @@ export function CommunityFilters({ filter, setFilter }: CommunityFiltersProps) {
             label={
               <Tooltip label="Links that have been posted in the original subreddit" withArrow>
                 <Text className={classes.officialOnly}>
-                  Official only
+                  Official
                   <IoCheckmarkCircleOutline size="1rem" />
                 </Text>
               </Tooltip>
             }
             checked={filter.officialOnly}
-            onChange={(e) => setFilterAndPushParams({ officialOnly: e.target.checked })}
+            onChange={(e) => {
+              setFilterAndPushParams({ officialOnly: e.target.checked });
+              umami.track("filterByOfficial", { filter: e.target.checked });
+            }}
+          />
+          <Checkbox
+            classNames={{ body: classes.checkbox }}
+            style={{ flexShrink: 0, alignItems: "center" }}
+            label={<Text className={classes.officialOnly}>Favorites</Text>}
+            checked={filter.favoriteOnly}
+            onChange={(e) => {
+              setFilterAndPushParams({ favoriteOnly: e.target.checked });
+              umami.track("filterByFavorite", { filter: e.target.checked });
+            }}
           />
           <Checkbox
             classNames={{ body: classes.checkbox }}
             style={{ flexShrink: 0, alignItems: "center" }}
             label={
               <Tooltip label="Links that have been added in the past 24 hours" withArrow>
-                <Text className={classes.officialOnly}>New only</Text>
+                <Text className={classes.officialOnly}>New</Text>
               </Tooltip>
             }
             checked={filter.newOnly}
-            onChange={(e) => setFilterAndPushParams({ newOnly: e.target.checked })}
+            onChange={(e) => {
+              setFilterAndPushParams({ newOnly: e.target.checked });
+              umami.track("filterByNew", { filter: e.target.checked });
+            }}
           />
         </div>
         <MultiSelect

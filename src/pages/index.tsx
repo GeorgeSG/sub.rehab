@@ -2,7 +2,7 @@ import { GradientButton } from "@/components/core/gradient-button";
 import { PageHeader } from "@/components/core/page-header";
 import { Section } from "@/components/core/section";
 import { AnimatedSlogan } from "@/components/index/animated-slogan";
-import { CommunityList } from "@/components/index/community-list";
+import { CommunityList } from "@/components/communities/community-list";
 import { Statistics } from "@/components/index/statistics";
 import { Anchor, Button, Flex, Group, Text, Tooltip, createStyles } from "@mantine/core";
 import { modals } from "@mantine/modals";

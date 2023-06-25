@@ -1,11 +1,14 @@
 import { PageHeader } from "@/components/core/page-header";
 import { Section } from "@/components/core/section";
 import { OriginalInstanceLink } from "@/components/original-instance-link";
+import { SettingsFavorites } from "@/components/settings/settings-favorites";
 import { useHomeInstance } from "@/hooks/use-home-instance";
 import {
   Alert,
+  Badge,
   Code,
   Flex,
+  Indicator,
   Select,
   Switch,
   Text,
@@ -63,9 +66,22 @@ export default function FAQPage() {
           onLabel={<IoSunnyOutline size={14} />}
           offLabel={<IoMoon size={12} />}
         />
-        <Title order={2} mt={40} sx={{ fontFamily: "var(--font-accent)" }}>
-          Home Instance
-        </Title>
+        <Flex align="center" mt={40} gap="md">
+          <Indicator label="new" size={16} offset={-24} position="middle-end">
+            <Title order={2} sx={{ fontFamily: "var(--font-accent)" }}>
+              Favorites
+            </Title>
+          </Indicator>
+        </Flex>
+        <SettingsFavorites />
+        <Flex align="center" mt={40} gap="md">
+          <Indicator label="new" size={16} offset={-24} position="middle-end">
+            <Title order={2} sx={{ fontFamily: "var(--font-accent)" }}>
+              Home Instance
+            </Title>
+          </Indicator>
+        </Flex>
+
         <Alert
           icon={<IoAlertCircleOutline size={20} />}
           mt="lg"
