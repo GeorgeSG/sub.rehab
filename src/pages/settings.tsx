@@ -107,11 +107,9 @@ export default function FAQPage() {
                         <Code color="orange">lemmy.world/c/baking@kbin.social</Code>.
                       </Text>
                       <Text mt="sm">
-                        <strong>Note:</strong> Links will not work if your home instance is not
-                        federated with the community you&apos;re trying to visit. In that case, you
-                        can use the&nbsp;
-                        <OriginalInstanceLink url="#" style={{ display: "inline" }} /> icon to visit
-                        the community on their original home instance.
+                        You have the option to select one of the pre-configured instances, or select
+                        &quot;custom&quot; and enter any URL for your home instance that appears
+                        below.
                       </Text>
                     </>
                   ),
@@ -122,6 +120,14 @@ export default function FAQPage() {
             </ActionIcon>
           </Tooltip>
         </Flex>
+        <Alert mt="lg" color="orange" title="A note on federation">
+          <Text>
+            Links will not work if your home instance is not federated with the community
+            you&apos;re trying to visit. In that case, you can use the&nbsp;
+            <OriginalInstanceLink style={{ display: "inline" }} /> icon to visit the community on
+            their original home instance.
+          </Text>
+        </Alert>
 
         <Flex maw={400} direction="column" gap="md" mt="lg">
           <Switch

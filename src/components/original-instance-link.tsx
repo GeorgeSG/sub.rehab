@@ -6,19 +6,12 @@ export function OriginalInstanceLink({
   url,
   style = { marginLeft: "auto" },
 }: {
-  url: string;
+  url?: string;
   style?: CSSProperties;
 }) {
   return (
     <Tooltip label="Visit on original instance" withArrow position="top">
-      <ActionIcon
-        color="gray"
-        component={"a"}
-        href={url ?? "asd"}
-        target="_blank"
-        title={url}
-        style={style}
-      >
+      <ActionIcon color="gray" component={"a"} href={url} target="_blank" title={url} style={style}>
         <IoShareOutline />
       </ActionIcon>
     </Tooltip>
