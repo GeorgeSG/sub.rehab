@@ -4,6 +4,7 @@ import { OriginalInstanceLink } from "@/components/original-instance-link";
 import { SettingsFavorites } from "@/components/settings/settings-favorites";
 import { useHomeInstance } from "@/hooks/use-home-instance";
 import {
+  ActionIcon,
   Alert,
   Badge,
   Button,
@@ -15,12 +16,15 @@ import {
   Text,
   TextInput,
   Title,
+  Tooltip,
   useMantineColorScheme,
 } from "@mantine/core";
 import { modals } from "@mantine/modals";
 import {
   IoAlertCircleOutline,
   IoCloseOutline,
+  IoHelpCircleOutline,
+  IoHelpOutline,
   IoHomeOutline,
   IoLinkOutline,
   IoMoon,
@@ -69,47 +73,56 @@ export default function FAQPage() {
           onLabel={<IoSunnyOutline size={14} />}
           offLabel={<IoMoon size={12} />}
         />
-        <Flex align="center" mt={40} gap="md">
-          <Indicator label="new" size={16} offset={-24} position="middle-end">
-            <Title order={2} sx={{ fontFamily: "var(--font-accent)" }}>
-              Favorites
-            </Title>
-          </Indicator>
-        </Flex>
+        <Title order={2} mt={40} sx={{ fontFamily: "var(--font-accent)" }}>
+          Favorites
+        </Title>
         <SettingsFavorites />
-        <Flex align="center" mt={40} gap="md">
-          <Indicator label="new" size={16} offset={-24} position="middle-end">
-            <Title order={2} sx={{ fontFamily: "var(--font-accent)" }}>
-              Home Instance
-            </Title>
-          </Indicator>
+        <Flex align="center" mt={40} gap="xs">
+          <Title order={2} sx={{ fontFamily: "var(--font-accent)" }}>
+            Home Instance
+          </Title>
+          <Tooltip label="What is a Home Instance?" withArrow>
+            <ActionIcon
+              onClick={() =>
+                modals.open({
+                  title: (
+                    <Text size="md" fw="900">
+                      Home Instance help
+                    </Text>
+                  ),
+                  centered: true,
+                  size: "lg",
+                  children: (
+                    <>
+                      <Text>
+                        Lemmy and Kbin users - you can set a Home Instance for links to Kbin and
+                        Lemmy communities.
+                      </Text>
+                      <Text mt="sm">
+                        If configured, sub.rehab will format Lemmy and Kbin links to point to your
+                        instance. For example, if your home instance is{" "}
+                        <Code color="orange">lemmy.world</Code> and you try to visit&nbsp;
+                        <Code color="orange">kbin.social/m/baking</Code>, it will instead link
+                        to&nbsp;
+                        <Code color="orange">lemmy.world/c/baking@kbin.social</Code>.
+                      </Text>
+                      <Text mt="sm">
+                        <strong>Note:</strong> Links will not work if your home instance is not
+                        federated with the community you&apos;re trying to visit. In that case, you
+                        can use the&nbsp;
+                        <OriginalInstanceLink url="#" style={{ display: "inline" }} /> icon to visit
+                        the community on their original home instance.
+                      </Text>
+                    </>
+                  ),
+                })
+              }
+            >
+              <IoHelpCircleOutline />
+            </ActionIcon>
+          </Tooltip>
         </Flex>
 
-        <Alert
-          icon={<IoAlertCircleOutline size={20} />}
-          mt="lg"
-          color="orange"
-          variant="outline"
-          title="This is an experimental feature!"
-        >
-          <Text>
-            Lemmy and Kbin users - you can set a Home Instance for links to Kbin and Lemmy
-            communities.
-          </Text>
-          <Text mt="sm">
-            If configured, sub.rehab will format Lemmy and Kbin links to point to your instance. For
-            example, if your home instance is <Code color="orange">lemmy.world</Code> and you try to
-            visit&nbsp;
-            <Code color="orange">kbin.social/m/baking</Code>, it will instead link to&nbsp;
-            <Code color="orange">lemmy.world/c/baking@kbin.social</Code>.
-          </Text>
-          <Text mt="sm">
-            Links will not work if your home instance is not federated with the community
-            you&apos;re trying to visit. In that case, you can use the&nbsp;
-            <OriginalInstanceLink url="#" style={{ display: "inline" }} /> icon to visit the
-            community on their original home instance.
-          </Text>
-        </Alert>
         <Flex maw={400} direction="column" gap="md" mt="lg">
           <Switch
             checked={homeInstanceEnabled}
