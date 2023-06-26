@@ -84,13 +84,13 @@ export default function FAQPage() {
 
           <Accordion.Item className={classes.item} value="wrongly-official">
             <Accordion.Control>
-              An alternative to a subrredit I am moderator of is wrongly marked as{" "}
+              An alternative to a subreddit I am moderator of is wrongly marked as{" "}
               <IoCheckmarkCircleOutline size="14px" /> official
             </Accordion.Control>
             <Accordion.Panel>
               <p>
                 Apologies for the inconvenience! We have a moderation process in place to verify
-                links, but we might have missed something.
+                links, but we may have missed something.
               </p>
               <p>
                 Please message us in the{" "}
