@@ -1580,7 +1580,7 @@
       "links": [
         { "service": "lemmy", "url": "https://lemmy.blahaj.zone/c/196", "official": true },
         { "service": "discord", "url": "https://discord.gg/196cord", "official": true },
-        { "service": "kbin", "url": "https://fedi196.gay/", "official": true },
+        { "service": "kbin", "url": "https://fedi196.gay/m/196", "official": true },
         {
           "service": "raddle",
           "url": "https://raddle.me/f/196",
@@ -7248,12 +7248,6 @@
           "url": "https://squabbles.io/s/TIL",
           "official": false,
           "added_ts": 1687625197987
-        },
-        {
-          "service": "squabbles",
-          "url": "https://squabbles.io/s/todayilearned",
-          "official": false,
-          "added_ts": 1687625201577
         }
       ]
     },
@@ -7848,7 +7842,7 @@
       ]
     },
     {
-      "name": "r/lotrmems",
+      "name": "r/lotrmemes",
       "links": [
         {
           "service": "lemmy",
