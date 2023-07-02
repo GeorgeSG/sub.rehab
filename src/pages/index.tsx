@@ -1,15 +1,15 @@
+import { CommunityList } from "@/components/communities/community-list";
 import { GradientButton } from "@/components/core/gradient-button";
 import { PageHeader } from "@/components/core/page-header";
 import { Section } from "@/components/core/section";
 import { AnimatedSlogan } from "@/components/index/animated-slogan";
-import { CommunityList } from "@/components/communities/community-list";
 import { Statistics } from "@/components/index/statistics";
 import { Anchor, Button, Flex, Group, Text, Tooltip, createStyles } from "@mantine/core";
+import { useLocalStorage } from "@mantine/hooks";
 import { modals } from "@mantine/modals";
 import Link from "next/link";
-import { IoAdd, IoStatsChart, IoWarningOutline } from "react-icons/io5";
-import { useLocalStorage } from "@mantine/hooks";
 import { useEffect, useState } from "react";
+import { IoAdd, IoStatsChart, IoWarningOutline } from "react-icons/io5";
 
 const useStyles = createStyles((theme) => ({
   statisticsWrapper: {
@@ -97,7 +97,7 @@ export default function Home() {
           </div>
         </Flex>
       </Section>
-      {isMounted && showSettingsTip && (
+      {showSettingsTip && (
         <Section mt="xl">
           <Flex align="center" justify="space-between" wrap="wrap" gap="md">
             <Text>
@@ -108,7 +108,7 @@ export default function Home() {
               .
             </Text>
             <Button variant="outline" onClick={() => setShowSettingsTip(false)}>
-              Don't show this again
+              Don&apos;t show this again
             </Button>
           </Flex>
         </Section>
