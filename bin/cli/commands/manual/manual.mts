@@ -9,10 +9,10 @@ export function manualImport() {
   const importData = JSON.parse(readFileSync(linksUrl).toString());
   const existingLinks = getExistingData()
     .flatMap((sub: any) => sub.links)
-    .map((link: any) => link.url);
+    .map((link: any) => link.url.toLowerCase());
 
   importData.forEach((link: string) => {
-    if (!existingLinks.includes(link)) {
+    if (!existingLinks.includes(link.toLowerCase())) {
       console.log(link);
     }
   });

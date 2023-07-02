@@ -1,8 +1,8 @@
-import { select, confirm, input } from "@inquirer/prompts";
-import { writeData, data } from "../../data.mjs";
-import { subSchema, validateSubList } from "../../validation.mts";
-import { chalkSuccess, error, warning, success } from "../../output-utils.mts";
+import { confirm, input, select } from "@inquirer/prompts";
 import chalk from "chalk";
+import { data, readExistingData, writeData } from "../../data.mjs";
+import { chalkSuccess, error, success, warning } from "../../output-utils.mts";
+import { subSchema, validateSubList } from "../../validation.mts";
 
 const knownServices = ["discord", "lemmy", "kbin", "matrix", "squabbles", "raddle"];
 
@@ -47,8 +47,13 @@ export async function addSubreddit(argv: any) {
   if (name.startsWith("/r/")) {
     name = name.slice(1);
   }
+  if (!name.startsWith("r/")) {
+    name = `r/${name}`;
+  }
 
-  let subreddit = data.subs.find((sub: any) => sub.name.toLowerCase() === name.toLowerCase());
+  let subreddit = readExistingData().subs.find(
+    (sub: any) => sub.name.toLowerCase() === name.toLowerCase()
+  );
   let newLink;
 
   if (subreddit) {
@@ -76,9 +81,15 @@ export async function addSubreddit(argv: any) {
     console.log(chalk.bold("New subreddit"), subreddit);
   }
 
-  const newData = { subs: [...data.subs.filter((sub: any) => sub.name !== name), subreddit] };
+  const newData = {
+    subs: [...data.subs.filter((sub: any) => sub.name !== subreddit.name), subreddit],
+  };
   validateSubList(newData.subs);
 
   await writeData(newData);
   console.log(chalkSuccess("All good!"));
+
+  if (!argv.name) {
+    addSubreddit(argv);
+  }
 }
