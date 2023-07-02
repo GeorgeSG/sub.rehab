@@ -157,6 +157,32 @@ export default function FAQPage() {
               </p>
             </Accordion.Panel>
           </Accordion.Item>
+          <Accordion.Item className={classes.item} value="alternatives">
+            <Accordion.Control>What are some alternatives to sub.rehab?</Accordion.Control>
+            <Accordion.Panel>
+              <p>Check out:</p>
+              <List>
+                <List.Item>
+                  <Anchor href="https://infosec.pub/post/83190" target="_blank">
+                    @Kierunkowy74&apos;s page on infosec.pub
+                  </Anchor>
+                </List.Item>
+                <List.Item>
+                  <Anchor href="https://redditmigration.com" target="_blank">
+                    https://redditmigration.com
+                  </Anchor>
+                </List.Item>
+                <List.Item>
+                  <Anchor
+                    href=" https://www.quippd.com/writing/2023/06/15/unofficial-subreddit-migration-list-lemmy-kbin-etc.html"
+                    target="_blank"
+                  >
+                    Unofficial Subreddit Migration List (Lemmy, Kbin)
+                  </Anchor>
+                </List.Item>
+              </List>
+            </Accordion.Panel>
+          </Accordion.Item>
         </Accordion>
       </Section>
     </>
