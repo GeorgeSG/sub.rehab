@@ -95,11 +95,11 @@ export default function FAQPage() {
                   children: (
                     <>
                       <Text>
-                        Lemmy and Kbin users - you can set a Home Instance for links to Kbin and
+                        Lemmy and kbin users - you can set a Home Instance for links to kbin and
                         Lemmy communities.
                       </Text>
                       <Text mt="sm">
-                        If configured, sub.rehab will format Lemmy and Kbin links to point to your
+                        If configured, sub.rehab will format Lemmy and kbin links to point to your
                         instance. For example, if your home instance is{" "}
                         <Code color="orange">lemmy.world</Code> and you try to visit&nbsp;
                         <Code color="orange">kbin.social/m/baking</Code>, it will instead link

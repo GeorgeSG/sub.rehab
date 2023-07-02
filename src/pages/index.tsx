@@ -101,7 +101,7 @@ export default function Home() {
         <Section mt="xl">
           <Flex align="center" justify="space-between" wrap="wrap" gap="md">
             <Text>
-              Tip: You can import your reddit subscriptions and set a Lemmy/KBin home instance from{" "}
+              Tip: You can import your reddit subscriptions and set a Lemmy/kbin home instance from{" "}
               <Anchor component={Link} href="/settings">
                 Settings
               </Anchor>
