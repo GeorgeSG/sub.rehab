@@ -8,6 +8,8 @@ import { Anchor, Button, Flex, Group, Text, Tooltip, createStyles } from "@manti
 import { modals } from "@mantine/modals";
 import Link from "next/link";
 import { IoAdd, IoStatsChart, IoWarningOutline } from "react-icons/io5";
+import { useLocalStorage } from "@mantine/hooks";
+import { useEffect, useState } from "react";
 
 const useStyles = createStyles((theme) => ({
   statisticsWrapper: {
@@ -32,6 +34,17 @@ const useStyles = createStyles((theme) => ({
 
 export default function Home() {
   const { classes } = useStyles();
+
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  const [showSettingsTip, setShowSettingsTip] = useLocalStorage({
+    key: "sub-rehab-home-settings-tip",
+    defaultValue: true,
+  });
 
   return (
     <>
@@ -84,6 +97,22 @@ export default function Home() {
           </div>
         </Flex>
       </Section>
+      {isMounted && showSettingsTip && (
+        <Section mt="xl">
+          <Flex align="center" justify="space-between" wrap="wrap" gap="md">
+            <Text>
+              Tip: You can import your reddit subscriptions and set a Lemmy/KBin home instance from{" "}
+              <Anchor component={Link} href="/settings">
+                Settings
+              </Anchor>
+              .
+            </Text>
+            <Button variant="outline" onClick={() => setShowSettingsTip(false)}>
+              Don't show this again
+            </Button>
+          </Flex>
+        </Section>
+      )}
       <CommunityList />
     </>
   );
