@@ -4,7 +4,7 @@ import { PageHeader } from "@/components/core/page-header";
 import { Section } from "@/components/core/section";
 import { AnimatedSlogan } from "@/components/index/animated-slogan";
 import { Statistics } from "@/components/index/statistics";
-import { Anchor, Button, Flex, Group, Text, Tooltip, createStyles } from "@mantine/core";
+import { Alert, Anchor, Button, Flex, Group, Text, Tooltip, createStyles } from "@mantine/core";
 import { useLocalStorage } from "@mantine/hooks";
 import { modals } from "@mantine/modals";
 import Link from "next/link";
@@ -12,6 +12,19 @@ import { useEffect, useState } from "react";
 import { IoAdd, IoStatsChart, IoWarningOutline } from "react-icons/io5";
 
 const useStyles = createStyles((theme) => ({
+  feedback: {
+    backgroundColor:
+      theme.colorScheme === "dark" ? "rgba(0, 0, 0, 0.6)" : "rgba(255, 255, 255, 0.9)",
+    backdropFilter: "blur(10px)",
+    boxShadow: theme.shadows.sm,
+    borderRadius: theme.radius.md,
+  },
+
+  feedbackText: {
+    color: theme.colorScheme === "dark" ? theme.colors.orange[4] : theme.colors.orange[6],
+    fontSize: theme.fontSizes.md,
+  },
+
   statisticsWrapper: {
     [theme.fn.smallerThan("xs")]: {
       display: "none",
@@ -48,6 +61,18 @@ export default function Home() {
 
   return (
     <>
+      <Alert className={classes.feedback} variant="outline" mb="xl">
+        <Text fw="800" className={classes.feedbackText}>
+          Community Feedback
+        </Text>{" "}
+        Please take some time (~5-7 mins) to{" "}
+        <strong>
+          <Anchor href="https://forms.gle/JyGMtzet2Y3Kj2i8A" target="_blank">
+            cast your vote
+          </Anchor>
+        </strong>{" "}
+        on the future of sub.rehab.
+      </Alert>
       <Section>
         <PageHeader />
         <AnimatedSlogan />
