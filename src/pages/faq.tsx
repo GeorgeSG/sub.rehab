@@ -1,6 +1,7 @@
 import { PageHeader } from "@/components/core/page-header";
 import { Section } from "@/components/core/section";
 import { Accordion, Anchor, List, Text, Title, createStyles } from "@mantine/core";
+import Link from "next/link";
 import { IoCheckmarkCircleOutline } from "react-icons/io5";
 
 const useStyles = createStyles((theme) => ({
@@ -136,6 +137,24 @@ export default function FAQPage() {
                 GeorgeSG/sub.rehab
               </Anchor>
               . Feel free to open a PR and contribute!
+            </Accordion.Panel>
+          </Accordion.Item>
+          <Accordion.Item className={classes.item} value="data-list">
+            <Accordion.Control>Can I get the raw list of links?</Accordion.Control>
+            <Accordion.Panel>
+              Yes. You can find the raw list of subreddits and alternative links as a JSON file in{" "}
+              <Anchor
+                href="https://raw.githubusercontent.com/GeorgeSG/sub.rehab/master/data/subreddits.json"
+                target="_blank"
+              >
+                our Github repo
+              </Anchor>
+              .
+              <p>
+                Note: Please do not submit Pull Requests to this file. It is generated
+                automatically. If you want to suggest a link to be added use the{" "}
+                <Link href="/submit-link">Submit link</Link> form instead!
+              </p>
             </Accordion.Panel>
           </Accordion.Item>
         </Accordion>
