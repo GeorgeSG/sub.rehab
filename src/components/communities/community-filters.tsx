@@ -10,10 +10,10 @@ import {
   Tooltip,
   createStyles,
 } from "@mantine/core";
-import { useDisclosure } from "@mantine/hooks";
+import { useDebouncedState, useDebouncedValue, useDisclosure } from "@mantine/hooks";
 import { notifications } from "@mantine/notifications";
 import { useRouter } from "next/router";
-import { useCallback, useMemo } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import {
   IoCheckmarkCircleOutline,
   IoCloseOutline,
@@ -92,10 +92,18 @@ export function CommunityFilters({ filter, setFilter }: CommunityFiltersProps) {
   );
 
   const [opened, { open, close }] = useDisclosure(false);
+
   const onChangeSearchTerm = useCallback(
     (value: string) => setFilterAndPushParams({ searchTerm: value }),
     [setFilterAndPushParams]
   );
+
+  const [localSearchTerm, setLocalSearchTerm] = useState(filter.searchTerm);
+  const [debouncedSearchTerm] = useDebouncedValue(localSearchTerm, 300);
+
+  useEffect(() => {
+    onChangeSearchTerm(debouncedSearchTerm);
+  }, [debouncedSearchTerm, onChangeSearchTerm]);
 
   const filters = useMemo(
     () => (
@@ -103,12 +111,12 @@ export function CommunityFilters({ filter, setFilter }: CommunityFiltersProps) {
         <div className={classes.filters}>
           <TextInput
             data-autofocus
-            placeholder="Search"
-            value={filter.searchTerm}
+            placeholder="Subreddit name"
+            value={localSearchTerm}
             size="md"
-            onChange={(e) => onChangeSearchTerm(e.currentTarget.value)}
+            onChange={(e) => setLocalSearchTerm(e.currentTarget.value)}
             icon={<IoSearch />}
-            rightSection={<IoCloseOutline onClick={() => onChangeSearchTerm("")} />}
+            rightSection={<IoCloseOutline onClick={() => setLocalSearchTerm("")} />}
             className={classes.searchInput}
           />
           <Checkbox
@@ -128,7 +136,7 @@ export function CommunityFilters({ filter, setFilter }: CommunityFiltersProps) {
             checked={filter.officialOnly}
             onChange={(e) => {
               setFilterAndPushParams({ officialOnly: e.target.checked });
-              umami.track("filterByOfficial", { filter: e.target.checked });
+              umami?.track("filterByOfficial", { filter: e.target.checked });
             }}
           />
           <Checkbox
@@ -138,7 +146,7 @@ export function CommunityFilters({ filter, setFilter }: CommunityFiltersProps) {
             checked={filter.favoriteOnly}
             onChange={(e) => {
               setFilterAndPushParams({ favoriteOnly: e.target.checked });
-              umami.track("filterByFavorite", { filter: e.target.checked });
+              umami?.track("filterByFavorite", { filter: e.target.checked });
             }}
           />
           <Checkbox
@@ -152,13 +160,27 @@ export function CommunityFilters({ filter, setFilter }: CommunityFiltersProps) {
             checked={filter.newOnly}
             onChange={(e) => {
               setFilterAndPushParams({ newOnly: e.target.checked });
-              umami.track("filterByNew", { filter: e.target.checked });
+              umami?.track("filterByNew", { filter: e.target.checked });
             }}
           />
         </div>
         <MultiSelect
           clearButtonProps={{ "aria-label": "Clear services" }}
-          icon={<IoGlobeOutline />}
+          left={"hui"}
+          icon={
+            <Flex gap={8} align="center">
+              <IoGlobeOutline />
+              <Text size="sm">Service:</Text>
+            </Flex>
+          }
+          styles={{
+            icon: {
+              width: "100px",
+            },
+            input: {
+              paddingLeft: "100px !important",
+            },
+          }}
           className={classes.multiSelect}
           aria-label="Select services"
           placeholder="Select services"

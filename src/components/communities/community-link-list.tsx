@@ -1,34 +1,13 @@
-import { Box, Flex, Title, Tooltip, createStyles } from "@mantine/core";
-import { CommunityFavorite } from "./community-favorite";
-import { CommunityLink, Link } from "./community-link";
+import { Box, Tooltip, createStyles } from "@mantine/core";
 import { useMemo } from "react";
 import { IoCheckmarkCircleOutline } from "react-icons/io5";
+import { CommunityLink, Link } from "./community-link";
+import { Subreddit } from "@/types";
 
-type CommunityProps = {
-  name: string;
-  links: Link[];
-};
-
-const useStyles = createStyles(({ colors, colorScheme, spacing, radius, fn, fontSizes }) => {
+const useStyles = createStyles(({ colors, colorScheme, fontSizes }) => {
   const isDark = colorScheme === "dark";
 
   return {
-    community: {
-      padding: spacing.md,
-      border: `1px solid ${isDark ? colors.gray[8] : colors.gray[3]}`,
-      backgroundColor: isDark ? colors.dark[6] : "#fff",
-      borderRadius: radius.md,
-
-      [fn.smallerThan(360)]: {
-        padding: spacing.xs,
-      },
-    },
-
-    communityName: {
-      color: isDark ? colors.orange[1] : colors.gray[8],
-      fontSize: "1.125rem",
-    },
-
     section: {
       position: "relative",
       display: "flex",
@@ -50,20 +29,16 @@ const useStyles = createStyles(({ colors, colorScheme, spacing, radius, fn, font
   };
 });
 
-export function Community({ name, links }: CommunityProps) {
+type CommunityLinkListProps = Subreddit;
+
+export function CommunityLinkList({ name, links }: CommunityLinkListProps) {
   const { classes } = useStyles();
 
   const officialLinks = useMemo(() => links.filter((link) => link.official), [links]);
   const unofficialLinks = useMemo(() => links.filter((link) => !link.official), [links]);
 
   return (
-    <div className={classes.community}>
-      <Flex align="center" justify="space-between" mb="xs">
-        <Title order={3} className={classes.communityName}>
-          {name}
-        </Title>
-        <CommunityFavorite name={name} />
-      </Flex>
+    <>
       {officialLinks.length > 0 && (
         <Tooltip
           label="Communities officially endorsed or created by the original subreddit's staff"
@@ -88,6 +63,6 @@ export function Community({ name, links }: CommunityProps) {
       {unofficialLinks.map((link) => (
         <CommunityLink link={link} key={link.url} name={name} />
       ))}
-    </div>
+    </>
   );
 }

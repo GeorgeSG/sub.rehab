@@ -11,18 +11,20 @@ export function CommunityFavorite({ name }: { name: string }) {
   return isFavorited ? (
     <ActionIcon
       color="yellow"
-      onClick={() => {
+      onClick={(e) => {
+        e.preventDefault();
         setFavorites((prev) => prev.filter((sub) => sub !== name));
-        umami.track("removeFavorite", { name });
+        umami?.track("removeFavorite", { name });
       }}
     >
       <IoStar />
     </ActionIcon>
   ) : (
     <ActionIcon
-      onClick={() => {
+      onClick={(e) => {
+        e.preventDefault();
         setFavorites((prev) => [...prev, name]);
-        umami.track("addFavorite", { name });
+        umami?.track("addFavorite", { name });
       }}
     >
       <IoStarOutline />

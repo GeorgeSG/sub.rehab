@@ -4,6 +4,7 @@ import { useIsLinkNew } from "@/hooks/use-is-link-new";
 import { Anchor, Flex, Indicator, Text, Tooltip, createStyles } from "@mantine/core";
 import { IoCheckmarkCircleOutline } from "react-icons/io5";
 import { OriginalInstanceLink } from "../original-instance-link";
+import { LinkPill } from "../core/link-pill";
 
 const SERVICE_ICONS: Record<string, string> = {
   discord: "/images/discord.svg",
@@ -15,36 +16,15 @@ const SERVICE_ICONS: Record<string, string> = {
   raddle: "/images/raddle.svg",
 };
 
-const useStyles = createStyles(({ colors, colorScheme, spacing, radius, other, fn }) => {
+const useStyles = createStyles(({ colors, colorScheme, spacing }) => {
   const isDark = colorScheme === "dark";
 
   return {
     homeLocation: {
-      display: "flex",
-      alignItems: "center",
-      gap: spacing.md,
-      borderRadius: radius.md,
-      padding: `${spacing.xs} ${spacing.md}`,
-      color: isDark ? colors.orange[1] : colors.gray[7],
-      lineHeight: "32px",
-      backgroundColor: isDark ? "rgba(255, 255, 255, 0.1)" : colors.orange[0],
-      transition: `background-color ${other.transitionTime} ease`,
-
-      "&:hover": {
-        backgroundColor: isDark ? "rgba(255, 255, 255, 0.2)" : colors.orange[1],
-        textDecoration: "none",
-      },
-
       "& + &": {
         marginTop: spacing.sm,
       },
-
-      [fn.smallerThan("xs")]: {
-        gap: spacing.xs,
-        padding: spacing.xs,
-      },
     },
-
     official: {
       height: "20px",
       color: isDark ? colors.orange[1] : colors.orange[6],
@@ -65,7 +45,7 @@ export function CommunityLink({ link, name }: { link: Link; name: string }) {
   const isLinkNew = useIsLinkNew();
 
   return (
-    <Anchor
+    <LinkPill
       key={link.url}
       href={getSubredditLink(link)}
       target="_blank"
@@ -104,6 +84,6 @@ export function CommunityLink({ link, name }: { link: Link; name: string }) {
           </Tooltip>
         )}
       </Flex>
-    </Anchor>
+    </LinkPill>
   );
 }

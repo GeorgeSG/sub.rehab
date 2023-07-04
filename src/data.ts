@@ -1,6 +1,7 @@
 import data from "@/subreddits";
 import { MantineTheme } from "@mantine/core";
 import { useMemo } from "react";
+import { Link, Subreddit } from "./types";
 
 export const SERVICE_COLORS: Record<string, (theme: MantineTheme) => string> = {
   lemmy: ({ colors, colorScheme }) => (colorScheme === "dark" ? colors.gray[7] : colors.gray[2]),
@@ -12,19 +13,40 @@ export const SERVICE_COLORS: Record<string, (theme: MantineTheme) => string> = {
   raddle: () => "#EA3524",
 };
 
+export function getSubreddits(): Subreddit[] {
+  return data.subs;
+}
+
+export function getSubredditData(subredditName: string): Subreddit | undefined {
+  const normalizedSubreddit = subredditName.toLowerCase();
+  return getSubreddits().find((sub) => sub.name.toLowerCase() === normalizedSubreddit);
+}
+
+export function getAllSubredditNames(): string[] {
+  return getSubreddits().map((sub) => sub.name);
+}
+
 export function useSubredditData() {
-  const allLinks = useMemo(() => data.subs.flatMap((sub) => sub.links), []);
+  const allLinks: Link[] = useMemo(() => getSubreddits().flatMap((sub) => sub.links), []);
 
   const uniqueServiceList = useMemo(
     () => Array.from(new Set(allLinks.map((link) => link.service))),
     [allLinks]
   );
 
-  const communitiesCount = useMemo(() => Object.keys(data.subs).length, []);
-  const linksCount = useMemo(() => data.subs.reduce((acc, sub) => acc + sub.links.length, 0), []);
+  const communitiesCount = useMemo(() => Object.keys(getSubreddits()).length, []);
+
+  const linksCount = useMemo(
+    () => getSubreddits().reduce((acc, sub) => acc + sub.links.length, 0),
+    []
+  );
+
   const officialLinksCount = useMemo(
     () =>
-      data.subs.reduce((acc, sub) => acc + sub.links.filter(({ official }) => official).length, 0),
+      getSubreddits().reduce(
+        (acc, sub) => acc + sub.links.filter(({ official }) => official).length,
+        0
+      ),
     []
   );
 

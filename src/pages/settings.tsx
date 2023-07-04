@@ -134,7 +134,7 @@ export default function FAQPage() {
             checked={homeInstanceEnabled}
             onChange={() => {
               setHomeInstanceEnabled((prev) => {
-                umami.track("setHomeInstanceEnabled", { enabled: (!prev).toString() });
+                umami?.track("setHomeInstanceEnabled", { enabled: (!prev).toString() });
                 return !prev;
               });
             }}
@@ -151,7 +151,7 @@ export default function FAQPage() {
             onChange={(e) => {
               if (e) {
                 setHomeInstance(e);
-                umami.track("setHomeInstance", { instance: e });
+                umami?.track("setHomeInstance", { instance: e });
               }
             }}
             icon={<IoHomeOutline />}

@@ -1,21 +1,15 @@
-import { Section } from "@/components/core/section";
-import { useSubredditData } from "@/data";
-import { useIsLinkNew } from "@/hooks/use-is-link-new";
-import data from "@/subreddits";
-import { Paper, SimpleGrid, Title } from "@mantine/core";
+import { Filter } from "@/components/communities/community-filters";
+import { getSubreddits, useSubredditData } from "@/data";
 import { useRouter } from "next/router";
-import { useCallback, useEffect, useMemo, useState } from "react";
-import { Community } from "./community";
-import { CommunityFilters, Filter } from "./community-filters";
-import { useFavorites } from "@/hooks/use-favorites";
+import { useState, useEffect, useCallback, useMemo } from "react";
+import { useFavorites } from "./use-favorites";
+import { useIsLinkNew } from "./use-is-link-new";
 
-const PAGE_SIZE = 30;
-
-export function CommunityList() {
+export function useFilteredSubreddits(pageSize: number) {
+  const [favorites] = useFavorites();
   const { uniqueServiceList } = useSubredditData();
   const router = useRouter();
   const isLinkNew = useIsLinkNew();
-  const [favorites] = useFavorites();
 
   // -- Page management
   const [page, setPage] = useState(1);
@@ -34,6 +28,7 @@ export function CommunityList() {
       setPage((prev) => prev + 1);
     }
   };
+
   // -- /Page management
 
   // -- Filter management
@@ -44,6 +39,11 @@ export function CommunityList() {
     newOnly: false,
     favoriteOnly: false,
   });
+
+  useEffect(() => {
+    // Refresh page when filter changes
+    setPage(1);
+  }, [filter]);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -82,18 +82,14 @@ export function CommunityList() {
     [filter, favorites, isLinkVisible]
   );
 
-  const filteredSubs = useMemo(() => data.subs.filter((sub) => isSubVisible(sub)), [isSubVisible]);
+  const filteredSubreddits = useMemo(
+    () => getSubreddits().filter((sub) => isSubVisible(sub)),
+    [isSubVisible]
+  );
 
-  useEffect(() => {
-    // Refresh page when filter changes
-    setPage(1);
-  }, [filter]);
-
-  // -- /Filter management
-
-  const visibleSubs = useMemo(
+  const visibleSubreddits = useMemo(
     () =>
-      filteredSubs
+      filteredSubreddits
         .sort((a, b) => {
           if (favorites.includes(a.name) && !favorites.includes(b.name)) {
             return -1;
@@ -104,45 +100,9 @@ export function CommunityList() {
 
           return a.name.localeCompare(b.name);
         })
-        .slice(0, page * PAGE_SIZE),
-    [filteredSubs, page, favorites]
+        .slice(0, page * pageSize),
+    [favorites, filteredSubreddits, page, pageSize]
   );
 
-  return (
-    <>
-      <Section mt="xxl">
-        <Title order={2} sx={{ fontFamily: "var(--font-accent)" }}>
-          Communities
-        </Title>
-
-        <CommunityFilters {...{ filter, setFilter }} />
-
-        {visibleSubs.length === 0 && (
-          <Paper mt="xxl" px="xxs" style={{ background: "transparent" }}>
-            {filter.searchTerm ? (
-              <>
-                No results matching <strong>&quot;{filter.searchTerm}&quot;</strong> found.
-              </>
-            ) : (
-              <>No results found.</>
-            )}
-          </Paper>
-        )}
-
-        <SimpleGrid
-          cols={3}
-          spacing="lg"
-          mt="xxl"
-          breakpoints={[
-            { maxWidth: "lg", cols: 2, spacing: "lg" },
-            { maxWidth: "sm", cols: 1, spacing: "md" },
-          ]}
-        >
-          {visibleSubs.map(({ name, links }) => (
-            <Community key={name} name={name} links={links.filter(isLinkVisible)} />
-          ))}
-        </SimpleGrid>
-      </Section>
-    </>
-  );
+  return { filter, setFilter, visibleSubreddits, isLinkVisible };
 }
