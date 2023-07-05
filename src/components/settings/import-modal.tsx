@@ -1,5 +1,5 @@
+import { getSubreddits } from "@/data";
 import { useFavorites } from "@/hooks/use-favorites";
-import data from "@/subreddits";
 import { Anchor, Badge, Box, Button, Code, List, Modal, Text, TextInput } from "@mantine/core";
 import { notifications } from "@mantine/notifications";
 import { useCallback, useEffect, useState } from "react";
@@ -29,7 +29,7 @@ export function ImportModal({ opened, onClose }: { opened: boolean; onClose(): v
     }
 
     const subreddits = importStr.split("+").map((sub) => `r/${sub.trim()}`);
-    const existingNames = data.subs.map((sub) => sub.name.toLowerCase());
+    const existingNames = getSubreddits().map((sub) => sub.name.toLowerCase());
     setImportCount(subreddits.length);
 
     const existingSubredditsToSubscribe = subreddits.filter((subscription) =>

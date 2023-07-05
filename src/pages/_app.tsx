@@ -3,10 +3,10 @@ import { theme } from "@/theme";
 import { ColorScheme, ColorSchemeProvider, MantineProvider } from "@mantine/core";
 import { useColorScheme, useLocalStorage } from "@mantine/hooks";
 import { ModalsProvider } from "@mantine/modals";
+import { Notifications } from "@mantine/notifications";
 import type { AppProps } from "next/app";
 import { Inter, Lobster } from "next/font/google";
 import Head from "next/head";
-import { Notifications } from "@mantine/notifications";
 
 const fontAccent = Lobster({ weight: "400", subsets: ["latin"], variable: "--font-accent" });
 const fontDefault = Inter({ subsets: ["latin"], variable: "--font-default" });
@@ -51,6 +51,8 @@ export default function App({ Component, pageProps }: AppProps) {
         <link rel="icon" type="image/png" sizes="192x192" href="/favicon/favicon-192x192.png" />
         <link rel="icon" type="image/png" sizes="310x310" href="/favicon/favicon-310x310.png" />
         <link rel="apple-touch-icon" sizes="167x167" href="/apple-touch-icon.png" />
+
+        <script type="text/javascript">window.umami = null;</script>
       </Head>
       <ColorSchemeProvider colorScheme={colorScheme} toggleColorScheme={toggleColorScheme}>
         <MantineProvider withGlobalStyles withNormalizeCSS theme={{ ...theme, colorScheme }}>

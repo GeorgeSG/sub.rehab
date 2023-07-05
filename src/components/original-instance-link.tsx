@@ -11,7 +11,15 @@ export function OriginalInstanceLink({
 }) {
   return (
     <Tooltip label="Visit on original instance" withArrow position="top">
-      <ActionIcon color="gray" component={"a"} href={url} target="_blank" title={url} style={style}>
+      <ActionIcon
+        color="gray"
+        onClick={(e) => {
+          e.preventDefault();
+          open(url, "_blank");
+        }}
+        title={url}
+        style={style}
+      >
         <IoShareOutline />
       </ActionIcon>
     </Tooltip>
