@@ -1,4 +1,4 @@
-import { Alert, Anchor, Button, Flex, Group, Text, Tooltip, createStyles } from "@mantine/core";
+import { Anchor, Button, Flex, Group, Text, Tooltip, createStyles } from "@mantine/core";
 import { useLocalStorage } from "@mantine/hooks";
 import { modals } from "@mantine/modals";
 import Link from "next/link";
@@ -11,14 +11,6 @@ import { AnimatedSlogan } from "./animated-slogan";
 import { Statistics } from "./statistics";
 
 const useStyles = createStyles((theme) => ({
-  feedback: {
-    backgroundColor:
-      theme.colorScheme === "dark" ? "rgba(0, 0, 0, 0.6)" : "rgba(255, 255, 255, 0.9)",
-    backdropFilter: "blur(10px)",
-    boxShadow: theme.shadows.sm,
-    borderRadius: theme.radius.md,
-  },
-
   feedbackText: {
     color: theme.colorScheme === "dark" ? theme.colors.orange[4] : theme.colors.orange[6],
     fontSize: theme.fontSizes.md,
@@ -59,18 +51,6 @@ export function IndexHeader() {
 
   return (
     <>
-      <Alert className={classes.feedback} variant="outline" mb="xl">
-        <Text fw="800" className={classes.feedbackText}>
-          Community Feedback
-        </Text>{" "}
-        Please take some time (~5-7 mins) to{" "}
-        <strong>
-          <Anchor href="https://forms.gle/JyGMtzet2Y3Kj2i8A" target="_blank">
-            cast your vote
-          </Anchor>
-        </strong>{" "}
-        on the future of sub.rehab.
-      </Alert>
       <Section>
         <PageHeader />
         <AnimatedSlogan />
@@ -82,6 +62,16 @@ export function IndexHeader() {
           </Anchor>
           &nbsp;lists instances of the Reddit communities on alternative platforms.
         </Text>
+        <Text fw="800" className={classes.feedbackText}>
+          Community Feedback
+        </Text>{" "}
+        Please take some time (~5-7 mins) to{" "}
+        <strong>
+          <Anchor href="https://forms.gle/JyGMtzet2Y3Kj2i8A" target="_blank">
+            cast your vote
+          </Anchor>
+        </strong>{" "}
+        on the future of sub.rehab.
         <div className={classes.statisticsWrapper}>
           <Statistics />
         </div>

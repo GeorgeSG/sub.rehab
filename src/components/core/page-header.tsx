@@ -18,6 +18,7 @@ import {
   IoLogoGithub,
   IoLogoMastodon,
   IoLogoReddit,
+  IoMailOpen,
 } from "react-icons/io5";
 import { Logotype } from "./logotype";
 
@@ -51,13 +52,13 @@ const useStyles = createStyles(({ spacing, shadows, radius, colorScheme, fn, col
   },
 
   links: {
-    [fn.smallerThan(700)]: {
+    [fn.smallerThan(840)]: {
       display: "none",
     },
   },
 
   burger: {
-    [fn.largerThan(700)]: {
+    [fn.largerThan(840)]: {
       display: "none",
     },
   },
@@ -154,6 +155,16 @@ export function PageHeader({ withBackground = false }: { withBackground?: boolea
             </Menu.Item>
             <Menu.Item
               closeMenuOnClick
+              component={Link}
+              href="https://forms.gle/JyGMtzet2Y3Kj2i8A"
+              target="_blank"
+              color={isDark ? "gray.3" : "gray.7"}
+              icon={<IoMailOpen size={22} />}
+            >
+              Give Feedback
+            </Menu.Item>
+            <Menu.Item
+              closeMenuOnClick
               color={isDark ? "gray.3" : "gray.7"}
               component="a"
               href="https://mastodon.social/@subrehab"
@@ -198,7 +209,16 @@ export function PageHeader({ withBackground = false }: { withBackground?: boolea
           >
             Buy me a coffee
           </Button>
-
+          <Button
+            component={Link}
+            href="https://forms.gle/JyGMtzet2Y3Kj2i8A"
+            target="_blank"
+            variant="subtle"
+            color={isDark ? "#C1C2C5" : "orange.6"}
+            leftIcon={<IoMailOpen size={18} />}
+          >
+            Give Feedback
+          </Button>
           <Tooltip label="@sub.rehab@mastodon.social" position="top" withArrow>
             <ActionIcon
               size="lg"
