@@ -14,6 +14,7 @@ const useStyles = createStyles(({ colorScheme, spacing, radius, colors, fn, othe
       lineHeight: "32px",
       backgroundColor: isDark ? "rgba(255, 255, 255, 0.1)" : colors.orange[0],
       transition: `background-color ${other.transitionTime} ease`,
+      border: `1px solid ${isDark ? "rgba(255, 255, 255, 0.15)" : colors.orange[2]}`,
 
       "&:hover": {
         backgroundColor: isDark ? "rgba(255, 255, 255, 0.2)" : colors.orange[1],
