@@ -68,7 +68,7 @@ export const theme: MantineThemeOverride = {
         padding: `${spacing.xxl} 0`,
 
         [fn.smallerThan(360)]: {
-          width: "95vw",
+          width: "100vw",
         },
       },
     };

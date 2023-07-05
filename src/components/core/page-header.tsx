@@ -86,7 +86,6 @@ export function PageHeader({ withBackground = false }: { withBackground?: boolea
 
   return (
     <>
-      {/* <Drawer opened={burgerOpened} onClose={toggleBurger} title="Navigation"></Drawer> */}
       <header className={`${classes.title} ${withBackground && classes.background}`}>
         <Logotype />
         <Menu

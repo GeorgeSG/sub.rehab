@@ -11,11 +11,6 @@ import { AnimatedSlogan } from "./animated-slogan";
 import { Statistics } from "./statistics";
 
 const useStyles = createStyles((theme) => ({
-  feedbackText: {
-    color: theme.colorScheme === "dark" ? theme.colors.orange[4] : theme.colors.orange[6],
-    fontSize: theme.fontSizes.md,
-  },
-
   statisticsWrapper: {
     [theme.fn.smallerThan("xs")]: {
       display: "none",
@@ -62,16 +57,6 @@ export function IndexHeader() {
           </Anchor>
           &nbsp;lists instances of the Reddit communities on alternative platforms.
         </Text>
-        <Text fw="800" className={classes.feedbackText}>
-          Community Feedback
-        </Text>{" "}
-        Please take some time (~5-7 mins) to{" "}
-        <strong>
-          <Anchor href="https://forms.gle/JyGMtzet2Y3Kj2i8A" target="_blank">
-            cast your vote
-          </Anchor>
-        </strong>{" "}
-        on the future of sub.rehab.
         <div className={classes.statisticsWrapper}>
           <Statistics />
         </div>
