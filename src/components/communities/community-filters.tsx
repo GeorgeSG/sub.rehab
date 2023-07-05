@@ -202,7 +202,7 @@ export function CommunityFilters({ filter, setFilter }: CommunityFiltersProps) {
         />
       </Flex>
     ),
-    [filter, setFilterAndPushParams, uniqueServiceList, classes, onChangeSearchTerm]
+    [filter, setFilterAndPushParams, uniqueServiceList, classes, localSearchTerm]
   );
 
   return (
