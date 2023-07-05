@@ -7094,17 +7094,6 @@
       ]
     },
     {
-      "name": "r/MilwaukeeTool",
-      "links": [
-        {
-          "service": "discord",
-          "url": "https://discord.gg/4Yk7PfMjCJ",
-          "official": true,
-          "added_ts": 1687805966639
-        }
-      ]
-    },
-    {
       "name": "r/OtomeIsekai",
       "links": [
         {
@@ -9986,29 +9975,6 @@
       ]
     },
     {
-      "name": "r/cosmere",
-      "links": [
-        {
-          "service": "squabbles",
-          "url": "https://squabbles.io/s/cosmere",
-          "official": false,
-          "added_ts": 1687203476648
-        },
-        {
-          "service": "lemmy",
-          "url": "https://lemmy.ml/c/cosmere",
-          "official": false,
-          "added_ts": 1688292892609
-        },
-        {
-          "service": "discord",
-          "url": "https://discord.gg/Y83JZy4",
-          "official": true,
-          "added_ts": 1688292902909
-        }
-      ]
-    },
-    {
       "name": "r/EmulationOnAndroid",
       "links": [
         {
@@ -10481,17 +10447,6 @@
       ]
     },
     {
-      "name": "r/flashpointarchive",
-      "links": [
-        {
-          "service": "discord",
-          "url": "https://discord.gg/S9uJ794",
-          "official": true,
-          "added_ts": 1688500437814
-        }
-      ]
-    },
-    {
       "name": "r/flying",
       "links": [
         {
@@ -10665,6 +10620,124 @@
           "url": "https://midwest.social/c/zillowgonewild",
           "official": false,
           "added_ts": 1688500438717
+        }
+      ]
+    },
+    {
+      "name": "r/USAnews",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://beehaw.org/c/usnews",
+          "official": false,
+          "added_ts": 1688585149427
+        }
+      ]
+    },
+    {
+      "name": "r/brandonsanderson",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://sffa.community/c/brandonsanderson",
+          "official": true,
+          "added_ts": 1688585149581
+        }
+      ]
+    },
+    {
+      "name": "r/cosmere",
+      "links": [
+        {
+          "service": "squabbles",
+          "url": "https://squabbles.io/s/cosmere",
+          "official": false,
+          "added_ts": 1687203476648
+        },
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.ml/c/cosmere",
+          "official": false,
+          "added_ts": 1688292892609
+        },
+        {
+          "service": "discord",
+          "url": "https://discord.gg/Y83JZy4",
+          "official": true,
+          "added_ts": 1688292902909
+        },
+        {
+          "service": "lemmy",
+          "url": "https://sffa.community/c/cosmere",
+          "official": true,
+          "added_ts": 1688585149681
+        }
+      ]
+    },
+    {
+      "name": "r/devpt",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.pt/c/devpt",
+          "official": true,
+          "added_ts": 1688585149767
+        }
+      ]
+    },
+    {
+      "name": "r/flashpointarchive",
+      "links": [
+        {
+          "service": "discord",
+          "url": "https://discord.gg/S9uJ794",
+          "official": true,
+          "added_ts": 1688500437814
+        },
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.ml/c/flashpointarchive",
+          "official": true,
+          "added_ts": 1688585149835
+        }
+      ]
+    },
+    {
+      "name": "r/guitar",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/guitars",
+          "official": false,
+          "added_ts": 1688585149902
+        }
+      ]
+    },
+    {
+      "name": "r/migraine",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/migraines",
+          "official": true,
+          "added_ts": 1688585149971
+        }
+      ]
+    },
+    {
+      "name": "r/MilwaukeeTool",
+      "links": [
+        {
+          "service": "discord",
+          "url": "https://discord.gg/4Yk7PfMjCJ",
+          "official": true,
+          "added_ts": 1687805966639
+        },
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/milwaukeetool",
+          "official": true,
+          "added_ts": 1688585150051
         }
       ]
     }
