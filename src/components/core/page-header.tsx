@@ -154,11 +154,11 @@ export function PageHeader({ withBackground = false }: { withBackground?: boolea
             </Menu.Item>
             <Menu.Item
               closeMenuOnClick
-              component={Link}
+              component="a"
               href="https://forms.gle/JyGMtzet2Y3Kj2i8A"
               target="_blank"
               color={isDark ? "gray.3" : "gray.7"}
-              icon={<IoMailOpen size={22} />}
+              icon={<IoMailOpen size={16} />}
             >
               Give Feedback
             </Menu.Item>
