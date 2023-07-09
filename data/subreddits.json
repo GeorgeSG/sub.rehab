@@ -9980,7 +9980,7 @@
         {
           "service": "lemmy",
           "url": "https://forum.basedcount.com/c/pcm",
-          "official": false,
+          "official": true,
           "added_ts": 1688299448242
         }
       ]
