@@ -128,7 +128,7 @@ export function useFilteredSubreddits(pageSize: number) {
     }
 
     return result.slice(0, page * pageSize);
-  }, [favorites, filteredSubreddits, page, pageSize, filter]);
+  }, [favorites, filteredSubreddits, page, pageSize, filter, isLinkVisible]);
 
   return { filter, setFilter, visibleSubreddits, isLinkVisible };
 }
