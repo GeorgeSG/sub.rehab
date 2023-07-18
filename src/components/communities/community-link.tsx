@@ -12,6 +12,7 @@ import {
 import { LinkPill } from "../core/link-pill";
 import { OriginalInstanceLink } from "../original-instance-link";
 import lemmyStats from "@/lemmyStats";
+import { formatCompactNumber } from "@/lib/numbers";
 
 const SERVICE_ICONS: Record<string, string> = {
   discord: "/images/discord.svg",
@@ -69,7 +70,7 @@ export function CommunityLink({ link, name }: { link: Link; name: string }) {
             <Tooltip label="Subscribers" withArrow>
               <span>
                 <IoPerson size={14} className={classes.icon} style={{ marginRight: "4px" }} />
-                {stats.subscribers}
+                {formatCompactNumber(stats.subscribers)}
               </span>
             </Tooltip>
             <Tooltip label="Posts" withArrow>
@@ -79,19 +80,19 @@ export function CommunityLink({ link, name }: { link: Link; name: string }) {
                   className={classes.icon}
                   style={{ marginRight: "4px" }}
                 />
-                {stats.posts}
+                {formatCompactNumber(stats.posts)}
               </span>
             </Tooltip>
             <Tooltip label="Comments" withArrow>
               <span>
                 <IoChatbubbles size={14} className={classes.icon} style={{ marginRight: "4px" }} />
-                {stats.comments}
+                {formatCompactNumber(stats.comments)}
               </span>
             </Tooltip>
             <Tooltip label="Active Users (Week)" withArrow>
               <span>
                 <IoTrendingUp size={14} className={classes.icon} style={{ marginRight: "4px" }} />
-                {stats.users_active_week}
+                {formatCompactNumber(stats.users_active_week)}
               </span>
             </Tooltip>
           </Flex>
