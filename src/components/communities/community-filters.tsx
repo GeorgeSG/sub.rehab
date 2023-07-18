@@ -215,8 +215,8 @@ export function CommunityFilters({ filter, setFilter }: CommunityFiltersProps) {
               umami?.track("sortBy", { sort: value });
             }}
             data={[
-              { label: "Subreddit Name", value: "name" },
-              { label: "Subscribers", value: "subscribers" },
+              { label: "Subreddit name", value: "name" },
+              { label: "Total users", value: "subscribers" },
               { label: "Posts", value: "posts" },
               { label: "Comments", value: "comments" },
               { label: "Active users (Week)", value: "users_active_week" },

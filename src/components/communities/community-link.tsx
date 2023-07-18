@@ -63,7 +63,7 @@ export function CommunityLink({ link, name }: { link: Link; name: string }) {
     if (link.service === "lemmy") {
       return [
         {
-          label: "Subscribers",
+          label: "Subscribed users",
           value: formatCompactNumber(link.stats.subscribers),
           icon: IoPerson,
         },
@@ -78,7 +78,7 @@ export function CommunityLink({ link, name }: { link: Link; name: string }) {
           icon: IoChatbubbles,
         },
         {
-          label: "Active Users (Week)",
+          label: "Active users (Week)",
           value: formatCompactNumber(link.stats.users_active_week),
           icon: IoTrendingUp,
         },
@@ -88,7 +88,7 @@ export function CommunityLink({ link, name }: { link: Link; name: string }) {
     if (link.service === "discord") {
       return [
         {
-          label: "Subscribers",
+          label: "Users",
           value: formatCompactNumber(link.stats.subscribers),
           icon: IoPerson,
         },
