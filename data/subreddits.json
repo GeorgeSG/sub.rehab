@@ -78,7 +78,7 @@
     },
     {
       "name": "r/FREEMEDIAHECKYEAH",
-      "links": [{ "service": "lemmy", "url": "https://lemmy.fmhy.ml/", "official": true }]
+      "links": [{ "service": "lemmy", "url": "https://lemmy.fmhy.ml/c/freemediaheckyeah", "official": true }]
     },
     {
       "name": "r/Gunners",
@@ -218,12 +218,6 @@
     {
       "name": "r/Cebu",
       "links": [{ "service": "lemmy", "url": "https://lemmy.world/c/cebu", "official": true }]
-    },
-    {
-      "name": "r/Darksiders",
-      "links": [
-        { "service": "lemmy", "url": "https://lemmy.blahaj.zone/c/darksiders", "official": true }
-      ]
     },
     {
       "name": "r/destinycirclejerk",
@@ -1600,7 +1594,7 @@
       "links": [
         {
           "service": "lemmy",
-          "url": "https://discuss.ntfy.sh",
+          "url": "https://discuss.ntfy.sh/c/ntfy",
           "official": true,
           "added_ts": 1687282358080
         }
@@ -1839,7 +1833,7 @@
       "links": [
         {
           "service": "lemmy",
-          "url": "https://feddit.dk",
+          "url": "https://feddit.dk/c/fedditdkk",
           "official": false,
           "added_ts": 1687284704884
         }
@@ -2709,7 +2703,7 @@
     {
       "name": "r/3Dprinting",
       "links": [
-        { "service": "lemmy", "url": "https://forum.rhombik.com", "official": true },
+        { "service": "lemmy", "url": "https://forum.rhombik.com/c/3d_printing", "official": true },
         { "service": "lemmy", "url": "https://lemmy.world/c/3dprinting", "official": true },
         {
           "service": "squabbles",
@@ -3790,7 +3784,7 @@
       "links": [
         {
           "service": "lemmy",
-          "url": "https://rblind.com",
+          "url": "https://rblind.com/c/main",
           "official": true,
           "added_ts": 1687514892102
         }
@@ -4536,7 +4530,7 @@
       "links": [
         {
           "service": "lemmy",
-          "url": "https://pathfinder.social",
+          "url": "https://pathfinder.social/c/pf2general",
           "official": false,
           "added_ts": 1687284912189
         },
@@ -4797,7 +4791,7 @@
         },
         {
           "service": "lemmy",
-          "url": "https://slrpnk.net",
+          "url": "https://slrpnk.net/c/solarpunk",
           "official": false,
           "added_ts": 1687514896870
         }
@@ -5069,12 +5063,6 @@
     {
       "name": "r/Eurovision",
       "links": [
-        {
-          "service": "lemmy",
-          "url": "https://feddit.uk/c/eurovision",
-          "official": false,
-          "added_ts": 1687625196868
-        },
         {
           "service": "kbin",
           "url": "https://kbin.social/m/Eurovision",
@@ -5847,17 +5835,6 @@
           "url": "https://squabbles.io/s/jokes",
           "official": false,
           "added_ts": 1687625199725
-        }
-      ]
-    },
-    {
-      "name": "r/macgaming",
-      "links": [
-        {
-          "service": "lemmy",
-          "url": "https://mlem.a-smol-cat.fr/c/macgaming",
-          "official": false,
-          "added_ts": 1687625199860
         }
       ]
     },
