@@ -1,8 +1,8 @@
+import { Subreddit } from "@/types";
 import { Box, Tooltip, createStyles } from "@mantine/core";
 import { useMemo } from "react";
 import { IoCheckmarkCircleOutline } from "react-icons/io5";
-import { CommunityLink, Link } from "./community-link";
-import { Subreddit } from "@/types";
+import { CommunityLink } from "./community-link";
 
 const useStyles = createStyles(({ colors, colorScheme, fontSizes }) => {
   const isDark = colorScheme === "dark";

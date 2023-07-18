@@ -5,6 +5,7 @@ import {
   Flex,
   MediaQuery,
   MultiSelect,
+  Select,
   Text,
   TextInput,
   Tooltip,
@@ -15,6 +16,7 @@ import { notifications } from "@mantine/notifications";
 import { useRouter } from "next/router";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import {
+  IoArrowUp,
   IoCheckmarkCircleOutline,
   IoCloseOutline,
   IoFilter,
@@ -67,6 +69,7 @@ export type Filter = {
   officialOnly: boolean;
   newOnly: boolean;
   favoriteOnly: boolean;
+  sortBy: "name" | "subscribers";
 };
 
 export type CommunityFiltersProps = {
@@ -200,6 +203,26 @@ export function CommunityFilters({ filter, setFilter }: CommunityFiltersProps) {
           }}
           withinPortal
         />
+        <Flex align="center" gap="sm">
+          Sort by:
+          <Select
+            icon={<IoArrowUp />}
+            allowDeselect={false}
+            clearable={false}
+            value={filter.sortBy}
+            onChange={(value) => {
+              setFilterAndPushParams({ sortBy: value as Filter["sortBy"] });
+              umami?.track("sortBy", { sort: value });
+            }}
+            data={[
+              { label: "Subreddit Name", value: "name" },
+              { label: "Subscribers", value: "subscribers" },
+              { label: "Posts", value: "posts" },
+              { label: "Comments", value: "comments" },
+              { label: "Weekly active users", value: "users_active_week" },
+            ]}
+          />
+        </Flex>
       </Flex>
     ),
     [filter, setFilterAndPushParams, uniqueServiceList, classes, localSearchTerm]

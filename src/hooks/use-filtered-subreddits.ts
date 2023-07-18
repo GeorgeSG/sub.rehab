@@ -4,6 +4,8 @@ import { useRouter } from "next/router";
 import { useState, useEffect, useCallback, useMemo } from "react";
 import { useFavorites } from "./use-favorites";
 import { useIsLinkNew } from "./use-is-link-new";
+import { apply, maxBy, sortBy } from "ramda";
+import { Link } from "@/types";
 
 export function useFilteredSubreddits(pageSize: number) {
   const [favorites] = useFavorites();
@@ -38,6 +40,7 @@ export function useFilteredSubreddits(pageSize: number) {
     officialOnly: false,
     newOnly: false,
     favoriteOnly: false,
+    sortBy: "name",
   });
 
   useEffect(() => {
@@ -58,6 +61,7 @@ export function useFilteredSubreddits(pageSize: number) {
         officialOnly: (router.query.officialOnly as string) === "true" || false,
         newOnly: (router.query.newOnly as string) === "true" || false,
         favoriteOnly: (router.query.favoriteOnly as string) === "true" || false,
+        sortBy: (router.query.sortBy as Filter["sortBy"]) || "name",
       });
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -87,22 +91,46 @@ export function useFilteredSubreddits(pageSize: number) {
     [isSubVisible]
   );
 
-  const visibleSubreddits = useMemo(
-    () =>
-      filteredSubreddits
-        .sort((a, b) => {
-          if (favorites.includes(a.name) && !favorites.includes(b.name)) {
-            return -1;
-          }
-          if (!favorites.includes(a.name) && favorites.includes(b.name)) {
-            return 1;
-          }
+  const maxFn = maxBy((link: Link) => link.stats?.subscribers ?? 0);
 
-          return a.name.localeCompare(b.name);
-        })
-        .slice(0, page * pageSize),
-    [favorites, filteredSubreddits, page, pageSize]
-  );
+  const visibleSubreddits = useMemo(() => {
+    let result = filteredSubreddits.sort((a, b) => {
+      if (favorites.includes(a.name) && !favorites.includes(b.name)) {
+        return -1;
+      }
+      if (!favorites.includes(a.name) && favorites.includes(b.name)) {
+        return 1;
+      }
+
+      if (filter.sortBy !== "name") {
+        return (
+          apply(
+            Math.max,
+            b.links.map((link) => link.stats?.[filter.sortBy] ?? 0)
+          ) -
+          apply(
+            Math.max,
+            a.links.map((link) => link.stats?.[filter.sortBy] ?? 0)
+          )
+        );
+      }
+
+      return a.name.localeCompare(b.name);
+    });
+
+    if (filter.sortBy !== "name") {
+      result = result.map((sub) => {
+        return {
+          ...sub,
+          links: sub.links.sort(
+            (a, b) => (b.stats?.[filter.sortBy] ?? 0) - (a.stats?.[filter.sortBy] ?? 0)
+          ),
+        };
+      });
+    }
+
+    return result.slice(0, page * pageSize);
+  }, [favorites, filteredSubreddits, page, pageSize, filter]);
 
   return { filter, setFilter, visibleSubreddits, isLinkVisible };
 }

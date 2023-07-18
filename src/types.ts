@@ -3,6 +3,7 @@ export type Link = {
   url: string;
   official?: boolean;
   added_ts?: number;
+  stats?: any;
 };
 
 export type Subreddit = {

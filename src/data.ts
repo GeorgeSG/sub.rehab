@@ -1,3 +1,4 @@
+import lemmyStats from "@/lemmyStats";
 import data from "@/subreddits";
 import { MantineTheme } from "@mantine/core";
 import { useMemo } from "react";
@@ -13,8 +14,20 @@ export const SERVICE_COLORS: Record<string, (theme: MantineTheme) => string> = {
   raddle: () => "#EA3524",
 };
 
+type StatKey = keyof typeof lemmyStats;
+
 export function getSubreddits(): Subreddit[] {
-  return data.subs;
+  return data.subs.map((sub) => {
+    return {
+      ...sub,
+      links: sub.links.map((link) => {
+        if (link.service !== "lemmy" || !lemmyStats[link.url as StatKey]) {
+          return link;
+        }
+        return { ...link, stats: lemmyStats[link.url as StatKey] };
+      }),
+    };
+  });
 }
 
 export function getSubredditData(subredditName: string): Subreddit | undefined {

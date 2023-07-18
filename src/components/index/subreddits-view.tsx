@@ -7,8 +7,9 @@ import { groupBy } from "ramda";
 import { Fragment, useMemo } from "react";
 import { CommunityFavorite } from "../communities/community-favorite";
 import { LinkPill } from "../core/link-pill";
+import { Filter } from "../communities/community-filters";
 
-export function SubredditsView() {
+export function SubredditsView({ filter }: { filter: Filter }) {
   const { visibleSubreddits } = useFilteredSubreddits(90);
   const [favorites] = useFavorites();
 
@@ -20,8 +21,13 @@ export function SubredditsView() {
   const grouped = useMemo<Record<string, Subreddit[]>>(() => {
     const unfavorited = visibleSubreddits.filter((sub) => !favorites.includes(sub.name));
 
-    return groupBy((sub) => sub.name.charAt(2).toLowerCase(), unfavorited);
-  }, [visibleSubreddits, favorites]);
+    if (filter.sortBy === "name") {
+      return groupBy((sub) => sub.name.charAt(2).toLowerCase(), unfavorited);
+    } else {
+      return { [`Subreddits by highest community ${filter.sortBy}`]: unfavorited };
+    }
+  }, [visibleSubreddits, favorites, filter]);
+
   return (
     <>
       {favoritedSubs.length > 0 && (

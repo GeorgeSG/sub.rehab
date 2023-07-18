@@ -56,7 +56,7 @@ export default function Home() {
             )}
           </Paper>
         )}
-        {view === "communities" ? <CommunitiesView /> : <SubredditsView />}
+        {view === "communities" ? <CommunitiesView /> : <SubredditsView filter={filter} />}
       </Section>
     </>
   );

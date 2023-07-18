@@ -1,6 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import { useHomeInstance } from "@/hooks/use-home-instance";
 import { useIsLinkNew } from "@/hooks/use-is-link-new";
+import { formatCompactNumber } from "@/lib/numbers";
+import { Link } from "@/types";
 import { Flex, Indicator, Text, Tooltip, createStyles } from "@mantine/core";
 import {
   IoChatboxEllipses,
@@ -11,8 +13,6 @@ import {
 } from "react-icons/io5";
 import { LinkPill } from "../core/link-pill";
 import { OriginalInstanceLink } from "../original-instance-link";
-import lemmyStats from "@/lemmyStats";
-import { formatCompactNumber } from "@/lib/numbers";
 
 const SERVICE_ICONS: Record<string, string> = {
   discord: "/images/discord.svg",
@@ -42,20 +42,10 @@ const useStyles = createStyles(({ colors, colorScheme, spacing, radius }) => {
   };
 });
 
-export type Link = {
-  service: string;
-  url: string;
-  official?: boolean;
-  added_ts?: number;
-};
-
 export function CommunityLink({ link, name }: { link: Link; name: string }) {
   const { classes } = useStyles();
   const { supportsHomeInstance, getSubredditLink } = useHomeInstance();
   const isLinkNew = useIsLinkNew();
-
-  // @ts-expect-error
-  const stats = lemmyStats && lemmyStats.hasOwnProperty(link.url) ? lemmyStats[link.url] : null;
 
   return (
     <LinkPill
@@ -65,12 +55,12 @@ export function CommunityLink({ link, name }: { link: Link; name: string }) {
       title={getSubredditLink(link).split("https://")[1]}
       className={classes.homeLocation}
       statRow={
-        stats && (
+        link.stats && (
           <Flex gap="md" pt={2} align="center" justify="center">
             <Tooltip label="Subscribers" withArrow>
               <span>
                 <IoPerson size={14} className={classes.icon} style={{ marginRight: "4px" }} />
-                {formatCompactNumber(stats.subscribers)}
+                {formatCompactNumber(link.stats.subscribers)}
               </span>
             </Tooltip>
             <Tooltip label="Posts" withArrow>
@@ -80,19 +70,19 @@ export function CommunityLink({ link, name }: { link: Link; name: string }) {
                   className={classes.icon}
                   style={{ marginRight: "4px" }}
                 />
-                {formatCompactNumber(stats.posts)}
+                {formatCompactNumber(link.stats.posts)}
               </span>
             </Tooltip>
             <Tooltip label="Comments" withArrow>
               <span>
                 <IoChatbubbles size={14} className={classes.icon} style={{ marginRight: "4px" }} />
-                {formatCompactNumber(stats.comments)}
+                {formatCompactNumber(link.stats.comments)}
               </span>
             </Tooltip>
             <Tooltip label="Active Users (Week)" withArrow>
               <span>
                 <IoTrendingUp size={14} className={classes.icon} style={{ marginRight: "4px" }} />
-                {formatCompactNumber(stats.users_active_week)}
+                {formatCompactNumber(link.stats.users_active_week)}
               </span>
             </Tooltip>
           </Flex>
