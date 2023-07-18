@@ -4529,12 +4529,6 @@
       "name": "r/Pathfinder2e",
       "links": [
         {
-          "service": "lemmy",
-          "url": "https://pathfinder.social/c/pf2general",
-          "official": false,
-          "added_ts": 1687284912189
-        },
-        {
           "service": "kbin",
           "url": "https://kbin.social/m/pathfinder2e",
           "official": false,
