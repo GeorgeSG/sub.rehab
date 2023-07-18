@@ -3057,17 +3057,6 @@
       ]
     },
     {
-      "name": "r/KerbalSpaceProgram",
-      "links": [
-        {
-          "service": "lemmy",
-          "url": "https://vlemmy.net/c/kerbalspaceprogram",
-          "official": false,
-          "added_ts": 1687514889542
-        }
-      ]
-    },
-    {
       "name": "r/Leagueoflegends",
       "links": [
         {
@@ -7367,12 +7356,6 @@
           "url": "https://discord.gg/wpupz5d3aw",
           "official": true,
           "added_ts": 1687805968108
-        },
-        {
-          "service": "lemmy",
-          "url": "https://vlemmy.net/c/wizardposting",
-          "official": false,
-          "added_ts": 1687805968156
         }
       ]
     },
@@ -9500,12 +9483,6 @@
         { "service": "discord", "url": "https://discord.gg/tMFaTvk", "official": true },
         {
           "service": "lemmy",
-          "url": "https://vlemmy.net/c/architecture",
-          "official": false,
-          "added_ts": 1687514891399
-        },
-        {
-          "service": "lemmy",
           "url": "https://lemmy.ml/c/architecture",
           "official": false,
           "added_ts": 1688286709322
@@ -9979,7 +9956,7 @@
       "links": [
         {
           "service": "lemmy",
-          "url": "https://forum.basedcount.com/c/pcm",
+          "url": "https://lemmy.basedcount.com/c/pcm",
           "official": true,
           "added_ts": 1688299448242
         }
