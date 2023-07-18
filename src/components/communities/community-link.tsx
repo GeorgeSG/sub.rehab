@@ -24,7 +24,7 @@ const SERVICE_ICONS: Record<string, string> = {
   raddle: "/images/raddle.svg",
 };
 
-const useStyles = createStyles(({ colors, colorScheme, spacing, radius }) => {
+const useStyles = createStyles(({ colors, colorScheme, spacing, radius, fn, fontSizes }) => {
   const isDark = colorScheme === "dark";
 
   return {
@@ -38,6 +38,15 @@ const useStyles = createStyles(({ colors, colorScheme, spacing, radius }) => {
     },
     icon: {
       color: isDark ? colors.orange[1] : colors.orange[6],
+    },
+
+    stats: {
+      display: "flex",
+      gap: spacing.md,
+      alignItems: "center",
+      fontSize: fontSizes.sm,
+      justifyContent: "flex-start",
+      paddingLeft: "48px",
     },
   };
 });
@@ -56,17 +65,17 @@ export function CommunityLink({ link, name }: { link: Link; name: string }) {
       className={classes.homeLocation}
       statRow={
         link.stats && (
-          <Flex gap="md" pt={2} align="center" justify="center">
+          <div className={classes.stats}>
             <Tooltip label="Subscribers" withArrow>
               <span>
-                <IoPerson size={14} className={classes.icon} style={{ marginRight: "4px" }} />
+                <IoPerson size={11} className={classes.icon} style={{ marginRight: "4px" }} />
                 {formatCompactNumber(link.stats.subscribers)}
               </span>
             </Tooltip>
             <Tooltip label="Posts" withArrow>
               <span>
                 <IoChatboxEllipses
-                  size={14}
+                  size={11}
                   className={classes.icon}
                   style={{ marginRight: "4px" }}
                 />
@@ -75,17 +84,17 @@ export function CommunityLink({ link, name }: { link: Link; name: string }) {
             </Tooltip>
             <Tooltip label="Comments" withArrow>
               <span>
-                <IoChatbubbles size={14} className={classes.icon} style={{ marginRight: "4px" }} />
+                <IoChatbubbles size={11} className={classes.icon} style={{ marginRight: "4px" }} />
                 {formatCompactNumber(link.stats.comments)}
               </span>
             </Tooltip>
             <Tooltip label="Active Users (Week)" withArrow>
               <span>
-                <IoTrendingUp size={14} className={classes.icon} style={{ marginRight: "4px" }} />
+                <IoTrendingUp size={11} className={classes.icon} style={{ marginRight: "4px" }} />
                 {formatCompactNumber(link.stats.users_active_week)}
               </span>
             </Tooltip>
-          </Flex>
+          </div>
         )
       }
     >

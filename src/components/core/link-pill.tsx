@@ -29,6 +29,11 @@ const useStyles = createStyles(({ colorScheme, spacing, radius, colors, fn, othe
     withStats: {
       flexDirection: "column",
       paddingBottom: "4px",
+
+      [fn.smallerThan("xs")]: {
+        paddingBottom: 0,
+        gap: 0,
+      },
     },
 
     itemsFlex: {
