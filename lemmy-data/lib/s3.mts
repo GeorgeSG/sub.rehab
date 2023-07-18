@@ -5,10 +5,10 @@ import dotenv from "dotenv";
 
 const env = dotenv.config().parsed!;
 
-const accessKeyId = env.AWS_ACCESS_KEY_ID!;
-const secretAccessKey = env.AWS_SECRET_ACCESS_KEY!;
-const region = env.S3_REGION;
-const Bucket = env.S3_BUCKET;
+const accessKeyId = process.env.AWS_ACCESS_KEY_ID || env.AWS_ACCESS_KEY_ID!;
+const secretAccessKey = process.env.AWS_SECRET_ACCESS_KEY || env.AWS_SECRET_ACCESS_KEY!;
+const region = process.env.S3_REGION || env.S3_REGION;
+const Bucket = process.env.S3_BUCKET || env.S3_BUCKET;
 
 const s3client = new S3Client({
   credentials: {
