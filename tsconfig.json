@@ -17,7 +17,8 @@
     "allowImportingTsExtensions": true,
     "paths": {
       "@/*": ["./src/*"],
-      "@/subreddits": ["./data/subreddits.json"]
+      "@/subreddits": ["./data/subreddits.json"],
+      "@/lemmyStats": ["./data/lemmy-stats.json"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.mts"],

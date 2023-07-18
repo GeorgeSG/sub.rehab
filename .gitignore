@@ -16,3 +16,5 @@ next-env.d.ts
 .netlify
 .env
 *.cache
+
+data/lemmy-stats.json

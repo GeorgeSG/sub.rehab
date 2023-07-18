@@ -1,13 +1,12 @@
 import { Anchor, AnchorProps, createStyles } from "@mantine/core";
 import { PolymorphicComponentProps } from "@mantine/utils";
+import { ReactNode } from "react";
 
 const useStyles = createStyles(({ colorScheme, spacing, radius, colors, fn, other }) => {
   const isDark = colorScheme === "dark";
   return {
     linkPill: {
       display: "flex",
-      alignItems: "center",
-      gap: spacing.md,
       borderRadius: radius.md,
       padding: `${spacing.xs} ${spacing.md}`,
       color: isDark ? colors.orange[1] : colors.gray[7],
@@ -26,18 +25,42 @@ const useStyles = createStyles(({ colorScheme, spacing, radius, colors, fn, othe
         padding: spacing.xs,
       },
     },
+
+    withStats: {
+      flexDirection: "column",
+      paddingBottom: "4px",
+    },
+
+    itemsFlex: {
+      display: "flex",
+      alignItems: "center",
+      gap: spacing.md,
+    },
   };
 });
 
 export function LinkPill<C = "a">({
   className,
+  statRow,
   children,
   ...props
-}: PolymorphicComponentProps<C, AnchorProps>) {
+}: PolymorphicComponentProps<C, AnchorProps> & { statRow?: ReactNode }) {
   const { classes } = useStyles();
   return (
-    <Anchor {...props} className={`${classes.linkPill} ${className}`}>
-      {children}
+    <Anchor
+      {...props}
+      className={`${classes.linkPill} ${
+        !statRow ? classes.itemsFlex : classes.withStats
+      } ${className}`}
+    >
+      {statRow ? (
+        <>
+          <div className={classes.itemsFlex}>{children}</div>
+          {statRow}
+        </>
+      ) : (
+        children
+      )}
     </Anchor>
   );
 }
