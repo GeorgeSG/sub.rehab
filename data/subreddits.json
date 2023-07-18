@@ -5382,7 +5382,7 @@
       "links": [
         {
           "service": "lemmy",
-          "url": "https://lemmy.radio/",
+          "url": "https://lemmy.radio/c/amateur_radio",
           "official": false,
           "added_ts": 1687286836033
         },
@@ -6509,7 +6509,7 @@
       "links": [
         {
           "service": "lemmy",
-          "url": "https://Lemmy.world/c/Psych",
+          "url": "https://lemmy.world/c/Psych",
           "official": false,
           "added_ts": 1687644143936
         }
@@ -6735,7 +6735,7 @@
       "links": [
         {
           "service": "lemmy",
-          "url": "https://Lemmy.world/c/Atlanta",
+          "url": "https://lemmy.world/c/Atlanta",
           "official": false,
           "added_ts": 1687721949036
         }
