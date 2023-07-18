@@ -1,14 +1,14 @@
-import { crawl } from "./lib/community.mts";
-import { getCommunities } from "./lib/get-communities.mts";
-import { readFromS3, writeToAWS } from "./lib/s3.mts";
+import { crawl as crawlCommunity } from "./community.mts";
+import { getCommunities } from "../lib/get-communities.mts";
+import { readFromS3, writeToAWS } from "../lib/s3.mts";
 
-async function scrape() {
-  const input = await getCommunities();
+async function crawl() {
+  const input = await getCommunities("lemmy");
   const promises = input.map((community) => {
     const base = community.split("/")[2];
     const name = community.split("/")[4];
     if (base && name) {
-      return crawl(base, name);
+      return crawlCommunity(base, name);
     } else {
       return Promise.resolve(null);
     }
@@ -17,8 +17,8 @@ async function scrape() {
   return await Promise.all(promises);
 }
 
-scrape().then(async (communities) => {
-  const oldResults = await readFromS3();
+crawl().then(async (communities) => {
+  const oldResults = await readFromS3("lemmy-stats.json");
 
   const outputArray = communities.filter(Boolean);
 

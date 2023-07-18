@@ -28,9 +28,13 @@
     "cli": "ts-node --esm ./bin/cli/cli.mts",
     "fbs": "yarn cli firebase",
     "prepare": "husky install",
-    "lemmy:scrape": "ts-node --esm ./lemmy-data/scrape.mts",
-    "lemmy:fetch": "ts-node --esm ./lemmy-data/fetch.mts",
-    "deploy": "NEXT_PUBLIC_FIRESTORE_SUFFIX='' yarn lemmy:fetch && yarn build && firebase deploy"
+    "stats:crawl": "yarn stats:crawl:discord && yarn stats:crawl:lemmy",
+    "stats:crawl:lemmy": "ts-node --esm ./crawlers/lemmy/crawl.mts",
+    "stats:crawl:discord": "ts-node --esm ./crawlers/discord/crawl.mts",
+    "stats:fetch": "yarn stats:fetch:discord && yarn stats:fetch:lemmy",
+    "stats:fetch:lemmy": "ts-node --esm ./crawlers/lemmy/fetch.mts",
+    "stats:fetch:discord": "ts-node --esm ./crawlers/discord/fetch.mts",
+    "deploy": "NEXT_PUBLIC_FIRESTORE_SUFFIX='' yarn stats:fetch && yarn build && firebase deploy"
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.370.0",

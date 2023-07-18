@@ -13,6 +13,7 @@ import {
 } from "react-icons/io5";
 import { LinkPill } from "../core/link-pill";
 import { OriginalInstanceLink } from "../original-instance-link";
+import { useMemo } from "react";
 
 const SERVICE_ICONS: Record<string, string> = {
   discord: "/images/discord.svg",
@@ -56,6 +57,45 @@ export function CommunityLink({ link, name }: { link: Link; name: string }) {
   const { supportsHomeInstance, getSubredditLink } = useHomeInstance();
   const isLinkNew = useIsLinkNew();
 
+  const statsOptions = useMemo(() => {
+    if (!link.stats) return [];
+
+    if (link.service === "lemmy") {
+      return [
+        {
+          label: "Subscribers",
+          value: formatCompactNumber(link.stats.subscribers),
+          icon: IoPerson,
+        },
+        {
+          label: "Posts",
+          value: formatCompactNumber(link.stats.posts),
+          icon: IoChatboxEllipses,
+        },
+        {
+          label: "Comments",
+          value: formatCompactNumber(link.stats.comments),
+          icon: IoChatbubbles,
+        },
+        {
+          label: "Active Users (Week)",
+          value: formatCompactNumber(link.stats.users_active_week),
+          icon: IoTrendingUp,
+        },
+      ];
+    }
+
+    if (link.service === "discord") {
+      return [
+        {
+          label: "Subscribers",
+          value: formatCompactNumber(link.stats.subscribers),
+          icon: IoPerson,
+        },
+      ];
+    }
+  }, [link]);
+
   return (
     <LinkPill
       key={link.url}
@@ -64,38 +104,16 @@ export function CommunityLink({ link, name }: { link: Link; name: string }) {
       title={getSubredditLink(link).split("https://")[1]}
       className={classes.homeLocation}
       statRow={
-        link.stats && (
-          <div className={classes.stats}>
-            <Tooltip label="Subscribers" withArrow>
+        <div className={classes.stats}>
+          {statsOptions?.map((stat) => (
+            <Tooltip key={stat.label} label={stat.label} withArrow>
               <span>
-                <IoPerson size={11} className={classes.icon} style={{ marginRight: "4px" }} />
-                {formatCompactNumber(link.stats.subscribers)}
+                <stat.icon size={11} className={classes.icon} style={{ marginRight: "4px" }} />
+                {stat.value}
               </span>
             </Tooltip>
-            <Tooltip label="Posts" withArrow>
-              <span>
-                <IoChatboxEllipses
-                  size={11}
-                  className={classes.icon}
-                  style={{ marginRight: "4px" }}
-                />
-                {formatCompactNumber(link.stats.posts)}
-              </span>
-            </Tooltip>
-            <Tooltip label="Comments" withArrow>
-              <span>
-                <IoChatbubbles size={11} className={classes.icon} style={{ marginRight: "4px" }} />
-                {formatCompactNumber(link.stats.comments)}
-              </span>
-            </Tooltip>
-            <Tooltip label="Active Users (Week)" withArrow>
-              <span>
-                <IoTrendingUp size={11} className={classes.icon} style={{ marginRight: "4px" }} />
-                {formatCompactNumber(link.stats.users_active_week)}
-              </span>
-            </Tooltip>
-          </div>
-        )
+          ))}
+        </div>
       }
     >
       {SERVICE_ICONS[link.service] && (

@@ -18,7 +18,8 @@
     "paths": {
       "@/*": ["./src/*"],
       "@/subreddits": ["./data/subreddits.json"],
-      "@/lemmyStats": ["./data/lemmy-stats.json"]
+      "@/lemmyStats": ["./data/lemmy-stats.json"],
+      "@/discordStats": ["./data/discord-stats.json"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.mts"],

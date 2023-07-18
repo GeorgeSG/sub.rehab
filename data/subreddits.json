@@ -7501,7 +7501,7 @@
         },
         {
           "service": "discord",
-          "url": "https://discord.ggBVknR4rdRa",
+          "url": "https://discord.gg/BVknR4rdRa",
           "official": true,
           "added_ts": 1687980164622
         }
@@ -10217,7 +10217,7 @@
       "links": [
         {
           "service": "discord",
-          "url": "https://discord.com/invite/taplap",
+          "url": "https://discord.gg/taplap",
           "official": true,
           "added_ts": 1688500438597
         }
@@ -10748,7 +10748,7 @@
       "links": [
         {
           "service": "discord",
-          "url": "https://discord.com/invite/first-tech-challenge",
+          "url": "https://discord.gg/first-tech-challenge",
           "official": true,
           "added_ts": 1689690719802
         }

@@ -1,4 +1,5 @@
 import lemmyStats from "@/lemmyStats";
+import discordStats from "@/discordStats";
 import data from "@/subreddits";
 import { MantineTheme } from "@mantine/core";
 import { useMemo } from "react";
@@ -14,17 +15,30 @@ export const SERVICE_COLORS: Record<string, (theme: MantineTheme) => string> = {
   raddle: () => "#EA3524",
 };
 
-type StatKey = keyof typeof lemmyStats;
+type LemmyStatKey = keyof typeof lemmyStats;
+type DiscordStatKey = keyof typeof discordStats;
 
 export function getSubreddits(): Subreddit[] {
   return data.subs.map((sub) => {
     return {
       ...sub,
       links: sub.links.map((link) => {
-        if (link.service !== "lemmy" || !lemmyStats[link.url as StatKey]) {
-          return link;
+        if (link.service === "lemmy" && lemmyStats[link.url as LemmyStatKey]) {
+          return { ...link, stats: lemmyStats[link.url as LemmyStatKey] };
         }
-        return { ...link, stats: lemmyStats[link.url as StatKey] };
+        if (link.service === "discord") {
+          const statKey = link.url.split("discord.gg/")?.[1] as DiscordStatKey;
+
+          if (statKey && discordStats[statKey]) {
+            return { ...link, stats: discordStats[statKey] };
+          }
+
+          // attempt with lowercase key
+          if (statKey && discordStats[statKey.toLowerCase() as DiscordStatKey]) {
+            return { ...link, stats: discordStats[statKey.toLowerCase() as DiscordStatKey] };
+          }
+        }
+        return link;
       }),
     };
   });

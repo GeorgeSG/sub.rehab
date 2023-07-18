@@ -18,3 +18,4 @@ next-env.d.ts
 *.cache
 
 data/lemmy-stats.json
+data/discord-stats.json

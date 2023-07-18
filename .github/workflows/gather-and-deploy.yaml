@@ -14,13 +14,13 @@ jobs:
           node-version: '18'
           cache: 'yarn'
       - run: yarn install
-      - run: yarn lemmy:scrape
+      - run: yarn stats:crawl
         env:
           AWS_ACCESS_KEY_ID: '${{ secrets.AWS_ACCESS_KEY_ID }}'
           AWS_SECRET_ACCESS_KEY: '${{ secrets.AWS_SECRET_ACCESS_KEY }}'
           S3_REGION: '${{ secrets.S3_REGION }}'
           S3_BUCKET: '${{ secrets.S3_BUCKET }}'
-      - run: yarn lemmy:fetch && yarn build
+      - run: yarn stats:fetch && yarn build
         env:
           AWS_ACCESS_KEY_ID: '${{ secrets.AWS_ACCESS_KEY_ID }}'
           AWS_SECRET_ACCESS_KEY: '${{ secrets.AWS_SECRET_ACCESS_KEY }}'

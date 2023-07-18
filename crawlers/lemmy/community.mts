@@ -1,4 +1,4 @@
-import { AxiosClient } from "./axios.mts";
+import { AxiosClient } from "../lib/axios.mts";
 
 async function crawlAndRetry(
   client: AxiosClient,

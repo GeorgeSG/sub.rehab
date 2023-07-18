@@ -18,9 +18,9 @@ const s3client = new S3Client({
   region,
 });
 
-export async function readFromS3() {
+export async function readFromS3(filaName: string) {
   return axios
-    .get("https://s3.eu-central-1.amazonaws.com/sub.rehab/lemmy-stats.json")
+    .get(`https://s3.eu-central-1.amazonaws.com/sub.rehab/${filaName}`)
     .then((res) => res.data);
 }
 
