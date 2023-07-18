@@ -219,7 +219,7 @@ export function CommunityFilters({ filter, setFilter }: CommunityFiltersProps) {
               { label: "Subscribers", value: "subscribers" },
               { label: "Posts", value: "posts" },
               { label: "Comments", value: "comments" },
-              { label: "Weekly active users", value: "users_active_week" },
+              { label: "Active users (Week)", value: "users_active_week" },
             ]}
           />
         </Flex>
