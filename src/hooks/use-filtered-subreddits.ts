@@ -91,8 +91,6 @@ export function useFilteredSubreddits(pageSize: number) {
     [isSubVisible]
   );
 
-  const maxFn = maxBy((link: Link) => link.stats?.subscribers ?? 0);
-
   const visibleSubreddits = useMemo(() => {
     let result = filteredSubreddits.sort((a, b) => {
       if (favorites.includes(a.name) && !favorites.includes(b.name)) {
@@ -106,11 +104,11 @@ export function useFilteredSubreddits(pageSize: number) {
         return (
           apply(
             Math.max,
-            b.links.map((link) => link.stats?.[filter.sortBy] ?? 0)
+            b.links.filter(isLinkVisible).map((link) => link.stats?.[filter.sortBy] ?? 0)
           ) -
           apply(
             Math.max,
-            a.links.map((link) => link.stats?.[filter.sortBy] ?? 0)
+            a.links.filter(isLinkVisible).map((link) => link.stats?.[filter.sortBy] ?? 0)
           )
         );
       }

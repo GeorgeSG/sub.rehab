@@ -1813,7 +1813,7 @@
       "links": [
         {
           "service": "lemmy",
-          "url": "https://feddit.dk/c/fedditdkk",
+          "url": "https://feddit.dk/c/fedditdk",
           "official": false,
           "added_ts": 1687284704884
         }
@@ -2774,7 +2774,7 @@
       "links": [
         {
           "service": "lemmy",
-          "url": "https://sh.itjust.works/c/buytiforlife",
+          "url": "https://sh.itjust.works/c/buyitforlife",
           "official": false,
           "added_ts": 1687284809566
         },
