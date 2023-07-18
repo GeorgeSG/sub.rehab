@@ -9903,7 +9903,6 @@
     {
       "name": "r/android",
       "links": [
-        { "service": "lemmy", "url": "https://lemmy.world/c/android" },
         { "service": "kbin", "url": "https://kbin.social/m/android" },
         {
           "service": "lemmy",
