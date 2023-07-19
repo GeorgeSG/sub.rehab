@@ -104,16 +104,19 @@ export function CommunityLink({ link, name }: { link: Link; name: string }) {
       title={getSubredditLink(link).split("https://")[1]}
       className={classes.homeLocation}
       statRow={
-        <div className={classes.stats}>
-          {statsOptions?.map((stat) => (
-            <Tooltip key={stat.label} label={stat.label} withArrow>
-              <span>
-                <stat.icon size={11} className={classes.icon} style={{ marginRight: "4px" }} />
-                {stat.value}
-              </span>
-            </Tooltip>
-          ))}
-        </div>
+        statsOptions &&
+        statsOptions.length > 0 && (
+          <div className={classes.stats}>
+            {statsOptions.map((stat) => (
+              <Tooltip key={stat.label} label={stat.label} withArrow>
+                <span>
+                  <stat.icon size={11} className={classes.icon} style={{ marginRight: "4px" }} />
+                  {stat.value}
+                </span>
+              </Tooltip>
+            ))}
+          </div>
+        )
       }
     >
       {SERVICE_ICONS[link.service] && (
