@@ -11818,6 +11818,17 @@
           "added_ts": 1690828759078
         }
       ]
+    },
+    {
+      "name": "r/lebowski",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lebowski.social/c/achievers",
+          "official": false,
+          "added_ts": 1690828921695
+        }
+      ]
     }
   ]
 }
