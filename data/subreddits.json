@@ -1315,18 +1315,6 @@
       ]
     },
     {
-      "name": "r/archlinux",
-      "links": [
-        { "service": "kbin", "url": "https://kbin.social/m/archlinux" },
-        {
-          "service": "lemmy",
-          "url": "https://lemmy.ml/c/archlinux",
-          "official": false,
-          "added_ts": 1687279838556
-        }
-      ]
-    },
-    {
       "name": "r/vexillologycirclejerk",
       "links": [
         {
@@ -1654,17 +1642,6 @@
           "url": "https://lemmy.world/c/pop_os",
           "official": true,
           "added_ts": 1687282694062
-        }
-      ]
-    },
-    {
-      "name": "r/touhou",
-      "links": [
-        {
-          "service": "raddle",
-          "url": "https://raddle.me/f/touhou",
-          "official": true,
-          "added_ts": 1687282718709
         }
       ]
     },
@@ -8527,17 +8504,6 @@
       ]
     },
     {
-      "name": "r/redditsync",
-      "links": [
-        {
-          "service": "lemmy",
-          "url": "https://lemmy.world/c/syncforlemmy",
-          "official": true,
-          "added_ts": 1688279180718
-        }
-      ]
-    },
-    {
       "name": "r/riddles",
       "links": [
         {
@@ -9875,17 +9841,6 @@
           "url": "https://squidboards.com",
           "official": false,
           "added_ts": 1688299449246
-        }
-      ]
-    },
-    {
-      "name": "r/thenetherlands",
-      "links": [
-        {
-          "service": "lemmy",
-          "url": "https://feddit.nl",
-          "official": false,
-          "added_ts": 1688299449314
         }
       ]
     },
@@ -11476,6 +11431,391 @@
           "url": "https://kbin.social/m/worldbuilding",
           "official": false,
           "added_ts": 1689690723810
+        }
+      ]
+    },
+    {
+      "name": "r/Cubers",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/cubers",
+          "official": false,
+          "added_ts": 1690828756567
+        }
+      ]
+    },
+    {
+      "name": "r/GPGpractice",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/gpgpractice",
+          "official": false,
+          "added_ts": 1690828756729
+        }
+      ]
+    },
+    {
+      "name": "r/LiverpoolFC",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/liverpoolfc",
+          "official": false,
+          "added_ts": 1690828756830
+        }
+      ]
+    },
+    {
+      "name": "r/Netherlands",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.ml/c/netherlands",
+          "official": false,
+          "added_ts": 1690828756921
+        }
+      ]
+    },
+    {
+      "name": "r/Planetside",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.ml/c/planetside",
+          "official": false,
+          "added_ts": 1690828756992
+        },
+        {
+          "service": "misc",
+          "url": "https://forums.daybreakgames.com/ps2/index.php",
+          "official": true,
+          "added_ts": 1690828757058
+        },
+        {
+          "service": "discord",
+          "url": "https://discord.gg/planetside-2-community-251073753759481856",
+          "official": true,
+          "added_ts": 1690828757127
+        }
+      ]
+    },
+    {
+      "name": "r/SkincareAddiction",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://sh.itjust.works/c/skincareaddiction",
+          "official": false,
+          "added_ts": 1690828757193
+        }
+      ]
+    },
+    {
+      "name": "r/archlinux",
+      "links": [
+        { "service": "kbin", "url": "https://kbin.social/m/archlinux" },
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.ml/c/archlinux",
+          "official": false,
+          "added_ts": 1687279838556
+        },
+        {
+          "service": "misc",
+          "url": "https://bbs.archlinux.org",
+          "official": true,
+          "added_ts": 1690828757258
+        }
+      ]
+    },
+    {
+      "name": "r/bikepacking",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/bikepacking",
+          "official": false,
+          "added_ts": 1690828757325
+        }
+      ]
+    },
+    {
+      "name": "r/bitcoin",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/bitcoin",
+          "official": false,
+          "added_ts": 1690828757393
+        }
+      ]
+    },
+    {
+      "name": "r/cineshots",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/cineshots",
+          "official": false,
+          "added_ts": 1690828757464
+        }
+      ]
+    },
+    {
+      "name": "r/cptsd",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.ml/c/cptsd",
+          "official": false,
+          "added_ts": 1690828757567
+        }
+      ]
+    },
+    {
+      "name": "r/deadmau5",
+      "links": [
+        {
+          "service": "discord",
+          "url": "https://discord.gg/deadmau5",
+          "official": true,
+          "added_ts": 1690828757637
+        }
+      ]
+    },
+    {
+      "name": "r/dune",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/dune",
+          "official": false,
+          "added_ts": 1690828757702
+        }
+      ]
+    },
+    {
+      "name": "r/eredivisie",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://feddit.nl/c/eredivisie",
+          "official": false,
+          "added_ts": 1690828757771
+        }
+      ]
+    },
+    {
+      "name": "r/h3h3productions",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/h3h3productions",
+          "official": false,
+          "added_ts": 1690828757838
+        }
+      ]
+    },
+    {
+      "name": "r/ik_ihe",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://feddit.nl/c/ik_ihe",
+          "official": false,
+          "added_ts": 1690828757907
+        }
+      ]
+    },
+    {
+      "name": "r/juridischadvies",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://feddit.nl/c/juridisch",
+          "official": false,
+          "added_ts": 1690828757974
+        }
+      ]
+    },
+    {
+      "name": "r/leagueoflinux",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/leagueoflinux",
+          "official": true,
+          "added_ts": 1690828758042
+        }
+      ]
+    },
+    {
+      "name": "r/liberalgunowners",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/LiberalGunOwners",
+          "official": false,
+          "added_ts": 1690828758107
+        }
+      ]
+    },
+    {
+      "name": "r/linguistics",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.ml/c/linguistics",
+          "official": false,
+          "added_ts": 1690828758173
+        }
+      ]
+    },
+    {
+      "name": "r/linuxadmin",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.run/c/linuxadmin",
+          "official": false,
+          "added_ts": 1690828758240
+        }
+      ]
+    },
+    {
+      "name": "r/onebag",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://wayfarershaven.eu/c/onebag",
+          "official": false,
+          "added_ts": 1690828758309
+        }
+      ]
+    },
+    {
+      "name": "r/redditsync",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/syncforlemmy",
+          "official": true,
+          "added_ts": 1688279180718
+        },
+        {
+          "service": "discord",
+          "url": "https://discord.gg/qYWxqva",
+          "official": true,
+          "added_ts": 1690828758380
+        }
+      ]
+    },
+    {
+      "name": "r/sideloaded",
+      "links": [
+        {
+          "service": "discord",
+          "url": "https://discord.gg/DwW9g5pK4A",
+          "official": true,
+          "added_ts": 1690828758450
+        }
+      ]
+    },
+    {
+      "name": "r/spacex",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://sh.itjust.works/c/spacex",
+          "official": false,
+          "added_ts": 1690828758517
+        }
+      ]
+    },
+    {
+      "name": "r/thenetherlands",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://feddit.nl",
+          "official": false,
+          "added_ts": 1688299449314
+        },
+        {
+          "service": "lemmy",
+          "url": "https://feddit.nl/c/thenetherlands",
+          "official": true,
+          "added_ts": 1690828758585
+        }
+      ]
+    },
+    {
+      "name": "r/touhou",
+      "links": [
+        {
+          "service": "raddle",
+          "url": "https://raddle.me/f/touhou",
+          "official": true,
+          "added_ts": 1687282718709
+        },
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/touhou",
+          "official": false,
+          "added_ts": 1690828758654
+        }
+      ]
+    },
+    {
+      "name": "r/vegetablegardening",
+      "links": [
+        {
+          "service": "kbin",
+          "url": "https://kbin.social/m/VegetableGardening",
+          "official": false,
+          "added_ts": 1690828758725
+        }
+      ]
+    },
+    {
+      "name": "r/wallpaper",
+      "links": [
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.ca/c/wallpapers",
+          "official": false,
+          "added_ts": 1690828758796
+        }
+      ]
+    },
+    {
+      "name": "r/weirdal",
+      "links": [
+        {
+          "service": "misc",
+          "url": "https://weirdalforum.com",
+          "official": false,
+          "added_ts": 1690828758869
+        },
+        {
+          "service": "discord",
+          "url": "https://4wKTfG2",
+          "official": true,
+          "added_ts": 1690828758939
+        },
+        {
+          "service": "lemmy",
+          "url": "https://lemmy.world/c/weirdal",
+          "official": false,
+          "added_ts": 1690828759009
+        },
+        {
+          "service": "squabbles",
+          "url": "https://squabbles.io/s/WeirdAl",
+          "official": false,
+          "added_ts": 1690828759078
         }
       ]
     }
