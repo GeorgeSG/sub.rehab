@@ -8102,7 +8102,7 @@
       "name": "r/braves",
       "links": [
         {
-          "service": "misc",
+          "service": "lemmy",
           "url": "https://fanaticus.social/c/braves",
           "official": false,
           "added_ts": 1688279178467
@@ -10318,7 +10318,7 @@
         },
         {
           "service": "lemmy",
-          "url": "https://lemmy.ml/c/flashpointarchive",
+          "url": "https://lemm.ee/c/flashpointarchive",
           "official": true,
           "added_ts": 1688585149835
         }
