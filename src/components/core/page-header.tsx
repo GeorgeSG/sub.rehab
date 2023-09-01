@@ -142,7 +142,7 @@ export function PageHeader({ withBackground = false }: { withBackground?: boolea
             </Menu.Item>
             <Menu.Divider />
             <Menu.Label>External links</Menu.Label>
-            <Menu.Item
+            {/* <Menu.Item
               closeMenuOnClick
               component={Link}
               href="https://www.buymeacoffee.com/subrehab"
@@ -151,7 +151,7 @@ export function PageHeader({ withBackground = false }: { withBackground?: boolea
               icon="☕"
             >
               Buy me a coffee
-            </Menu.Item>
+            </Menu.Item> */}
             <Menu.Item
               closeMenuOnClick
               component="a"
@@ -198,7 +198,7 @@ export function PageHeader({ withBackground = false }: { withBackground?: boolea
           >
             FAQ
           </Button>
-          <Button
+          {/* <Button
             component={Link}
             href="https://www.buymeacoffee.com/subrehab"
             target="_blank"
@@ -207,7 +207,7 @@ export function PageHeader({ withBackground = false }: { withBackground?: boolea
             leftIcon="☕"
           >
             Buy me a coffee
-          </Button>
+          </Button> */}
           <Button
             component={Link}
             href="https://forms.gle/JyGMtzet2Y3Kj2i8A"

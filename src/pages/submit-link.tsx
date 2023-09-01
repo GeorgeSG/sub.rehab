@@ -157,7 +157,8 @@ export default function SubmitLink() {
   return (
     <>
       <PageHeader withBackground />
-      <Section>
+      <Section>Suggesting links is currently disabled.</Section>
+      {/* <Section>
         <Title order={2} sx={{ fontFamily: "var(--font-accent)" }}>
           Link approval criteria
         </Title>
@@ -269,7 +270,7 @@ export default function SubmitLink() {
             </Group>
           </form>
         </Box>
-      </Section>
+      </Section> */}
     </>
   );
 }

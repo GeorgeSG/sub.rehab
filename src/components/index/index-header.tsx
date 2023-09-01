@@ -62,9 +62,9 @@ export function IndexHeader() {
         </div>
         <Flex gap="xs" className={classes.buttonRow}>
           <Group>
-            <GradientButton<typeof Link> component={Link} href="/submit-link" leftIcon={<IoAdd />}>
+            {/* <GradientButton<typeof Link> component={Link} href="/submit-link" leftIcon={<IoAdd />}>
               Suggest link
-            </GradientButton>
+            </GradientButton> */}
 
             <Tooltip label="Report a broken, miscategorized, or inaccurate link" withArrow>
               <div>
