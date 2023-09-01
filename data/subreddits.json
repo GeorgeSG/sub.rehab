@@ -8498,7 +8498,7 @@
         {
           "service": "lemmy",
           "url": "https://lemmy.world/c/protonprivacy",
-          "official": false,
+          "official": true,
           "added_ts": 1688279180663
         }
       ]
