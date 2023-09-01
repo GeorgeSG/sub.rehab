@@ -6785,7 +6785,7 @@
         {
           "service": "lemmy",
           "url": "https://lemmy.world/c/guiltygear",
-          "official": false,
+          "official": true,
           "added_ts": 1687805966505
         }
       ]
